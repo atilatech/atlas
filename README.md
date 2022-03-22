@@ -1,7 +1,8 @@
 # Atlas
-Atila's Tool for Learning any Subject (starting with crypto). An open-source search engine.
+Atila's Tool for Learning any Subject (starting with crypto).
 
-Atlas is a tool that allows you to parse a collection of URLs, index them into database and make it searchable.
+Atlas is a search engine that allows you to parse a collection of URLs,
+index them into a database and make it searchable.
 
 ## Installation
 
@@ -10,6 +11,8 @@ Atlas is a tool that allows you to parse a collection of URLs, index them into d
 Put your environment variables into the newly created .env file
 
 `source .env`
+
+`pip install -e .`
 
 ## Quickstart
 
