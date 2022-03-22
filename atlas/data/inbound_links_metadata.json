@@ -1,0 +1,128 @@
+{
+    "953e682900d4f8669eea9ac34217a957e75556884e5ed963c6b5524d06a1c7a3": {
+        "unique_sources_count": 4,
+        "sources": [
+            {
+                "url": "https://www.cryptokitties.co",
+                "text": "CryptoKitties",
+                "objectID": "953e682900d4f8669eea9ac34217a957e75556884e5ed963c6b5524d06a1c7a3",
+                "source_url": "https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem"
+            },
+            {
+                "url": "https://www.cryptokitties.co",
+                "text": "CryptoKitties",
+                "objectID": "953e682900d4f8669eea9ac34217a957e75556884e5ed963c6b5524d06a1c7a3",
+                "source_url": "https://chain.link/education/nfts"
+            },
+            {
+                "url": "https://www.cryptokitties.co",
+                "text": "CryptoKitties",
+                "objectID": "953e682900d4f8669eea9ac34217a957e75556884e5ed963c6b5524d06a1c7a3",
+                "source_url": "https://verinite.com/a-primer-on-non-fungible-tokens-everything-you-need-to-know"
+            },
+            {
+                "url": "https://www.cryptokitties.co",
+                "text": "https://www.cryptokitties.co/",
+                "objectID": "953e682900d4f8669eea9ac34217a957e75556884e5ed963c6b5524d06a1c7a3",
+                "source_url": "https://golden.com/wiki/Non-fungible_token_(NFT)-PBRM4DG"
+            }
+        ],
+        "url": "https://www.cryptokitties.co"
+    },
+    "935db4b51fc8153645559b6ab0e04a1ab4c5e19e0e4cafe1af8eae8eee291087": {
+        "unique_sources_count": 3,
+        "sources": [
+            {
+                "url": "https://godsunchained.com",
+                "text": "Gods Unchained",
+                "objectID": "935db4b51fc8153645559b6ab0e04a1ab4c5e19e0e4cafe1af8eae8eee291087",
+                "source_url": "https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d"
+            },
+            {
+                "url": "https://godsunchained.com",
+                "text": "Gods Unchained",
+                "objectID": "935db4b51fc8153645559b6ab0e04a1ab4c5e19e0e4cafe1af8eae8eee291087",
+                "source_url": "https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem"
+            },
+            {
+                "url": "https://godsunchained.com",
+                "text": "Gods Unchained",
+                "objectID": "935db4b51fc8153645559b6ab0e04a1ab4c5e19e0e4cafe1af8eae8eee291087",
+                "source_url": "https://editorial.mintable.app/2021/12/06/what-is-a-layer-2-for-nfts"
+            }
+        ],
+        "url": "https://godsunchained.com"
+    },
+    "aa7653a8cf83a6dff06eb5dff0f4aa5bc438643cf4e02dfdf26a1759653d6bb9": {
+        "unique_sources_count": 3,
+        "sources": [
+            {
+                "url": "https://axieinfinity.com",
+                "text": "Axie Infinity",
+                "objectID": "aa7653a8cf83a6dff06eb5dff0f4aa5bc438643cf4e02dfdf26a1759653d6bb9",
+                "source_url": "https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d"
+            },
+            {
+                "url": "https://axieinfinity.com",
+                "text": "Axie Infinity",
+                "objectID": "aa7653a8cf83a6dff06eb5dff0f4aa5bc438643cf4e02dfdf26a1759653d6bb9",
+                "source_url": "https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem"
+            },
+            {
+                "url": "https://axieinfinity.com",
+                "text": "Axie Infinity",
+                "objectID": "aa7653a8cf83a6dff06eb5dff0f4aa5bc438643cf4e02dfdf26a1759653d6bb9",
+                "source_url": "https://chain.link/education/nfts"
+            }
+        ],
+        "url": "https://axieinfinity.com"
+    },
+    "5ecccfa53330df3c1bd90c63c2e514cd7994f74c7dc04340c3eb496581959d5b": {
+        "unique_sources_count": 3,
+        "sources": [
+            {
+                "url": "https://opensea.io",
+                "text": "OpenSea",
+                "objectID": "5ecccfa53330df3c1bd90c63c2e514cd7994f74c7dc04340c3eb496581959d5b",
+                "source_url": "https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d"
+            },
+            {
+                "url": "https://opensea.io",
+                "text": "OpenSea",
+                "objectID": "5ecccfa53330df3c1bd90c63c2e514cd7994f74c7dc04340c3eb496581959d5b",
+                "source_url": "https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem"
+            },
+            {
+                "url": "https://opensea.io",
+                "text": "OpenSea",
+                "objectID": "5ecccfa53330df3c1bd90c63c2e514cd7994f74c7dc04340c3eb496581959d5b",
+                "source_url": "https://decrypt.co/resources/what-is-bored-ape-yacht-club-the-celebrity-nft-of-choice"
+            }
+        ],
+        "url": "https://opensea.io"
+    },
+    "757fb01e67fc521e162af4ae1158838aae0b3158cdb7f40ca2ef564ef441f5cc": {
+        "unique_sources_count": 3,
+        "sources": [
+            {
+                "url": "https://decentraland.org",
+                "text": "Decentraland",
+                "objectID": "757fb01e67fc521e162af4ae1158838aae0b3158cdb7f40ca2ef564ef441f5cc",
+                "source_url": "https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem"
+            },
+            {
+                "url": "https://decentraland.org",
+                "text": "Decentraland",
+                "objectID": "757fb01e67fc521e162af4ae1158838aae0b3158cdb7f40ca2ef564ef441f5cc",
+                "source_url": "https://verinite.com/a-primer-on-non-fungible-tokens-everything-you-need-to-know"
+            },
+            {
+                "url": "https://decentraland.org",
+                "text": "https://decentraland.org/",
+                "objectID": "757fb01e67fc521e162af4ae1158838aae0b3158cdb7f40ca2ef564ef441f5cc",
+                "source_url": "https://golden.com/wiki/Non-fungible_token_(NFT)-PBRM4DG"
+            }
+        ],
+        "url": "https://decentraland.org"
+    }
+}
