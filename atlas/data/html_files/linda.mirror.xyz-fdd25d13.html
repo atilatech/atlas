@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="width=device-width" name="viewport"/>
+  <meta charset="utf-8"/>
+  <style>
+   body {
+          --accent: var(--mode-colors-accent);
+          --accentText: var(--mode-colors-accentText);
+          --background: var(--mode-colors-background);
+          --backgroundSecondary: var(--mode-colors-backgroundSecondary);
+          --backgroundTertiary: var(--mode-colors-backgroundTertiary);
+          --foreground: var(--mode-colors-foreground);
+          --groupBackground: var(--mode-colors-groupBackground);
+          --groupBorder: var(--mode-colors-groupBorder);
+          --relativeBackground: var(--mode-colors-background);
+
+          --blue: var(--mode-colors-blue);
+          --green: var(--mode-colors-green);
+          --indigo: var(--mode-colors-indigo);
+          --orange: var(--mode-colors-orange);
+          --pink: var(--mode-colors-pink);
+          --purple: var(--mode-colors-purple);
+          --red: var(--mode-colors-red);
+          --teal: var(--mode-colors-teal);
+          --yellow: var(--mode-colors-yellow);
+
+          --shadeAccentSecondary: var(--mode-shades-accentSecondary);
+          --shadeAccentSecondaryHover: var(--mode-shades-accentSecondaryHover);
+          --shadeForegroundSecondary: var(--mode-shades-foregroundSecondary);
+          --shadeForegroundSecondaryHover: var(--mode-shades-foregroundSecondaryHover);
+          --shadeForegroundTertiary: var(--mode-shades-foregroundTertiary);
+          --shadeGroupBackground: 1;
+          --shadeGroupBorder: var(--mode-shades-groupBorder);
+          --shadeText: var(--mode-shades-text);
+          --shadeTextSecondary: var(--mode-shades-textSecondary);
+          --shadeTextSecondaryHover: var(--mode-shades-textSecondaryHover);
+        }
+  </style>
+  <meta content="dark" name="twitter:widgets:theme"/>
+  <link as="font" crossorigin="anonymous" href="/fonts/inter/Inter-roman.var.woff2" rel="preload" type="font/woff2"/>
+  <link href="/favicon.ico" rel="icon" sizes="any"/>
+  <link href="/icon/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="/icon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/icon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <title>
+   A beginner's guide to NFTs — Linda Xie
+  </title>
+  <meta content="Non-fungible token (NFT) is a term used to describe a unique digital asset whose ownership is tracked on a blockchain, such as Ethereum. Assets that can be represented as NFTs range from digital goods, such as items that exist within virtual worlds, to claims on physical assets such as clothing items or real estate. In the coming years, we will see NFTs used to unlock entirely new use cases that are only made possible by crypto.
+" property="description"/>
+  <meta content="A beginner's guide to NFTs" property="og:title"/>
+  <meta content="Non-fungible token (NFT) is a term used to describe a unique digital asset whose ownership is tracked on a blockchain, such as Ethereum. Assets that can be represented as NFTs range from digital goods, such as items that exist within virtual worlds, to claims on physical assets such as clothing items or real estate. In the coming years, we will see NFTs used to unlock entirely new use cases that are only made possible by crypto.
+" property="og:description"/>
+  <meta content="https://images.mirror-media.xyz/nft/09865721-a967-4108-8ac2-ba91d413cfc9.jpeg" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="15" name="next-head-count"/>
+  <link as="style" href="/_next/static/css/4425644fbbd63ef6.css" rel="preload"/>
+  <link data-n-g="" href="/_next/static/css/4425644fbbd63ef6.css" rel="stylesheet"/>
+  <noscript data-n-css="">
+  </noscript>
+  <script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js">
+  </script>
+  <script data-nscript="beforeInteractive" defer="" id="theme-script" src="data:text/javascript;base64,IWZ1bmN0aW9uKCl7dmFyIGQ9ZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50O2Quc2V0QXR0cmlidXRlKCdkYXRhLXRoZW1lJywnZGFyaycpfSgpOw==">
+  </script>
+  <script defer="" src="/_next/static/chunks/webpack-3bc1f0c78106b797.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/framework-3e58cadbcc365cda.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/main-a82826a051316f0f.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/pages/_app-81f4592e444907eb.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/29107295-b133b9f0bd8c6f37.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/0f1ac474-8f41b54216724345.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9669-912e34a6bfec66f5.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/7447-562326c4213c00ac.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/944-473828c677e35965.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9702-008fc09647a6d324.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8743-af6bf311c6c1e1c0.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4675-d666d8c1fb444206.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4802-85aae4259c2a4d3c.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/1715-1da55b047b326be6.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4078-b96b6542c0834135.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/2624-337e96cf31cea0bb.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9285-dcbbe2656b2ca21b.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8687-7d58d05c48915303.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/5324-72a42f80f76a9492.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9612-a6dad8b6bf567bbf.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3597-8c67110f747c8002.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/2015-1d31f859d5a5fc1a.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/7497-0b92c8fe9a8b6051.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4459-13171d0a50038c47.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3911-17752dcc210bbeba.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/5891-9499322215d0ae51.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4573-86b3b0504e26e91d.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3000-5a3b046f42d1b8e1.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8817-d072a1d1584b40a8.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/254-9fc0d45f7811275c.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9562-59b802c1ee8329fd.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4910-8d0a306b6dc54b0b.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8739-f6b4fce0486f2540.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3374-b776c4d62be0213e.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3646-55fc3f402fdd9820.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/6773-2923e3ccdc3ccfc5.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9735-be8d2015d40a45b4.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9128-b4abfaa93fe58b91.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/7558-1e99f8626eb414ca.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/6001-fa1843f2ff15b8c9.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/pages/_sites/%5Bslug%5D/%5Bdigest%5D-a6c6969a49740cab.js">
+  </script>
+  <script defer="" src="/_next/static/F-jHNqB-ulEh84qa9G4tN/_buildManifest.js">
+  </script>
+  <script defer="" src="/_next/static/F-jHNqB-ulEh84qa9G4tN/_ssgManifest.js">
+  </script>
+  <script defer="" src="/_next/static/F-jHNqB-ulEh84qa9G4tN/_middlewareManifest.js">
+  </script>
+ </head>
+ <body>
+  <div data-reactroot="" id="__next">
+   <style data-emotion="css-global 10ckap1">
+    body{color:var(--colors-text);background-color:var(--colors-background);}
+   </style>
+   <style data-emotion="css-global bz6fku">
+    *{box-sizing:border-box;}body{font-family:var(--fonts-sans);line-height:1.5;font-size:1rem;font-weight:375;color:var(--theme-ui-colors-text, var(--colors-text));margin:0px;}
+   </style>
+   <style data-emotion="css suo593">
+    @media print{.css-suo593{display:none;}}
+   </style>
+   <div class="GlobalNavigation css-suo593">
+    <style data-emotion="css stayho">
+     .css-stayho{top:-1rem;left:0px;right:0px;z-index:9;padding-top:1rem;position:fixed;-webkit-transition:250ms ease-in-out box-shadow;transition:250ms ease-in-out box-shadow;}
+    </style>
+    <div class="GlobalNavigationContainer css-stayho" style="transform:none">
+     <style data-emotion="css 47ks30">
+      .css-47ks30{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:1rem;z-index:2;}
+     </style>
+     <div class="css-47ks30">
+      <div class="_1sjywpl0 _1sjywpl1 bc5nciih bc5nci2yj">
+       <div class="_1sjywpl0 _1sjywpl1 bc5nci5 bc5nciih bc5ncixc bc5nci2yj bc5nci44r">
+        <a href="/">
+         <div class="_1sjywpl0 _1sjywpl1 bc5nci44r">
+          <a class="_1sjywpl0 _1sjywplf bc5nci1gi bc5nci4pq bc5nci5 bc5nci4rv bc5nciih bc5ncixc bc5nci589 bc5nci4si bc5nci4sq yfzfkjm bc5nci78 bc5nci3ll bc5nci3s4 bc5nci6t bc5ncivo bc5nci159 yfzfkj1c bc5nci537 bc5nci4uz bc5nci4v6 bc5nci4v4 yfzfkjg bc5nci398 yfzfkjr">
+           <div class="_1sjywpl0 _1sjywpl1 bc5nci51z bc5nci4ry bc5ncivy bc5nciwi _2gklefb bc5nci3dy bc5nci4su">
+            <div>
+            </div>
+            <style data-emotion="css 1in85ao">
+             .css-1in85ao{box-shadow:inset 0 0 0 1px rgba(var(--foreground), var(--shadeForegroundSecondary));position:absolute;top:0px;left:0px;right:0px;bottom:0px;z-index:2;border-radius:100%;-webkit-transition:box-shadow ease-in-out 150ms;transition:box-shadow ease-in-out 150ms;}.css-1in85ao:hover{box-shadow:inset 0 0 0 1px rgba(var(--foreground), var(--shadeForegroundSecondaryHover));}
+            </style>
+            <div class="css-1in85ao">
+            </div>
+            <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+             <img alt="Linda Xie" class="_1sjywpl0 _1sjywpl1 bc5nci78 bc5nci4s1" data-nimg="fill" decoding="async" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+             <noscript>
+              <img alt="Linda Xie" class="_1sjywpl0 _1sjywpl1 bc5nci78 bc5nci4s1" data-nimg="fill" decoding="async" loading="lazy" sizes="100vw" src="/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=3840&amp;q=75" srcset="/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2F5590908c-8a4e-4750-8a92-613e9c184828.png&amp;w=3840&amp;q=75 3840w" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+             </noscript>
+            </span>
+           </div>
+          </a>
+         </div>
+        </a>
+        <div>
+         <div class="_1sjywpl0 _1sjywpl1 bc5nciih bc5ncisw bc5nci11n bc5nci2yj">
+          <div class="_1sjywpl0 _1sjywpl1 bc5nci52j bc5nci4ry bc5nciv9 bc5nciwi bc5nci1oa bc5nci1pe _2gklefb bc5nci3dy bc5nci4su">
+           <a href="/">
+            Linda Xie
+           </a>
+          </div>
+          <div class="_1sjywpl0 _1sjywpl1 bc5nci53j bc5nci4ry bc5ncive _2gklefb bc5nci3dy bc5nci4su">
+           <div class="_1sjywpl0 _1sjywpl1 bc5nci53j bc5nci4ry bc5ncive _2gklefb bc5nci3dy bc5nci4su">
+            <style data-emotion="css 1ml1o4l">
+             .css-1ml1o4l{padding-right:0.5rem;height:1rem;width:auto;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;display:inline-block;vertical-align:middle;margin-top:-3px;}
+            </style>
+            <style data-emotion="css 19oq5hs">
+             .css-19oq5hs{display:block;height:1.1em;width:auto;padding-right:0.5rem;height:1rem;width:auto;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;display:inline-block;vertical-align:middle;margin-top:-3px;}
+            </style>
+            <svg class="css-19oq5hs" fill="none" height="134" viewbox="0 0 284 134" width="284">
+             <rect fill="rgba(var(--foreground), var(--shadeForegroundSecondary))" height="134" rx="67" width="284">
+             </rect>
+             <path d="M49.9901 103.722H96.0128V94.2756H60.9631V72.0099H93.2074V62.5994H60.9631V40.4403H95.5867V30.9943H49.9901V103.722Z" fill="rgba(var(--foreground), var(--shadeTextSecondary))">
+             </path>
+             <path d="M168.944 30.9943H158.078V84.4034H157.403L120.4 30.9943H110.244V103.722H121.217V50.3835H121.892L158.859 103.722H168.944V30.9943Z" fill="rgba(var(--foreground), var(--shadeTextSecondary))">
+             </path>
+             <path d="M224.617 50.0994H235.2C234.88 38.4517 224.582 30 209.809 30C195.214 30 184.028 38.3452 184.028 50.8807C184.028 61.0014 191.272 66.9318 202.955 70.0923L211.549 72.4361C219.326 74.4957 225.327 77.0526 225.327 83.5156C225.327 90.6179 218.545 95.3054 209.205 95.3054C200.754 95.3054 193.722 91.5412 193.083 83.6222H182.075C182.785 96.7969 192.977 104.929 209.276 104.929C226.357 104.929 236.194 95.9446 236.194 83.6222C236.194 70.5185 224.511 65.4403 215.278 63.1676L208.175 61.321C202.494 59.8651 194.93 57.2017 194.965 50.2415C194.965 44.0625 200.612 39.4815 209.56 39.4815C217.906 39.4815 223.836 43.3878 224.617 50.0994Z" fill="rgba(var(--foreground), var(--shadeTextSecondary))">
+             </path>
+            </svg>
+            <style data-emotion="css 1pd718u">
+             .css-1pd718u{-webkit-transition:150ms ease-in-out color;transition:150ms ease-in-out color;}
+            </style>
+            <span class="css-1pd718u">
+             linda
+             <!-- -->
+             .
+             <!-- -->
+             mirror.xyz
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <style data-emotion="css kmj35e">
+      .css-kmj35e{position:absolute;top:0px;left:0px;right:0px;bottom:0px;-webkit-transition:250ms ease-in-out opacity;transition:250ms ease-in-out opacity;background:rgba(var(--mode-colors-background), 0.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);}
+     </style>
+     <div class="css-kmj35e">
+     </div>
+     <style data-emotion="css 1wbotn3">
+      .css-1wbotn3{position:absolute;height:2px;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));bottom:-2px;left:0px;right:0px;}
+     </style>
+     <div class="css-1wbotn3">
+     </div>
+    </div>
+    <style data-emotion="css 1mdq9s2">
+     .css-1mdq9s2{position:fixed;bottom:0px;left:0px;margin:1rem;z-index:98;}
+    </style>
+    <div class="GlobalNavigationMirrorIcon css-1mdq9s2">
+     <style data-emotion="css 1b3ebty">
+      .css-1b3ebty{position:relative;border-radius:100%;background:rgba(var(--background), 0.9);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);}
+     </style>
+     <div class="css-1b3ebty" style="transform:none">
+      <div class="_1sjywpl0 _1sjywpl1" href="/" style="opacity:0.33">
+       <a class="_1sjywpl0 _1sjywplf bc5nci1gi bc5nci4pq bc5nci5 bc5nci4rv bc5nciih bc5ncixc bc5nci589 bc5nci4si bc5nci4sq yfzfkjm bc5nci78 bc5nci3ll bc5nci3s4 bc5nci6t bc5ncivo bc5nci159 yfzfkj1c bc5nci537 bc5nci4uz bc5nci4v6 bc5nci4v4 yfzfkjg bc5nci398 yfzfkjr">
+        <div class="_1sjywpl0 _1sjywpl1 bc5nci51z bc5nci4ry bc5ncivy bc5nciwi _2gklefb bc5nci3dy bc5nci4su">
+         <svg class="_1sjywpl0 _1sjywpl1 bc5nciic bc5nci18q bc5nci4jc" viewbox="0 0 144 185" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 71.6129C0 32.0622 32.0622 0 71.6129 0C111.164 0 143.226 32.0622 143.226 71.6129V174.118C143.226 180.128 138.354 185 132.343 185H10.8824C4.87222 185 0 180.128 0 174.118V71.6129Z" fill="url(#markGradient)">
+          </path>
+          <path clip-rule="evenodd" d="M134.717 176.111V71.8216C134.717 36.8684 106.465 8.53326 71.6129 8.53326C36.7613 8.53326 8.50846 36.8684 8.50846 71.8216V176.111C8.50846 176.308 8.66719 176.467 8.86298 176.467H134.363C134.559 176.467 134.717 176.308 134.717 176.111ZM71.6129 0C32.0622 0 0 32.1556 0 71.8216V176.111C0 181.02 3.96809 185 8.86298 185H134.363C139.258 185 143.226 181.02 143.226 176.111V71.8216C143.226 32.1556 111.164 0 71.6129 0Z" fill="var(--colors-foreground)" fill-rule="evenodd">
+          </path>
+          <defs>
+           <lineargradient gradientunits="userSpaceOnUse" id="markGradient" x1="18.435" x2="143.747" y1="10.6666" y2="209.447">
+            <stop offset="0.265625" stop-color="var(--colors-foreground)">
+            </stop>
+            <stop offset="0.734375" stop-color="var(--colors-background)">
+            </stop>
+           </lineargradient>
+          </defs>
+         </svg>
+        </div>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="_1sjywpl0 _1sjywpl1 bc5nciih bc5ncisw bc5nci36v">
+    <style data-emotion="css 1gs41rw">
+     .css-1gs41rw{padding-left:0px;padding-right:0px;margin-top:5.5rem;margin-left:auto;margin-right:auto;max-width:100%;width:100%;}@media screen and (min-width: 640px){.css-1gs41rw{max-width:64rem;}}@media screen and (min-width: 1024px){.css-1gs41rw{padding-left:1.5rem;padding-right:1.5rem;margin-top:8.5rem;}}
+    </style>
+    <div class="css-1gs41rw">
+     <style data-emotion="css 1m2qfeg">
+      .css-1m2qfeg{position:relative;overflow:hidden;}@media screen and (min-width: 1024px){.css-1m2qfeg{border-radius:0.75rem;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);}}
+     </style>
+     <div class="css-1m2qfeg">
+      <style data-emotion="css 136z4xf">
+       .css-136z4xf::after{content:"";position:absolute;top:0px;left:0px;right:0px;bottom:0px;pointer-events:none;border:1px solid var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));z-index:2;}@media screen and (min-width: 1024px){.css-136z4xf::after{border-left:1px solid var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));border-right:1px solid var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));border-radius:0.75rem;}}
+      </style>
+      <style data-emotion="css t2al7l">
+       .css-t2al7l{background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));position:relative;}.css-t2al7l::after{content:"";position:absolute;top:0px;left:0px;right:0px;bottom:0px;pointer-events:none;border:1px solid var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));z-index:2;}@media screen and (min-width: 1024px){.css-t2al7l::after{border-left:1px solid var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));border-right:1px solid var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));border-radius:0.75rem;}}
+      </style>
+      <div class="css-t2al7l">
+       <style data-emotion="css xah9so">
+        .css-xah9so{object-fit:cover;}
+       </style>
+       <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+        <img class="css-xah9so" data-nimg="fill" decoding="async" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+        <noscript>
+         <img class="css-xah9so" data-nimg="fill" decoding="async" loading="lazy" src="https://images.mirror-media.xyz/nft/09865721-a967-4108-8ac2-ba91d413cfc9.jpeg" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+        </noscript>
+       </span>
+       <style data-emotion="css 9ehrwc">
+        .css-9ehrwc{padding-bottom:50%;}
+       </style>
+       <div class="css-9ehrwc">
+       </div>
+      </div>
+      <style data-emotion="css 8k4xdv">
+       .css-8k4xdv{height:2px;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));position:absolute;bottom:0px;left:0px;right:0px;display:block;}@media screen and (min-width: 1024px){.css-8k4xdv{display:none;}}
+      </style>
+      <div class="css-8k4xdv">
+      </div>
+     </div>
+    </div>
+    <style data-emotion="css 7tslr2">
+     .css-7tslr2{padding-left:0px;padding-right:0px;max-width:100%;width:100%;margin-left:auto;margin-right:auto;}@media screen and (min-width: 640px){.css-7tslr2{max-width:64rem;}}@media screen and (min-width: 1024px){.css-7tslr2{padding-left:1.5rem;padding-right:1.5rem;}}
+    </style>
+    <div class="css-7tslr2">
+     <style data-emotion="css nwhntt">
+      .css-nwhntt{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;padding-left:1rem;padding-right:1rem;padding-top:1rem;padding-bottom:1rem;}@media screen and (min-width: 640px){.css-nwhntt{padding-left:1.5rem;padding-right:1.5rem;padding-top:1.5rem;padding-bottom:1.5rem;}}@media screen and (min-width: 1024px){.css-nwhntt{padding-left:0px;padding-right:0px;}}
+     </style>
+     <div class="css-nwhntt">
+      <style data-emotion="css 1qmexd7">
+       .css-1qmexd7{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;}@media screen and (min-width: 640px){.css-1qmexd7{-webkit-flex:none;-ms-flex:none;flex:none;}}
+      </style>
+      <div class="css-1qmexd7">
+       <style data-emotion="css ldfn80">
+        .css-ldfn80{margin-right:1.5rem;-webkit-flex:1;-ms-flex:1;flex:1;min-width:8.5rem;}@media screen and (min-width: 640px){.css-ldfn80{margin-right:2rem;}}
+       </style>
+       <div class="css-ldfn80">
+        <style data-emotion="css 1obvwja">
+         .css-1obvwja{min-width:6rem;white-space:nowrap;}
+        </style>
+        <div class="css-1obvwja">
+         <style data-emotion="css lhf3fh">
+          .css-lhf3fh{font-weight:600;letter-spacing:0.05em;text-transform:uppercase;font-size:0.75rem;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));}
+         </style>
+         <div class="css-lhf3fh">
+          <style data-emotion="css 1qnvdh2">
+           .css-1qnvdh2{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.25em;width:50%;}
+          </style>
+          <span class="css-1qnvdh2">
+          </span>
+         </div>
+         <style data-emotion="css 1mx94qd">
+          .css-1mx94qd{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));line-height:1.3;font-weight:600;font-size:1.5rem;letter-spacing:-0.015em;}@media screen and (min-width: 640px){.css-1mx94qd{font-size:1.85rem;}}
+         </style>
+         <div class="css-1mx94qd">
+          <style data-emotion="css ist4x1">
+           .css-ist4x1{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.25em;width:85%;}
+          </style>
+          <span class="css-ist4x1">
+          </span>
+         </div>
+         <style data-emotion="css 19zvkg7">
+          .css-19zvkg7{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.25em;width:33%;}
+         </style>
+         <span class="css-19zvkg7">
+         </span>
+        </div>
+       </div>
+       <style data-emotion="css aoq723">
+        .css-aoq723{-webkit-flex:1;-ms-flex:1;flex:1;min-width:8.5rem;}
+       </style>
+       <div class="css-aoq723">
+        <div class="css-1obvwja">
+         <div class="css-lhf3fh">
+          <span class="css-1qnvdh2">
+          </span>
+         </div>
+         <div class="css-1mx94qd">
+          <span class="css-ist4x1">
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <style data-emotion="css xjebmg">
+       .css-xjebmg{width:100%;padding-left:2.75rem;padding-right:2.75rem;-webkit-order:-1;-ms-flex-order:-1;order:-1;margin-bottom:1rem;}@media screen and (min-width: 640px){.css-xjebmg{width:auto;-webkit-order:0;-ms-flex-order:0;order:0;margin-bottom:0px;}}
+      </style>
+      <style data-emotion="css zirh1a">
+       .css-zirh1a{min-width:initial;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;line-height:inherit;-webkit-text-decoration:none;text-decoration:none;border:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;height:3.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;transition-property:box-shadow color;transition-timing-function:ease-in-out;transition-duration:150ms;font-weight:500;white-space:nowrap;cursor:not-allowed;background:rgba(var(--foreground), var(--shadeSecondary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));--shadeSecondary:var(--shadeForegroundSecondary);--shadeSecondaryHover:var(--shadeForegroundSecondaryHover);--buttonTextHover:rgba(var(--foreground), var(--shadeTextSecondary));font-size:1.1rem;padding-left:1.25rem;padding-right:1.25rem;border-radius:0.75rem;box-shadow:0 0 0 0 rgba(var(--foreground), var(--shadeSecondary));width:100%;padding-left:2.75rem;padding-right:2.75rem;-webkit-order:-1;-ms-flex-order:-1;order:-1;margin-bottom:1rem;}.css-zirh1a:focus{outline:none;}@media screen and (min-width: 640px){.css-zirh1a{width:auto;-webkit-order:0;-ms-flex-order:0;order:0;margin-bottom:0px;}}
+      </style>
+      <style data-emotion="css 1r5bkux">
+       .css-1r5bkux{box-sizing:border-box;margin:0;min-width:0;min-width:initial;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;line-height:inherit;-webkit-text-decoration:none;text-decoration:none;border:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;height:3.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;transition-property:box-shadow color;transition-timing-function:ease-in-out;transition-duration:150ms;font-weight:500;white-space:nowrap;cursor:not-allowed;background:rgba(var(--foreground), var(--shadeSecondary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));--shadeSecondary:var(--shadeForegroundSecondary);--shadeSecondaryHover:var(--shadeForegroundSecondaryHover);--buttonTextHover:rgba(var(--foreground), var(--shadeTextSecondary));font-size:1.1rem;padding-left:1.25rem;padding-right:1.25rem;border-radius:0.75rem;box-shadow:0 0 0 0 rgba(var(--foreground), var(--shadeSecondary));width:100%;padding-left:2.75rem;padding-right:2.75rem;-webkit-order:-1;-ms-flex-order:-1;order:-1;margin-bottom:1rem;}.css-1r5bkux:focus{outline:none;}@media screen and (min-width: 640px){.css-1r5bkux{width:auto;-webkit-order:0;-ms-flex-order:0;order:0;margin-bottom:0px;}}
+      </style>
+      <button class="css-1r5bkux" disabled="">
+       Collect NFT
+      </button>
+     </div>
+     <style data-emotion="css 8di4k1">
+      .css-8di4k1{position:relative;background:none;-webkit-transition:150ms ease-in-out box-shadow;transition:150ms ease-in-out box-shadow;box-shadow:0 0 0 1px var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));}@media screen and (min-width: 1024px){.css-8di4k1{border-radius:0.75rem;}}.css-8di4k1:hover{box-shadow:0 0 0 0.25rem var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));}.css-8di4k1:active{box-shadow:0 0 0 0.125rem var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));}
+     </style>
+     <div class="css-8di4k1">
+      <style data-emotion="css 1opzaki">
+       .css-1opzaki{cursor:pointer;position:absolute;top:0px;left:0px;right:0px;bottom:0px;width:100%;height:100%;border:0;z-index:2;display:none;-webkit-appearance:none;background:none;opacity:0;}@media screen and (min-width: 768px){.css-1opzaki{display:block;}}
+      </style>
+      <button class="css-1opzaki">
+      </button>
+      <style data-emotion="css 987jew">
+       .css-987jew{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-top:1rem;padding-bottom:1rem;padding-left:0.5rem;padding-right:0.5rem;margin-left:auto;margin-right:auto;overflow-x:auto;}@media screen and (min-width: 640px){.css-987jew{padding-left:1.5rem;padding-right:1.5rem;}}@media screen and (min-width: 768px){.css-987jew{-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}}
+      </style>
+      <section class="css-987jew">
+       <style data-emotion="css 180b784">
+        .css-180b784{border-right:1px solid var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));padding-right:1.25rem;margin-right:1.25rem;}
+       </style>
+       <div class="css-180b784">
+        <style data-emotion="css eiynbj">
+         .css-eiynbj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:3.5rem;}
+        </style>
+        <div class="css-eiynbj">
+         <style data-emotion="css eykbcn">
+          .css-eykbcn{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));min-height:2.5rem;min-width:2.5rem;border-radius:9999px;margin-right:1rem;}
+         </style>
+         <div class="css-eykbcn">
+         </div>
+         <style data-emotion="css 9vd5ud">
+          .css-9vd5ud{width:100%;}
+         </style>
+         <div class="css-9vd5ud">
+          <style data-emotion="css aiyxy8">
+           .css-aiyxy8{color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));font-weight:600;letter-spacing:0.05em;text-transform:uppercase;font-size:0.75rem;margin-bottom:0.125rem;}
+          </style>
+          <div class="css-aiyxy8">
+           first collector
+          </div>
+          <style data-emotion="css yx0k2f">
+           .css-yx0k2f{display:block;line-height:1;}
+          </style>
+          <style data-emotion="css t4z7xz">
+           .css-t4z7xz{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.2rem;width:8.5rem;display:block;line-height:1;}
+          </style>
+          <span class="css-t4z7xz">
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="css-180b784">
+        <div class="css-eiynbj">
+         <div class="css-eykbcn">
+         </div>
+         <div class="css-9vd5ud">
+          <div class="css-aiyxy8">
+           top collector
+          </div>
+          <span class="css-t4z7xz">
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="css-eiynbj">
+        <div class="css-eykbcn">
+        </div>
+        <div class="css-9vd5ud">
+         <div class="css-aiyxy8">
+          latest collector
+         </div>
+         <span class="css-t4z7xz">
+         </span>
+        </div>
+       </div>
+      </section>
+      <style data-emotion="css r9mn9z">
+       .css-r9mn9z{border-top:1px solid var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));margin-left:1rem;margin-right:1rem;}@media screen and (min-width: 640px){.css-r9mn9z{margin-left:1.5rem;margin-right:1.5rem;}}
+      </style>
+      <div class="css-r9mn9z">
+      </div>
+      <style data-emotion="css 1qizfwd">
+       .css-1qizfwd{padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}
+      </style>
+      <div class="css-1qizfwd">
+       <style data-emotion="css jkav8y">
+        .css-jkav8y{min-width:initial;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;line-height:inherit;-webkit-text-decoration:none;text-decoration:none;border:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;height:2.25rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;transition-property:box-shadow color;transition-timing-function:ease-in-out;transition-duration:150ms;font-weight:500;white-space:nowrap;cursor:not-allowed;background:rgba(var(--foreground), var(--shadeSecondary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));--shadeSecondary:0;--shadeSecondaryHover:var(--shadeForegroundSecondaryHover);--buttonTextHover:rgba(var(--foreground), var(--shadeTextSecondary));font-size:1rem;padding-left:1rem;padding-right:1rem;border-radius:0.375rem;box-shadow:0 0 0 0 rgba(var(--foreground), var(--shadeSecondary));}.css-jkav8y:focus{outline:none;}
+       </style>
+       <style data-emotion="css kbkq9q">
+        .css-kbkq9q{box-sizing:border-box;margin:0;min-width:0;min-width:initial;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;line-height:inherit;-webkit-text-decoration:none;text-decoration:none;border:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;height:2.25rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;transition-property:box-shadow color;transition-timing-function:ease-in-out;transition-duration:150ms;font-weight:500;white-space:nowrap;cursor:not-allowed;background:rgba(var(--foreground), var(--shadeSecondary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));--shadeSecondary:0;--shadeSecondaryHover:var(--shadeForegroundSecondaryHover);--buttonTextHover:rgba(var(--foreground), var(--shadeTextSecondary));font-size:1rem;padding-left:1rem;padding-right:1rem;border-radius:0.375rem;box-shadow:0 0 0 0 rgba(var(--foreground), var(--shadeSecondary));}.css-kbkq9q:focus{outline:none;}
+       </style>
+       <button class="css-kbkq9q" disabled="">
+        View
+        <!-- -->
+        Leaderboard
+       </button>
+      </div>
+     </div>
+    </div>
+    <style data-emotion="css 1e0k9yb">
+     .css-1e0k9yb{max-width:80rem;width:100%;margin-left:auto;margin-right:auto;padding-top:0px;padding-bottom:0px;margin-top:1.5rem;margin-bottom:2.5rem;}@media screen and (min-width: 640px){.css-1e0k9yb{padding-top:0px;padding-bottom:0px;}}@media screen and (min-width: 768px){.css-1e0k9yb{margin-top:3rem;margin-bottom:4rem;}}@media screen and (min-width: 1024px){.css-1e0k9yb{margin-top:3rem;margin-bottom:5rem;}}
+    </style>
+    <div class="css-1e0k9yb">
+     <style data-emotion="css 16f77nt">
+      .css-16f77nt{padding-left:1rem;padding-right:1rem;max-width:45rem;width:100%;margin-left:auto;margin-right:auto;}@media screen and (min-width: 768px){.css-16f77nt{padding-left:0px;padding-right:0px;}}
+     </style>
+     <div class="css-16f77nt">
+      <style data-emotion="css 37sef5">
+       .css-37sef5{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;color:var(--theme-ui-colors-text, var(--colors-text));line-height:1.3;}
+      </style>
+      <div class="css-37sef5">
+       <style data-emotion="css c6ixvj">
+        .css-c6ixvj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;}
+       </style>
+       <div class="css-c6ixvj">
+        <style data-emotion="css 150ro3b">
+         .css-150ro3b{margin-right:0.75rem;margin-bottom:0.75rem;}
+        </style>
+        <style data-emotion="css ia2eld">
+         .css-ia2eld{display:block;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;margin-right:0.75rem;margin-bottom:0.75rem;}
+        </style>
+        <style data-emotion="css 5f70j4">
+         .css-5f70j4{box-sizing:border-box;margin:0;min-width:0;-webkit-text-decoration:none;text-decoration:none;color:inherit;display:block;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;margin-right:0.75rem;margin-bottom:0.75rem;}
+        </style>
+        <a class="css-5f70j4" href="https://etherscan.io/address/0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee" rel="noreferrer" target="_blank">
+         <style data-emotion="css 4nykgo">
+          .css-4nykgo{background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));cursor:pointer;border-radius:999px;font-size:0.875rem;font-weight:500;line-height:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;white-space:nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoratioin:none;-moz-text-decoratioin:none;-ms-text-decoratioin:none;text-decoratioin:none;overflow:hidden;height:1.5rem;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-align:center;-webkit-transition:125ms ease-in-out color,125ms ease-in-out background-color;transition:125ms ease-in-out color,125ms ease-in-out background-color;}.css-4nykgo:hover{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));color:var(--theme-ui-colors-text, var(--colors-text));}.css-4nykgo:active{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));color:var(--theme-ui-colors-text, var(--colors-text));}
+         </style>
+         <style data-emotion="css xnt5cy">
+          .css-xnt5cy{box-sizing:border-box;margin:0;min-width:0;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));cursor:pointer;border-radius:999px;font-size:0.875rem;font-weight:500;line-height:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;white-space:nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoratioin:none;-moz-text-decoratioin:none;-ms-text-decoratioin:none;text-decoratioin:none;overflow:hidden;height:1.5rem;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-align:center;-webkit-transition:125ms ease-in-out color,125ms ease-in-out background-color;transition:125ms ease-in-out color,125ms ease-in-out background-color;}.css-xnt5cy:hover{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));color:var(--theme-ui-colors-text, var(--colors-text));}.css-xnt5cy:active{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));color:var(--theme-ui-colors-text, var(--colors-text));}
+         </style>
+         <div class="css-xnt5cy">
+          <style data-emotion="css 1cmd7eo">
+           .css-1cmd7eo{padding-left:0.5rem;padding-right:0.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+          </style>
+          <div class="css-1cmd7eo">
+           0x5e34
+          </div>
+         </div>
+        </a>
+        <div class="css-150ro3b">
+         <style data-emotion="css 17egrn8">
+          .css-17egrn8{background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));border-radius:999px;font-size:0.875rem;font-weight:500;line-height:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;white-space:nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoratioin:none;-moz-text-decoratioin:none;-ms-text-decoratioin:none;text-decoratioin:none;overflow:hidden;height:1.5rem;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-align:center;-webkit-transition:125ms ease-in-out color,125ms ease-in-out background-color;transition:125ms ease-in-out color,125ms ease-in-out background-color;}
+         </style>
+         <style data-emotion="css qng491">
+          .css-qng491{box-sizing:border-box;margin:0;min-width:0;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));border-radius:999px;font-size:0.875rem;font-weight:500;line-height:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;white-space:nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoratioin:none;-moz-text-decoratioin:none;-ms-text-decoratioin:none;text-decoratioin:none;overflow:hidden;height:1.5rem;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-align:center;-webkit-transition:125ms ease-in-out color,125ms ease-in-out background-color;transition:125ms ease-in-out color,125ms ease-in-out background-color;}
+         </style>
+         <div class="css-qng491">
+          <div class="css-1cmd7eo">
+           January 4th, 2021
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <style data-emotion="css 1vbjebc">
+      .css-1vbjebc{padding-top:1rem;padding-bottom:4.5rem;}@media screen and (min-width: 640px){.css-1vbjebc{padding-bottom:7rem;}}
+     </style>
+     <style data-emotion="css 1u7gzx3">
+      .css-1u7gzx3{font-size:1rem;line-height:1.5;color:var(--theme-ui-colors-text, var(--colors-text));word-wrap:break-word;padding-top:1rem;padding-bottom:4.5rem;}@media screen and (min-width: 640px){.css-1u7gzx3{font-size:1.1rem;line-height:1.625;}}.css-1u7gzx3>div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-1u7gzx3>div>*{margin-top:0.75rem;margin-bottom:0.75rem;max-width:45rem;width:100%;}.css-1u7gzx3>div>*:first-child:not(style){margin-top:0px;}.css-1u7gzx3>div>p,.css-1u7gzx3 ol,.css-1u7gzx3 ul,.css-1u7gzx3 blockquote,.css-1u7gzx3 h1,.css-1u7gzx3 h2,.css-1u7gzx3 h3,.css-1u7gzx3 h4,.css-1u7gzx3 h5,.css-1u7gzx3 h6{padding-left:1rem;padding-right:1rem;}@media screen and (min-width: 640px){.css-1u7gzx3>div>p,.css-1u7gzx3 ol,.css-1u7gzx3 ul,.css-1u7gzx3 blockquote,.css-1u7gzx3 h1,.css-1u7gzx3 h2,.css-1u7gzx3 h3,.css-1u7gzx3 h4,.css-1u7gzx3 h5,.css-1u7gzx3 h6{padding-left:1.5rem;padding-right:1.5rem;}}@media screen and (min-width: 768px){.css-1u7gzx3>div>p,.css-1u7gzx3 ol,.css-1u7gzx3 ul,.css-1u7gzx3 blockquote,.css-1u7gzx3 h1,.css-1u7gzx3 h2,.css-1u7gzx3 h3,.css-1u7gzx3 h4,.css-1u7gzx3 h5,.css-1u7gzx3 h6{padding-left:0px;padding-right:0px;}}.css-1u7gzx3 p a:not([class*="MirrorButton"]),.css-1u7gzx3 ul a,.css-1u7gzx3 ol a,.css-1u7gzx3 blockquote a{color:rgb(var(--accent));cursor:pointer;text-underline-offset:0.2em;-webkit-text-decoration:underline;text-decoration:underline;}.css-1u7gzx3 p a:not([class*="MirrorButton"]):hover,.css-1u7gzx3 ul a:hover,.css-1u7gzx3 ol a:hover,.css-1u7gzx3 blockquote a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1u7gzx3 hr{border:0;height:2px;border-radius:99px;margin-top:1.5rem;margin-bottom:1.5rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));max-width:12rem;}@media screen and (min-width: 768px){.css-1u7gzx3 hr{margin-top:3rem;margin-bottom:3rem;}}.css-1u7gzx3 h2,.css-1u7gzx3 h3{color:var(--theme-ui-colors-text, var(--colors-text));}.css-1u7gzx3 h1,.css-1u7gzx3 h2{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));line-height:1.3;font-weight:600;font-size:1.5rem;letter-spacing:-0.015em;margin-top:2.25rem;}@media screen and (min-width: 640px){.css-1u7gzx3 h1,.css-1u7gzx3 h2{font-size:1.85rem;}}.css-1u7gzx3 h3{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));line-height:1.4;font-weight:600;font-size:1.35rem;letter-spacing:-0.015em;margin-top:1.5rem;}.css-1u7gzx3 h4{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));font-weight:600;font-size:inherit;}.css-1u7gzx3 h5{font-weight:600;letter-spacing:0.05em;text-transform:uppercase;font-size:0.75rem;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));}.css-1u7gzx3 h3+p,.css-1u7gzx3 h3+ul,.css-1u7gzx3 h3+ol,.css-1u7gzx3 h4+ol,.css-1u7gzx3 h5+ol{margin-top:0px;}.css-1u7gzx3 strong,.css-1u7gzx3 bold{font-weight:700;}.css-1u7gzx3 sup{display:inline-block;margin-top:-1em;}.css-1u7gzx3>div>figure,.css-1u7gzx3>div>a>figure,.css-1u7gzx3 .ProseMirror figure{margin-left:auto;margin-right:auto;margin-top:0.75rem;margin-bottom:0.75rem;padding-left:0px;padding-right:0px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;}@media screen and (min-width: 640px){.css-1u7gzx3>div>figure,.css-1u7gzx3>div>a>figure,.css-1u7gzx3 .ProseMirror figure{padding-left:0px;padding-right:0px;}}@media screen and (min-width: 768px){.css-1u7gzx3>div>figure,.css-1u7gzx3>div>a>figure,.css-1u7gzx3 .ProseMirror figure{margin-top:1.5rem;margin-bottom:1.5rem;padding-left:0px;padding-right:0px;}}.css-1u7gzx3>div>figure.figure-size-medium,.css-1u7gzx3>div>a>figure.figure-size-medium,.css-1u7gzx3 .ProseMirror figure.figure-size-medium{max-width:64rem;}@media screen and (min-width: 1024px){.css-1u7gzx3>div>figure.figure-size-medium [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure.figure-size-medium [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure.figure-size-medium [data-rmiz-wrap] img,.css-1u7gzx3>div>figure.figure-size-medium img[srcset],.css-1u7gzx3>div>a>figure.figure-size-medium img[srcset],.css-1u7gzx3 .ProseMirror figure.figure-size-medium img[srcset],.css-1u7gzx3>div>figure.figure-size-medium video,.css-1u7gzx3>div>a>figure.figure-size-medium video,.css-1u7gzx3 .ProseMirror figure.figure-size-medium video,.css-1u7gzx3>div>figure.figure-size-medium iframe,.css-1u7gzx3>div>a>figure.figure-size-medium iframe,.css-1u7gzx3 .ProseMirror figure.figure-size-medium iframe{border-radius:0.375rem;}}.css-1u7gzx3>div>figure.figure-size-large,.css-1u7gzx3>div>a>figure.figure-size-large,.css-1u7gzx3 .ProseMirror figure.figure-size-large{max-width:80rem;}@media screen and (min-width: 1280px){.css-1u7gzx3>div>figure.figure-size-large [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure.figure-size-large [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure.figure-size-large [data-rmiz-wrap] img,.css-1u7gzx3>div>figure.figure-size-large img[srcset],.css-1u7gzx3>div>a>figure.figure-size-large img[srcset],.css-1u7gzx3 .ProseMirror figure.figure-size-large img[srcset],.css-1u7gzx3>div>figure.figure-size-large video,.css-1u7gzx3>div>a>figure.figure-size-large video,.css-1u7gzx3 .ProseMirror figure.figure-size-large video,.css-1u7gzx3>div>figure.figure-size-large iframe,.css-1u7gzx3>div>a>figure.figure-size-large iframe,.css-1u7gzx3 .ProseMirror figure.figure-size-large iframe{border-radius:0.375rem;}}.css-1u7gzx3>div>figure [data-rmiz-wrap],.css-1u7gzx3>div>a>figure [data-rmiz-wrap],.css-1u7gzx3 .ProseMirror figure [data-rmiz-wrap],.css-1u7gzx3>div>figure [data-rmiz-wrap]>div,.css-1u7gzx3>div>a>figure [data-rmiz-wrap]>div,.css-1u7gzx3 .ProseMirror figure [data-rmiz-wrap]>div{display:block!important;}.css-1u7gzx3>div>figure [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure [data-rmiz-wrap] img,.css-1u7gzx3>div>figure img[srcset],.css-1u7gzx3>div>a>figure img[srcset],.css-1u7gzx3 .ProseMirror figure img[srcset],.css-1u7gzx3>div>figure video,.css-1u7gzx3>div>a>figure video,.css-1u7gzx3 .ProseMirror figure video{display:block;border:0;margin:auto;width:100%;}.css-1u7gzx3>div>figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3>div>figure:not([class*="figure-size"])>div>img[srcset],.css-1u7gzx3>div>a>figure:not([class*="figure-size"])>div>img[srcset],.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"])>div>img[srcset]{max-height:100vh;object-fit:contain;}@media screen and (min-width: 768px){.css-1u7gzx3>div>figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3>div>figure:not([class*="figure-size"])>div>img[srcset],.css-1u7gzx3>div>a>figure:not([class*="figure-size"])>div>img[srcset],.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"])>div>img[srcset]{border-radius:0.375rem;}}.css-1u7gzx3>div>figure figcaption,.css-1u7gzx3>div>a>figure figcaption,.css-1u7gzx3 .ProseMirror figure figcaption,.css-1u7gzx3>div>figure .caption,.css-1u7gzx3>div>a>figure .caption,.css-1u7gzx3 .ProseMirror figure .caption{margin-top:0.5rem;font-size:0.875rem;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));padding-left:1rem;padding-right:1rem;text-align:center;width:100%;}@media screen and (min-width: 640px){.css-1u7gzx3>div>figure figcaption,.css-1u7gzx3>div>a>figure figcaption,.css-1u7gzx3 .ProseMirror figure figcaption,.css-1u7gzx3>div>figure .caption,.css-1u7gzx3>div>a>figure .caption,.css-1u7gzx3 .ProseMirror figure .caption{font-size:1rem;}}.css-1u7gzx3>div>figure .embed-video,.css-1u7gzx3>div>a>figure .embed-video,.css-1u7gzx3 .ProseMirror figure .embed-video{width:100%;padding-bottom:56.25%;position:relative;}.css-1u7gzx3>div>figure .embed-video iframe,.css-1u7gzx3>div>a>figure .embed-video iframe,.css-1u7gzx3 .ProseMirror figure .embed-video iframe,.css-1u7gzx3>div>figure .embed-video video,.css-1u7gzx3>div>a>figure .embed-video video,.css-1u7gzx3 .ProseMirror figure .embed-video video{position:absolute;top:0px;left:0px;height:100%;width:100%;outline:0;}.css-1u7gzx3>div>figure .embed-video iframe:focus,.css-1u7gzx3>div>a>figure .embed-video iframe:focus,.css-1u7gzx3 .ProseMirror figure .embed-video iframe:focus,.css-1u7gzx3>div>figure .embed-video video:focus,.css-1u7gzx3>div>a>figure .embed-video video:focus,.css-1u7gzx3 .ProseMirror figure .embed-video video:focus{outline:0;}@media screen and (min-width: 768px){.css-1u7gzx3>div>figure:not([class*="figure-size"]) .embed-video iframe,.css-1u7gzx3>div>a>figure:not([class*="figure-size"]) .embed-video iframe,.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"]) .embed-video iframe,.css-1u7gzx3>div>figure:not([class*="figure-size"]) .embed-video video,.css-1u7gzx3>div>a>figure:not([class*="figure-size"]) .embed-video video,.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"]) .embed-video video{border-radius:0.375rem;}}.css-1u7gzx3>div>figure b,.css-1u7gzx3>div>a>figure b,.css-1u7gzx3 .ProseMirror figure b,.css-1u7gzx3>div>figure strong,.css-1u7gzx3>div>a>figure strong,.css-1u7gzx3 .ProseMirror figure strong{font-weight:525;}.css-1u7gzx3 code,.css-1u7gzx3 .code-block{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));border-radius:0.375rem;padding:0.05rem 0.3rem;transition-property:box-shadow color;transition-timing-function:ease-in-out;transition-duration:150ms;font-family:"iAWriter Mono",monospace;}.css-1u7gzx3 blockquote{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;padding-left:2rem;padding-right:2rem;padding-top:0px;padding-bottom:0px;}@media screen and (min-width: 640px){.css-1u7gzx3 blockquote{padding-top:0px;padding-bottom:0px;}}@media screen and (min-width: 768px){.css-1u7gzx3 blockquote{padding-left:1.5rem;padding-right:1.5rem;padding-top:0px;padding-bottom:0px;}}.css-1u7gzx3 blockquote::before{content:"";position:absolute;top:0px;bottom:0px;left:1rem;background-color:var(--theme-ui-colors-accent, var(--colors-accent));width:2px;border-radius:999px;}@media screen and (min-width: 640px){.css-1u7gzx3 blockquote::before{left:1rem;}}@media screen and (min-width: 768px){.css-1u7gzx3 blockquote::before{left:0px;}}.css-1u7gzx3 blockquote>:first-child:not(style){margin-top:0px;}.css-1u7gzx3 blockquote>:last-child:not(style){margin-bottom:0px;}.css-1u7gzx3>div>pre,.css-1u7gzx3 .code-block{box-shadow:inset 0 0 0 1px rgba(var(--groupBorder), var(--shadeGroupBorder)),0 0 0 0 rgba(var(--foreground), var(--shadeForegroundSecondaryHover));background-color:var(--theme-ui-colors-groupBackground, var(--colors-groupBackground));border-radius:0;overflow:auto;padding:1rem;position:relative;}@media screen and (min-width: 768px){.css-1u7gzx3>div>pre,.css-1u7gzx3 .code-block{border-radius:0.375rem;padding:1.5rem;}}@media screen and (min-width: 1024px){.css-1u7gzx3>div>pre,.css-1u7gzx3 .code-block{padding:1.5rem;}}@media screen and (min-width: 1152px){.css-1u7gzx3>div>pre,.css-1u7gzx3 .code-block{padding:1.5rem;}}.css-1u7gzx3>div>pre code,.css-1u7gzx3 .code-block code{background:transparent;border-radius:0;padding:0px;}.css-1u7gzx3 ul,.css-1u7gzx3 ol{padding-top:0px;padding-bottom:0px;padding-left:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media screen and (min-width: 768px){.css-1u7gzx3 ul,.css-1u7gzx3 ol{padding-left:0px;}}.css-1u7gzx3 li{list-style:none;margin-top:0.5rem;position:relative;padding-left:2rem;}.css-1u7gzx3 li::before{position:absolute;top:0px;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));text-align:right;}.css-1u7gzx3 ol li::before{font-family:var(--fonts-mono);right:calc(100% - 2ch);}.css-1u7gzx3 ul li::before{content:"•";right:calc(100% - 1ch);top:-2px;}.css-1u7gzx3 li p:first-child{margin-top:0px;}.css-1u7gzx3 li p:last-child{margin-bottom:0px;}.css-1u7gzx3 ol li:nth-of-type(1)::before{content:"1.";}.css-1u7gzx3 ol li:nth-of-type(2)::before{content:"2.";}.css-1u7gzx3 ol li:nth-of-type(3)::before{content:"3.";}.css-1u7gzx3 ol li:nth-of-type(4)::before{content:"4.";}.css-1u7gzx3 ol li:nth-of-type(5)::before{content:"5.";}.css-1u7gzx3 ol li:nth-of-type(6)::before{content:"6.";}.css-1u7gzx3 ol li:nth-of-type(7)::before{content:"7.";}.css-1u7gzx3 ol li:nth-of-type(8)::before{content:"8.";}.css-1u7gzx3 ol li:nth-of-type(9)::before{content:"9.";}.css-1u7gzx3 ol li:nth-of-type(10)::before{content:"10.";}.css-1u7gzx3 ol li:nth-of-type(11)::before{content:"11.";}.css-1u7gzx3 ol li:nth-of-type(12)::before{content:"12.";}.css-1u7gzx3 ol li:nth-of-type(13)::before{content:"13.";}.css-1u7gzx3 ol li:nth-of-type(14)::before{content:"14.";}.css-1u7gzx3 ol li:nth-of-type(15)::before{content:"15.";}.css-1u7gzx3 ol li:nth-of-type(16)::before{content:"16.";}.css-1u7gzx3 ol li:nth-of-type(17)::before{content:"17.";}.css-1u7gzx3 ol li:nth-of-type(18)::before{content:"18.";}.css-1u7gzx3 ol li:nth-of-type(19)::before{content:"19.";}.css-1u7gzx3 ol li:nth-of-type(20)::before{content:"20.";}.css-1u7gzx3 ol li:nth-of-type(21)::before{content:"21.";}.css-1u7gzx3 ol li:nth-of-type(22)::before{content:"22.";}.css-1u7gzx3 ol li:nth-of-type(23)::before{content:"23.";}.css-1u7gzx3 ol li:nth-of-type(24)::before{content:"24.";}.css-1u7gzx3 ol li:nth-of-type(25)::before{content:"25.";}.css-1u7gzx3 ol li:nth-of-type(26)::before{content:"26.";}.css-1u7gzx3 ol li:nth-of-type(27)::before{content:"27.";}.css-1u7gzx3 ol li:nth-of-type(28)::before{content:"28.";}.css-1u7gzx3 ol li:nth-of-type(29)::before{content:"29.";}.css-1u7gzx3 ol li:nth-of-type(30)::before{content:"30.";}.css-1u7gzx3 ol li:nth-of-type(31)::before{content:"31.";}.css-1u7gzx3 ol li:nth-of-type(32)::before{content:"32.";}.css-1u7gzx3 ol li:nth-of-type(33)::before{content:"33.";}.css-1u7gzx3 ol li:nth-of-type(34)::before{content:"34.";}.css-1u7gzx3 ol li:nth-of-type(35)::before{content:"35.";}.css-1u7gzx3 ol li:nth-of-type(36)::before{content:"36.";}.css-1u7gzx3 ol li:nth-of-type(37)::before{content:"37.";}.css-1u7gzx3 ol li:nth-of-type(38)::before{content:"38.";}.css-1u7gzx3 ol li:nth-of-type(39)::before{content:"39.";}.css-1u7gzx3 ol li:nth-of-type(40)::before{content:"40.";}.css-1u7gzx3 ol li:nth-of-type(41)::before{content:"41.";}.css-1u7gzx3 ol li:nth-of-type(42)::before{content:"42.";}.css-1u7gzx3 ol li:nth-of-type(43)::before{content:"43.";}.css-1u7gzx3 ol li:nth-of-type(44)::before{content:"44.";}.css-1u7gzx3 ol li:nth-of-type(45)::before{content:"45.";}.css-1u7gzx3 ol li:nth-of-type(46)::before{content:"46.";}.css-1u7gzx3 ol li:nth-of-type(47)::before{content:"47.";}.css-1u7gzx3 ol li:nth-of-type(48)::before{content:"48.";}.css-1u7gzx3 ol li:nth-of-type(49)::before{content:"49.";}.css-1u7gzx3 ol li:nth-of-type(50)::before{content:"50.";}.css-1u7gzx3 .footnotes a:last-child{background:none;margin-left:0.75ch;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));}.css-1u7gzx3>div>table{box-shadow:0 0 0 1px rgba(var(--groupBorder), var(--shadeGroupBorder));border-spacing:0;border-radius:0;background-color:var(--theme-ui-colors-groupBackground, var(--colors-groupBackground));overflow:hidden;margin:0px;padding:0px;}@media screen and (min-width: 768px){.css-1u7gzx3>div>table{border-radius:0.75rem;}}.css-1u7gzx3>div>thead th{text-align:left;font-weight:600;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));}.css-1u7gzx3>div>table th,.css-1u7gzx3>div>table td{padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;vertical-align:top;}.css-1u7gzx3>div>table th:not(:last-child),.css-1u7gzx3>div>table td:not(:last-child){border-right:1px solid rgba(var(--foreground), var(--shadeGroupBorder));}.css-1u7gzx3>div>table tr:nth-child(odd) td{background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));}@media screen and (min-width: 640px){.css-1u7gzx3{padding-bottom:7rem;}}
+     </style>
+     <div class="css-1u7gzx3">
+      <div>
+       <h3 id="what-are-nfts">
+        What are NFTs?
+       </h3>
+       <p>
+        Non-fungible token (NFT) is a term used to describe a unique digital asset whose ownership is tracked on a blockchain, such as Ethereum. Assets that can be represented as NFTs range from digital goods, such as items that exist within virtual worlds, to claims on physical assets such as clothing items or real estate. In the coming years, we will see NFTs used to unlock entirely new use cases that are only made possible by crypto.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <style data-emotion="css ovd0pw">
+          .css-ovd0pw{position:relative;height:100%;width:100%;}
+         </style>
+         <div class="css-ovd0pw">
+          <style data-emotion="css r0ukz2">
+           .css-r0ukz2{max-width:100%;max-height:100%;}
+          </style>
+          <img alt="Tokens redeemable for real world goods on Zora" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/9799dae1-c2c9-4712-813b-10b23c279a36.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Tokens redeemable for real world goods on Zora
+        </figcaption>
+       </figure>
+       <p>
+        While the Ethereum ecosystem is where most NFT activity has taken place to date, NFTs can exist on other smart contract platforms too. This is because, at their core, NFTs are just digital abstractions used to represent assets that are one of a kind. Non-fungible token isn’t the most intuitive term since we don’t commonly refer to the fungibility of objects in the physical world, but this is an important technical distinction when it comes to how an asset is represented on a blockchain. The goal for this post is not to detail every project within the NFT space, but to give a high level overview of what NFTs are, why they are interesting, and showcase some of their potential use cases.
+       </p>
+       <h3 id="why-are-nfts-interesting">
+        Why are NFTs interesting?
+       </h3>
+       <p>
+        NFTs are powerful because, when combined with other financial building blocks on Ethereum, they allow anyone to issue, own, and trade them. This makes interacting with NFTs significantly more efficient than in traditional platforms. The same reason why cryptocurrency used in payments is more efficient than traditional payments, that it is borderless and significantly easier to transfer, applies to NFTs. For example, if you want to create tradable in-game items as a game developer, then you can instantly have them be tradable through protocols that allow for decentralized exchange of NFTs. You don’t have to create your own marketplace or go through the onboarding process of a centralized platform in order to have the items be tradable.
+       </p>
+       <p>
+        NFT activity can go well past trading and include actions like being able to borrow and lend, support fractional ownership (e.g.
+        <a href="https://www.niftex.com/" rel="noreferrer" target="_blank">
+         NIFTEX
+        </a>
+        ), or use it as collateral in taking out a loan (e.g.
+        <a href="https://nftfi.com/" rel="noreferrer" target="_blank">
+         NFTfi
+        </a>
+        ). The possibilities are endless when you have the ability to combine NFTs with DeFi building blocks. For example, the game
+        <a href="http://aavegotchi.com" rel="noreferrer" target="_blank">
+         Aavegotchi
+        </a>
+        combines DeFi and NFT gaming where each Aavegotchi character represents a user’s collateral that is deposited within the lending platform
+        <a href="https://aave.com/" rel="noreferrer" target="_blank">
+         Aave
+        </a>
+        , but you can also battle the characters, level them up, and equip wearables that change their traits.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Aavegotchi gaming attributes change based on actions taken in DeFi" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/a1259686-6b61-455a-a204-f6e6da648f10.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Aavegotchi gaming attributes change based on actions taken in DeFi
+        </figcaption>
+       </figure>
+       <p>
+        NFTs can cover an extremely wide variety of areas given they are simply digital representations of ownership but there has been significant growth within art and gaming in particular. Note that many digital works of art and gaming items are a subset of a larger category of NFT collectibles. There is also the emerging space of social tokens, which sometimes falls into the NFT category or that is closely related to it.
+       </p>
+       <h3 id="art">
+        Art
+       </h3>
+       <p>
+        NFTs can make fractionalized ownership more accessible, so if there is a valuable item that otherwise wouldn’t have been accessible for someone to own, now they can own a piece of it. Custody of a physical item still requires a trustworthy custodian, but being able to issue, hold, and trade it as a cryptoasset unlocks more use cases. One can also craft an NFT such that the creator receives a percentage of all secondary sales in a completely automated way. Artists typically don’t receive a cut of secondary sales in the traditional art world.
+       </p>
+       <p>
+        Programmable art is another interesting concept where a piece of artwork can incorporate on-chain data to dynamically update certain features or characteristics of the work. For example, one could create a piece of programmable art whose background changes if the price of ether goes above a certain dollar-value. There are countless creative possibilities.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Rutger van der Tas artwork that changes based on if it’s day or night" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/a51670c0-4a1c-4aaf-917d-0e551855b56d.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Rutger van der Tas artwork that changes based on if it’s day or night
+        </figcaption>
+       </figure>
+       <p>
+        <a href="https://async.art/" rel="noreferrer" target="_blank">
+         Async Art
+        </a>
+        is a digital art marketplace known for programmable art. Many artists on Async sell artwork where someone is able to own the “master” copy which consists of a number of individual layers, but other people can own the individual layers and adjust their attributes over time. Imagine groups of people being able to own art collectively, where members of the group manage attributes of the work.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Osinachi artwork that includes a master and layers that can be individually adjusted" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/fea07c75-8b3c-4592-b8f2-f5d6d92e544c.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Osinachi artwork that includes a master and layers that can be individually adjusted
+        </figcaption>
+       </figure>
+       <p>
+        A common question about digital artwork is what can you do with it? These works can be displayed in digital frames in a physical setting for people to enjoy. The digital artist Beeple sold physical tokens along with his digital NFTs and made
+        <a href="https://niftygateway.com/itemdetail/primary/0x6e5dc5405baefb8c0166bcc78d2692777f2cbffb/21" rel="noreferrer" target="_blank">
+         $3.5 million
+        </a>
+        from sales in an auction on the Nifty Gateway marketplace.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Artist Beeple’s physical token that came with the NFT sale" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/8689be31-b33f-46ac-94aa-feea3a1b3dd1.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Artist Beeple’s physical token that came with the NFT sale
+        </figcaption>
+       </figure>
+       <p>
+        Digital artwork can also be displayed in online collections like a
+        <a href="https://superrare.co/thevault/collection" rel="noreferrer" target="_blank">
+         SuperRare profile
+        </a>
+        as well as in virtual worlds. There are a number of art galleries within
+        <a href="http://cryptovoxels.com" rel="noreferrer" target="_blank">
+         Cryptovoxels
+        </a>
+        , a virtual world where users can buy and sell land parcels as NFTs. As virtual reality spaces become more popular, having digital art to display will become more common. This wouldn’t be much different than someone spending money on video game items to customize a character’s appearance, already a multi-billion dollar industry.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Digital art gallery in Cryptovoxels" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/7386d358-d43d-4934-9ea5-b51c33932365.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Digital art gallery in Cryptovoxels
+        </figcaption>
+       </figure>
+       <p>
+        A common skepticism is that someone can just take a screenshot of the image or get a digital file so it’s not really scarce. However, the same argument could apply to physical items as well. Anyone can take a photo of the Mona Lisa or create a replica of it, but it isn’t the real item from the artist. People are willing to pay a premium for the original work. Another interesting aspect of digital art or collectibles is that you can easily verify the item’s ownership history. Some digital items might be worth more depending on who owned it in the past.
+       </p>
+       <p>
+        With NFTs, you can also prove that the item is real and tamper proof. This is an issue in the physical collectibles space. For example, a
+        <a href="https://en.wikipedia.org/wiki/T206_Honus_Wagner" rel="noreferrer" target="_blank">
+         T206 Honus Wagner baseball card
+        </a>
+        was sold to Wayne Gretzky for $451k and sold again for several million dollars. One of the sellers of the card later admitted in court to trimming the card’s edges to make it look better. You can ensure NFT supply doesn’t change and there’s no counterfeit or continued printing. For example, there are many
+        <a href="https://www.youtube.com/watch?v=AAvLC3fz068&amp;" rel="noreferrer" target="_blank">
+         counterfeit Black Lotus
+        </a>
+        cards in the popular game Magic: The Gathering. Common verification methods include bending the card to make sure it doesn’t crease or going through centralized grading services whose rating significantly affects the card's value.
+       </p>
+       <h3 id="gaming">
+        Gaming
+       </h3>
+       <p>
+        Steam, a popular video game platform, has a
+        <a href="https://steamcommunity.com/market/?" rel="noreferrer" target="_blank">
+         Community Market
+        </a>
+        where in-game items can be bought and sold. Steam’s marketplace is centralized and collects a transaction fee of 5% for each item from the buyer. Games like Team Fortress 2 and Dota 2 take an additional fee of 10% for their items sold.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Steam Community Market" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/4ad85fcf-b986-4b60-9fb5-925200fde3a9.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Steam Community Market
+        </figcaption>
+       </figure>
+       <p>
+        Steam also restricts user wallet balances to $2,000 and the price of a single item to $1,800. While these cases are outliers, many in-game items can actually sell for significantly larger amounts such as the
+        <a href="https://www.engadget.com/2013-11-06-dota-2-pink-war-dog-courier-sells-for-38-000.html" rel="noreferrer" target="_blank">
+         DotA 2 pink war dog courier
+        </a>
+        for $38,000. Within the crypto space there have also been high priced sales such as the $170,000
+        <a href="https://thenextweb.com/hardfork/2018/09/05/most-expensive-cryptokitty/" rel="noreferrer" target="_blank">
+         CryptoKitty
+        </a>
+        . Similarly Magic: The Gathering’s coveted
+        <a href="https://www.polygon.com/2019/3/5/18251623/magic-the-gathering-black-lotus-auction-price" rel="noreferrer" target="_blank">
+         Black Lotus
+        </a>
+        card sold for $166,100. There is certainly demand for valuable in-game items. In decentralized marketplaces, there isn’t a limit imposed on what game items can be sold and for what amount.
+       </p>
+       <p>
+        Decentralized marketplaces can significantly reduce transaction fees due to the improved efficiency of starting up and operating a marketplace. Marketplaces can also improve overall user experience and increase interest in the game. Hearthstone is a wildly popular digital collectible card game created by Blizzard Entertainment that had over
+        <a href="https://variety.com/2018/gaming/news/hearthstone-has-over-100-million-players-1203019919/" rel="noreferrer" target="_blank">
+         100 million players
+        </a>
+        in 2018. Hearthstone opted to not have a marketplace for their cards which leaves opportunity for other digital collectible card games that allow for an open marketplace.
+        <a href="https://godsunchained.com/" rel="noreferrer" target="_blank">
+         Gods Unchained
+        </a>
+        and
+        <a href="https://www.skyweaver.net/" rel="noreferrer" target="_blank">
+         SkyWeaver
+        </a>
+        are two trading card games (TCGs) that have cards that are freely tradable. You are also able to earn cards as you level up in the game. Players that did not purchase packs of cards will still be able to improve upon the game’s default decks. It’s an exciting feeling knowing that the earned cards have real world value and can be sold or traded for other cards. Gods Unchained also lets users earn tokens for when they win a match or refer their friend. The tokens themselves unlock rare in-game items and are also freely tradable.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Gods Unchained" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/aa82c586-39b6-46b1-ae55-cb8a2e44c8e1.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Gods Unchained
+        </figcaption>
+       </figure>
+       <p>
+        One of the most popular games in crypto is
+        <a href="https://axieinfinity.com/" rel="noreferrer" target="_blank">
+         Axie Infinity
+        </a>
+        . You battle with a team of pet Axies and level them up. There's no aspect of the gameplay that feels like a blockchain game but there is the added benefit of being able to openly trade the Axies on NFT marketplaces such as
+        <a href="https://opensea.io/" rel="noreferrer" target="_blank">
+         OpenSea
+        </a>
+        . The game has become popular in the
+        <a href="https://www.coindesk.com/nft-game-filipinos-covid" rel="noreferrer" target="_blank">
+         Philippines
+        </a>
+        and earning tokens from the game has become a viable source of income for players even
+        <a href="https://www.playtoearn.online/2020/07/08/axie-infinity-beats-minimum-wage-in-many-countries/" rel="noreferrer" target="_blank">
+         beating minimum wage
+        </a>
+        in many countries. There is also a decentralized autonomous organization (DAO) called
+        <a href="https://yieldguild.io/" rel="noreferrer" target="_blank">
+         Yield Guild Games
+        </a>
+        which leases Axies to players that want to get started with the game but don’t have the funds to purchase them. Several rare Axies were even
+        <a href="https://www.delphidigital.io/reports/why-we-spent-159k-on-digital-battle-pets-2/" rel="noreferrer" target="_blank">
+         purchased
+        </a>
+        for $159,000 total.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Axie Infinity battle" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/26353bcc-0d05-47ea-89ac-fcdc9d2dd848.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Axie Infinity battle
+        </figcaption>
+       </figure>
+       <p>
+        There’s another popular game
+        <a href="https://zkga.me/" rel="noreferrer" target="_blank">
+         Dark Forest
+        </a>
+        where you can explore different planets and collect Artifact NFTs on new planets, which give bonuses when attached to the planet. Being able to discover and collect these items or even win them in a battle and then trade them in decentralized marketplaces can make the game even more fun.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Planet in Dark Forest which has an Artifact NFT" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/be66b61a-05f0-46b7-aa8f-f7ed542d5cd3.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Planet in Dark Forest which has an Artifact NFT
+        </figcaption>
+       </figure>
+       <p>
+        One concern with making in-game items tradable is that the ability to trade items can negatively affect the gameplay as people are focused on extracting value from the system or only the players that are willing to pay a lot of money for items can enjoy the game. Diablo III had an auction house where users could trade in-game items for in-game currency and cash. It was
+        <a href="https://www.wired.com/2013/09/diablo-auction-house/" rel="noreferrer" target="_blank">
+         shut down
+        </a>
+        because of how it affected the game. It was no longer fun and rewarding since players would just buy the best loot. In Diablo III, having the best loot was essentially the goal of the game so having an auction house severely affected gameplay whereas other games are not set up this way. It’s important for game developers to find a balance on what should be freely traded for their game (e.g. skins rather than weapons,
+        <a href="https://secure.eveonline.com/plex/" rel="noreferrer" target="_blank">
+         game time
+        </a>
+        itself can be traded, etc).
+       </p>
+       <h3 id="social-tokens">
+        Social tokens
+       </h3>
+       <p>
+        The emerging area of social tokens grew significantly in 2020. Social tokens are a broad category of tokens issued by individuals and communities. This term encompasses other similar terms like personal token, community token, and creator token. So far there hasn’t been a standardized term but I will use social tokens to refer to the broader category. Social tokens enable creators and communities to have more ownership in what they are building which is extremely exciting.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Social tokens map created by Forefront and Seedclub in Social Tokens Year in Review" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/b9316db6-25dd-4c4e-bbb2-b18cfa9a7890.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Social tokens map created by Forefront and Seedclub in Social Tokens Year in Review
+        </figcaption>
+       </figure>
+       <p>
+        Early experiments of social tokens involved people tokenizing their time. For example
+        <a href="https://twitter.com/bramanathan?lang=en" rel="noreferrer" target="_blank">
+         Reuben Bramanathan
+        </a>
+        , who previously worked on legal and product at Coinbase, tokenized his time where 1
+        <a href="https://www.bramanathan.com/" rel="noreferrer" target="_blank">
+         $CSNL
+        </a>
+        token equaled 1 hour of his time and was freely traded. We also saw people attempting to tokenize part of their future income. Platforms like
+        <a href="https://tryroll.com/" rel="noreferrer" target="_blank">
+         Roll
+        </a>
+        and
+        <a href="https://coinvise.co/" rel="noreferrer" target="_blank">
+         Coinvise
+        </a>
+        make it easier for people to issue their own token.
+       </p>
+       <p>
+        One prominent example of a social token is
+        <a href="https://blog.ourzora.com/home/introducing-rac" rel="noreferrer" target="_blank">
+         $RAC
+        </a>
+        , a community token by the Grammy award winning recording artist
+        <a href="https://twitter.com/RAC" rel="noreferrer" target="_blank">
+         RAC
+        </a>
+        , issued through Zora. Token holders get access to a private Discord group and receive early access to merch drops with more perks to be added in the future. The token was retroactively distributed to his supporters including Bandcamp and Patreon supporters, people who had bought merch, and will eventually be distributed to all Twitch supporters. This allows creators to directly interact with and reward their early supporters.
+       </p>
+       <p>
+        One of the tools that enabled a new wave of social tokens was
+        <a href="https://collab.land/" rel="noreferrer" target="_blank">
+         Collab.Land
+        </a>
+        , which built a Telegram and Discord bot that connects to an Ethereum wallet to verify token balance before joining a chat group. This allowed for the creation of token permissioned groups, such as
+        <a href="https://www.jammpad.com/" rel="noreferrer" target="_blank">
+         $JAMM
+        </a>
+        and
+        <a href="https://andrwlee.medium.com/announcing-karma-dao-first-ever-token-permissioned-networking-chat-group-on-telegram-5feab7a54def" rel="noreferrer" target="_blank">
+         $KARMA
+        </a>
+        with their native tokens, which helped make sure that those joining the group had a certain level of skin in the game. Another feature of Collab.Land is a leaderboard that keeps track of who has contributed the most to the chat group. You could imagine token rewards distributed to those with the highest amounts of participation to reward engagement.
+       </p>
+       <p>
+        Another useful social token tool is
+        <a href="https://unite.community/" rel="noreferrer" target="_blank">
+         Unite Community
+        </a>
+        which allows for creators to easily distribute their tokens to followers through their social media channels and reward engagement.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Unite.community distribution" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/0026c774-c91d-443f-a295-161236ad0fba.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Unite.community distribution
+        </figcaption>
+       </figure>
+       <p>
+        The interesting part about social tokens is that it can represent anything from a person’s time to specialized access to collective ownership of a community. There is a lot of potential for social tokens and I expect many more creators to issue them in the future.
+       </p>
+       <h3 id="future">
+        Future
+       </h3>
+       <p>
+        These are just a few of the many use cases that are possible and have gotten some traction. There will likely be a significant increase in NFT adoption over the next several years. Traditional assets like equity getting tokenized seems like a clear progression in the future as it would make transferring them far more efficient. Then we’ll see tokenization that bridges the traditional world but adds new possibilities such as advertising space represented as an NFT where you could sell advertising rights to a site and have that be freely tradable. This would be a form of digital real estate. These NFTs would allow people to bet that a website will get a lot of traction and that the advertising space will become more valuable. Then we’ll start seeing more tokens with brand new concepts that are only made possible because of crypto which is what I’m most excited about.
+       </p>
+       <figure class="rehype-figure">
+        <div data-rmiz-wrap="visible">
+         <div class="css-ovd0pw">
+          <img alt="Table from Will Warren’s presentation at 0xpo" class="css-r0ukz2" src="https://images.mirror-media.xyz/publication-images/d8459ba6-156e-48a1-86ad-4182988bfdfc.jpeg"/>
+         </div>
+         <button aria-label="Zoom image" data-rmiz-btn-open="true">
+         </button>
+        </div>
+        <figcaption>
+         Table from Will Warren’s presentation at 0xpo
+        </figcaption>
+       </figure>
+       <p>
+        There are a few aspects of the user experience that need to be improved in order for NFTs to become more accessible. We need to have improvements to scaling since transaction fees can make some transactions very expensive or infeasible. Scaling research is already in the works with many different teams in Ethereum working on scaling solutions and we also are seeing other blockchains being built that are catered specifically for this use case. Another point of friction with NFTs is that holders will need to self-custody them. However this complexity can be abstracted away with user friendly wallets that make it easy to onboard and support features such as a PIN, biometrics, and social account recovery. I’m optimistic that these will get built out over time and we will see a huge wave of creativity and experimentation in the NFT space.
+       </p>
+       <h3 id="resources">
+        Resources
+       </h3>
+       <p>
+        Here are some additional resources to understand NFTs further and keep up with developments.
+       </p>
+       <h4 id="understanding-nfts">
+        Understanding NFTs
+       </h4>
+       <ul>
+        <li>
+         <a href="https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem" rel="noreferrer" target="_blank">
+          Quick Overview of the NFT Ecosystem
+         </a>
+         by Andrew Steinwold
+        </li>
+        <li>
+         <a href="https://opensea.io/blog/guides/non-fungible-tokens/" rel="noreferrer" target="_blank">
+          The Non-Fungible Token Bible
+         </a>
+         by Devin Finzer
+        </li>
+        <li>
+         <a href="https://2020inreview.forefront.news/" rel="noreferrer" target="_blank">
+          Social Tokens Year in Review
+         </a>
+         by Cooper Turley
+        </li>
+       </ul>
+       <h4 id="keeping-up-with-nfts">
+        Keeping up with NFTs
+       </h4>
+       <ul>
+        <li>
+         <a href="https://artsdefi.substack.com/" rel="noreferrer" target="_blank">
+          DeFi Arts Intelligencer newsletter
+         </a>
+         by William Peaster
+        </li>
+        <li>
+         <a href="https://andrewsteinwold.substack.com/" rel="noreferrer" target="_blank">
+          Zima Red newsletter
+         </a>
+         by Andrew Steinwold
+        </li>
+        <li>
+         <a href="https://forefront.market/" rel="noreferrer" target="_blank">
+          Forefront newsletter
+         </a>
+         on social tokens
+        </li>
+       </ul>
+       <p>
+        If you want to get in touch about interesting NFT ideas or projects, I’m
+        <a href="https://twitter.com/ljxie" rel="noreferrer" target="_blank">
+         @ljxie
+        </a>
+        on Twitter.
+       </p>
+       <p>
+        Thanks to
+        <a href="https://twitter.com/willwarren89" rel="noreferrer" target="_blank">
+         Will Warren
+        </a>
+        and
+        <a href="https://twitter.com/jcliff42" rel="noreferrer" target="_blank">
+         Jordan Clifford
+        </a>
+        for reviewing this post.
+       </p>
+       <p>
+        <em>
+         Disclaimer: Linda Xie is a Managing Director of Scalar Capital Management, LLC, an investment manager focused on cryptoassets which holds ETH and Ethereum tokens. This post is not investment advice.
+        </em>
+       </p>
+       <figure>
+        <style data-emotion="css 1d6zol8">
+         .css-1d6zol8{padding-left:1rem;padding-right:1rem;width:100%;}@media screen and (min-width: 768px){.css-1d6zol8{padding-left:0px;padding-right:0px;}}
+        </style>
+        <div class="css-1d6zol8">
+         <style data-emotion="css 18n3ei0">
+          .css-18n3ei0{display:block;background:linear-gradient(
+      to right,
+      rgba(var(--groupBackground), var(--shadeGroupBackground)),
+      rgba(var(--groupBackground), var(--shadeGroupBackground))
+    ),linear-gradient(to right, rgb(var(--background)), rgb(var(--background)));color:rgba(var(--foreground), var(--shadeTextSecondary));font-size:1rem;position:relative;border-radius:1.5rem;margin-left:auto;margin-right:auto;width:100%;--relativeBackground:var(--groupBackground);}.css-18n3ei0::after{content:"";border-radius:1.5rem;position:absolute;top:0px;left:0px;right:0px;bottom:0px;pointer-events:none;border:1px solid rgba(var(--foreground), var(--shadeForegroundSecondary));-webkit-transition:125ms ease-in-out border;transition:125ms ease-in-out border;}.css-18n3ei0::before{content:"";border-radius:1.5rem;position:absolute;top:0px;left:0px;right:0px;bottom:0px;pointer-events:none;-webkit-transition:125ms ease-in-out box-shadow,125ms ease-in-out background;transition:125ms ease-in-out box-shadow,125ms ease-in-out background;z-index:-1;box-shadow:0 0 0.5rem rgba(var(--groupBorder), var(--shadeGroupBorder));}
+         </style>
+         <div class="css-18n3ei0">
+          <style data-emotion="css 1v27800">
+           .css-1v27800{padding:1rem;padding-bottom:0.75rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media screen and (min-width: 640px){.css-1v27800{padding:1.5rem;padding-bottom:1.25rem;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}
+          </style>
+          <div class="css-1v27800">
+           <style data-emotion="css 1qh5309">
+            .css-1qh5309{-webkit-flex:1;-ms-flex:1;flex:1;}
+           </style>
+           <div class="css-1qh5309">
+            <style data-emotion="css 1mx94qd">
+             .css-1mx94qd{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));line-height:1.3;font-weight:600;font-size:1.5rem;letter-spacing:-0.015em;}@media screen and (min-width: 640px){.css-1mx94qd{font-size:1.85rem;}}
+            </style>
+            <div class="css-1mx94qd">
+             <style data-emotion="css 18tb7i">
+              .css-18tb7i{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.25em;width:75%;}
+             </style>
+             <span class="css-18tb7i">
+             </span>
+            </div>
+            <style data-emotion="css 1qffxyl">
+             .css-1qffxyl{margin-top:0.25rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-flex-alignment:flex-start;-ms-flex-alignment:flex-start;flex-alignment:flex-start;}
+            </style>
+            <div class="css-1qffxyl">
+             <style data-emotion="css 1qnvdh2">
+              .css-1qnvdh2{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.25em;width:50%;}
+             </style>
+             <span class="css-1qnvdh2">
+             </span>
+            </div>
+           </div>
+           <style data-emotion="css vds776">
+            .css-vds776{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-left:0px;margin-top:0.75rem;}@media screen and (min-width: 640px){.css-vds776{margin-left:1rem;margin-top:0px;}}
+           </style>
+           <div class="css-vds776">
+            <style data-emotion="css omdfv7">
+             .css-omdfv7{width:100%;color:rgba(0, 0, 0, 0);}
+            </style>
+            <style data-emotion="css 1kak3nq">
+             .css-1kak3nq{min-width:initial;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;line-height:inherit;-webkit-text-decoration:none;text-decoration:none;border:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;height:3.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;transition-property:box-shadow color;transition-timing-function:ease-in-out;transition-duration:150ms;font-weight:500;white-space:nowrap;cursor:not-allowed;background:rgba(var(--foreground), var(--shadeSecondary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));--shadeSecondary:var(--shadeForegroundSecondary);--shadeSecondaryHover:var(--shadeForegroundSecondaryHover);--buttonTextHover:rgba(var(--foreground), var(--shadeTextSecondary));font-size:1.1rem;padding-left:1.25rem;padding-right:1.25rem;border-radius:0.75rem;box-shadow:0 0 0 0 rgba(var(--foreground), var(--shadeSecondary));width:100%;color:rgba(0, 0, 0, 0);}.css-1kak3nq:focus{outline:none;}
+            </style>
+            <style data-emotion="css 12oi1dm">
+             .css-12oi1dm{box-sizing:border-box;margin:0;min-width:0;min-width:initial;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;line-height:inherit;-webkit-text-decoration:none;text-decoration:none;border:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;height:3.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;transition-property:box-shadow color;transition-timing-function:ease-in-out;transition-duration:150ms;font-weight:500;white-space:nowrap;cursor:not-allowed;background:rgba(var(--foreground), var(--shadeSecondary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));--shadeSecondary:var(--shadeForegroundSecondary);--shadeSecondaryHover:var(--shadeForegroundSecondaryHover);--buttonTextHover:rgba(var(--foreground), var(--shadeTextSecondary));font-size:1.1rem;padding-left:1.25rem;padding-right:1.25rem;border-radius:0.75rem;box-shadow:0 0 0 0 rgba(var(--foreground), var(--shadeSecondary));width:100%;color:rgba(0, 0, 0, 0);}.css-12oi1dm:focus{outline:none;}
+            </style>
+            <button class="css-12oi1dm" disabled="">
+             Send a Tip
+            </button>
+           </div>
+          </div>
+          <style data-emotion="css 1avbtqv">
+           .css-1avbtqv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:1rem;}@media screen and (min-width: 768px){.css-1avbtqv{padding:1.5rem;}}
+          </style>
+          <div class="css-1avbtqv">
+           <style data-emotion="css 1wpjqbx">
+            .css-1wpjqbx{height:24px;width:24px;display:block;}
+           </style>
+           <svg class="spinner undefined css-1wpjqbx" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" fill="none" r="10" stroke-dasharray="42" stroke-linecap="round" stroke-width="2">
+            </circle>
+            <circle cx="12" cy="12" fill="none" opacity="0.25" r="10" stroke-linecap="round" stroke-width="2">
+            </circle>
+           </svg>
+          </div>
+         </div>
+        </div>
+       </figure>
+      </div>
+     </div>
+     <div class="css-16f77nt">
+      <style data-emotion="css 15s0ms8">
+       .css-15s0ms8{line-height:1.625;width:100%;color:var(--theme-ui-colors-text, var(--colors-text));border:1px solid rgba(var(--foreground), var(--shadeForegroundSecondary));border-radius:0.5rem;font-weight:400;overflow:hidden;}
+      </style>
+      <div class="css-15s0ms8">
+       <style data-emotion="css vzelj8">
+        .css-vzelj8{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;white-space:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;width:100%;padding-left:1rem;padding-right:1rem;padding-top:0.75rem;padding-bottom:0.75rem;-webkit-transition:background 150ms ease-in-out;transition:background 150ms ease-in-out;}.css-vzelj8:not(:last-child){border-bottom:1px solid rgba(var(--foreground), var(--shadeForegroundSecondary));}.css-vzelj8:hover{background:rgba(var(--foreground), calc(var(--shadeForegroundSecondary) - 0.05));}
+       </style>
+       <a class="css-vzelj8" href="https://viewblock.io/arweave/tx/yPcdf7_jIdM4B0fAMfazvjkgnCCrX_ssdOlKm5sod2w" rel="noreferrer" target="_blank">
+        <style data-emotion="css 1d988al">
+         .css-1d988al{font-size:0.75rem;text-transform:uppercase;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));font-family:var(--fonts-mono);margin-right:1rem;}
+        </style>
+        <div class="css-1d988al">
+         Arweave TX
+         <style data-emotion="css 1la59za">
+          .css-1la59za{font-family:var(--fonts-sans);display:inline-block;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);margin-left:0.25rem;}
+         </style>
+         <span class="css-1la59za">
+          →
+         </span>
+        </div>
+        <style data-emotion="css 1lz9cf9">
+         .css-1lz9cf9{font-family:var(--fonts-mono);text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:0.75rem;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));}
+        </style>
+        <div class="css-1lz9cf9">
+         yPcdf7_jIdM4B0fAMfazvjkgnCCrX_ssdOlKm5sod2w
+        </div>
+       </a>
+       <a class="css-vzelj8" href="https://etherscan.io/address/0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee" rel="noreferrer" target="_blank">
+        <div class="css-1d988al">
+         Ethereum Address
+         <span class="css-1la59za">
+          →
+         </span>
+        </div>
+        <div class="css-1lz9cf9">
+         0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee
+        </div>
+       </a>
+       <style data-emotion="css 16umo6p">
+        .css-16umo6p{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;white-space:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;width:100%;padding-left:1rem;padding-right:1rem;padding-top:0.75rem;padding-bottom:0.75rem;-webkit-transition:background 150ms ease-in-out;transition:background 150ms ease-in-out;}.css-16umo6p:not(:last-child){border-bottom:1px solid rgba(var(--foreground), var(--shadeForegroundSecondary));}
+       </style>
+       <div class="css-16umo6p">
+        <div class="css-1d988al">
+         Content Digest
+        </div>
+        <div class="css-1lz9cf9">
+         df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none">
+   </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"pageProps":{"accent":"blue","mode":"dark","ensLabel":"linda","digest":"df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d","gaTrackingID":null,"member":{"__typename":"ProjectType","_id":"0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee","address":"0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee","avatarURL":"https://images.mirror-media.xyz/publication-images/5590908c-8a4e-4750-8a92-613e9c184828.png","description":null,"displayName":"Linda Xie","domain":"linda.mirror.xyz","ens":"lindajxie.eth","gaTrackingID":null,"mailingListURL":null,"headerImage":null,"theme":{"__typename":"UserProfileThemeType","accent":"BLUE","colorMode":"DARK"}},"project":{"__typename":"ProjectType","_id":"0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee","address":"0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee","avatarURL":"https://images.mirror-media.xyz/publication-images/5590908c-8a4e-4750-8a92-613e9c184828.png","description":null,"displayName":"Linda Xie","domain":"linda.mirror.xyz","ens":"lindajxie.eth","gaTrackingID":null,"mailingListURL":null,"headerImage":null,"theme":{"__typename":"UserProfileThemeType","accent":"BLUE","colorMode":"DARK"}},"__APOLLO_STATE__":{"ProjectType:0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee":{"__typename":"ProjectType","_id":"0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee","address":"0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee","avatarURL":"https://images.mirror-media.xyz/publication-images/5590908c-8a4e-4750-8a92-613e9c184828.png","description":null,"displayName":"Linda Xie","domain":"linda.mirror.xyz","ens":"lindajxie.eth","gaTrackingID":null,"mailingListURL":null,"headerImage":null,"theme":{"__typename":"UserProfileThemeType","accent":"BLUE","colorMode":"DARK"}},"edition:0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-16":{"__typename":"edition","_id":"0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-16","title":"A beginner's guide to NFTs","price":1,"quantity":5,"description":"https://mirror.xyz/ftDdOcoOXJO4deoSvcvqIiUX17nrurA4z64hcnRKzgY","editionId":16,"mediaURL":null,"editionContractAddress":"0xaf89C5E115Ab3437fC965224D317d09faa66ee3E","fundingRecipient":"0xC89ae0710A76B303Ad819159c02a9b4e7578075D","events":[{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x4ef7ba7bebb92872664122c21f22af2dd5043965aa4b27a8b48858928725d791","numSold":"1","avatarURL":"https://pbs.twimg.com/profile_images/1475496031747919873/ZiyJ6pyn_normal.jpg","twitterUsername":"gabusch","serialNumber":"1","collectorAddress":"0x7405Fe24003A50e4f4117D35E9b5a9f5E512fEdE","amountPaid":"1000000000000000000","blockNumber":12795682},{"__typename":"EditionEventsType","event":"EditionCreated","transactionHash":"0x5faa797d957d01ec2219b93fb4b7df4f217397083e55dbccee8768b9bc563c6b","numSold":"1","avatarURL":null,"twitterUsername":null,"serialNumber":"1","collectorAddress":null,"amountPaid":null,"blockNumber":12794874}],"attributes":[{"__typename":"EditionAttribute","trait_type":"Rarity","value":"Legendary"}],"primaryMedia":null,"thumbnailMedia":null,"blockState":{"__typename":"BlockStateType","status":null}},"edition:0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-17":{"__typename":"edition","_id":"0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-17","title":"A beginner's guide to NFTs","price":0.1,"quantity":50,"description":"https://mirror.xyz/ftDdOcoOXJO4deoSvcvqIiUX17nrurA4z64hcnRKzgY","editionId":17,"mediaURL":null,"editionContractAddress":"0xaf89C5E115Ab3437fC965224D317d09faa66ee3E","fundingRecipient":"0xC89ae0710A76B303Ad819159c02a9b4e7578075D","events":[{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x6a3f2cb786130218ae15a3a5fa4cad21a363c3810ff2775896df38e7c50eb746","numSold":"1","avatarURL":"https://pbs.twimg.com/profile_images/1484280512449421312/sOlimNGS_normal.jpg","twitterUsername":"travpreneur","serialNumber":"1","collectorAddress":"0x6F1B12a415E035eEbDc8559130eA8bdb96ADd48c","amountPaid":"100000000000000000","blockNumber":12794982},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xbbf1a538bcbeb5c47b7c4f49317588f64c436866811e23d80e5bcc62b1c3e44f","numSold":"2","avatarURL":"https://pbs.twimg.com/profile_images/1475367046284132353/_apJDsBR_normal.jpg","twitterUsername":"Cooopahtroopa","serialNumber":"2","collectorAddress":"0x46301F7E700Be9cFfCE3e5e142a2244Df3f2d4F2","amountPaid":"100000000000000000","blockNumber":12795188},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xf0d745f05a26d1def38a07a5d808dfec68216622fea09cee52f18e53a9d0a3ba","numSold":"3","avatarURL":"https://pbs.twimg.com/profile_images/1480399985808007170/GlHksHo7_normal.jpg","twitterUsername":"natemodi","serialNumber":"3","collectorAddress":"0xA49958fa14309F3720159c83cD92C5F38B1e3306","amountPaid":"100000000000000000","blockNumber":12795297},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xc21be59fd1587d33d70244c621ba26929e38b5ad988822755e382c976c9268fd","numSold":"4","avatarURL":null,"twitterUsername":null,"serialNumber":"4","collectorAddress":"0xdc2Ee21439a75a3794B8a1C7734548067Ba2E6f7","amountPaid":"100000000000000000","blockNumber":12795666},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x041d566d9245cab3d27510f62663c313eafefef3a1dd3a57c5ae69d8869065ec","numSold":"5","avatarURL":"https://pbs.twimg.com/profile_images/1484695755805896705/N5hIJDVV_normal.jpg","twitterUsername":"opt1m3","serialNumber":"5","collectorAddress":"0x4981E6Ada1D4695C66912Afd21D1B13c4A16373f","amountPaid":"100000000000000000","blockNumber":12801287},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x8e5fc271e1836c615a2f048783eb1282d33990368558bfa92660da41c84694b9","numSold":"6","avatarURL":"https://pbs.twimg.com/profile_images/1460683314419810304/dEyiC_oH_normal.jpg","twitterUsername":"timrix","serialNumber":"6","collectorAddress":"0x6E7caCc6F2b49dFB980663BF2bb014046aC45320","amountPaid":"100000000000000000","blockNumber":12804688},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xb3ec126c3386eaac18ed43da72daf9781ba09994bc0a71f29313e982c9660846","numSold":"7","avatarURL":"https://pbs.twimg.com/profile_images/1484387961005395969/g3eohnGk_normal.png","twitterUsername":"web3brett","serialNumber":"7","collectorAddress":"0x1e341Aa44c293d95d13d778492D417D1BE4E63D5","amountPaid":"100000000000000000","blockNumber":12909288},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xd5da61130b0124019584880ea0bfa77bfbec26de2aa9074187d2017f8517578f","numSold":"8","avatarURL":null,"twitterUsername":null,"serialNumber":"8","collectorAddress":"0x1a361e8974Ad9bdEC806e0e62c8E189F138E8CE5","amountPaid":"100000000000000000","blockNumber":14159838},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x7ccd311394098d81d3d5fcc6b489354ac58edeeaf9f147f95ba55210418d5f7d","numSold":"9","avatarURL":null,"twitterUsername":null,"serialNumber":"9","collectorAddress":"0x2d48c6432CC4000A55de200341a8E65a1cAfa400","amountPaid":"100000000000000000","blockNumber":14272687},{"__typename":"EditionEventsType","event":"EditionCreated","transactionHash":"0x5faa797d957d01ec2219b93fb4b7df4f217397083e55dbccee8768b9bc563c6b","numSold":"9","avatarURL":null,"twitterUsername":null,"serialNumber":"9","collectorAddress":null,"amountPaid":null,"blockNumber":12794874}],"attributes":[{"__typename":"EditionAttribute","trait_type":"Rarity","value":"Rare"}],"primaryMedia":{"__typename":"MediaAssetType","mimetype":"image/jpeg","sizes":{"__typename":"MediaAssetSizesType","og":{"__typename":"MediaAssetSizeType","src":"https://images.mirror-media.xyz/nft/09865721-a967-4108-8ac2-ba91d413cfc9.jpeg","height":1440,"width":2880}}},"thumbnailMedia":{"__typename":"MediaAssetType","mimetype":"image/jpeg","sizes":{"__typename":"MediaAssetSizesType","og":{"__typename":"MediaAssetSizeType","src":"https://images.mirror-media.xyz/nft/09865721-a967-4108-8ac2-ba91d413cfc9.jpeg","height":1440,"width":2880}}},"blockState":{"__typename":"BlockStateType","status":null}},"edition:0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-18":{"__typename":"edition","_id":"0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-18","title":"A beginner's guide to NFTs","price":0.01,"quantity":500,"description":"https://mirror.xyz/ftDdOcoOXJO4deoSvcvqIiUX17nrurA4z64hcnRKzgY","editionId":18,"mediaURL":null,"editionContractAddress":"0xaf89C5E115Ab3437fC965224D317d09faa66ee3E","fundingRecipient":"0xC89ae0710A76B303Ad819159c02a9b4e7578075D","events":[{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x80026335904ed2a40b08ab023631eb3ed125e303589cc76971b2e16f1d2b8b5c","numSold":"1","avatarURL":"https://pbs.twimg.com/profile_images/1462291760135258115/tJ9K8K5v_normal.jpg","twitterUsername":"awkweb","serialNumber":"1","collectorAddress":"0xA0Cf798816D4b9b9866b5330EEa46a18382f251e","amountPaid":"10000000000000000","blockNumber":12794924},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xe8472b6a785a8d4708528d5b3e1b214e4175f696bcbb69691dd5ab4f6188909b","numSold":"2","avatarURL":"https://pbs.twimg.com/profile_images/2010653796/bl_sm03_normal.gif","twitterUsername":"Iiterature","serialNumber":"2","collectorAddress":"0x5507dbd48a5A5bAcE8a6030e878cC4E0af147C33","amountPaid":"10000000000000000","blockNumber":12794925},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x82ea7d75f03af9356f51b4b9bf527e7b4c2b8209f4869c073fc9845d5bd09220","numSold":"3","avatarURL":"https://pbs.twimg.com/profile_images/1481025329602961413/BHE6s9CQ_normal.jpg","twitterUsername":"CryptoChris91","serialNumber":"3","collectorAddress":"0x979284053AA656630961bFbcea2E4aC233B898B8","amountPaid":"10000000000000000","blockNumber":12794939},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xb7784b8e0bfc3889aa4ab6384f5aa20ad37fae0a9ebcf747aa91db1dddc40668","numSold":"4","avatarURL":"https://pbs.twimg.com/profile_images/1484280512449421312/sOlimNGS_normal.jpg","twitterUsername":"travpreneur","serialNumber":"4","collectorAddress":"0x6F1B12a415E035eEbDc8559130eA8bdb96ADd48c","amountPaid":"10000000000000000","blockNumber":12794991},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xfb8158b631f8807142c38097b4a50954dcfa136c8cf2e2bb93984dcf87866faa","numSold":"5","avatarURL":"https://pbs.twimg.com/profile_images/1484249091462811651/kFJgxR-X_normal.jpg","twitterUsername":"stxsmith","serialNumber":"5","collectorAddress":"0x2e44F49552C0C8e93f60318520760f619c03615F","amountPaid":"10000000000000000","blockNumber":12795060},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xfc781d5b74b376f44c9434be069fa0caaac09a0c2b3fbd261d7541ddbbc6da29","numSold":"6","avatarURL":"https://pbs.twimg.com/profile_images/1459894639566094341/SiFnEZTu_normal.png","twitterUsername":"tandavas","serialNumber":"6","collectorAddress":"0xdCDb88F3754B2841093D9348A2D02DF8cf06314C","amountPaid":"10000000000000000","blockNumber":12795121},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x7717e0436cfaad97706ff04e8708a769ed534420428ea4ffc000cee7f9a7678a","numSold":"7","avatarURL":null,"twitterUsername":null,"serialNumber":"7","collectorAddress":"0x530cF036Ed4Fa58f7301a9C788C9806624ceFD19","amountPaid":"10000000000000000","blockNumber":12795172},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x381822b81608f2fe059f6c6d1854d1abdba27cbe7ec170330bab953b21b6c48d","numSold":"8","avatarURL":null,"twitterUsername":null,"serialNumber":"8","collectorAddress":"0x2525f1a08a2d5f037DDa969f2Fa1B56E4b4B47f3","amountPaid":"10000000000000000","blockNumber":12795673},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x7ab170aa9a3cabf19f8900b337c60f4710793a707719d0c04f99d48b875215ae","numSold":"9","avatarURL":null,"twitterUsername":null,"serialNumber":"9","collectorAddress":"0xda0396c581d426dD0c333D8991c1e979E02F3223","amountPaid":"10000000000000000","blockNumber":12797038},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x1f6680075496efa73a6614ca776cb86aa6a5e8105ca5f003104af6cf5d96d1b4","numSold":"10","avatarURL":"https://pbs.twimg.com/profile_images/1461576735141810176/piMONabb_normal.jpg","twitterUsername":"tolehico","serialNumber":"10","collectorAddress":"0x7bC1D6E8150D4C96917901C26C922Dd64654B3c3","amountPaid":"10000000000000000","blockNumber":12800632},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xac9a47153694a7d45268fdf33fce56998048eca2e379b888a3325145caca0318","numSold":"11","avatarURL":"https://pbs.twimg.com/profile_images/1412410617542156300/F5nudtYL_normal.jpg","twitterUsername":"chaykak","serialNumber":"11","collectorAddress":"0x25cbCFA16e43e58517f80D583087Ea89241293E6","amountPaid":"10000000000000000","blockNumber":12800992},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x739a7f5571a287fe4232055899875c581d1c45d7eba8ab33d301e2ccdd01c0ab","numSold":"12","avatarURL":"https://pbs.twimg.com/profile_images/1484564476150042630/3aUCn1Zx_normal.jpg","twitterUsername":"jaesmail","serialNumber":"12","collectorAddress":"0x70eCe45cDc64A768f936Ccb8aC851578251363e3","amountPaid":"10000000000000000","blockNumber":12801324},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x8278a27cdf6b3a8be267b2a98c3752c8e966b1b5e6ddfd5d88d4f05b1a469526","numSold":"13","avatarURL":"https://pbs.twimg.com/profile_images/1484339685056860161/ddiL_AiG_normal.jpg","twitterUsername":"m1guelpf","serialNumber":"13","collectorAddress":"0xE340b00B6B622C136fFA5CFf130eC8edCdDCb39D","amountPaid":"10000000000000000","blockNumber":12801325},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xcf79e5500a0115d539f947fa6082820ef8ecfa23f07bca9015651d5f6466bf8b","numSold":"14","avatarURL":"https://pbs.twimg.com/profile_images/1479628929136795650/5cAbZgxo_normal.jpg","twitterUsername":"ccarella","serialNumber":"14","collectorAddress":"0x3B60e31CFC48a9074CD5bEbb26C9EAa77650a43F","amountPaid":"10000000000000000","blockNumber":12806703},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x8881f8aac59a5d95579c48cd6d3ea75dcedbdf29d481889e00cc1af772fe9027","numSold":"15","avatarURL":"https://pbs.twimg.com/profile_images/1479628929136795650/5cAbZgxo_normal.jpg","twitterUsername":"ccarella","serialNumber":"15","collectorAddress":"0x3B60e31CFC48a9074CD5bEbb26C9EAa77650a43F","amountPaid":"10000000000000000","blockNumber":12806782},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x1e34fccb48080f830b2ee5be940ecaa859e4e9918caab8d8808c9b57c69de23a","numSold":"16","avatarURL":"https://pbs.twimg.com/profile_images/1483563273131864065/B9T1JLOJ_normal.jpg","twitterUsername":"selimimoberdorf","serialNumber":"16","collectorAddress":"0xd5fb864ACfD6BB2f72939f122e89fF7F475924f5","amountPaid":"10000000000000000","blockNumber":12811168},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xc4cb98ba2264fc0e4f7ea795ed804381df41fd21efc599b0059a5525e7ab8006","numSold":"17","avatarURL":null,"twitterUsername":null,"serialNumber":"17","collectorAddress":"0x00EaC8989B2dD513D61Ad1Faa277DA3ad1f5BD2C","amountPaid":"10000000000000000","blockNumber":12813947},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x9100a7cd01aa083493c3fe059a4e8b9658adcdf3324b765a534cf20f944ee6f7","numSold":"18","avatarURL":null,"twitterUsername":null,"serialNumber":"18","collectorAddress":"0x156F93Bd27507Be62728c1dfecD945cA6500753A","amountPaid":"10000000000000000","blockNumber":12814194},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xcaf357935f816c151bf3f3738f877713ccb6fa101a30bb7bafec04f916d0eda1","numSold":"19","avatarURL":null,"twitterUsername":null,"serialNumber":"19","collectorAddress":"0x1200Eb4fA3dF9903fC6EfF1d7A4a5D17502329b2","amountPaid":"10000000000000000","blockNumber":12826866},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x41f70b938ebd3fb518a6173a76c2a7aee15fb93ed505e26265974a1734425d25","numSold":"20","avatarURL":"https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png","twitterUsername":"nosolnick","serialNumber":"20","collectorAddress":"0x6Ec6923dcBD8d4043cE5c78C35721f5807D05fd1","amountPaid":"10000000000000000","blockNumber":12872319},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x72e76de3de4759540cff94442e4a4dce0f3fee8b48045abe71c303199bf6024f","numSold":"21","avatarURL":"https://pbs.twimg.com/profile_images/1480849702509817861/xoxd6h1X_normal.jpg","twitterUsername":"rafathebuilder","serialNumber":"21","collectorAddress":"0xe62d071Ea99A63798Fec7222c483c53e87F2A32E","amountPaid":"10000000000000000","blockNumber":12912827},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x58606f66f138afe79ccc54bdbb05bddc82ee88b8a3143b3e8f06e02a7707ef60","numSold":"22","avatarURL":"https://pbs.twimg.com/profile_images/1407727721568903170/ylfRQXbx_normal.jpg","twitterUsername":"allofuscommand","serialNumber":"22","collectorAddress":"0xF8FDfa3Fc69Ea21cF854f111957ECd7Ffe78cc25","amountPaid":"50000000000000000","blockNumber":12973340},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x95036e63a0167387574e1f691d2dd9e08e66bc1cf6d0f11361847c4341a8c017","numSold":"23","avatarURL":"https://pbs.twimg.com/profile_images/1437811565512757252/ebB6Wmjf_normal.jpg","twitterUsername":"julianweisser","serialNumber":"23","collectorAddress":"0x76ce7A233804C5f662897bBfc469212d28D11613","amountPaid":"10000000000000000","blockNumber":13002147},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x924dff51206eb23a817214da025c61c896ae13f463cf471354690c93c0480b20","numSold":"24","avatarURL":"https://pbs.twimg.com/profile_images/1428182060938694665/p2o70vDG_normal.jpg","twitterUsername":"yuhanwang001","serialNumber":"24","collectorAddress":"0x7c3C30F9B22e79227312855d1E710e5F2b75C6dB","amountPaid":"10000000000000000","blockNumber":13003664},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x5220a600c7c07ddcfa5aa70728a41b91f347e9565255008fa3bd9ea5dcb97729","numSold":"25","avatarURL":"https://pbs.twimg.com/profile_images/951876969083400194/sT2FlE4h_normal.jpg","twitterUsername":"ptrwtts","serialNumber":"25","collectorAddress":"0xD5c0D17cCb9071D27a4F7eD8255F59989b9aee0d","amountPaid":"10000000000000000","blockNumber":13105009},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xe46472d77a86ef2feda7c03081b0796126b15e758dfaed76d2e8235819de0b4a","numSold":"26","avatarURL":null,"twitterUsername":null,"serialNumber":"26","collectorAddress":"0x8716E9d83071B318BF718037bBEC699913EE5255","amountPaid":"10000000000000000","blockNumber":13177961},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xb2bb4638fd3d9c9d0a2328ac5133a975f9817f6aba4fecbf79abed6382113bc5","numSold":"27","avatarURL":null,"twitterUsername":null,"serialNumber":"27","collectorAddress":"0xD078456E6A890dB93BD0d2a711ee7f395f889160","amountPaid":"10000000000000000","blockNumber":13254177},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xd10141b5a39b599d5bf2908638cf65cf824e8ce214a423ccd340d172edc6373e","numSold":"28","avatarURL":null,"twitterUsername":null,"serialNumber":"28","collectorAddress":"0x6C51A5Ef1B6736B63c965b3057ae5c5b50De76D3","amountPaid":"10000000000000000","blockNumber":13319477},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x5f36043fd4d3dcbe36c92d2ead4f58e2d3efaec24051c83223299ed9067e243f","numSold":"29","avatarURL":null,"twitterUsername":null,"serialNumber":"29","collectorAddress":"0x5E81d6F6fF6ee3F43d8fc9cF44C9b77BD447e059","amountPaid":"10000000000000000","blockNumber":13376048},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xc6e93c2b43531f2227491bab4677fada907176e76f277a89335b86d41b30d367","numSold":"30","avatarURL":"https://pbs.twimg.com/profile_images/1391109563760402433/0PYndVSj_normal.jpg","twitterUsername":"davwoe_de","serialNumber":"30","collectorAddress":"0xAB6D57F34D4aa25F5ce5170dfF1Ab6D6D9ca6c75","amountPaid":"10000000000000000","blockNumber":13386240},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x35600dba76709fb4b0c03e74852480d4ccf2001bc8f2a9c1b4fead44c4116e13","numSold":"31","avatarURL":null,"twitterUsername":null,"serialNumber":"31","collectorAddress":"0x0936E1c4Fb71B3af9A5537Bc7462E6887dbf70C1","amountPaid":"10000000000000000","blockNumber":13574601},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xa0d53f7c58caad8f7b98dc85075e0ab4bfe65d9702465bcb0bbea27e3247d832","numSold":"32","avatarURL":null,"twitterUsername":null,"serialNumber":"32","collectorAddress":"0x8b21033337a7066bCFf10Fe0b3CA2A9DA1c58A1d","amountPaid":"10000000000000000","blockNumber":13606124},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0xd9cae2ccce1178544cd9147fd09a37cacafc4028e0f1e2d10b9da36e42a85ac0","numSold":"33","avatarURL":null,"twitterUsername":null,"serialNumber":"33","collectorAddress":"0x77A12608B5Cc2F6b1F57775d0195AC2F433A7513","amountPaid":"10000000000000000","blockNumber":13743833},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x05092b31a410eb7e33d2f9143394fca7b2a33c940b3721c0cd383851383d0fc6","numSold":"34","avatarURL":null,"twitterUsername":null,"serialNumber":"34","collectorAddress":"0xA697AEdF5af55fd7a3D75122fAa8fFC57e84261C","amountPaid":"10000000000000000","blockNumber":13756001},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x463fdc16f32b4ec39ea80994079cd78483df9e1adaf09ba8cc4e95002ac4d92b","numSold":"35","avatarURL":null,"twitterUsername":null,"serialNumber":"35","collectorAddress":"0x8B651435d48F0DBa3170845EEd7655e9b24aA3a8","amountPaid":"10000000000000000","blockNumber":13988229},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x12ed0b20bf8ede7855e239d271dd910718a45434d674d34b201ca97fac1a9e7f","numSold":"36","avatarURL":"https://pbs.twimg.com/profile_images/1484262879742337024/66ryWlLC_normal.jpg","twitterUsername":"artignatyev","serialNumber":"36","collectorAddress":"0xA582360DA4ae1fBb912C975fcce1A0C0e2af91e8","amountPaid":"10000000000000000","blockNumber":14076287},{"__typename":"EditionEventsType","event":"EditionPurchased","transactionHash":"0x867cc70fd64871e856cb23e3d89cc9ff673527e0e6285c021ed4fc828fd55728","numSold":"37","avatarURL":null,"twitterUsername":null,"serialNumber":"37","collectorAddress":"0x6926bcBFac0fE1a77080f721d6731f2e4fe9fA92","amountPaid":"10000000000000000","blockNumber":14282889},{"__typename":"EditionEventsType","event":"EditionCreated","transactionHash":"0x5faa797d957d01ec2219b93fb4b7df4f217397083e55dbccee8768b9bc563c6b","numSold":"37","avatarURL":null,"twitterUsername":null,"serialNumber":"37","collectorAddress":null,"amountPaid":null,"blockNumber":12794874}],"attributes":[{"__typename":"EditionAttribute","trait_type":"Rarity","value":"Common"}],"primaryMedia":{"__typename":"MediaAssetType","mimetype":"image/jpeg","sizes":{"__typename":"MediaAssetSizesType","og":{"__typename":"MediaAssetSizeType","src":"https://images.mirror-media.xyz/nft/09865721-a967-4108-8ac2-ba91d413cfc9.jpeg","height":1440,"width":2880}}},"thumbnailMedia":{"__typename":"MediaAssetType","mimetype":"image/jpeg","sizes":{"__typename":"MediaAssetSizesType","og":{"__typename":"MediaAssetSizeType","src":"https://images.mirror-media.xyz/nft/09865721-a967-4108-8ac2-ba91d413cfc9.jpeg","height":1440,"width":2880}}},"blockState":{"__typename":"BlockStateType","status":null}},"entry:df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d":{"__typename":"entry","_id":"df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d","body":"### What are NFTs?\n\nNon-fungible token (NFT) is a term used to describe a unique digital asset whose ownership is tracked on a blockchain, such as Ethereum. Assets that can be represented as NFTs range from digital goods, such as items that exist within virtual worlds, to claims on physical assets such as clothing items or real estate. In the coming years, we will see NFTs used to unlock entirely new use cases that are only made possible by crypto.\n\n![**Tokens redeemable for real world goods on [Zora](https://store.zora.co/)**](https://images.mirror-media.xyz/publication-images/9799dae1-c2c9-4712-813b-10b23c279a36.jpeg)\n\nWhile the Ethereum ecosystem is where most NFT activity has taken place to date, NFTs can exist on other smart contract platforms too. This is because, at their core, NFTs are just digital abstractions used to represent assets that are one of a kind. Non-fungible token isn’t the most intuitive term since we don’t commonly refer to the fungibility of objects in the physical world, but this is an important technical distinction when it comes to how an asset is represented on a blockchain. The goal for this post is not to detail every project within the NFT space, but to give a high level overview of what NFTs are, why they are interesting, and showcase some of their potential use cases.\n\n\n### Why are NFTs interesting?\n\nNFTs are powerful because, when combined with other financial building blocks on Ethereum, they allow anyone to issue, own, and trade them. This makes interacting with NFTs significantly more efficient than in traditional platforms. The same reason why cryptocurrency used in payments is more efficient than traditional payments, that it is borderless and significantly easier to transfer, applies to NFTs. For example, if you want to create tradable in-game items as a game developer, then you can instantly have them be tradable through protocols that allow for decentralized exchange of NFTs. You don’t have to create your own marketplace or go through the onboarding process of a centralized platform in order to have the items be tradable.\n\nNFT activity can go well past trading and include actions like being able to borrow and lend, support fractional ownership (e.g. [NIFTEX](https://www.niftex.com/)), or use it as collateral in taking out a loan (e.g. [NFTfi](https://nftfi.com/)). The possibilities are endless when you have the ability to combine NFTs with DeFi building blocks. For example, the game [Aavegotchi](http://aavegotchi.com) combines DeFi and NFT gaming where each Aavegotchi character represents a user’s collateral that is deposited within the lending platform [Aave](https://aave.com/), but you can also battle the characters, level them up, and equip wearables that change their traits.\n\n![**Aavegotchi gaming attributes change based on actions taken in DeFi**](https://images.mirror-media.xyz/publication-images/a1259686-6b61-455a-a204-f6e6da648f10.jpeg)\n\nNFTs can cover an extremely wide variety of areas given they are simply digital representations of ownership but there has been significant growth within art and gaming in particular. Note that many digital works of art and gaming items are a subset of a larger category of NFT collectibles. There is also the emerging space of social tokens, which sometimes falls into the NFT category or that is closely related to it.\n\n\n### Art\n\nNFTs can make fractionalized ownership more accessible, so if there is a valuable item that otherwise wouldn’t have been accessible for someone to own, now they can own a piece of it. Custody of a physical item still requires a trustworthy custodian, but being able to issue, hold, and trade it as a cryptoasset unlocks more use cases. One can also craft an NFT such that the creator receives a percentage of all secondary sales in a completely automated way. Artists typically don’t receive a cut of secondary sales in the traditional art world. \n\nProgrammable art is another interesting concept where a piece of artwork can incorporate on-chain data to dynamically update certain features or characteristics of the work. For example, one could create a piece of programmable art whose background changes if the price of ether goes above a certain dollar-value. There are countless creative possibilities.\n\n![**Rutger van der Tas [artwork](https://async.art/art/master/0x6c424c25e9f1fff9642cb5b7750b0db7312c29ad-83) that changes based on if it’s day or night**](https://images.mirror-media.xyz/publication-images/a51670c0-4a1c-4aaf-917d-0e551855b56d.jpeg)\n\n[Async Art](https://async.art/) is a digital art marketplace known for programmable art. Many artists on Async sell artwork where someone is able to own the “master” copy which consists of a number of individual layers, but other people can own the individual layers and adjust their attributes over time. Imagine groups of people being able to own art collectively, where members of the group manage attributes of the work.\n\n![**Osinachi [artwork](https://async.art/art/master/0x6c424c25e9f1fff9642cb5b7750b0db7312c29ad-118) that includes a master and layers that can be individually adjusted**](https://images.mirror-media.xyz/publication-images/fea07c75-8b3c-4592-b8f2-f5d6d92e544c.jpeg)\n\nA common question about digital artwork is what can you do with it? These works can be displayed in digital frames in a physical setting for people to enjoy. The digital artist Beeple sold physical tokens along with his digital NFTs and made [$3.5 million](https://niftygateway.com/itemdetail/primary/0x6e5dc5405baefb8c0166bcc78d2692777f2cbffb/21) from sales in an auction on the Nifty Gateway marketplace.\n\n![**Artist Beeple’s physical token that came with the NFT sale**](https://images.mirror-media.xyz/publication-images/8689be31-b33f-46ac-94aa-feea3a1b3dd1.jpeg)\n\nDigital artwork can also be displayed in online collections like a [SuperRare profile](https://superrare.co/thevault/collection) as well as in virtual worlds. There are a number of art galleries within [Cryptovoxels](http://cryptovoxels.com), a virtual world where users can buy and sell land parcels as NFTs. As virtual reality spaces become more popular, having digital art to display will become more common. This wouldn’t be much different than someone spending money on video game items to customize a character’s appearance, already a multi-billion dollar industry. \n\n![**Digital art gallery in Cryptovoxels**](https://images.mirror-media.xyz/publication-images/7386d358-d43d-4934-9ea5-b51c33932365.jpeg)\n\nA common skepticism is that someone can just take a screenshot of the image or get a digital file so it’s not really scarce. However, the same argument could apply to physical items as well. Anyone can take a photo of the Mona Lisa or create a replica of it, but it isn’t the real item from the artist. People are willing to pay a premium for the original work. Another interesting aspect of digital art or collectibles is that you can easily verify the item’s ownership history. Some digital items might be worth more depending on who owned it in the past.\n\nWith NFTs, you can also prove that the item is real and tamper proof. This is an issue in the physical collectibles space. For example, a [T206 Honus Wagner baseball card](https://en.wikipedia.org/wiki/T206_Honus_Wagner) was sold to Wayne Gretzky for $451k and sold again for several million dollars. One of the sellers of the card later admitted in court to trimming the card’s edges to make it look better. You can ensure NFT supply doesn’t change and there’s no counterfeit or continued printing. For example, there are many [counterfeit Black Lotus](https://www.youtube.com/watch?v=AAvLC3fz068\u0026) cards in the popular game Magic: The Gathering. Common verification methods include bending the card to make sure it doesn’t crease or going through centralized grading services whose rating significantly affects the card's value. \n\n\n### Gaming\n\nSteam, a popular video game platform, has a [Community Market](https://steamcommunity.com/market/?) where in-game items can be bought and sold. Steam’s marketplace is centralized and collects a transaction fee of 5% for each item from the buyer. Games like Team Fortress 2 and Dota 2 take an additional fee of 10% for their items sold.\n\n\n![**Steam Community Market**](https://images.mirror-media.xyz/publication-images/4ad85fcf-b986-4b60-9fb5-925200fde3a9.jpeg)\n\n\nSteam also restricts user wallet balances to $2,000 and the price of a single item to $1,800. While these cases are outliers, many in-game items can actually sell for significantly larger amounts such as the [DotA 2 pink war dog courier](https://www.engadget.com/2013-11-06-dota-2-pink-war-dog-courier-sells-for-38-000.html) for $38,000. Within the crypto space there have also been high priced sales such as the $170,000 [CryptoKitty](https://thenextweb.com/hardfork/2018/09/05/most-expensive-cryptokitty/). Similarly Magic: The Gathering’s coveted [Black Lotus](https://www.polygon.com/2019/3/5/18251623/magic-the-gathering-black-lotus-auction-price) card sold for $166,100. There is certainly demand for valuable in-game items. In decentralized marketplaces, there isn’t a limit imposed on what game items can be sold and for what amount.\n\nDecentralized marketplaces can significantly reduce transaction fees due to the improved efficiency of starting up and operating a marketplace. Marketplaces can also improve overall user experience and increase interest in the game. Hearthstone is a wildly popular digital collectible card game created by Blizzard Entertainment that had over [100 million players](https://variety.com/2018/gaming/news/hearthstone-has-over-100-million-players-1203019919/) in 2018. Hearthstone opted to not have a marketplace for their cards which leaves opportunity for other digital collectible card games that allow for an open marketplace. [Gods Unchained](https://godsunchained.com/) and [SkyWeaver](https://www.skyweaver.net/) are two trading card games (TCGs) that have cards that are freely tradable. You are also able to earn cards as you level up in the game. Players that did not purchase packs of cards will still be able to improve upon the game’s default decks. It’s an exciting feeling knowing that the earned cards have real world value and can be sold or traded for other cards. Gods Unchained also lets users earn tokens for when they win a match or refer their friend. The tokens themselves unlock rare in-game items and are also freely tradable.\n\n\n![**Gods Unchained**](https://images.mirror-media.xyz/publication-images/aa82c586-39b6-46b1-ae55-cb8a2e44c8e1.jpeg)\n\n\nOne of the most popular games in crypto is [Axie Infinity](https://axieinfinity.com/). You battle with a team of pet Axies and level them up. There's no aspect of the gameplay that feels like a blockchain game but there is the added benefit of being able to openly trade the Axies on NFT marketplaces such as [OpenSea](https://opensea.io/). The game has become popular in the [Philippines](https://www.coindesk.com/nft-game-filipinos-covid) and earning tokens from the game has become a viable source of income for players even [beating minimum wage](https://www.playtoearn.online/2020/07/08/axie-infinity-beats-minimum-wage-in-many-countries/) in many countries. There is also a decentralized autonomous organization (DAO) called [Yield Guild Games](https://yieldguild.io/) which leases Axies to players that want to get started with the game but don’t have the funds to purchase them. Several rare Axies were even [purchased](https://www.delphidigital.io/reports/why-we-spent-159k-on-digital-battle-pets-2/) for $159,000 total.\n\n\n![**Axie Infinity battle**](https://images.mirror-media.xyz/publication-images/26353bcc-0d05-47ea-89ac-fcdc9d2dd848.jpeg)\n\n\nThere’s another popular game [Dark Forest](https://zkga.me/) where you can explore different planets and collect Artifact NFTs on new planets, which give bonuses when attached to the planet. Being able to discover and collect these items or even win them in a battle and then trade them in decentralized marketplaces can make the game even more fun.\n\n![Planet in Dark Forest which has an Artifact NFT](https://images.mirror-media.xyz/publication-images/be66b61a-05f0-46b7-aa8f-f7ed542d5cd3.jpeg)\n\nOne concern with making in-game items tradable is that the ability to trade items can negatively affect the gameplay as people are focused on extracting value from the system or only the players that are willing to pay a lot of money for items can enjoy the game. Diablo III had an auction house where users could trade in-game items for in-game currency and cash. It was [shut down](https://www.wired.com/2013/09/diablo-auction-house/) because of how it affected the game. It was no longer fun and rewarding since players would just buy the best loot. In Diablo III, having the best loot was essentially the goal of the game so having an auction house severely affected gameplay whereas other games are not set up this way. It’s important for game developers to find a balance on what should be freely traded for their game (e.g. skins rather than weapons, [game time](https://secure.eveonline.com/plex/) itself can be traded, etc).\n\n\n### Social tokens\n\nThe emerging area of social tokens grew significantly in 2020. Social tokens are a broad category of tokens issued by individuals and communities. This term encompasses other similar terms like personal token, community token, and creator token. So far there hasn’t been a standardized term but I will use social tokens to refer to the broader category. Social tokens enable creators and communities to have more ownership in what they are building which is extremely exciting.\n\n\n![Social tokens map created by Forefront and Seedclub in [Social Tokens Year in Review](https://2020inreview.forefront.news/)](https://images.mirror-media.xyz/publication-images/b9316db6-25dd-4c4e-bbb2-b18cfa9a7890.jpeg)\n\nEarly experiments of social tokens involved people tokenizing their time. For example [Reuben Bramanathan](https://twitter.com/bramanathan?lang=en), who previously worked on legal and product at Coinbase, tokenized his time where 1 [$CSNL](https://www.bramanathan.com/) token equaled 1 hour of his time and was freely traded. We also saw people attempting to tokenize part of their future income. Platforms like [Roll](https://tryroll.com/) and [Coinvise](https://coinvise.co/) make it easier for people to issue their own token.\n\nOne prominent example of a social token is [$RAC](https://blog.ourzora.com/home/introducing-rac), a community token by the Grammy award winning recording artist [RAC](https://twitter.com/RAC), issued through Zora. Token holders get access to a private Discord group and receive early access to merch drops with more perks to be added in the future. The token was retroactively distributed to his supporters including Bandcamp and Patreon supporters, people who had bought merch, and will eventually be distributed to all Twitch supporters. This allows creators to directly interact with and reward their early supporters.\n\nOne of the tools that enabled a new wave of social tokens was [Collab.Land](https://collab.land/), which built a Telegram and Discord bot that connects to an Ethereum wallet to verify token balance before joining a chat group. This allowed for the creation of token permissioned groups, such as [$JAMM](https://www.jammpad.com/) and [$KARMA](https://andrwlee.medium.com/announcing-karma-dao-first-ever-token-permissioned-networking-chat-group-on-telegram-5feab7a54def) with their native tokens, which helped make sure that those joining the group had a certain level of skin in the game. Another feature of Collab.Land is a leaderboard that keeps track of who has contributed the most to the chat group. You could imagine token rewards distributed to those with the highest amounts of participation to reward engagement.\n\nAnother useful social token tool is [Unite Community](https://unite.community/) which allows for creators to easily distribute their tokens to followers through their social media channels and reward engagement.\n\n\n![Unite.community distribution](https://images.mirror-media.xyz/publication-images/0026c774-c91d-443f-a295-161236ad0fba.jpeg)\n\nThe interesting part about social tokens is that it can represent anything from a person’s time to specialized access to collective ownership of a community. There is a lot of potential for social tokens and I expect many more creators to issue them in the future.\n\n\n### Future\n\nThese are just a few of the many use cases that are possible and have gotten some traction. There will likely be a significant increase in NFT adoption over the next several years. Traditional assets like equity getting tokenized seems like a clear progression in the future as it would make transferring them far more efficient. Then we’ll see tokenization that bridges the traditional world but adds new possibilities such as advertising space represented as an NFT where you could sell advertising rights to a site and have that be freely tradable. This would be a form of digital real estate. These NFTs would allow people to bet that a website will get a lot of traction and that the advertising space will become more valuable. Then we’ll start seeing more tokens with brand new concepts that are only made possible because of crypto which is what I’m most excited about.\n\n![Table from Will Warren’s presentation at [0xpo](https://www.0xpo.com/)](https://images.mirror-media.xyz/publication-images/d8459ba6-156e-48a1-86ad-4182988bfdfc.jpeg)\n\n\nThere are a few aspects of the user experience that need to be improved in order for NFTs to become more accessible. We need to have improvements to scaling since transaction fees can make some transactions very expensive or infeasible. Scaling research is already in the works with many different teams in Ethereum working on scaling solutions and we also are seeing other blockchains being built that are catered specifically for this use case. Another point of friction with NFTs is that holders will need to self-custody them. However this complexity can be abstracted away with user friendly wallets that make it easy to onboard and support features such as a PIN, biometrics, and social account recovery. I’m optimistic that these will get built out over time and we will see a huge wave of creativity and experimentation in the NFT space.\n\n\n### Resources\n\nHere are some additional resources to understand NFTs further and keep up with developments.\n\n\n#### Understanding NFTs\n\n\n\n*   [Quick Overview of the NFT Ecosystem](https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem) by Andrew Steinwold\n*   [The Non-Fungible Token Bible](https://opensea.io/blog/guides/non-fungible-tokens/) by Devin Finzer\n*   [Social Tokens Year in Review](https://2020inreview.forefront.news/) by Cooper Turley\n\n\n#### Keeping up with NFTs\n\n\n\n*   [DeFi Arts Intelligencer newsletter](https://artsdefi.substack.com/) by William Peaster\n*   [Zima Red newsletter](https://andrewsteinwold.substack.com/) by Andrew Steinwold\n*   [Forefront newsletter](https://forefront.market/) on social tokens\n\nIf you want to get in touch about interesting NFT ideas or projects, I’m [@ljxie](https://twitter.com/ljxie) on Twitter.\n\nThanks to [Will Warren](https://twitter.com/willwarren89) and [Jordan Clifford](https://twitter.com/jcliff42) for reviewing this post.\n\n_Disclaimer: Linda Xie is a Managing Director of Scalar Capital Management, LLC, an investment manager focused on cryptoassets which holds ETH and Ethereum tokens. This post is not investment advice._\n\n[Gitcoin Grants, Axie scholarships, First Mint Fund](split://0xC89ae0710A76B303Ad819159c02a9b4e7578075D?network=mainnet)","hideTitleInEntry":true,"publishStatus":"public","publishedAtTimestamp":1609796490,"originalDigest":"df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d","timestamp":1609796490,"title":"A beginner's guide to NFTs","arweaveTransactionRequest":{"__typename":"ArweaveTransactionRequestType","transactionId":"yPcdf7_jIdM4B0fAMfazvjkgnCCrX_ssdOlKm5sod2w"},"featuredImageId":96,"featuredImage":{"__typename":"MediaAssetType","mimetype":"image/jpeg","sizes":{"__typename":"MediaAssetSizesType","og":{"__typename":"MediaAssetSizeType","src":"https://images.mirror-media.xyz/nft/09865721-a967-4108-8ac2-ba91d413cfc9.jpeg","height":1440,"width":2880}}},"publisher":{"__typename":"PublisherType","project":{"__ref":"ProjectType:0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee"},"member":{"__ref":"ProjectType:0x5e349eca2dc61aBCd9dD99Ce94d04136151a09Ee"}},"latestBlockData":{"__typename":"LatestBlockDataType","timestamp":1647880274,"number":14430787},"collaborators":[],"editions":[{"__ref":"edition:0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-16"},{"__ref":"edition:0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-17"},{"__ref":"edition:0xaf89C5E115Ab3437fC965224D317d09faa66ee3E-18"}],"settings":null},"ROOT_QUERY":{"__typename":"Query","entry({\"digest\":\"df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d\"})":{"__ref":"entry:df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d"}}}},"__N_SSG":true},"page":"/_sites/[slug]/[digest]","query":{"slug":"linda","digest":"df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d"},"buildId":"F-jHNqB-ulEh84qa9G4tN","isFallback":false,"gsp":true,"scriptLoader":[]}
+  </script>
+ </body>
+</html>

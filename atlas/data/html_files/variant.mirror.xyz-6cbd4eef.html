@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="width=device-width" name="viewport"/>
+  <meta charset="utf-8"/>
+  <style>
+   body {
+          --accent: var(--mode-colors-accent);
+          --accentText: var(--mode-colors-accentText);
+          --background: var(--mode-colors-background);
+          --backgroundSecondary: var(--mode-colors-backgroundSecondary);
+          --backgroundTertiary: var(--mode-colors-backgroundTertiary);
+          --foreground: var(--mode-colors-foreground);
+          --groupBackground: var(--mode-colors-groupBackground);
+          --groupBorder: var(--mode-colors-groupBorder);
+          --relativeBackground: var(--mode-colors-background);
+
+          --blue: var(--mode-colors-blue);
+          --green: var(--mode-colors-green);
+          --indigo: var(--mode-colors-indigo);
+          --orange: var(--mode-colors-orange);
+          --pink: var(--mode-colors-pink);
+          --purple: var(--mode-colors-purple);
+          --red: var(--mode-colors-red);
+          --teal: var(--mode-colors-teal);
+          --yellow: var(--mode-colors-yellow);
+
+          --shadeAccentSecondary: var(--mode-shades-accentSecondary);
+          --shadeAccentSecondaryHover: var(--mode-shades-accentSecondaryHover);
+          --shadeForegroundSecondary: var(--mode-shades-foregroundSecondary);
+          --shadeForegroundSecondaryHover: var(--mode-shades-foregroundSecondaryHover);
+          --shadeForegroundTertiary: var(--mode-shades-foregroundTertiary);
+          --shadeGroupBackground: 1;
+          --shadeGroupBorder: var(--mode-shades-groupBorder);
+          --shadeText: var(--mode-shades-text);
+          --shadeTextSecondary: var(--mode-shades-textSecondary);
+          --shadeTextSecondaryHover: var(--mode-shades-textSecondaryHover);
+        }
+  </style>
+  <meta content="light" name="twitter:widgets:theme"/>
+  <link as="font" crossorigin="anonymous" href="/fonts/inter/Inter-roman.var.woff2" rel="preload" type="font/woff2"/>
+  <link href="/favicon.ico" rel="icon" sizes="any"/>
+  <link href="/icon/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="/icon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/icon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <title>
+   NFTs make the internet ownable — Variant Fund
+  </title>
+  <meta content="Before tech, I was an artist manager in music. When I started the firm, I believed one thing about the music industry very firmly: ownership endows power. Typically, labels had ownership over the music, and thus, power over artists.
+" property="description"/>
+  <meta content="NFTs make the internet ownable" property="og:title"/>
+  <meta content="Before tech, I was an artist manager in music. When I started the firm, I believed one thing about the music industry very firmly: ownership endows power. Typically, labels had ownership over the music, and thus, power over artists.
+" property="og:description"/>
+  <meta content="https://images.mirror-media.xyz/publication-images/XOVukHaULvp4dsmWbcywK.jpg?height=2500&amp;width=2500" property="og:image"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="15" name="next-head-count"/>
+  <link as="style" href="/_next/static/css/4425644fbbd63ef6.css" rel="preload"/>
+  <link data-n-g="" href="/_next/static/css/4425644fbbd63ef6.css" rel="stylesheet"/>
+  <noscript data-n-css="">
+  </noscript>
+  <script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js">
+  </script>
+  <script data-nscript="beforeInteractive" defer="" id="theme-script" src="data:text/javascript;base64,IWZ1bmN0aW9uKCl7dmFyIGQ9ZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50O2Quc2V0QXR0cmlidXRlKCdkYXRhLXRoZW1lJywnbGlnaHQnKX0oKTs=">
+  </script>
+  <script defer="" src="/_next/static/chunks/webpack-3bc1f0c78106b797.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/framework-3e58cadbcc365cda.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/main-a82826a051316f0f.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/pages/_app-81f4592e444907eb.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/29107295-b133b9f0bd8c6f37.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/0f1ac474-8f41b54216724345.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9669-912e34a6bfec66f5.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/7447-562326c4213c00ac.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/944-473828c677e35965.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9702-008fc09647a6d324.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8743-af6bf311c6c1e1c0.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4675-d666d8c1fb444206.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4802-85aae4259c2a4d3c.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/1715-1da55b047b326be6.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4078-b96b6542c0834135.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/2624-337e96cf31cea0bb.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9285-dcbbe2656b2ca21b.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8687-7d58d05c48915303.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/5324-72a42f80f76a9492.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9612-a6dad8b6bf567bbf.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3597-8c67110f747c8002.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/2015-1d31f859d5a5fc1a.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/7497-0b92c8fe9a8b6051.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4459-13171d0a50038c47.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3911-17752dcc210bbeba.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/5891-9499322215d0ae51.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4573-86b3b0504e26e91d.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3000-5a3b046f42d1b8e1.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8817-d072a1d1584b40a8.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/254-9fc0d45f7811275c.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9562-59b802c1ee8329fd.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/4910-8d0a306b6dc54b0b.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/8739-f6b4fce0486f2540.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3374-b776c4d62be0213e.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/3646-55fc3f402fdd9820.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/6773-2923e3ccdc3ccfc5.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9735-be8d2015d40a45b4.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/9128-b4abfaa93fe58b91.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/7558-1e99f8626eb414ca.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/6001-fa1843f2ff15b8c9.js">
+  </script>
+  <script defer="" src="/_next/static/chunks/pages/_sites/%5Bslug%5D/%5Bdigest%5D-a6c6969a49740cab.js">
+  </script>
+  <script defer="" src="/_next/static/F-jHNqB-ulEh84qa9G4tN/_buildManifest.js">
+  </script>
+  <script defer="" src="/_next/static/F-jHNqB-ulEh84qa9G4tN/_ssgManifest.js">
+  </script>
+  <script defer="" src="/_next/static/F-jHNqB-ulEh84qa9G4tN/_middlewareManifest.js">
+  </script>
+ </head>
+ <body>
+  <div data-reactroot="" id="__next">
+   <style data-emotion="css-global 10ckap1">
+    body{color:var(--colors-text);background-color:var(--colors-background);}
+   </style>
+   <style data-emotion="css-global bz6fku">
+    *{box-sizing:border-box;}body{font-family:var(--fonts-sans);line-height:1.5;font-size:1rem;font-weight:375;color:var(--theme-ui-colors-text, var(--colors-text));margin:0px;}
+   </style>
+   <style data-emotion="css suo593">
+    @media print{.css-suo593{display:none;}}
+   </style>
+   <div class="GlobalNavigation css-suo593">
+    <style data-emotion="css stayho">
+     .css-stayho{top:-1rem;left:0px;right:0px;z-index:9;padding-top:1rem;position:fixed;-webkit-transition:250ms ease-in-out box-shadow;transition:250ms ease-in-out box-shadow;}
+    </style>
+    <div class="GlobalNavigationContainer css-stayho" style="transform:none">
+     <style data-emotion="css 47ks30">
+      .css-47ks30{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:1rem;z-index:2;}
+     </style>
+     <div class="css-47ks30">
+      <div class="_1sjywpl0 _1sjywpl1 bc5nciih bc5nci2yj">
+       <div class="_1sjywpl0 _1sjywpl1 bc5nci5 bc5nciih bc5ncixc bc5nci2yj bc5nci44r">
+        <a href="/">
+         <div class="_1sjywpl0 _1sjywpl1 bc5nci44r">
+          <a class="_1sjywpl0 _1sjywplf bc5nci1gi bc5nci4pq bc5nci5 bc5nci4rv bc5nciih bc5ncixc bc5nci589 bc5nci4si bc5nci4sq yfzfkjm bc5nci78 bc5nci3ll bc5nci3s4 bc5nci6t bc5ncivo bc5nci159 yfzfkj1c bc5nci537 bc5nci4uz bc5nci4v6 bc5nci4v4 yfzfkjg bc5nci398 yfzfkjr">
+           <div class="_1sjywpl0 _1sjywpl1 bc5nci51z bc5nci4ry bc5ncivy bc5nciwi _2gklefb bc5nci3dy bc5nci4su">
+            <div>
+            </div>
+            <style data-emotion="css 1in85ao">
+             .css-1in85ao{box-shadow:inset 0 0 0 1px rgba(var(--foreground), var(--shadeForegroundSecondary));position:absolute;top:0px;left:0px;right:0px;bottom:0px;z-index:2;border-radius:100%;-webkit-transition:box-shadow ease-in-out 150ms;transition:box-shadow ease-in-out 150ms;}.css-1in85ao:hover{box-shadow:inset 0 0 0 1px rgba(var(--foreground), var(--shadeForegroundSecondaryHover));}
+            </style>
+            <div class="css-1in85ao">
+            </div>
+            <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+             <img alt="Variant Fund" class="_1sjywpl0 _1sjywpl1 bc5nci78 bc5nci4s1" data-nimg="fill" decoding="async" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+             <noscript>
+              <img alt="Variant Fund" class="_1sjywpl0 _1sjywpl1 bc5nci78 bc5nci4s1" data-nimg="fill" decoding="async" loading="lazy" sizes="100vw" src="/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=3840&amp;q=75" srcset="/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FXOVukHaULvp4dsmWbcywK.jpg%3Fheight%3D2500%26width%3D2500&amp;w=3840&amp;q=75 3840w" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+             </noscript>
+            </span>
+           </div>
+          </a>
+         </div>
+        </a>
+        <div>
+         <div class="_1sjywpl0 _1sjywpl1 bc5nciih bc5ncisw bc5nci11n bc5nci2yj">
+          <div class="_1sjywpl0 _1sjywpl1 bc5nci52j bc5nci4ry bc5nciv9 bc5nciwi bc5nci1oa bc5nci1pe _2gklefb bc5nci3dy bc5nci4su">
+           <a href="/">
+            Variant Fund
+           </a>
+          </div>
+          <div class="_1sjywpl0 _1sjywpl1 bc5nci53j bc5nci4ry bc5ncive _2gklefb bc5nci3dy bc5nci4su">
+           <div class="_1sjywpl0 _1sjywpl1 bc5nci53j bc5nci4ry bc5ncive _2gklefb bc5nci3dy bc5nci4su">
+            <style data-emotion="css 1ml1o4l">
+             .css-1ml1o4l{padding-right:0.5rem;height:1rem;width:auto;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;display:inline-block;vertical-align:middle;margin-top:-3px;}
+            </style>
+            <style data-emotion="css 19oq5hs">
+             .css-19oq5hs{display:block;height:1.1em;width:auto;padding-right:0.5rem;height:1rem;width:auto;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;display:inline-block;vertical-align:middle;margin-top:-3px;}
+            </style>
+            <svg class="css-19oq5hs" fill="none" height="134" viewbox="0 0 284 134" width="284">
+             <rect fill="rgba(var(--foreground), var(--shadeForegroundSecondary))" height="134" rx="67" width="284">
+             </rect>
+             <path d="M49.9901 103.722H96.0128V94.2756H60.9631V72.0099H93.2074V62.5994H60.9631V40.4403H95.5867V30.9943H49.9901V103.722Z" fill="rgba(var(--foreground), var(--shadeTextSecondary))">
+             </path>
+             <path d="M168.944 30.9943H158.078V84.4034H157.403L120.4 30.9943H110.244V103.722H121.217V50.3835H121.892L158.859 103.722H168.944V30.9943Z" fill="rgba(var(--foreground), var(--shadeTextSecondary))">
+             </path>
+             <path d="M224.617 50.0994H235.2C234.88 38.4517 224.582 30 209.809 30C195.214 30 184.028 38.3452 184.028 50.8807C184.028 61.0014 191.272 66.9318 202.955 70.0923L211.549 72.4361C219.326 74.4957 225.327 77.0526 225.327 83.5156C225.327 90.6179 218.545 95.3054 209.205 95.3054C200.754 95.3054 193.722 91.5412 193.083 83.6222H182.075C182.785 96.7969 192.977 104.929 209.276 104.929C226.357 104.929 236.194 95.9446 236.194 83.6222C236.194 70.5185 224.511 65.4403 215.278 63.1676L208.175 61.321C202.494 59.8651 194.93 57.2017 194.965 50.2415C194.965 44.0625 200.612 39.4815 209.56 39.4815C217.906 39.4815 223.836 43.3878 224.617 50.0994Z" fill="rgba(var(--foreground), var(--shadeTextSecondary))">
+             </path>
+            </svg>
+            <style data-emotion="css 1pd718u">
+             .css-1pd718u{-webkit-transition:150ms ease-in-out color;transition:150ms ease-in-out color;}
+            </style>
+            <span class="css-1pd718u">
+             variant
+             <!-- -->
+             .
+             <!-- -->
+             mirror.xyz
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <style data-emotion="css kmj35e">
+      .css-kmj35e{position:absolute;top:0px;left:0px;right:0px;bottom:0px;-webkit-transition:250ms ease-in-out opacity;transition:250ms ease-in-out opacity;background:rgba(var(--mode-colors-background), 0.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);}
+     </style>
+     <div class="css-kmj35e">
+     </div>
+     <style data-emotion="css 1wbotn3">
+      .css-1wbotn3{position:absolute;height:2px;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));bottom:-2px;left:0px;right:0px;}
+     </style>
+     <div class="css-1wbotn3">
+     </div>
+    </div>
+    <style data-emotion="css 1mdq9s2">
+     .css-1mdq9s2{position:fixed;bottom:0px;left:0px;margin:1rem;z-index:98;}
+    </style>
+    <div class="GlobalNavigationMirrorIcon css-1mdq9s2">
+     <style data-emotion="css 1b3ebty">
+      .css-1b3ebty{position:relative;border-radius:100%;background:rgba(var(--background), 0.9);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);}
+     </style>
+     <div class="css-1b3ebty" style="transform:none">
+      <div class="_1sjywpl0 _1sjywpl1" href="/" style="opacity:0.33">
+       <a class="_1sjywpl0 _1sjywplf bc5nci1gi bc5nci4pq bc5nci5 bc5nci4rv bc5nciih bc5ncixc bc5nci589 bc5nci4si bc5nci4sq yfzfkjm bc5nci78 bc5nci3ll bc5nci3s4 bc5nci6t bc5ncivo bc5nci159 yfzfkj1c bc5nci537 bc5nci4uz bc5nci4v6 bc5nci4v4 yfzfkjg bc5nci398 yfzfkjr">
+        <div class="_1sjywpl0 _1sjywpl1 bc5nci51z bc5nci4ry bc5ncivy bc5nciwi _2gklefb bc5nci3dy bc5nci4su">
+         <svg class="_1sjywpl0 _1sjywpl1 bc5nciic bc5nci18q bc5nci4jc" viewbox="0 0 144 185" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 71.6129C0 32.0622 32.0622 0 71.6129 0C111.164 0 143.226 32.0622 143.226 71.6129V174.118C143.226 180.128 138.354 185 132.343 185H10.8824C4.87222 185 0 180.128 0 174.118V71.6129Z" fill="url(#markGradient)">
+          </path>
+          <path clip-rule="evenodd" d="M134.717 176.111V71.8216C134.717 36.8684 106.465 8.53326 71.6129 8.53326C36.7613 8.53326 8.50846 36.8684 8.50846 71.8216V176.111C8.50846 176.308 8.66719 176.467 8.86298 176.467H134.363C134.559 176.467 134.717 176.308 134.717 176.111ZM71.6129 0C32.0622 0 0 32.1556 0 71.8216V176.111C0 181.02 3.96809 185 8.86298 185H134.363C139.258 185 143.226 181.02 143.226 176.111V71.8216C143.226 32.1556 111.164 0 71.6129 0Z" fill="var(--colors-foreground)" fill-rule="evenodd">
+          </path>
+          <defs>
+           <lineargradient gradientunits="userSpaceOnUse" id="markGradient" x1="18.435" x2="143.747" y1="10.6666" y2="209.447">
+            <stop offset="0.265625" stop-color="var(--colors-foreground)">
+            </stop>
+            <stop offset="0.734375" stop-color="var(--colors-background)">
+            </stop>
+           </lineargradient>
+          </defs>
+         </svg>
+        </div>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="_1sjywpl0 _1sjywpl1 bc5nciih bc5ncisw bc5nci36v">
+    <style data-emotion="css 1cghisr">
+     .css-1cghisr{max-width:80rem;width:100%;margin-left:auto;margin-right:auto;padding-top:4.75rem;padding-bottom:4.75rem;margin-top:2.5rem;margin-bottom:2.5rem;}@media screen and (min-width: 640px){.css-1cghisr{padding-top:5.25rem;padding-bottom:5.25rem;}}@media screen and (min-width: 768px){.css-1cghisr{margin-top:4rem;margin-bottom:4rem;}}@media screen and (min-width: 1024px){.css-1cghisr{margin-top:5rem;margin-bottom:5rem;}}
+    </style>
+    <div class="css-1cghisr">
+     <style data-emotion="css z18076">
+      .css-z18076{padding-bottom:1rem;}@media screen and (min-width: 640px){.css-z18076{padding-bottom:1.75rem;}}
+     </style>
+     <style data-emotion="css cts56n">
+      .css-cts56n{max-width:45rem;width:100%;padding-left:1rem;padding-right:1rem;margin-left:auto;margin-right:auto;padding-bottom:1rem;}@media screen and (min-width: 768px){.css-cts56n{padding-left:0px;padding-right:0px;}}@media screen and (min-width: 640px){.css-cts56n{padding-bottom:1.75rem;}}
+     </style>
+     <div class="css-cts56n">
+      <style data-emotion="css 1bncbpx">
+       .css-1bncbpx{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));font-size:1.85rem;font-weight:600;letter-spacing:-0.015em;line-height:1.3;}@media screen and (min-width: 640px){.css-1bncbpx{font-size:2.25rem;letter-spacing:-0.025em;line-height:1.1;}}@media screen and (min-width: 768px){.css-1bncbpx{font-size:3rem;}}
+      </style>
+      <div class="css-1bncbpx">
+       <div>
+        <style data-emotion="css 1b1esvm">
+         .css-1b1esvm{font:inherit;margin:0px;padding:0px;}
+        </style>
+        <h1 class="css-1b1esvm">
+         NFTs make the internet ownable
+        </h1>
+       </div>
+      </div>
+     </div>
+     <style data-emotion="css 16f77nt">
+      .css-16f77nt{padding-left:1rem;padding-right:1rem;max-width:45rem;width:100%;margin-left:auto;margin-right:auto;}@media screen and (min-width: 768px){.css-16f77nt{padding-left:0px;padding-right:0px;}}
+     </style>
+     <div class="css-16f77nt">
+      <style data-emotion="css 37sef5">
+       .css-37sef5{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;color:var(--theme-ui-colors-text, var(--colors-text));line-height:1.3;}
+      </style>
+      <div class="css-37sef5">
+       <style data-emotion="css c6ixvj">
+        .css-c6ixvj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;}
+       </style>
+       <div class="css-c6ixvj">
+        <style data-emotion="css 150ro3b">
+         .css-150ro3b{margin-right:0.75rem;margin-bottom:0.75rem;}
+        </style>
+        <style data-emotion="css ia2eld">
+         .css-ia2eld{display:block;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;margin-right:0.75rem;margin-bottom:0.75rem;}
+        </style>
+        <style data-emotion="css 5f70j4">
+         .css-5f70j4{box-sizing:border-box;margin:0;min-width:0;-webkit-text-decoration:none;text-decoration:none;color:inherit;display:block;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;margin-right:0.75rem;margin-bottom:0.75rem;}
+        </style>
+        <a class="css-5f70j4" href="https://etherscan.io/address/0xe7925D190aea9279400cD9a005E33CEB9389Cc2b" rel="noreferrer" target="_blank">
+         <style data-emotion="css 4nykgo">
+          .css-4nykgo{background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));cursor:pointer;border-radius:999px;font-size:0.875rem;font-weight:500;line-height:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;white-space:nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoratioin:none;-moz-text-decoratioin:none;-ms-text-decoratioin:none;text-decoratioin:none;overflow:hidden;height:1.5rem;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-align:center;-webkit-transition:125ms ease-in-out color,125ms ease-in-out background-color;transition:125ms ease-in-out color,125ms ease-in-out background-color;}.css-4nykgo:hover{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));color:var(--theme-ui-colors-text, var(--colors-text));}.css-4nykgo:active{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));color:var(--theme-ui-colors-text, var(--colors-text));}
+         </style>
+         <style data-emotion="css xnt5cy">
+          .css-xnt5cy{box-sizing:border-box;margin:0;min-width:0;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));cursor:pointer;border-radius:999px;font-size:0.875rem;font-weight:500;line-height:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;white-space:nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoratioin:none;-moz-text-decoratioin:none;-ms-text-decoratioin:none;text-decoratioin:none;overflow:hidden;height:1.5rem;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-align:center;-webkit-transition:125ms ease-in-out color,125ms ease-in-out background-color;transition:125ms ease-in-out color,125ms ease-in-out background-color;}.css-xnt5cy:hover{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));color:var(--theme-ui-colors-text, var(--colors-text));}.css-xnt5cy:active{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));color:var(--theme-ui-colors-text, var(--colors-text));}
+         </style>
+         <div class="css-xnt5cy">
+          <style data-emotion="css 1cmd7eo">
+           .css-1cmd7eo{padding-left:0.5rem;padding-right:0.5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+          </style>
+          <div class="css-1cmd7eo">
+           0xe792
+          </div>
+         </div>
+        </a>
+        <div class="css-150ro3b">
+         <style data-emotion="css 17egrn8">
+          .css-17egrn8{background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));border-radius:999px;font-size:0.875rem;font-weight:500;line-height:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;white-space:nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoratioin:none;-moz-text-decoratioin:none;-ms-text-decoratioin:none;text-decoratioin:none;overflow:hidden;height:1.5rem;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-align:center;-webkit-transition:125ms ease-in-out color,125ms ease-in-out background-color;transition:125ms ease-in-out color,125ms ease-in-out background-color;}
+         </style>
+         <style data-emotion="css qng491">
+          .css-qng491{box-sizing:border-box;margin:0;min-width:0;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));border-radius:999px;font-size:0.875rem;font-weight:500;line-height:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;white-space:nowrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoratioin:none;-moz-text-decoratioin:none;-ms-text-decoratioin:none;text-decoratioin:none;overflow:hidden;height:1.5rem;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-align:center;-webkit-transition:125ms ease-in-out color,125ms ease-in-out background-color;transition:125ms ease-in-out color,125ms ease-in-out background-color;}
+         </style>
+         <div class="css-qng491">
+          <div class="css-1cmd7eo">
+           February 15th, 2021
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <style data-emotion="css 1vbjebc">
+      .css-1vbjebc{padding-top:1rem;padding-bottom:4.5rem;}@media screen and (min-width: 640px){.css-1vbjebc{padding-bottom:7rem;}}
+     </style>
+     <style data-emotion="css 1u7gzx3">
+      .css-1u7gzx3{font-size:1rem;line-height:1.5;color:var(--theme-ui-colors-text, var(--colors-text));word-wrap:break-word;padding-top:1rem;padding-bottom:4.5rem;}@media screen and (min-width: 640px){.css-1u7gzx3{font-size:1.1rem;line-height:1.625;}}.css-1u7gzx3>div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-1u7gzx3>div>*{margin-top:0.75rem;margin-bottom:0.75rem;max-width:45rem;width:100%;}.css-1u7gzx3>div>*:first-child:not(style){margin-top:0px;}.css-1u7gzx3>div>p,.css-1u7gzx3 ol,.css-1u7gzx3 ul,.css-1u7gzx3 blockquote,.css-1u7gzx3 h1,.css-1u7gzx3 h2,.css-1u7gzx3 h3,.css-1u7gzx3 h4,.css-1u7gzx3 h5,.css-1u7gzx3 h6{padding-left:1rem;padding-right:1rem;}@media screen and (min-width: 640px){.css-1u7gzx3>div>p,.css-1u7gzx3 ol,.css-1u7gzx3 ul,.css-1u7gzx3 blockquote,.css-1u7gzx3 h1,.css-1u7gzx3 h2,.css-1u7gzx3 h3,.css-1u7gzx3 h4,.css-1u7gzx3 h5,.css-1u7gzx3 h6{padding-left:1.5rem;padding-right:1.5rem;}}@media screen and (min-width: 768px){.css-1u7gzx3>div>p,.css-1u7gzx3 ol,.css-1u7gzx3 ul,.css-1u7gzx3 blockquote,.css-1u7gzx3 h1,.css-1u7gzx3 h2,.css-1u7gzx3 h3,.css-1u7gzx3 h4,.css-1u7gzx3 h5,.css-1u7gzx3 h6{padding-left:0px;padding-right:0px;}}.css-1u7gzx3 p a:not([class*="MirrorButton"]),.css-1u7gzx3 ul a,.css-1u7gzx3 ol a,.css-1u7gzx3 blockquote a{color:rgb(var(--accent));cursor:pointer;text-underline-offset:0.2em;-webkit-text-decoration:underline;text-decoration:underline;}.css-1u7gzx3 p a:not([class*="MirrorButton"]):hover,.css-1u7gzx3 ul a:hover,.css-1u7gzx3 ol a:hover,.css-1u7gzx3 blockquote a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1u7gzx3 hr{border:0;height:2px;border-radius:99px;margin-top:1.5rem;margin-bottom:1.5rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));max-width:12rem;}@media screen and (min-width: 768px){.css-1u7gzx3 hr{margin-top:3rem;margin-bottom:3rem;}}.css-1u7gzx3 h2,.css-1u7gzx3 h3{color:var(--theme-ui-colors-text, var(--colors-text));}.css-1u7gzx3 h1,.css-1u7gzx3 h2{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));line-height:1.3;font-weight:600;font-size:1.5rem;letter-spacing:-0.015em;margin-top:2.25rem;}@media screen and (min-width: 640px){.css-1u7gzx3 h1,.css-1u7gzx3 h2{font-size:1.85rem;}}.css-1u7gzx3 h3{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));line-height:1.4;font-weight:600;font-size:1.35rem;letter-spacing:-0.015em;margin-top:1.5rem;}.css-1u7gzx3 h4{color:var(--theme-ui-colors-textPrimary, var(--colors-textPrimary));font-weight:600;font-size:inherit;}.css-1u7gzx3 h5{font-weight:600;letter-spacing:0.05em;text-transform:uppercase;font-size:0.75rem;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));}.css-1u7gzx3 h3+p,.css-1u7gzx3 h3+ul,.css-1u7gzx3 h3+ol,.css-1u7gzx3 h4+ol,.css-1u7gzx3 h5+ol{margin-top:0px;}.css-1u7gzx3 strong,.css-1u7gzx3 bold{font-weight:700;}.css-1u7gzx3 sup{display:inline-block;margin-top:-1em;}.css-1u7gzx3>div>figure,.css-1u7gzx3>div>a>figure,.css-1u7gzx3 .ProseMirror figure{margin-left:auto;margin-right:auto;margin-top:0.75rem;margin-bottom:0.75rem;padding-left:0px;padding-right:0px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;}@media screen and (min-width: 640px){.css-1u7gzx3>div>figure,.css-1u7gzx3>div>a>figure,.css-1u7gzx3 .ProseMirror figure{padding-left:0px;padding-right:0px;}}@media screen and (min-width: 768px){.css-1u7gzx3>div>figure,.css-1u7gzx3>div>a>figure,.css-1u7gzx3 .ProseMirror figure{margin-top:1.5rem;margin-bottom:1.5rem;padding-left:0px;padding-right:0px;}}.css-1u7gzx3>div>figure.figure-size-medium,.css-1u7gzx3>div>a>figure.figure-size-medium,.css-1u7gzx3 .ProseMirror figure.figure-size-medium{max-width:64rem;}@media screen and (min-width: 1024px){.css-1u7gzx3>div>figure.figure-size-medium [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure.figure-size-medium [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure.figure-size-medium [data-rmiz-wrap] img,.css-1u7gzx3>div>figure.figure-size-medium img[srcset],.css-1u7gzx3>div>a>figure.figure-size-medium img[srcset],.css-1u7gzx3 .ProseMirror figure.figure-size-medium img[srcset],.css-1u7gzx3>div>figure.figure-size-medium video,.css-1u7gzx3>div>a>figure.figure-size-medium video,.css-1u7gzx3 .ProseMirror figure.figure-size-medium video,.css-1u7gzx3>div>figure.figure-size-medium iframe,.css-1u7gzx3>div>a>figure.figure-size-medium iframe,.css-1u7gzx3 .ProseMirror figure.figure-size-medium iframe{border-radius:0.375rem;}}.css-1u7gzx3>div>figure.figure-size-large,.css-1u7gzx3>div>a>figure.figure-size-large,.css-1u7gzx3 .ProseMirror figure.figure-size-large{max-width:80rem;}@media screen and (min-width: 1280px){.css-1u7gzx3>div>figure.figure-size-large [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure.figure-size-large [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure.figure-size-large [data-rmiz-wrap] img,.css-1u7gzx3>div>figure.figure-size-large img[srcset],.css-1u7gzx3>div>a>figure.figure-size-large img[srcset],.css-1u7gzx3 .ProseMirror figure.figure-size-large img[srcset],.css-1u7gzx3>div>figure.figure-size-large video,.css-1u7gzx3>div>a>figure.figure-size-large video,.css-1u7gzx3 .ProseMirror figure.figure-size-large video,.css-1u7gzx3>div>figure.figure-size-large iframe,.css-1u7gzx3>div>a>figure.figure-size-large iframe,.css-1u7gzx3 .ProseMirror figure.figure-size-large iframe{border-radius:0.375rem;}}.css-1u7gzx3>div>figure [data-rmiz-wrap],.css-1u7gzx3>div>a>figure [data-rmiz-wrap],.css-1u7gzx3 .ProseMirror figure [data-rmiz-wrap],.css-1u7gzx3>div>figure [data-rmiz-wrap]>div,.css-1u7gzx3>div>a>figure [data-rmiz-wrap]>div,.css-1u7gzx3 .ProseMirror figure [data-rmiz-wrap]>div{display:block!important;}.css-1u7gzx3>div>figure [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure [data-rmiz-wrap] img,.css-1u7gzx3>div>figure img[srcset],.css-1u7gzx3>div>a>figure img[srcset],.css-1u7gzx3 .ProseMirror figure img[srcset],.css-1u7gzx3>div>figure video,.css-1u7gzx3>div>a>figure video,.css-1u7gzx3 .ProseMirror figure video{display:block;border:0;margin:auto;width:100%;}.css-1u7gzx3>div>figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3>div>figure:not([class*="figure-size"])>div>img[srcset],.css-1u7gzx3>div>a>figure:not([class*="figure-size"])>div>img[srcset],.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"])>div>img[srcset]{max-height:100vh;object-fit:contain;}@media screen and (min-width: 768px){.css-1u7gzx3>div>figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3>div>a>figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"]) [data-rmiz-wrap] img,.css-1u7gzx3>div>figure:not([class*="figure-size"])>div>img[srcset],.css-1u7gzx3>div>a>figure:not([class*="figure-size"])>div>img[srcset],.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"])>div>img[srcset]{border-radius:0.375rem;}}.css-1u7gzx3>div>figure figcaption,.css-1u7gzx3>div>a>figure figcaption,.css-1u7gzx3 .ProseMirror figure figcaption,.css-1u7gzx3>div>figure .caption,.css-1u7gzx3>div>a>figure .caption,.css-1u7gzx3 .ProseMirror figure .caption{margin-top:0.5rem;font-size:0.875rem;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));padding-left:1rem;padding-right:1rem;text-align:center;width:100%;}@media screen and (min-width: 640px){.css-1u7gzx3>div>figure figcaption,.css-1u7gzx3>div>a>figure figcaption,.css-1u7gzx3 .ProseMirror figure figcaption,.css-1u7gzx3>div>figure .caption,.css-1u7gzx3>div>a>figure .caption,.css-1u7gzx3 .ProseMirror figure .caption{font-size:1rem;}}.css-1u7gzx3>div>figure .embed-video,.css-1u7gzx3>div>a>figure .embed-video,.css-1u7gzx3 .ProseMirror figure .embed-video{width:100%;padding-bottom:56.25%;position:relative;}.css-1u7gzx3>div>figure .embed-video iframe,.css-1u7gzx3>div>a>figure .embed-video iframe,.css-1u7gzx3 .ProseMirror figure .embed-video iframe,.css-1u7gzx3>div>figure .embed-video video,.css-1u7gzx3>div>a>figure .embed-video video,.css-1u7gzx3 .ProseMirror figure .embed-video video{position:absolute;top:0px;left:0px;height:100%;width:100%;outline:0;}.css-1u7gzx3>div>figure .embed-video iframe:focus,.css-1u7gzx3>div>a>figure .embed-video iframe:focus,.css-1u7gzx3 .ProseMirror figure .embed-video iframe:focus,.css-1u7gzx3>div>figure .embed-video video:focus,.css-1u7gzx3>div>a>figure .embed-video video:focus,.css-1u7gzx3 .ProseMirror figure .embed-video video:focus{outline:0;}@media screen and (min-width: 768px){.css-1u7gzx3>div>figure:not([class*="figure-size"]) .embed-video iframe,.css-1u7gzx3>div>a>figure:not([class*="figure-size"]) .embed-video iframe,.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"]) .embed-video iframe,.css-1u7gzx3>div>figure:not([class*="figure-size"]) .embed-video video,.css-1u7gzx3>div>a>figure:not([class*="figure-size"]) .embed-video video,.css-1u7gzx3 .ProseMirror figure:not([class*="figure-size"]) .embed-video video{border-radius:0.375rem;}}.css-1u7gzx3>div>figure b,.css-1u7gzx3>div>a>figure b,.css-1u7gzx3 .ProseMirror figure b,.css-1u7gzx3>div>figure strong,.css-1u7gzx3>div>a>figure strong,.css-1u7gzx3 .ProseMirror figure strong{font-weight:525;}.css-1u7gzx3 code,.css-1u7gzx3 .code-block{background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));border-radius:0.375rem;padding:0.05rem 0.3rem;transition-property:box-shadow color;transition-timing-function:ease-in-out;transition-duration:150ms;font-family:"iAWriter Mono",monospace;}.css-1u7gzx3 blockquote{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;padding-left:2rem;padding-right:2rem;padding-top:0px;padding-bottom:0px;}@media screen and (min-width: 640px){.css-1u7gzx3 blockquote{padding-top:0px;padding-bottom:0px;}}@media screen and (min-width: 768px){.css-1u7gzx3 blockquote{padding-left:1.5rem;padding-right:1.5rem;padding-top:0px;padding-bottom:0px;}}.css-1u7gzx3 blockquote::before{content:"";position:absolute;top:0px;bottom:0px;left:1rem;background-color:var(--theme-ui-colors-accent, var(--colors-accent));width:2px;border-radius:999px;}@media screen and (min-width: 640px){.css-1u7gzx3 blockquote::before{left:1rem;}}@media screen and (min-width: 768px){.css-1u7gzx3 blockquote::before{left:0px;}}.css-1u7gzx3 blockquote>:first-child:not(style){margin-top:0px;}.css-1u7gzx3 blockquote>:last-child:not(style){margin-bottom:0px;}.css-1u7gzx3>div>pre,.css-1u7gzx3 .code-block{box-shadow:inset 0 0 0 1px rgba(var(--groupBorder), var(--shadeGroupBorder)),0 0 0 0 rgba(var(--foreground), var(--shadeForegroundSecondaryHover));background-color:var(--theme-ui-colors-groupBackground, var(--colors-groupBackground));border-radius:0;overflow:auto;padding:1rem;position:relative;}@media screen and (min-width: 768px){.css-1u7gzx3>div>pre,.css-1u7gzx3 .code-block{border-radius:0.375rem;padding:1.5rem;}}@media screen and (min-width: 1024px){.css-1u7gzx3>div>pre,.css-1u7gzx3 .code-block{padding:1.5rem;}}@media screen and (min-width: 1152px){.css-1u7gzx3>div>pre,.css-1u7gzx3 .code-block{padding:1.5rem;}}.css-1u7gzx3>div>pre code,.css-1u7gzx3 .code-block code{background:transparent;border-radius:0;padding:0px;}.css-1u7gzx3 ul,.css-1u7gzx3 ol{padding-top:0px;padding-bottom:0px;padding-left:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media screen and (min-width: 768px){.css-1u7gzx3 ul,.css-1u7gzx3 ol{padding-left:0px;}}.css-1u7gzx3 li{list-style:none;margin-top:0.5rem;position:relative;padding-left:2rem;}.css-1u7gzx3 li::before{position:absolute;top:0px;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));text-align:right;}.css-1u7gzx3 ol li::before{font-family:var(--fonts-mono);right:calc(100% - 2ch);}.css-1u7gzx3 ul li::before{content:"•";right:calc(100% - 1ch);top:-2px;}.css-1u7gzx3 li p:first-child{margin-top:0px;}.css-1u7gzx3 li p:last-child{margin-bottom:0px;}.css-1u7gzx3 ol li:nth-of-type(1)::before{content:"1.";}.css-1u7gzx3 ol li:nth-of-type(2)::before{content:"2.";}.css-1u7gzx3 ol li:nth-of-type(3)::before{content:"3.";}.css-1u7gzx3 ol li:nth-of-type(4)::before{content:"4.";}.css-1u7gzx3 ol li:nth-of-type(5)::before{content:"5.";}.css-1u7gzx3 ol li:nth-of-type(6)::before{content:"6.";}.css-1u7gzx3 ol li:nth-of-type(7)::before{content:"7.";}.css-1u7gzx3 ol li:nth-of-type(8)::before{content:"8.";}.css-1u7gzx3 ol li:nth-of-type(9)::before{content:"9.";}.css-1u7gzx3 ol li:nth-of-type(10)::before{content:"10.";}.css-1u7gzx3 ol li:nth-of-type(11)::before{content:"11.";}.css-1u7gzx3 ol li:nth-of-type(12)::before{content:"12.";}.css-1u7gzx3 ol li:nth-of-type(13)::before{content:"13.";}.css-1u7gzx3 ol li:nth-of-type(14)::before{content:"14.";}.css-1u7gzx3 ol li:nth-of-type(15)::before{content:"15.";}.css-1u7gzx3 ol li:nth-of-type(16)::before{content:"16.";}.css-1u7gzx3 ol li:nth-of-type(17)::before{content:"17.";}.css-1u7gzx3 ol li:nth-of-type(18)::before{content:"18.";}.css-1u7gzx3 ol li:nth-of-type(19)::before{content:"19.";}.css-1u7gzx3 ol li:nth-of-type(20)::before{content:"20.";}.css-1u7gzx3 ol li:nth-of-type(21)::before{content:"21.";}.css-1u7gzx3 ol li:nth-of-type(22)::before{content:"22.";}.css-1u7gzx3 ol li:nth-of-type(23)::before{content:"23.";}.css-1u7gzx3 ol li:nth-of-type(24)::before{content:"24.";}.css-1u7gzx3 ol li:nth-of-type(25)::before{content:"25.";}.css-1u7gzx3 ol li:nth-of-type(26)::before{content:"26.";}.css-1u7gzx3 ol li:nth-of-type(27)::before{content:"27.";}.css-1u7gzx3 ol li:nth-of-type(28)::before{content:"28.";}.css-1u7gzx3 ol li:nth-of-type(29)::before{content:"29.";}.css-1u7gzx3 ol li:nth-of-type(30)::before{content:"30.";}.css-1u7gzx3 ol li:nth-of-type(31)::before{content:"31.";}.css-1u7gzx3 ol li:nth-of-type(32)::before{content:"32.";}.css-1u7gzx3 ol li:nth-of-type(33)::before{content:"33.";}.css-1u7gzx3 ol li:nth-of-type(34)::before{content:"34.";}.css-1u7gzx3 ol li:nth-of-type(35)::before{content:"35.";}.css-1u7gzx3 ol li:nth-of-type(36)::before{content:"36.";}.css-1u7gzx3 ol li:nth-of-type(37)::before{content:"37.";}.css-1u7gzx3 ol li:nth-of-type(38)::before{content:"38.";}.css-1u7gzx3 ol li:nth-of-type(39)::before{content:"39.";}.css-1u7gzx3 ol li:nth-of-type(40)::before{content:"40.";}.css-1u7gzx3 ol li:nth-of-type(41)::before{content:"41.";}.css-1u7gzx3 ol li:nth-of-type(42)::before{content:"42.";}.css-1u7gzx3 ol li:nth-of-type(43)::before{content:"43.";}.css-1u7gzx3 ol li:nth-of-type(44)::before{content:"44.";}.css-1u7gzx3 ol li:nth-of-type(45)::before{content:"45.";}.css-1u7gzx3 ol li:nth-of-type(46)::before{content:"46.";}.css-1u7gzx3 ol li:nth-of-type(47)::before{content:"47.";}.css-1u7gzx3 ol li:nth-of-type(48)::before{content:"48.";}.css-1u7gzx3 ol li:nth-of-type(49)::before{content:"49.";}.css-1u7gzx3 ol li:nth-of-type(50)::before{content:"50.";}.css-1u7gzx3 .footnotes a:last-child{background:none;margin-left:0.75ch;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));}.css-1u7gzx3>div>table{box-shadow:0 0 0 1px rgba(var(--groupBorder), var(--shadeGroupBorder));border-spacing:0;border-radius:0;background-color:var(--theme-ui-colors-groupBackground, var(--colors-groupBackground));overflow:hidden;margin:0px;padding:0px;}@media screen and (min-width: 768px){.css-1u7gzx3>div>table{border-radius:0.75rem;}}.css-1u7gzx3>div>thead th{text-align:left;font-weight:600;background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));}.css-1u7gzx3>div>table th,.css-1u7gzx3>div>table td{padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;vertical-align:top;}.css-1u7gzx3>div>table th:not(:last-child),.css-1u7gzx3>div>table td:not(:last-child){border-right:1px solid rgba(var(--foreground), var(--shadeGroupBorder));}.css-1u7gzx3>div>table tr:nth-child(odd) td{background-color:var(--theme-ui-colors-foregroundTertiary, var(--colors-foregroundTertiary));}@media screen and (min-width: 640px){.css-1u7gzx3{padding-bottom:7rem;}}
+     </style>
+     <div class="css-1u7gzx3">
+      <div>
+       <h2 id="why-crypto-is-becoming-the-port-of-entry-for-all-internet-media">
+        Why crypto is becoming the "port of entry" for all internet media.
+       </h2>
+       <p>
+        Before tech, I was an artist manager in music. When I started
+        <a href="http://coolmanagers.com" rel="noreferrer" target="_blank">
+         the firm
+        </a>
+        , I believed one thing about the music industry very firmly: ownership endows power. Typically, labels had ownership over the music, and thus, power over artists.
+       </p>
+       <p>
+        Our goal was to help artists retain ownership of their work and run their business independently, using technology to reach their fans directly. Today, we’re all creators online, and ownership continues to carry a ton of weight. Yet the role of ownership on technology platforms is often overlooked.
+       </p>
+       <p>
+        Every day billions of images, videos, songs, and more media are shared on social media. When those files are posted, a copy of the media is taken from the creator’s device and pasted to the server of the platform distributing it—Facebook, Twitter, YouTube, TikTok and the like.
+       </p>
+       <p>
+        This may seem like a lightweight interaction, but when uploading, creators don’t simply copy a file—
+        <strong>
+         they also copy-paste ownership of the file to the platform itself.
+        </strong>
+       </p>
+       <p>
+        I’m talking about the Terms of Service, which typically specify that when a file is uploaded, its ownership is shared with the platform, to monetize as they see fit. This comes with some advantages: platforms can offer distribution or economies of scale that optimize ad-based revenues. But it's no secret that today’s monetization models aren’t always aligned with the best interests of creators. And this is where the problem lies. For too long, platforms have reaped the bulk of the value from owning creators' content.
+       </p>
+       <p>
+        Meanwhile, crypto is unlocking a different path—what I call the
+        <a href="https://variant.fund/the-ownership-economy-crypto-and-consumer-software/" rel="noreferrer" target="_blank">
+         Ownership Economy
+        </a>
+        —a broader thesis that the next generation of internet platforms will be built, operated, and
+        <em>
+         owned by users directly
+        </em>
+        .
+       </p>
+       <figure>
+        <style data-emotion="css 18x9foa">
+         .css-18x9foa{padding-left:1rem;padding-right:1rem;max-width:100%;width:100%;}@media screen and (min-width: 768px){.css-18x9foa{padding-left:0px;padding-right:0px;}}
+        </style>
+        <div class="css-18x9foa">
+         <style data-emotion="css 11j27fm">
+          .css-11j27fm{display:block;background:linear-gradient(
+      to right,
+      rgba(var(--groupBackground), var(--shadeGroupBackground)),
+      rgba(var(--groupBackground), var(--shadeGroupBackground))
+    ),linear-gradient(to right, rgb(var(--background)), rgb(var(--background)));color:rgba(var(--foreground), var(--shadeTextSecondary));font-size:1rem;position:relative;border-radius:1.5rem;margin-left:auto;margin-right:auto;width:100%;--relativeBackground:var(--groupBackground);pointer-events:none;}.css-11j27fm::after{content:"";border-radius:1.5rem;position:absolute;top:0px;left:0px;right:0px;bottom:0px;pointer-events:none;border:1px solid rgba(var(--foreground), var(--shadeForegroundSecondary));-webkit-transition:125ms ease-in-out border;transition:125ms ease-in-out border;}.css-11j27fm::before{content:"";border-radius:1.5rem;position:absolute;top:0px;left:0px;right:0px;bottom:0px;pointer-events:none;-webkit-transition:125ms ease-in-out box-shadow,125ms ease-in-out background;transition:125ms ease-in-out box-shadow,125ms ease-in-out background;z-index:-1;box-shadow:0 0 0.5rem rgba(var(--groupBorder), var(--shadeGroupBorder));}
+         </style>
+         <div class="css-11j27fm">
+          <style data-emotion="css 16no7tu">
+           .css-16no7tu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding-left:2rem;padding-right:2rem;padding-top:4rem;padding-bottom:4rem;width:100%;}
+          </style>
+          <div class="css-16no7tu">
+           <style data-emotion="css 1wpjqbx">
+            .css-1wpjqbx{height:24px;width:24px;display:block;}
+           </style>
+           <svg class="spinner undefined css-1wpjqbx" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" fill="none" r="10" stroke-dasharray="42" stroke-linecap="round" stroke-width="2">
+            </circle>
+            <circle cx="12" cy="12" fill="none" opacity="0.25" r="10" stroke-linecap="round" stroke-width="2">
+            </circle>
+           </svg>
+          </div>
+         </div>
+        </div>
+       </figure>
+       <p>
+        In media, NFTs—or Non-Fungible Tokens—make it possible for creators to retain ownership of their content, without limiting the propagation of their files across the internet. As a result, NFTs have the potential to invert the ownership model of media—offering creators, their audiences, and developers who build for them, a viable alternative to platform-driven monetization.
+       </p>
+       <p>
+        <strong>
+         A simple way to think about NFTs are as files that live on the blockchain.
+        </strong>
+        This means they can't be copy-pasted, edited, deleted, or otherwise manipulated.
+       </p>
+       <p>
+        These guarantees stem from the same technical properties that make cryptocurrencies valuable: like Bitcoin, NFTs are digital tokens that can be bought, sold, traded, and whose ownership and provenance are always immutably tracked by the blockchain. What's yours is yours, verifiably so, and without the need for any third party to intermediate that ownership.
+       </p>
+       <p>
+        <strong>
+         NFTs make it possible to own digital media assets in the same way that you can own a digital currency asset, like Bitcoin.
+        </strong>
+       </p>
+       <p>
+        To many, NFTs look like a new tech toy, a soon-to-burst bubble. And while it's true the money being spent on digital art and crypto collectibles has been fast and flashy, their utility stands in sharp relief to the way platforms enable creator monetization today.
+       </p>
+       <p>
+        I believe we are well on our way to
+        <strong>
+         NFTs becoming the "port of entry" for every piece of media on the internet
+        </strong>
+        . This includes the 2D audio/visual and text-based work of the web, and the emerging 3D work that will encompass the metaverse of games and virtual worlds tomorrow.
+       </p>
+       <p>
+        What I believe will pull this future forward is the fact that the business model enabled by NFTs is better for every stakeholder involved:
+        <strong>
+         creators, their audiences, and developers can all make more money in a marketplace built around true digital ownership.
+        </strong>
+       </p>
+       <p>
+        To unpack this further, I'll address some common questions I've heard about NFTs. Many of the answers below expand on tweetstorms I’ve written over the last few years.
+       </p>
+       <h3 id="how-do-nfts-work">
+        How do NFTs work?
+       </h3>
+       <figure>
+        <style data-emotion="css 154qrrz">
+         .css-154qrrz{border-radius:0.75rem;overflow:hidden;padding-left:1rem;padding-right:1rem;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;max-width:32rem;}@media screen and (min-width: 768px){.css-154qrrz{padding-left:0px;padding-right:0px;}}.css-154qrrz>div{margin-top:0!important;margin-bottom:0!important;}
+        </style>
+        <div class="css-154qrrz">
+        </div>
+       </figure>
+       <p>
+        In practice, an NFT is simply a unique token representing a digital file. Each has a canonical identifier, a unique ID. Hooked to that ID is arbitrary metadata, for example, who created it, what it’s about, or its price history. When an NFT is minted by a creator, this information is immutably registered on the blockchain and becomes a sort of digital passport for the work. Moving forward, anytime that piece of media is distributed on another platform, that platform can "check its passport" and see its entire history. This means that instances of an idea can point back to the original, immutable record registered on the blockchain. An image on the internet no longer needs to be a two-dimensional box. Instead, it can take on a “Z-Axis” where all of its history and context can be discovered by third-parties, adding to its cultural and financial value.
+       </p>
+       <h3 id="is-there-value-in-owning-digital-art">
+        Is there value in owning digital art?
+       </h3>
+       <figure>
+        <div class="css-154qrrz">
+        </div>
+       </figure>
+       <p>
+        A common critique is that because digital art and digital collectibles can be copied, they don’t carry much value. But NFTs introduce a new possibility that enables true ownership to exist while a work continues to freely circulate online.
+       </p>
+       <p>
+        The more a file is shared and seen online, the more cultural value it accrues. Consider the mass production of posters and t-shirts of Warhol imagery. With increase in notoriety, the concept of owning the canonical work becomes more thrilling, and more a marker of social status. It can also drive up the value that can be derived from reselling the work should its notoriety increase after purchase. NFTs enable collectors to reap most of the benefits of owning a physical work of art, with the added bonus that their collection can be freely shared across the internet without limitation—and thus accrue more value with wider distribution.
+       </p>
+       <p>
+        And its not just art. The growing universe of crypto collectibles, game assets, digital fashion, skins, and more blurs the line between art and programmed utility. More on that below.
+       </p>
+       <h3 id="why-collect-nfts-right-now">
+        Why collect NFTs right now?
+       </h3>
+       <p>
+        People collect NFTs for a number of reasons. It could be the thrill of discovering a promising new artist or artwork, the allure of a piece’s potential cultural value, the social status of owning something unique and canonical, or the prospect of turning a profit by reselling the work down the line.
+       </p>
+       <p>
+        Right now, in NFTs (and in other crypto markets) many collect for speculative value. And like the rest of the crypto market,
+        <strong>
+         NFT markets are reflexive.
+        </strong>
+        Just like cryptocurrencies and traditional art, the more people who think an asset might have value—even for subjective reasons—the more real value it can typically fetch in the market.
+       </p>
+       <p>
+        As an example of this, the reflexivity of Bitcoin markets began as the currency bootstrapped its popularity, eventually growing in momentum from a pizza memecoin to a global reserve asset. Similarly, NFTs may start out looking like fun and games for crypto whales, but as more money flows into these markets—and as more creators mint tokens and get involved—outsiders will start to see value changing hands, and the perceived value will rise. This kind of reflexivity creates a positive feedback loop that, in many instances, helps drive an inevitable rise in market activity over time.
+       </p>
+       <h3 id="longterm-where-are-nfts-heading">
+        Longterm, where are NFTs heading?
+       </h3>
+       <figure>
+        <div class="css-154qrrz">
+        </div>
+       </figure>
+       <p>
+        Coming back to utility: as with many technological hype cycles, speculative value often gives way to functional value. Because these assets are programmable and open, any developer can build on top of them. And because NFTs are user-portable, programmable assets can take on new utility across the totality of our digital world.
+       </p>
+       <p>
+        Tokens and smart contracts have been called "money legos" as they allow programmers to
+        <a href="https://jessewalden.com/4-eras-of-blockchain-computing-degrees-of-composability/" rel="noreferrer" target="_blank">
+         compose and remix
+        </a>
+        DeFi applications. Similarly, NFTs are "media legos" for developers and creators to permissionlessly remix and build new experiences around. As a result, users can look forward to richer experiences, and compounding utility around the items they own.
+       </p>
+       <h3 id="is-nft-adoption-inevitable">
+        Is NFT adoption inevitable?
+       </h3>
+       <figure>
+        <div class="css-154qrrz">
+        </div>
+       </figure>
+       <p>
+        I think NFTs will become the port of entry to all internet media
+        <strong>
+         because everyone involved can make more money from the markets they enable
+        </strong>
+        :
+       </p>
+       <p>
+        <strong>
+         Creators
+        </strong>
+        make more money by selling directly to their fans and by collecting royalties every time their NFTs are resold. This is an entirely new revenue stream that is only possible because of true digital ownership that can encode royalty logic in the media itself.
+       </p>
+       <p>
+        For
+        <strong>
+         consumers
+        </strong>
+        , NFTs are a better model because they combine the social and utilitarian benefits of patronage with the
+        <em>
+         possibility
+        </em>
+        of turning a profit or realizing compounding utility. On the web today, consumers rent access to most goods and services, including the creators they patronize. A key tenet of new Ownership Economy platforms is the incentive alignment that comes from having skin in the game. With regard to supporting creators, I've called this “
+        <a href="https://twitter.com/jessewldn/status/1355165547441303554" rel="noreferrer" target="_blank">
+         Patronage+
+        </a>
+        ” where the “plus” is the possibility of earning value alongside the creators you support. This is a strong, under-explored incentive to become a patron in the first place—and I think it may drive more engaging and rewarding demand in markets for creative work.
+       </p>
+       <p>
+        <strong>
+         Developers
+        </strong>
+        can make money by building to enable these new markets. Wheras major platforms choke access to developer APIs and limit free market development, developers building atop permissionless infrastructure stand to step into the flow of a growing market-economy with property rights that in many ways, function more like those in the physical world.
+       </p>
+       <h3 id="where-are-we-in-the-nft-adoption-cycle">
+        Where are we in the NFT adoption cycle?
+       </h3>
+       <figure>
+        <div class="css-154qrrz">
+        </div>
+       </figure>
+       <p>
+        The backdrop of the 2021 crypto/everything-bull market, coupled with the internet waking up to investing as a team sport (WallStreetBets), has created the right conditions for NFT markets to enter their frenzy stage, capturing mainstream attention and serious money.
+       </p>
+       <p>
+        Much of it is taking place in the digital art space, but it’s also happening in burgeoning niches—including gaming world assets like
+        <a href="https://axieinfinity.com/" rel="noreferrer" target="_blank">
+         Axie Infinity
+        </a>
+        , or sets of crypto collectibles like
+        <a href="https://www.thehashmasks.com/" rel="noreferrer" target="_blank">
+         Hashmasks
+        </a>
+        and
+        <a href="https://www.larvalabs.com/cryptopunks" rel="noreferrer" target="_blank">
+         CryptoPunks
+        </a>
+        , or generative artworks that are programmatically created on-chain (like
+        <a href="https://www.artblocks.io/project/5" rel="noreferrer" target="_blank">
+         this series
+        </a>
+        I commissioned for Variant:)
+       </p>
+       <figure>
+        <style data-emotion="css 1sgmus3">
+         .css-1sgmus3{padding-left:1rem;padding-right:1rem;max-width:32rem;width:100%;}@media screen and (min-width: 768px){.css-1sgmus3{padding-left:0px;padding-right:0px;}}
+        </style>
+        <div class="css-1sgmus3">
+         <style data-emotion="css l4l9s1">
+          .css-l4l9s1{display:block;background-color:var(--theme-ui-colors-groupBackground, var(--colors-groupBackground));color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));font-size:1rem;position:relative;border-radius:0.75rem;margin-left:auto;margin-right:auto;width:100%;}.css-l4l9s1::after{content:"";box-shadow:0 0 1rem rgba(var(--groupBorder), var(--shadeGroupBorder));border:1px solid rgba(var(--groupBorder), var(--shadeGroupBorder));border-radius:0.75rem;position:absolute;top:0px;left:0px;right:0px;bottom:0px;pointer-events:none;}.css-l4l9s1::before{content:"";border-radius:0.75rem;position:absolute;top:0px;left:0px;right:0px;bottom:0px;pointer-events:none;-webkit-transition:125ms ease-in-out box-shadow,125ms ease-in-out background;transition:125ms ease-in-out box-shadow,125ms ease-in-out background;z-index:-1;}
+         </style>
+         <div class="css-l4l9s1">
+          <style data-emotion="css n651it">
+           .css-n651it{padding-top:1rem;padding-bottom:1rem;padding-left:1rem;padding-right:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media screen and (min-width: 640px){.css-n651it{padding-top:1.25rem;padding-bottom:1.25rem;padding-left:1.5rem;padding-right:1.5rem;}}
+          </style>
+          <div class="css-n651it">
+           <style data-emotion="css 34mow6">
+            .css-34mow6{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));}
+           </style>
+           <div class="css-34mow6">
+            <style data-emotion="css 1akw3mk">
+             .css-1akw3mk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+            </style>
+            <div class="css-1akw3mk">
+             <style data-emotion="css pw7i03">
+              .css-pw7i03{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:15.5rem;}
+             </style>
+             <div class="css-pw7i03">
+              <style data-emotion="css 1sdf1k3">
+               .css-1sdf1k3{margin-right:0.5rem;font-weight:500;white-space:nowrap;color:var(--theme-ui-colors-text, var(--colors-text));overflow:hidden;text-overflow:ellipsis;}
+              </style>
+              <div class="css-1sdf1k3">
+               <style data-emotion="css o6z1ax">
+                .css-o6z1ax{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.5em;width:10em;}
+               </style>
+               <span class="css-o6z1ax">
+               </span>
+              </div>
+             </div>
+            </div>
+           </div>
+           <a rel="noreferrer" target="_blank">
+            <div class="css-xnt5cy">
+             <div class="css-1cmd7eo">
+              <style data-emotion="css 1oidk3u">
+               .css-1oidk3u{height:0.65rem;width:auto;display:block;}
+              </style>
+              <svg class="css-1oidk3u" fill="currentColor" version="1.1" viewbox="0 0 177 68">
+               <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                <g fill-rule="nonzero" id="Artboard">
+                 <path d="M17.4053296,64.126506 L22.7293128,39.1487731 C23.85554,34.0512766 24.8793829,27.730381 25.2889201,23.346534 C26.1079944,26.4050319 27.9509116,32.1142279 29.5890603,36.396125 L40.3394109,64.6362556 C41.3632539,67.1850039 41.6704067,67.5928036 42.6942496,67.8986534 C43.1037868,67.9802133 43.1856942,67.9965253 44.2504909,68 L55.855669,67.9992358 C59.0884989,67.979705 59.2212298,67.7001193 59.997195,64.126506 L72.6928471,4.89359664 C72.8976157,3.87409734 73,2.95654797 73,2.54874825 C73,1.73314881 72.6928471,1.22339916 72.0785414,0.61169958 C71.4642356,0.10194993 71.1570827,0 68.5974755,0 L60.4067321,0 C56.516129,0 56.4137447,0.10194993 55.5946704,3.87409734 L50.6802244,26.8128316 C49.7587658,31.4005784 48.3253857,39.8624226 47.9158485,44.4501695 C46.8920056,40.8819219 45.0490884,35.3766257 43.513324,31.4005784 L33.0701262,3.36434769 C32.0462833,0.81559944 31.8415147,0.40779972 30.7152875,0.10194993 C30.6640954,0.091754937 30.6180224,0.0825794433 30.5745091,0.074321499 L30.4490884,0.0521983642 C30.2033661,0.013049591 29.9576438,0.00326239776 29.1590463,0.00081559944 L28.4477954,0 C28.3553296,0 28.2580645,0 28.1556802,0 L17.7124825,0 C13.9242637,0 13.8218794,0.10194993 13.002805,3.87409734 L0.307152875,63.1070067 C0.102384292,64.126506 0,65.0440553 0,65.4518551 C0,66.2674545 0.307152875,66.7772041 0.921458626,67.3889037 C1.50905543,67.8764903 1.81562768,67.9909672 4.08122619,68 L13.1767494,67.9992358 C16.4966336,67.979705 16.6293644,67.7001193 17.4053296,64.126506 Z M82.8176,64.126506 L87.6304,41.7994713 L112.979439,41.7981038 C116.212765,41.778573 116.345516,41.4989873 117.1216,37.925374 L118.248,32.8278775 C118.6576,31.0947286 118.6576,30.9927787 118.6576,30.4830291 C118.6576,29.6674296 118.3504,29.15768 117.736,28.5459804 C117.1216,28.0362307 116.8144,27.9342808 114.2544,27.9342808 L90.6,27.9342808 L93.3648,14.7827398 L122.5488,14.7827398 C126.3376,14.7827398 126.44,14.6807899 127.2592,11.0105924 L128.5904,4.89359664 C128.951812,3.36434769 128.994331,3.10506327 128.999333,2.7150472 L129,2.54874825 L129,2.54874825 C129,1.73314881 128.6928,1.22339916 128.0784,0.61169958 C127.464,0.10194993 127.1568,0 124.5968,0 L82.7152,0 C78.9264,0 78.824,0.10194993 78.0048,3.77214741 L65.3072,63.1070067 C65.1024,64.126506 65,65.0440553 65,65.4518551 C65,66.2674545 65.3072,66.7772041 65.9216,67.3889037 C66.509287,67.8764903 66.8159062,67.9909672 69.0818524,68 L78.6765481,67.9993177 C82.0105183,67.9804948 82.137559,67.7052099 82.8176,64.126506 Z M144.076923,64.126506 L154.641026,14.7827398 L170.641026,14.7827398 C174.435897,14.7827398 174.538462,14.6807899 175.358974,11.0105924 L176.692308,4.89359664 C176.897436,3.77214741 177,3.0584979 177,2.54874825 C177,1.73314881 176.692308,1.22339916 176.076923,0.61169958 C175.461538,0.10194993 175.153846,0 172.589744,0 L123.358974,0 C119.564103,0 119.461538,0.10194993 118.641026,3.77214741 L117.307692,9.88914321 C117.102564,10.9086425 117,11.8261919 117,12.2339916 C117,13.049591 117.307692,13.5593407 117.923077,14.1710403 C118.538462,14.6807899 118.846154,14.7827398 121.410256,14.7827398 L136.794872,14.7827398 L126.538462,63.1070067 C126.230769,64.5343057 126.128205,64.9421054 126.128205,65.4518551 C126.128205,66.2674545 126.435897,66.7772041 127.051282,67.3889037 C127.639911,67.8764903 127.947021,67.9909672 130.216599,68 L139.840916,67.9992358 C143.166631,67.979705 143.299595,67.7001193 144.076923,64.126506 Z" fill="currentColor" id="NFT-Copy-4">
+                 </path>
+                </g>
+               </g>
+              </svg>
+             </div>
+            </div>
+           </a>
+          </div>
+          <style data-emotion="css c7923">
+           .css-c7923{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:10rem;position:relative;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-c7923>img,.css-c7923>video{display:block;height:auto;width:100%;border-radius:0!important;max-height:none!important;}.css-c7923::after{content:"";border:1px solid rgba(var(--black), var(--shadeGroupBorder));border-left:0;border-right:0;position:absolute;top:0px;left:0px;right:0px;bottom:0px;z-index:2;pointer-events:none;}
+          </style>
+          <div class="css-c7923">
+           <style data-emotion="css 113uyhs">
+            .css-113uyhs{height:48px;width:48px;display:block;}
+           </style>
+           <svg class="spinner undefined css-113uyhs" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" fill="none" r="10" stroke-dasharray="42" stroke-linecap="round" stroke-width="2">
+            </circle>
+            <circle cx="12" cy="12" fill="none" opacity="0.25" r="10" stroke-linecap="round" stroke-width="2">
+            </circle>
+           </svg>
+          </div>
+          <style data-emotion="css 1slbjb9">
+           .css-1slbjb9{padding-top:1rem;padding-bottom:1rem;padding-left:1rem;padding-right:1rem;line-height:1.5;}@media screen and (min-width: 640px){.css-1slbjb9{padding-top:1.25rem;padding-bottom:1.25rem;padding-left:1.5rem;padding-right:1.5rem;}}
+          </style>
+          <div class="css-1slbjb9">
+           <style data-emotion="css jthrp8">
+            .css-jthrp8{font-size:0.875rem;}
+           </style>
+           <style data-emotion="css 19pksgw">
+            .css-19pksgw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));font-size:0.875rem;}
+           </style>
+           <div class="css-19pksgw">
+            <div class="css-1akw3mk">
+             <div class="css-pw7i03">
+              <div class="css-1sdf1k3">
+               <span class="css-o6z1ax">
+               </span>
+              </div>
+             </div>
+            </div>
+           </div>
+           <style data-emotion="css 1lanuoe">
+            .css-1lanuoe{word-wrap:break-word;}
+           </style>
+           <div class="css-1lanuoe">
+            <style data-emotion="css 1kbcer0">
+             .css-1kbcer0{margin-top:1rem;margin-bottom:1rem;}
+            </style>
+            <div class="css-1kbcer0">
+             <style data-emotion="css 1s9prab">
+              .css-1s9prab{display:inline-block;margin-right:0.5rem;font-weight:500;color:var(--theme-ui-colors-text, var(--colors-text));width:100%;}
+             </style>
+             <span class="css-1s9prab">
+              <style data-emotion="css 1m7y3r7">
+               .css-1m7y3r7{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.25em;width:100%;}
+              </style>
+              <span class="css-1m7y3r7">
+              </span>
+             </span>
+             <style data-emotion="css nvfpct">
+              .css-nvfpct{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.25em;width:65%;}
+             </style>
+             <span class="css-nvfpct">
+             </span>
+            </div>
+            <style data-emotion="css ho5us4">
+             .css-ho5us4{font-size:0.875rem;font-weight:500;}
+            </style>
+            <div class="css-ho5us4">
+             <style data-emotion="css wy0530">
+              .css-wy0530{display:inline-block;vertical-align:middle;border-radius:0.375rem;background-color:var(--theme-ui-colors-foregroundSecondary, var(--colors-foregroundSecondary));height:1.25em;width:4rem;}
+             </style>
+             <span class="css-wy0530">
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </figure>
+       <p>
+        We are also seeing new marketplaces popping up where creators can mint NFTs and connect with collectors.
+        <a href="https://foundation.app" rel="noreferrer" target="_blank">
+         Foundation
+        </a>
+        saw over $150K in sales during its first week online, including the
+        <a href="https://foundation.app/dom/summer-night-77" rel="noreferrer" target="_blank">
+         first Vine video ever created, which sold for $14K
+        </a>
+        . VCs are
+        <a href="https://twitter.com/NTmoney/status/1346642772397199360?s=20" rel="noreferrer" target="_blank">
+         buying AI-generated artworks for their portfolios
+        </a>
+        (myself included.)  The decentralized blogging platform on which I am publishing this essay,
+        <a href="https://mirror.xyz" rel="noreferrer" target="_blank">
+         Mirror
+        </a>
+        , recently
+        <a href="https://twitter.com/viamirror/status/1359990786985766918?s=20" rel="noreferrer" target="_blank">
+         crowdfunded $13,000+ for an essay
+        </a>
+        that was subsequently auctioned as an NFT, earning the crowdfunders royalties on their investment.
+       </p>
+       <p>
+        This is all happening despite the fact that it’s still fairly clunky and expensive to engage with NFTs on Ethereum. Minting a single NFT costs roughly $100 in ETH, and buying and trading incurs high transaction fees.
+       </p>
+       <p>
+        But 2021 is also the year major technical upgrades are set to arrive in the crypto space. Reduced transaction costs and higher throughput will help developers push NFTs into higher-volume, social territory.
+        <a href="https://zora.co" rel="noreferrer" target="_blank">
+         Zora
+        </a>
+        is heading that direction with a Tumblr-like interface where each “post” is minted as an NFT. Because these social experiences have markets baked-in, and users can make money alongside the creators they support, there are strong incentives to participate.
+       </p>
+       <p>
+        And remember, these are not just collectors’ items, they are programmable assets that any developer can remix. As developers build new contexts for NFTs to live, there will be compounding demand from creators to have their work included in this emerging metaverse and for collectors to flex their ownership rights.
+       </p>
+       <h3 id="wrapping-up">
+        Wrapping up
+       </h3>
+       <p>
+        In 2014, I started a company called
+        <a href="https://twitter.com/jessewldn/status/1346490319332892674?s=20" rel="noreferrer" target="_blank">
+         Mediachain Labs
+        </a>
+        where we were working on an open protocol called Mediachain. Our goal was to build a “
+        <a href="https://github.com/mediachainlabs/canonical-content-registry" rel="noreferrer" target="_blank">
+         universal media library
+        </a>
+        ” that would do for digital media assets what Bitcoin did for digital financial assets.
+       </p>
+       <p>
+        Roughly six years later, in a world where the early majority (10%+ of Americans) own digital currency, the infrastructure and markets for those ideas are here and now.
+       </p>
+       <p>
+        I’m incredibly grateful to continue to be involved with teams and communities who are building out the universal media library via NFTs. If that’s you, I'd love to
+        <a href="https://variant.fund/#site-footer" rel="noreferrer" target="_blank">
+         learn about what you're building
+        </a>
+        .
+       </p>
+       <hr/>
+       <p>
+        <strong>
+         Update
+        </strong>
+        : If you're looking to jump into the NFT space, teams are hiring engineers, creator/dev evangelists, community, product and design roles.
+        <a href="https://forms.gle/cY4vgKZj7yn9pTSA9" rel="noreferrer" target="_blank">
+         Get in touch
+        </a>
+        and I'll do my best to connect the dots!
+       </p>
+       <p>
+        Join the discussion on
+        <a href="https://twitter.com/jessewldn/status/1361344223216340993" rel="noreferrer" target="_blank">
+         Twitter
+        </a>
+       </p>
+       <hr/>
+       <p>
+        <em>
+         Thanks to
+         <a href="https://twitter.com/Lindsay_Howard" rel="noreferrer" target="_blank">
+          Lindsay Howard
+         </a>
+         ,
+         <a href="https://twitter.com/spencernoon" rel="noreferrer" target="_blank">
+          Spencer Noon
+         </a>
+         ,
+         <a href="https://twitter.com/willak" rel="noreferrer" target="_blank">
+          Willa Koerner
+         </a>
+         and
+         <a href="https://twitter.com/Iiterature" rel="noreferrer" target="_blank">
+          Denis Nazarov
+         </a>
+         for reviewing drafts of this post.
+        </em>
+       </p>
+      </div>
+     </div>
+     <div class="css-16f77nt">
+      <style data-emotion="css 15s0ms8">
+       .css-15s0ms8{line-height:1.625;width:100%;color:var(--theme-ui-colors-text, var(--colors-text));border:1px solid rgba(var(--foreground), var(--shadeForegroundSecondary));border-radius:0.5rem;font-weight:400;overflow:hidden;}
+      </style>
+      <div class="css-15s0ms8">
+       <style data-emotion="css vzelj8">
+        .css-vzelj8{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;white-space:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;width:100%;padding-left:1rem;padding-right:1rem;padding-top:0.75rem;padding-bottom:0.75rem;-webkit-transition:background 150ms ease-in-out;transition:background 150ms ease-in-out;}.css-vzelj8:not(:last-child){border-bottom:1px solid rgba(var(--foreground), var(--shadeForegroundSecondary));}.css-vzelj8:hover{background:rgba(var(--foreground), calc(var(--shadeForegroundSecondary) - 0.05));}
+       </style>
+       <a class="css-vzelj8" href="https://viewblock.io/arweave/tx/T8z7SUKbF0hYTbLHi4q6U5FWtUYUT51FX26T-gnrJ1E" rel="noreferrer" target="_blank">
+        <style data-emotion="css 1d988al">
+         .css-1d988al{font-size:0.75rem;text-transform:uppercase;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));font-family:var(--fonts-mono);margin-right:1rem;}
+        </style>
+        <div class="css-1d988al">
+         Arweave TX
+         <style data-emotion="css 1la59za">
+          .css-1la59za{font-family:var(--fonts-sans);display:inline-block;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);margin-left:0.25rem;}
+         </style>
+         <span class="css-1la59za">
+          →
+         </span>
+        </div>
+        <style data-emotion="css 1lz9cf9">
+         .css-1lz9cf9{font-family:var(--fonts-mono);text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:0.75rem;color:var(--theme-ui-colors-textSecondary, var(--colors-textTertiary));}
+        </style>
+        <div class="css-1lz9cf9">
+         T8z7SUKbF0hYTbLHi4q6U5FWtUYUT51FX26T-gnrJ1E
+        </div>
+       </a>
+       <a class="css-vzelj8" href="https://etherscan.io/address/0xe7925D190aea9279400cD9a005E33CEB9389Cc2b" rel="noreferrer" target="_blank">
+        <div class="css-1d988al">
+         Ethereum Address
+         <span class="css-1la59za">
+          →
+         </span>
+        </div>
+        <div class="css-1lz9cf9">
+         0xe7925D190aea9279400cD9a005E33CEB9389Cc2b
+        </div>
+       </a>
+       <style data-emotion="css 16umo6p">
+        .css-16umo6p{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;white-space:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;width:100%;padding-left:1rem;padding-right:1rem;padding-top:0.75rem;padding-bottom:0.75rem;-webkit-transition:background 150ms ease-in-out;transition:background 150ms ease-in-out;}.css-16umo6p:not(:last-child){border-bottom:1px solid rgba(var(--foreground), var(--shadeForegroundSecondary));}
+       </style>
+       <div class="css-16umo6p">
+        <div class="css-1d988al">
+         Content Digest
+        </div>
+        <div class="css-1lz9cf9">
+         T8kdtZRIgy_srXB5B06L8vBqFHYlEBcv6ae2zR6Y_eo
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none">
+   </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"pageProps":{"accent":"blue","mode":"light","ensLabel":"variant","digest":"T8kdtZRIgy_srXB5B06L8vBqFHYlEBcv6ae2zR6Y_eo","gaTrackingID":"UA-172522649-1","member":{"__typename":"ProjectType","_id":"0xe7925D190aea9279400cD9a005E33CEB9389Cc2b","address":"0xe7925D190aea9279400cD9a005E33CEB9389Cc2b","avatarURL":"https://images.mirror-media.xyz/publication-images/XOVukHaULvp4dsmWbcywK.jpg?height=2500\u0026width=2500","description":"","displayName":"Variant Fund","domain":"variant.mirror.xyz","ens":"jessewldn.eth","gaTrackingID":"UA-172522649-1","mailingListURL":null,"headerImage":null,"theme":{"__typename":"UserProfileThemeType","accent":"BLUE","colorMode":"LIGHT"}},"project":{"__typename":"ProjectType","_id":"0xe7925D190aea9279400cD9a005E33CEB9389Cc2b","address":"0xe7925D190aea9279400cD9a005E33CEB9389Cc2b","avatarURL":"https://images.mirror-media.xyz/publication-images/XOVukHaULvp4dsmWbcywK.jpg?height=2500\u0026width=2500","description":"","displayName":"Variant Fund","domain":"variant.mirror.xyz","ens":"jessewldn.eth","gaTrackingID":"UA-172522649-1","mailingListURL":null,"headerImage":null,"theme":{"__typename":"UserProfileThemeType","accent":"BLUE","colorMode":"LIGHT"}},"__APOLLO_STATE__":{"ProjectType:0xe7925D190aea9279400cD9a005E33CEB9389Cc2b":{"__typename":"ProjectType","_id":"0xe7925D190aea9279400cD9a005E33CEB9389Cc2b","address":"0xe7925D190aea9279400cD9a005E33CEB9389Cc2b","avatarURL":"https://images.mirror-media.xyz/publication-images/XOVukHaULvp4dsmWbcywK.jpg?height=2500\u0026width=2500","description":"","displayName":"Variant Fund","domain":"variant.mirror.xyz","ens":"jessewldn.eth","gaTrackingID":"UA-172522649-1","mailingListURL":null,"headerImage":null,"theme":{"__typename":"UserProfileThemeType","accent":"BLUE","colorMode":"LIGHT"}},"entry:T8kdtZRIgy_srXB5B06L8vBqFHYlEBcv6ae2zR6Y_eo":{"__typename":"entry","_id":"T8kdtZRIgy_srXB5B06L8vBqFHYlEBcv6ae2zR6Y_eo","body":"## Why crypto is becoming the \"port of entry\" for all internet media. \n\nBefore tech, I was an artist manager in music. When I started [the firm](http://coolmanagers.com), I believed one thing about the music industry very firmly: ownership endows power. Typically, labels had ownership over the music, and thus, power over artists. \n\nOur goal was to help artists retain ownership of their work and run their business independently, using technology to reach their fans directly. Today, we’re all creators online, and ownership continues to carry a ton of weight. Yet the role of ownership on technology platforms is often overlooked.\n\nEvery day billions of images, videos, songs, and more media are shared on social media. When those files are posted, a copy of the media is taken from the creator’s device and pasted to the server of the platform distributing it—Facebook, Twitter, YouTube, TikTok and the like. \n\nThis may seem like a lightweight interaction, but when uploading, creators don’t simply copy a file—**they also copy-paste ownership of the file to the platform itself.**\n\nI’m talking about the Terms of Service, which typically specify that when a file is uploaded, its ownership is shared with the platform, to monetize as they see fit. This comes with some advantages: platforms can offer distribution or economies of scale that optimize ad-based revenues. But it's no secret that today’s monetization models aren’t always aligned with the best interests of creators. And this is where the problem lies. For too long, platforms have reaped the bulk of the value from owning creators' content.\n\nMeanwhile, crypto is unlocking a different path—what I call the [Ownership Economy](https://variant.fund/the-ownership-economy-crypto-and-consumer-software/)—a broader thesis that the next generation of internet platforms will be built, operated, and *owned by users directly*. \n\n[TOE](https://variant.fund/the-ownership-economy-crypto-and-consumer-software)\n\nIn media, NFTs—or Non-Fungible Tokens—make it possible for creators to retain ownership of their content, without limiting the propagation of their files across the internet. As a result, NFTs have the potential to invert the ownership model of media—offering creators, their audiences, and developers who build for them, a viable alternative to platform-driven monetization.  \n\n**A simple way to think about NFTs are as files that live on the blockchain.**  This means they can't be copy-pasted, edited, deleted, or otherwise manipulated. \n\nThese guarantees stem from the same technical properties that make cryptocurrencies valuable: like Bitcoin, NFTs are digital tokens that can be bought, sold, traded, and whose ownership and provenance are always immutably tracked by the blockchain. What's yours is yours, verifiably so, and without the need for any third party to intermediate that ownership.\n\n**NFTs make it possible to own digital media assets in the same way that you can own a digital currency asset, like Bitcoin.** \n\nTo many, NFTs look like a new tech toy, a soon-to-burst bubble. And while it's true the money being spent on digital art and crypto collectibles has been fast and flashy, their utility stands in sharp relief to the way platforms enable creator monetization today.\n\nI believe we are well on our way to **NFTs becoming the \"port of entry\" for every piece of media on the internet**. This includes the 2D audio/visual and text-based work of the web, and the emerging 3D work that will encompass the metaverse of games and virtual worlds tomorrow.\n\nWhat I believe will pull this future forward is the fact that the business model enabled by NFTs is better for every stakeholder involved: **creators, their audiences, and developers can all make more money in a marketplace built around true digital ownership.**\n\nTo unpack this further, I'll address some common questions I've heard about NFTs. Many of the answers below expand on tweetstorms I’ve written over the last few years.\n\n### How do NFTs work?\n\n[NFT is a file format](https://twitter.com/jessewldn/status/1321239372449153024)\n\nIn practice, an NFT is simply a unique token representing a digital file. Each has a canonical identifier, a unique ID. Hooked to that ID is arbitrary metadata, for example, who created it, what it’s about, or its price history. When an NFT is minted by a creator, this information is immutably registered on the blockchain and becomes a sort of digital passport for the work. Moving forward, anytime that piece of media is distributed on another platform, that platform can \"check its passport\" and see its entire history. This means that instances of an idea can point back to the original, immutable record registered on the blockchain. An image on the internet no longer needs to be a two-dimensional box. Instead, it can take on a “Z-Axis” where all of its history and context can be discovered by third-parties, adding to its cultural and financial value.\n\n### Is there value in owning digital art? \n\n[The value of an NFT](https://twitter.com/jessewldn/status/1321447490370080769?s=20)\n\nA common critique is that because digital art and digital collectibles can be copied, they don’t carry much value. But NFTs introduce a new possibility that enables true ownership to exist while a work continues to freely circulate online.  \n \nThe more a file is shared and seen online, the more cultural value it accrues. Consider the mass production of posters and t-shirts of Warhol imagery. With increase in notoriety, the concept of owning the canonical work becomes more thrilling, and more a marker of social status. It can also drive up the value that can be derived from reselling the work should its notoriety increase after purchase. NFTs enable collectors to reap most of the benefits of owning a physical work of art, with the added bonus that their collection can be freely shared across the internet without limitation—and thus accrue more value with wider distribution.\n\nAnd its not just art. The growing universe of crypto collectibles, game assets, digital fashion, skins, and more blurs the line between art and programmed utility. More on that below. \n\n### Why collect NFTs right now? \n \nPeople collect NFTs for a number of reasons. It could be the thrill of discovering a promising new artist or artwork, the allure of a piece’s potential cultural value, the social status of owning something unique and canonical, or the prospect of turning a profit by reselling the work down the line. \n \nRight now, in NFTs (and in other crypto markets) many collect for speculative value. And like the rest of the crypto market, **NFT markets are reflexive.** Just like cryptocurrencies and traditional art, the more people who think an asset might have value—even for subjective reasons—the more real value it can typically fetch in the market. \n \nAs an example of this, the reflexivity of Bitcoin markets began as the currency bootstrapped its popularity, eventually growing in momentum from a pizza memecoin to a global reserve asset. Similarly, NFTs may start out looking like fun and games for crypto whales, but as more money flows into these markets—and as more creators mint tokens and get involved—outsiders will start to see value changing hands, and the perceived value will rise. This kind of reflexivity creates a positive feedback loop that, in many instances, helps drive an inevitable rise in market activity over time. \n \n### Longterm, where are NFTs heading?\n\n[Media Legos](https://twitter.com/jessewldn/status/1301669871789445122)\n\nComing back to utility: as with many technological hype cycles, speculative value often gives way to functional value. Because these assets are programmable and open, any developer can build on top of them. And because NFTs are user-portable, programmable assets can take on new utility across the totality of our digital world.\n\nTokens and smart contracts have been called \"money legos\" as they allow programmers to [compose and remix](https://jessewalden.com/4-eras-of-blockchain-computing-degrees-of-composability/) DeFi applications. Similarly, NFTs are \"media legos\" for developers and creators to permissionlessly remix and build new experiences around. As a result, users can look forward to richer experiences, and compounding utility around the items they own. \n\n### Is NFT adoption inevitable? \n\n[port of entry](https://twitter.com/jessewldn/status/1346470700979089414)\n\nI think NFTs will become the port of entry to all internet media **because everyone involved can make more money from the markets they enable**: \n\n**Creators** make more money by selling directly to their fans and by collecting royalties every time their NFTs are resold. This is an entirely new revenue stream that is only possible because of true digital ownership that can encode royalty logic in the media itself.\n\nFor **consumers**, NFTs are a better model because they combine the social and utilitarian benefits of patronage with the *possibility* of turning a profit or realizing compounding utility. On the web today, consumers rent access to most goods and services, including the creators they patronize. A key tenet of new Ownership Economy platforms is the incentive alignment that comes from having skin in the game. With regard to supporting creators, I've called this “[Patronage+](https://twitter.com/jessewldn/status/1355165547441303554)” where the “plus” is the possibility of earning value alongside the creators you support. This is a strong, under-explored incentive to become a patron in the first place—and I think it may drive more engaging and rewarding demand in markets for creative work.\n\n**Developers** can make money by building to enable these new markets. Wheras major platforms choke access to developer APIs and limit free market development, developers building atop permissionless infrastructure stand to step into the flow of a growing market-economy with property rights that in many ways, function more like those in the physical world.\n\n### Where are we in the NFT adoption cycle?\n\n[frenzy](https://twitter.com/jessewldn/status/1335979344225820673)\n\nThe backdrop of the 2021 crypto/everything-bull market, coupled with the internet waking up to investing as a team sport (WallStreetBets), has created the right conditions for NFT markets to enter their frenzy stage, capturing mainstream attention and serious money.\n\nMuch of it is taking place in the digital art space, but it’s also happening in burgeoning niches—including gaming world assets like [Axie Infinity](https://axieinfinity.com/), or sets of crypto collectibles like [Hashmasks](https://www.thehashmasks.com/) and [CryptoPunks](https://www.larvalabs.com/cryptopunks), or generative artworks that are programmatically created on-chain (like [this series](https://www.artblocks.io/project/5) I commissioned for Variant:) \n\n[NFT](ethereum://0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/5000001)\n\nWe are also seeing new marketplaces popping up where creators can mint NFTs and connect with collectors. [Foundation](https://foundation.app) saw over $150K in sales during its first week online, including the [first Vine video ever created, which sold for $14K](https://foundation.app/dom/summer-night-77). VCs are [buying AI-generated artworks for their portfolios](https://twitter.com/NTmoney/status/1346642772397199360?s=20) (myself included.)  The decentralized blogging platform on which I am publishing this essay, [Mirror](https://mirror.xyz), recently [crowdfunded $13,000+ for an essay](https://twitter.com/viamirror/status/1359990786985766918?s=20) that was subsequently auctioned as an NFT, earning the crowdfunders royalties on their investment. \n \nThis is all happening despite the fact that it’s still fairly clunky and expensive to engage with NFTs on Ethereum. Minting a single NFT costs roughly $100 in ETH, and buying and trading incurs high transaction fees. \n\nBut 2021 is also the year major technical upgrades are set to arrive in the crypto space. Reduced transaction costs and higher throughput will help developers push NFTs into higher-volume, social territory. [Zora](https://zora.co) is heading that direction with a Tumblr-like interface where each “post” is minted as an NFT. Because these social experiences have markets baked-in, and users can make money alongside the creators they support, there are strong incentives to participate. \n \nAnd remember, these are not just collectors’ items, they are programmable assets that any developer can remix. As developers build new contexts for NFTs to live, there will be compounding demand from creators to have their work included in this emerging metaverse and for collectors to flex their ownership rights. \n\n### Wrapping up\n\nIn 2014, I started a company called [Mediachain Labs](https://twitter.com/jessewldn/status/1346490319332892674?s=20) where we were working on an open protocol called Mediachain. Our goal was to build a “[universal media library](https://github.com/mediachainlabs/canonical-content-registry)” that would do for digital media assets what Bitcoin did for digital financial assets. \n\nRoughly six years later, in a world where the early majority (10%+ of Americans) own digital currency, the infrastructure and markets for those ideas are here and now.  \n\nI’m incredibly grateful to continue to be involved with teams and communities who are building out the universal media library via NFTs. If that’s you, I'd love to [learn about what you're building](https://variant.fund/#site-footer).\n\n---\n**Update**: If you're looking to jump into the NFT space, teams are hiring engineers, creator/dev evangelists, community, product and design roles. [Get in touch](https://forms.gle/cY4vgKZj7yn9pTSA9) and I'll do my best to connect the dots!\n\nJoin the discussion on [Twitter](https://twitter.com/jessewldn/status/1361344223216340993)\n\n---\n*Thanks to [Lindsay Howard](https://twitter.com/Lindsay_Howard), [Spencer Noon](https://twitter.com/spencernoon), [Willa Koerner](https://twitter.com/willak) and [Denis Nazarov](https://twitter.com/Iiterature) for reviewing drafts of this post.*\n","hideTitleInEntry":false,"publishStatus":"public","publishedAtTimestamp":1613404127,"originalDigest":"T8kdtZRIgy_srXB5B06L8vBqFHYlEBcv6ae2zR6Y_eo","timestamp":1613404127,"title":"NFTs make the internet ownable","arweaveTransactionRequest":{"__typename":"ArweaveTransactionRequestType","transactionId":"T8z7SUKbF0hYTbLHi4q6U5FWtUYUT51FX26T-gnrJ1E"},"featuredImageId":null,"featuredImage":null,"publisher":{"__typename":"PublisherType","project":{"__ref":"ProjectType:0xe7925D190aea9279400cD9a005E33CEB9389Cc2b"},"member":{"__ref":"ProjectType:0xe7925D190aea9279400cD9a005E33CEB9389Cc2b"}},"latestBlockData":{"__typename":"LatestBlockDataType","timestamp":1647880278,"number":14430789},"collaborators":[],"editions":[],"settings":null},"ROOT_QUERY":{"__typename":"Query","entry({\"digest\":\"T8kdtZRIgy_srXB5B06L8vBqFHYlEBcv6ae2zR6Y_eo\"})":{"__ref":"entry:T8kdtZRIgy_srXB5B06L8vBqFHYlEBcv6ae2zR6Y_eo"}}}},"__N_SSG":true},"page":"/_sites/[slug]/[digest]","query":{"slug":"variant","digest":"T8kdtZRIgy_srXB5B06L8vBqFHYlEBcv6ae2zR6Y_eo"},"buildId":"F-jHNqB-ulEh84qa9G4tN","isFallback":false,"gsp":true,"scriptLoader":[]}
+  </script>
+ </body>
+</html>

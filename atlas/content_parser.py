@@ -56,7 +56,7 @@ class ContentParser:
             for content_id, content in self.all_content.items():
                 domain = urlparse(self.all_content[content_id]["url"]).netloc
                 file_name = f"{domain}-{content_id[:8]}"
-                with open(parent_directory / f"data/{file_name}.html", 'w') as outfile:
+                with open(parent_directory / f"data/html_files/{file_name}.html", 'w') as outfile:
                     outfile.write(content['html'])
         else:
             output_file_name = parent_directory / f"data/{file_name}.json"

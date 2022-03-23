@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link as="font" crossorigin="anonymous" href="/alexandria/fonts/inter/Inter-Light.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="anonymous" href="/alexandria/fonts/inter/Inter-Regular-new.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="anonymous" href="/alexandria/fonts/inter/Inter-Medium-new.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="anonymous" href="/alexandria/fonts/inter/Inter-SemiBold-new.woff2" rel="preload" type="font/woff2"/>
+  <meta charset="utf-8"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@CoinMarketCap" name="twitter:site"/>
+  <meta content="@CoinMarketCap" name="twitter:creator"/>
+  <meta content="Alexandria" property="og:image:alt"/>
+  <meta content="CoinMarketCap Alexandria" property="og:site_name"/>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-40475998-1');
+  </script>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://api.coinmarketcap.com/alexandria/api" rel="preconnect"/>
+  <link href="https://academy-public.coinmarketcap.com" rel="preconnect"/>
+  <link href="https://coinmarketcap.com/alexandria/images/ico/favicon.ico" rel="shortcut icon"/>
+  <link href="https://coinmarketcap.com/alexandria/images/ico/favicon.ico" rel="icon" sizes="16x16 32x32" type="image/x-icon"/>
+  <link href="https://coinmarketcap.com/alexandria/images/ico/favicon-32.png" rel="icon" sizes="32x32"/>
+  <link href="https://coinmarketcap.com/alexandria/images/ico/favicon-192.png" rel="icon" sizes="192x192"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <meta content="#2e2e2e" name="theme-color"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="86f2f08131d8239e3a4d73b0179d556eae74fa62209b410a64ff348f74e711ea" name="ahrefs-site-verification"/>
+  <meta content="wyJEt1aEuf8X_of3aofK_Tl5WprWou38Ze4o3ZeeGts" name="google-site-verification"/>
+  <meta content="e70af2cacdaf993fe72ef9fd208822bbebc2e028" name="naver-site-verification"/>
+  <meta content="7e56260ff92b3c3f" name="yandex-verification"/>
+  <script>
+   (function() {
+      var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+      _sf_async_config.uid = 66377;
+      _sf_async_config.domain = 'coinmarketcap.com';
+      _sf_async_config.useCanonical = true;
+      _sf_async_config.useCanonicalDomain = true;
+      _sf_async_config.flickerControl = false;
+      function loadChartbeat() {
+          var e = document.createElement('script');
+          var n = document.getElementsByTagName('script')[0];
+          e.type = 'text/javascript';
+          e.async = true;
+          e.src = '//static.chartbeat.com/js/chartbeat.js';
+          n.parentNode.insertBefore(e, n);
+      }
+      loadChartbeat();
+    })();
+  </script>
+  <script>
+   (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:1060636,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script async="" src="//static.chartbeat.com/js/chartbeat_mab.js">
+  </script>
+  <script charset="UTF-8">
+   var projectName="coinmarketcap.com"===location.host?"cmc":"default",sensors=window.sensorsDataAnalytic201505;!function(e){var t=e.sdk_url,r=e.name,s=window,n=document,a="script",c=null,o=null;if(void 0!==s.sensorsDataAnalytic201505)return!1;s.sensorsDataAnalytic201505=r,s[r]=s[r]||function(e){return function(){(s[r]._q=s[r]._q||[]).push([e,arguments])}};for(var i=["track","quick","register","registerPage","registerOnce","clearAllRegister","trackSignup","trackAbtest","setProfile","setOnceProfile","appendProfile","incrementProfile","deleteProfile","unsetProfile","identify","login","logout","trackLink"],l=0;l<i.length;l++)s[r][i[l]]=s[r].call(null,i[l]);s[r]._t||(c=n.createElement(a),o=n.getElementsByTagName(a)[0],c.async=1,c.src=t,c.setAttribute("charset","UTF-8"),s[r].para=e,o.parentNode.insertBefore(c,o))}({sdk_url:"https://cdn.jsdelivr.net/npm/sa-sdk-javascript@1.15.26/sensorsdata.min.js",name:"sensors",server_url:"https://sensors.binance.cloud/sa?project="+projectName,use_client_time:!0,send_type:"beacon",app_js_bridge:!0,show_log:!1,heatmap:{scroll_notice_map:"scroll_notice_map",collect_tags:{div:!0}}}),sensors.quick("autoTrack");
+  </script>
+  <link href="https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars" hreflang="en" rel="alternate"/>
+  <link href="https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars" hreflang="x-default" rel="alternate"/>
+  <title>
+   3 Minute Tips: What Are Gas Wars? | Alexandria
+  </title>
+  <meta content="index,follow" name="robots"/>
+  <meta content="index,follow" name="googlebot"/>
+  <meta content="Gas wars occur when different network participants battle it out to secure space in the next block, by taking part in a priority gas auction. Learn how to win in a gas war if you get caught in one in the future." name="description"/>
+  <meta content="https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars" property="og:url"/>
+  <meta content="article" property="og:type"/>
+  <meta content="3 Minute Tips: What Are Gas Wars? | CoinMarketCap" property="og:title"/>
+  <meta content="Gas wars occur when different network participants battle it out to secure space in the next block, by taking part in a priority gas auction. Learn how to win in a gas war if you get caught in one in the future." property="og:description"/>
+  <meta content="https://academy-public.coinmarketcap.com/optimized-uploads/771d204091bc439196e148c33af15e24.jpg" property="og:image"/>
+  <link href="https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars" rel="canonical"/>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://coinmarketcap.com/alexandria//article/3-minute-tips-what-are-gas-wars"
+    },
+    "headline": "3 Minute Tips: What Are Gas Wars?",
+    "image": [
+      "https://academy-public.coinmarketcap.com/optimized-uploads/771d204091bc439196e148c33af15e24.jpg"
+     ],
+    "datePublished": "2021-08-19T03:03:23.000Z",
+    "dateModified": "2021-08-19T03:03:23.000Z",
+    "author": {"@type": "Person","name": "CoinMarketCap"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "CoinMarketCap",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://coinmarketcap.com/alexandria/images/apple-touch-icon.png"
+      }
+    },
+    "description": "Gas wars occur when different network participants battle it out to secure space in the next block, by taking part in a priority gas auction. Learn how to win in a gas war if you get caught in one in the future."
+  }
+  </script>
+  <link as="image" imagesrcset="https://academy-public.coinmarketcap.com/optimized-uploads/771d204091bc439196e148c33af15e24.jpg 1x, https://academy-public.coinmarketcap.com/optimized-uploads/771d204091bc439196e148c33af15e24.jpg 2x" rel="preload"/>
+  <meta content="40" name="next-head-count"/>
+  <noscript data-n-css="">
+  </noscript>
+  <link as="script" href="/alexandria/_next/static/chunks/webpack-37e3146a8b69e7f35b5c.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/framework.f8bd46fc02868c500bda.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/04e37f4d6c528b0f0d80140d93dfb7aea3787e99.65571f932be9853a08b3.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/e8be24f57145524316a5f3a5a1367135728657a9.74d5b26cbc7639c9f70d.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/main-17decf8f2f93a326ecc1.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/db9b7ace882e78c03cd18cfdc014d8150d427169.457863b109ae76845421.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/cc09560be9c81fc7a21806c7d47db67c5afce608.2ba0087da578ac1db2bb.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/6e333aff15ab7779bcdc00cab5df5760b679d3b7.c5aafd63960017096fad.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/f7e86894c62b1b4585c33f328aa66be3e1a0fab3.60d37e9af8b1cec5a49c.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/6a0f8e083dd402f98433b56dc80f06a5212c7677.cba4459fc829defbf9c1.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/f29d735d71feedc072dc9851ac21bdba93356132.b6cb712649650f2a3d82.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/pages/_app-97796f1ab5f9a6c651f0.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/c6ebe4b14158841a4ff2a093869258a8b896b5d0.b3d069b828e5a0f091f1.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/a7ced4349a5a3a01f455762438431af0f43d1317.888a0860fc91bb6ead4c.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/61d1c476db4910a26448f908775c0a15a425313c.50221222468d0a9b8c19.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/7b0d724edad6d163eda5363a14422bba6434af08.2e5962d916a98b177de5.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/e3d24eb48a70eff3456a01e2819f084c397814b6.6f8d1b66a846269f5a55.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/3dd71bec730e6eb6ab138b7daf85921ddd1ae7bb.1c1faa954cef631d1567.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/96228f85c16890032173ca987b7dad9cefb8754d.521e1d11664b6e02e08a.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/1d9642865c5a754e58bb2ffa8f880f1ad09df7c0.9cea7ec07d533d5c3e3e.js" rel="preload"/>
+  <link as="script" href="/alexandria/_next/static/chunks/pages/article/%5Bslug%5D-b0e216e28f0e14b12bf9.js" rel="preload"/>
+  <style data-styled="" data-styled-version="5.2.1">
+   .bZFyDn{width:150px;color:#14151A;font-size:16px;font-weight:400;line-height:1.45;}/*!sc*/
+.cKSfzR{color:#000;width:20px;height:20px;}/*!sc*/
+.guyNMq{color:#000;width:32px;}/*!sc*/
+.uqPkp{vertical-align:middle;color:#000;width:32px;height:intrinsic;}/*!sc*/
+.dLcezr{font-size:18px;color:#000;font-weight:400;line-height:1.45;}/*!sc*/
+.kCeqsc{vertical-align:middle;width:20px;}/*!sc*/
+.kmkzFK{width:20px;height:20px;}/*!sc*/
+.hSHUfX{padding:8px;max-height:400px;}/*!sc*/
+@media screen and (min-width:768px){}/*!sc*/
+@media screen and (min-width:1200px){.hSHUfX{max-height:none;}}/*!sc*/
+.jZXIMD{color:#FFFFFF;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;width:100%;margin-left:24px;-webkit-flex:1;-ms-flex:1;flex:1;display:none;}/*!sc*/
+@media screen and (min-width:768px){.jZXIMD{display:none;}}/*!sc*/
+@media screen and (min-width:1200px){.jZXIMD{display:block;}}/*!sc*/
+.eBAqEu{width:12px;margin-left:8px;}/*!sc*/
+.hGITez{padding:8px;}/*!sc*/
+.bRtkcJ{font-size:16px;color:#000;font-weight:400;line-height:1.45;}/*!sc*/
+.ecKBcM{vertical-align:middle;width:24px;height:24px;}/*!sc*/
+.kGZDmf{max-width:752px;min-height:calc(100vh - 208px);padding-top:24px;padding-bottom:24px;padding-left:16px;padding-right:16px;}/*!sc*/
+.lifqWE{-webkit-transform:translateY(-100px);-ms-transform:translateY(-100px);transform:translateY(-100px);}/*!sc*/
+.cjnMxG{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-order:1;-ms-flex-order:1;order:1;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;-webkit-flex-basis:75%;-ms-flex-preferred-size:75%;flex-basis:75%;font-weight:500;padding-right:8px;color:#14151A;font-size:16px;line-height:1.45;}/*!sc*/
+@media screen and (min-width:768px){.cjnMxG{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;}}/*!sc*/
+.gQbnxJ{display:none;-webkit-order:2;-ms-flex-order:2;order:2;margin-left:0;}/*!sc*/
+@media screen and (min-width:768px){.gQbnxJ{-webkit-order:3;-ms-flex-order:3;order:3;margin-left:24px;}}/*!sc*/
+@media screen and (min-width:1200px){.gQbnxJ{display:block;}}/*!sc*/
+.jvVtgT{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}/*!sc*/
+.fWNSXR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-order:3;-ms-flex-order:3;order:3;margin-left:0;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}/*!sc*/
+@media screen and (min-width:768px){.fWNSXR{-webkit-order:3;-ms-flex-order:3;order:3;margin-left:24px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;}}/*!sc*/
+@media screen and (min-width:1200px){.fWNSXR{display:none;}}/*!sc*/
+.gSUsoi{width:24px;height:24px;}/*!sc*/
+.haGBPZ{-webkit-order:2;-ms-flex-order:2;order:2;}/*!sc*/
+@media screen and (min-width:768px){.haGBPZ{-webkit-order:2;-ms-flex-order:2;order:2;}}/*!sc*/
+.fJwUeL{font-size:12px;color:#14151A;font-weight:400;line-height:1.45;}/*!sc*/
+@media screen and (min-width:768px){.fJwUeL{font-size:16px;}}/*!sc*/
+.erLLvd{width:8px;margin-left:8px;}/*!sc*/
+.blnIOn{background-color:#3861FB;}/*!sc*/
+.jStWLp{color:#3861FB;font-size:16px;font-weight:400;line-height:1.45;}/*!sc*/
+.eoTVVS{font-size:32px;margin-bottom:32px;line-height:1.3;color:#14151A;font-weight:600;}/*!sc*/
+.clhOqr{color:#76808F;font-size:16px;margin-right:16px;font-weight:400;line-height:1.45;}/*!sc*/
+.kKBMco{vertical-align:middle;width:16px;height:16px;color:#76808F;}/*!sc*/
+.gtVAYr{color:#76808F;margin-left:4px;font-size:16px;font-weight:400;line-height:1.45;}/*!sc*/
+.eDxZZL{color:#76808F;margin-right:16px;font-size:16px;font-weight:400;line-height:1.45;}/*!sc*/
+.koUmyx{padding-top:40px;padding-bottom:40px;padding-left:32px;padding-right:32px;margin-top:40px;margin-bottom:40px;font-size:16px;}/*!sc*/
+.eOpHrs{background-color:#F8FAFD;padding-top:32px;padding-bottom:32px;padding-left:32px;padding-right:32px;margin-top:24px;}/*!sc*/
+.ksiqdi{font-size:24px;margin-bottom:8px;color:#14151A;font-weight:600;line-height:1.45;}/*!sc*/
+.bjGZcz{color:#3861FB;font-weight:600;font-size:16px;line-height:1.45;}/*!sc*/
+.QlHlj{padding-left:0;padding-right:0;padding-top:56px;padding-bottom:56px;max-width:1136px;}/*!sc*/
+.fAerDW{overflow-wrap:break-word;margin-bottom:32px;font-size:16px;line-height:1.6;color:#14151A;font-weight:400;}/*!sc*/
+@media screen and (min-width:768px){.fAerDW{font-size:18px;}}/*!sc*/
+.gbfvns{color:#3861FB;font-size:16px;font-weight:400;line-height:1.45;}/*!sc*/
+@media screen and (min-width:768px){.gbfvns{font-size:18px;}}/*!sc*/
+.iLpgJa{margin-bottom:32px;color:#14151A;font-size:16px;font-weight:600;line-height:1.45;}/*!sc*/
+.gPOvAF{margin-top:24px;margin-bottom:48px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+.hZZWDZ{height:20px;width:24px;color:#808A9D;}/*!sc*/
+.bFLuOX{margin-left:8px;font-size:14px;color:#14151A;font-weight:400;line-height:1.45;}/*!sc*/
+.dCEoLC{max-width:752px;padding-top:24px;padding-bottom:24px;padding-left:16px;padding-right:16px;}/*!sc*/
+.dBQaiO{background-color:#F8FAFD;padding-top:40px;padding-bottom:40px;margin-top:56px;}/*!sc*/
+.kA-dzTb{max-width:1136px;padding-top:24px;padding-bottom:24px;padding-left:16px;padding-right:16px;}/*!sc*/
+.bjGlIw{font-size:32px;color:#14151A;font-weight:600;line-height:1.45;}/*!sc*/
+.bGWzuD{padding-top:56px;padding-bottom:56px;}/*!sc*/
+.iXxiMt{display:block;}/*!sc*/
+.ftOUaZ{margin-bottom:24px;padding-top:56.25%;}/*!sc*/
+.jzZbpr{margin-bottom:24px;-webkit-flex:1;-ms-flex:1;flex:1;}/*!sc*/
+.bXSEgn{color:#14151A;margin-bottom:8px;font-size:16px;font-weight:600;line-height:1.45;}/*!sc*/
+.hOMFgM{color:#76808F;font-size:14px;font-weight:400;line-height:1.45;}/*!sc*/
+.fDPsJm{color:#76808F;font-size:12px;font-weight:400;line-height:1.45;}/*!sc*/
+.hAnSfs{vertical-align:middle;width:12px;height:12px;color:#76808F;}/*!sc*/
+.czscDz{color:#76808F;margin-left:4px;font-size:12px;font-weight:400;line-height:1.45;}/*!sc*/
+.bwxocM{vertical-align:middle;width:24px;}/*!sc*/
+.jKSHrp{max-width:1200px;padding-top:24px;padding-bottom:24px;padding-left:16px;padding-right:16px;}/*!sc*/
+.iCRjms{padding-top:56px;padding-bottom:56px;background-color:#F5F5F5;}/*!sc*/
+.bFOiFL{font-size:16px;text-align:center;color:#3861FB;margin-bottom:24px;font-weight:400;line-height:1.45;}/*!sc*/
+@media screen and (min-width:768px){.bFOiFL{text-align:left;}}/*!sc*/
+@media screen and (min-width:1200px){.bFOiFL{font-size:18px;}}/*!sc*/
+.epLOPA{font-size:24px;margin-bottom:8px;text-align:center;line-height:1.2;color:#14151A;font-weight:600;}/*!sc*/
+@media screen and (min-width:768px){.epLOPA{text-align:left;}}/*!sc*/
+@media screen and (min-width:1200px){.epLOPA{font-size:32px;}}/*!sc*/
+.dGqbKE{-webkit-flex:1;-ms-flex:1;flex:1;}/*!sc*/
+.eToAte{margin-left:8px;}/*!sc*/
+data-styled.g1[id="sc-bdfBwQ"]{content:"bZFyDn,cKSfzR,guyNMq,uqPkp,dLcezr,kCeqsc,kmkzFK,hSHUfX,jZXIMD,eBAqEu,hGITez,bRtkcJ,ecKBcM,kGZDmf,lifqWE,cjnMxG,gQbnxJ,jvVtgT,fWNSXR,gSUsoi,haGBPZ,fJwUeL,erLLvd,blnIOn,jStWLp,eoTVVS,clhOqr,kKBMco,gtVAYr,eDxZZL,koUmyx,eOpHrs,ksiqdi,bjGZcz,QlHlj,fAerDW,gbfvns,iLpgJa,gPOvAF,hZZWDZ,bFLuOX,dCEoLC,dBQaiO,kA-dzTb,bjGlIw,bGWzuD,iXxiMt,ftOUaZ,jzZbpr,bXSEgn,hOMFgM,fDPsJm,hAnSfs,czscDz,bwxocM,jKSHrp,iCRjms,bFOiFL,epLOPA,dGqbKE,eToAte,"}/*!sc*/
+.inJjsD{position:relative;height:80px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#ffffff;padding-left:16px;padding-right:16px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+@media screen and (min-width:768px){.inJjsD{padding-left:24px;padding-right:24px;}}/*!sc*/
+.fBYRBQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+@media screen and (min-width:768px){.fBYRBQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}/*!sc*/
+@media screen and (min-width:1200px){.fBYRBQ{display:none;}}/*!sc*/
+.jUEeyM{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:24px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.kupqjK{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:0;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.irrFZf{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin-top:24px;margin-bottom:24px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.kSSfgv{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.leStXf{color:#000;margin-right:32px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.cZWuHU{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:16px;padding-bottom:16px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.kAuvPc{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-left:16px;margin-right:16px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.cHCQYY{-webkit-flex:1;-ms-flex:1;flex:1;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.bgZavq{box-shadow:0px 0px 1px rgba(20,21,26,0.1),0px 7px 14px rgba(71,77,87,0.08),0px 3px 6px rgba(20,21,26,0.08);height:auto;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:24px;padding-right:24px;padding-top:8px;padding-bottom:8px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+@media screen and (min-width:768px){.bgZavq{height:64px;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;padding-left:24px;padding-right:24px;padding-top:0;padding-bottom:0;}}/*!sc*/
+@media screen and (min-width:1200px){.bgZavq{padding-left:56px;padding-right:56px;}}/*!sc*/
+.hSEAzV{cursor:pointer;color:#474D57;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.HVMbO{margin-bottom:4px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.cYTCNP{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.lmyhRy{margin-bottom:48px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.ghfBCu{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:start;-webkit-box-align:start;-ms-flex-align:start;align-items:start;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.hoYWsg{padding-bottom:8px;font-size:12px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.gvdfNf{padding-bottom:24px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.dSCuHF{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;margin-left:16px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.hFwcgf{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+data-styled.g2[id="sc-gsTCUz"]{content:"inJjsD,fBYRBQ,jUEeyM,kupqjK,irrFZf,kSSfgv,leStXf,cZWuHU,kAuvPc,cHCQYY,bgZavq,hSEAzV,HVMbO,cYTCNP,lmyhRy,ghfBCu,hoYWsg,gvdfNf,dSCuHF,hFwcgf,"}/*!sc*/
+.jcleUz{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border:1px solid transparent;border-radius:4px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;font-weight:500;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;white-space:nowrap;outline:0;font-size:14px;height:32px;line-height:20px;padding-left:16px;padding-right:16px;background-color:#F5F5F5;color:#14151A;}/*!sc*/
+.jcleUz:hover{cursor:pointer;}/*!sc*/
+.jcleUz:focus{box-shadow:0 0 0 2px #222531;}/*!sc*/
+.jcleUz:disabled{cursor:not-allowed;}/*!sc*/
+.jcleUz:hover:not(:disabled){background-color:#F2F2F2;}/*!sc*/
+.jcleUz:active:not(:disabled){background-color:#F5F5F5;}/*!sc*/
+.jcleUz:focus{background-color:#FAFAFA;}/*!sc*/
+.jcleUz:disabled{background-color:#F5F5F5;color:#76808F;}/*!sc*/
+.bxNOKk{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border:1px solid transparent;border-radius:4px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;font-weight:500;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;white-space:nowrap;outline:0;font-size:14px;height:40px;line-height:20px;padding-left:16px;padding-right:16px;border-radius:8px;background-color:#222531;color:#FFFFFF;}/*!sc*/
+.bxNOKk:hover{cursor:pointer;}/*!sc*/
+.bxNOKk:focus{box-shadow:0 0 0 2px #222531;}/*!sc*/
+.bxNOKk:disabled{cursor:not-allowed;}/*!sc*/
+.bxNOKk:hover:not(:disabled){background-color:#2B2F36;}/*!sc*/
+.bxNOKk:active:not(:disabled){background-color:#2B2F36;}/*!sc*/
+.bxNOKk:focus{background-color:#2B2F36;}/*!sc*/
+.bxNOKk:disabled{background-color:#F5F5F5;color:#76808F;}/*!sc*/
+.cCzBkx{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border:1px solid transparent;border-radius:4px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;font-weight:500;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;white-space:nowrap;outline:0;font-size:16px;height:48px;line-height:24px;padding-left:16px;padding-right:16px;background-image:linear-gradient(180deg,#3861FB 0%,#3861FB 100%);color:#fff;border-width:0;}/*!sc*/
+.cCzBkx:hover{cursor:pointer;}/*!sc*/
+.cCzBkx:focus{box-shadow:0 0 0 2px #222531;}/*!sc*/
+.cCzBkx:disabled{cursor:not-allowed;}/*!sc*/
+.cCzBkx:hover:not(:disabled){background-image:linear-gradient(180deg,#3861FB 0%,#3861FB 100%);}/*!sc*/
+.cCzBkx:active:not(:disabled){background-image:linear-gradient(180deg,#3861FB 0%,#3861FB 100%);}/*!sc*/
+.cCzBkx:focus{background-image:linear-gradient(180deg,#3861FB 0%,#3861FB 100%);}/*!sc*/
+.cCzBkx:disabled{background-image:none;background-color:linear-gradient(180deg,#3861FB 0%,#3861FB 100%);color:#fff;}/*!sc*/
+data-styled.g3[id="Button__StyledButton-sc-1kvh4an-0"]{content:"jcleUz,bxNOKk,cCzBkx,"}/*!sc*/
+.cEbvLE{margin-left:0.5em;}/*!sc*/
+.cEbvLE svg{display:block;}/*!sc*/
+data-styled.g4[id="Button__EndIcon-sc-1kvh4an-1"]{content:"cEbvLE,"}/*!sc*/
+.khdEkh{margin:auto;}/*!sc*/
+data-styled.g8[id="Container-sc-4c5vqs-0"]{content:"khdEkh,"}/*!sc*/
+.eYLPhT{display:grid;grid-template-columns:1fr;grid-gap:8px;grid-template-rows:auto;}/*!sc*/
+@media screen and (min-width:768px){}/*!sc*/
+@media screen and (min-width:1200px){.eYLPhT{grid-template-columns:1fr;}}/*!sc*/
+.hhlnuT{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto;}/*!sc*/
+.hfyApF{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:16px;grid-template-rows:auto;}/*!sc*/
+.iaLNSR{display:grid;grid-template-rows:repeat(4,1fr);grid-gap:16px;grid-template-columns:auto;}/*!sc*/
+.ZAQjM{display:grid;grid-gap:16px;grid-template-columns:1fr;grid-template-rows:auto;}/*!sc*/
+@media screen and (min-width:768px){.ZAQjM{grid-template-columns:1fr 1fr;}}/*!sc*/
+@media screen and (min-width:1200px){.ZAQjM{grid-template-columns:1fr 1fr 1fr;}}/*!sc*/
+data-styled.g9[id="Grid-sc-3uwl3g-0"]{content:"eYLPhT,hhlnuT,hfyApF,iaLNSR,ZAQjM,"}/*!sc*/
+.dAnDNe{word-break:break-word;}/*!sc*/
+.ehzvDo{font-size:32px;line-height:40px;word-break:break-word;}/*!sc*/
+.ffRerq{font-size:18px;line-height:28px;word-break:break-word;}/*!sc*/
+data-styled.g13[id="Heading-juwhnu-0"]{content:"dAnDNe,ehzvDo,ffRerq,"}/*!sc*/
+.bBRENP{background-color:#ffffff;border-radius:4px;box-shadow:0px 0px 1px rgba(0,0,0,0.1),0px 3px 6px rgba(0,0,0,0.04),0px 1px 2px rgba(0,0,0,0.04);position:relative;}/*!sc*/
+data-styled.g25[id="Dropdown__Menu-egbkvi-0"]{content:"bBRENP,"}/*!sc*/
+.dpplru{display:none;position:absolute;width:-webkit-max-content;width:-moz-max-content;width:max-content;z-index:1000;bottom:100%;left:auto;padding:0 0 16px 0;right:auto;top:auto;}/*!sc*/
+@media screen and (min-width:768px){.dpplru{bottom:auto;left:auto;padding:16px 0 0 0;right:auto;top:100%;}}/*!sc*/
+.gaITVH{display:none;position:absolute;width:-webkit-max-content;width:-moz-max-content;width:max-content;z-index:1000;bottom:auto;left:auto;padding:16px 0 0 0;right:auto;top:100%;}/*!sc*/
+.jrosAA{display:none;position:absolute;width:-webkit-max-content;width:-moz-max-content;width:max-content;z-index:1000;bottom:auto;left:auto;padding:16px 0 0 0;right:0;top:100%;}/*!sc*/
+.jpFHJB{display:none;position:absolute;width:-webkit-max-content;width:-moz-max-content;width:max-content;z-index:1000;bottom:auto;left:auto;padding:16px 0 0 0;right:auto;top:100%;}/*!sc*/
+@media screen and (min-width:768px){.jpFHJB{bottom:auto;left:auto;padding:16px 0 0 0;right:0;top:100%;}}/*!sc*/
+data-styled.g26[id="Dropdown__DropdownWrapper-egbkvi-1"]{content:"dpplru,gaITVH,jrosAA,jpFHJB,"}/*!sc*/
+.iOZaIg{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;position:relative;}/*!sc*/
+.iOZaIg:after{border-color:transparent;border-style:solid;border-width:8px;content:"";display:none;height:0;position:absolute;-webkit-transform:translate(rotate(-45deg));-ms-transform:translate(rotate(-45deg));transform:translate(rotate(-45deg));-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;width:0;z-index:1001;}/*!sc*/
+.iOZaIg:hover::after,.iOZaIg:focus-within::after{border-color:#FFFFFF transparent transparent transparent;bottom:100%;display:block;-webkit-filter:drop-shadow(0px 2px 1px rgba(0,0,0,0.1));filter:drop-shadow(0px 2px 1px rgba(0,0,0,0.1));left:50%;margin-left:-8px;right:auto;top:auto;}/*!sc*/
+@media screen and (min-width:768px){.iOZaIg:hover::after,.iOZaIg:focus-within::after{bottom:auto;border-color:transparent transparent #FFFFFF transparent;display:block;-webkit-filter:drop-shadow(0px -1px 1px rgba(0,0,0,0.1));filter:drop-shadow(0px -1px 1px rgba(0,0,0,0.1));left:50%;margin-left:-8px;right:auto;top:100%;}}/*!sc*/
+.iOZaIg:hover .Dropdown__DropdownWrapper-egbkvi-1,.iOZaIg:focus-within .Dropdown__DropdownWrapper-egbkvi-1,.iOZaIg.wrapper--open .Dropdown__DropdownWrapper-egbkvi-1{display:block;}/*!sc*/
+.hjcGbS{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;position:relative;}/*!sc*/
+.hjcGbS:after{border-color:transparent;border-style:solid;border-width:8px;content:"";display:none;height:0;position:absolute;-webkit-transform:translate(rotate(-45deg));-ms-transform:translate(rotate(-45deg));transform:translate(rotate(-45deg));-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;width:0;z-index:1001;}/*!sc*/
+.hjcGbS:hover::after,.hjcGbS:focus-within::after{bottom:auto;border-color:transparent transparent #FFFFFF transparent;display:block;-webkit-filter:drop-shadow(0px -1px 1px rgba(0,0,0,0.1));filter:drop-shadow(0px -1px 1px rgba(0,0,0,0.1));left:50%;margin-left:-8px;right:auto;top:100%;}/*!sc*/
+.hjcGbS:hover .Dropdown__DropdownWrapper-egbkvi-1,.hjcGbS:focus-within .Dropdown__DropdownWrapper-egbkvi-1,.hjcGbS.wrapper--open .Dropdown__DropdownWrapper-egbkvi-1{display:block;}/*!sc*/
+.dKySxu{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;position:relative;}/*!sc*/
+.dKySxu:after{border-color:transparent;border-style:solid;border-width:8px;content:"";display:none;height:0;position:absolute;-webkit-transform:translate(rotate(-45deg));-ms-transform:translate(rotate(-45deg));transform:translate(rotate(-45deg));-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;width:0;z-index:1001;}/*!sc*/
+.dKySxu:hover::after,.dKySxu:focus-within::after{bottom:auto;border-color:transparent transparent #FFFFFF transparent;display:block;-webkit-filter:drop-shadow(0px -1px 1px rgba(0,0,0,0.1));filter:drop-shadow(0px -1px 1px rgba(0,0,0,0.1));left:50%;margin-left:-8px;right:auto;top:100%;}/*!sc*/
+@media screen and (min-width:768px){.dKySxu:hover::after,.dKySxu:focus-within::after{bottom:auto;border-color:transparent transparent #FFFFFF transparent;display:block;-webkit-filter:drop-shadow(0px -1px 1px rgba(0,0,0,0.1));filter:drop-shadow(0px -1px 1px rgba(0,0,0,0.1));left:50%;margin-left:-8px;right:auto;top:100%;}}/*!sc*/
+.dKySxu:hover .Dropdown__DropdownWrapper-egbkvi-1,.dKySxu:focus-within .Dropdown__DropdownWrapper-egbkvi-1,.dKySxu.wrapper--open .Dropdown__DropdownWrapper-egbkvi-1{display:block;}/*!sc*/
+data-styled.g27[id="Dropdown__Wrapper-egbkvi-2"]{content:"iOZaIg,hjcGbS,dKySxu,"}/*!sc*/
+.IiwYn{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:#FFFFFF;border:1px solid #E6E8EA;border-radius:8px;color:#14151A;display:block;outline:0;-webkit-transition:border-color 150ms ease-in-out;transition:border-color 150ms ease-in-out;width:100%;font-size:16px;height:48px;padding-left:16px;padding-right:16px;}/*!sc*/
+.IiwYn:focus{box-shadow:0 0 0 2px #3861FB;}/*!sc*/
+.IiwYn::-webkit-input-placeholder{color:#AEB4BC;}/*!sc*/
+.IiwYn::-moz-placeholder{color:#AEB4BC;}/*!sc*/
+.IiwYn:-ms-input-placeholder{color:#AEB4BC;}/*!sc*/
+.IiwYn::placeholder{color:#AEB4BC;}/*!sc*/
+data-styled.g29[id="Input__StyledInput-hw3pg2-0"]{content:"IiwYn,"}/*!sc*/
+.jmfAe{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:transparent;border:0;border-radius:4px;color:#000;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:40px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;outline:0;padding:0;width:40px;}/*!sc*/
+.jmfAe:hover{background-color:#ccc;}/*!sc*/
+.jmfAe:focus{box-shadow:0 0 0 2px #3861FB;}/*!sc*/
+data-styled.g31[id="NavButton-sc-1sr7lbk-0"]{content:"jmfAe,"}/*!sc*/
+.gitnvH{position:fixed;top:80px;right:16px;max-height:100%;max-width:343px;width:100%;pointer-events:none;}/*!sc*/
+data-styled.g32[id="notification__NotificationContainer-ru7pbh-0"]{content:"gitnvH,"}/*!sc*/
+.hQeyNG{width:205px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+.hQeyNG svg{height:40px;display:block;}/*!sc*/
+.hQeyNG svg:first-child{padding-right:8px;}/*!sc*/
+.hQeyNG svg:last-child{padding-left:8px;}/*!sc*/
+data-styled.g34[id="Logo__SvgContainer-hxzlkl-0"]{content:"hQeyNG,"}/*!sc*/
+.iOKdEn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:8px;padding:16px;background:transparent;color:#000;}/*!sc*/
+.iOKdEn:hover{background:#000;color:#fff;}/*!sc*/
+data-styled.g36[id="ListCTA__Link-rp0q6e-0"]{content:"iOKdEn,"}/*!sc*/
+@media screen and (max-width:1200px){.iSSjsx{color:#ffffff;background-color:#ffffff;width:50px;height:50px;}.iSSjsx:hover{background-color:#F5F5F5;}}/*!sc*/
+data-styled.g38[id="LanguageSwitcher__Button-sc-1rgi4yk-0"]{content:"iSSjsx,"}/*!sc*/
+.cZFSA-d{padding:16px 24px;}/*!sc*/
+data-styled.g39[id="MainPanel__Container-dujdt9-0"]{content:"cZFSA-d,"}/*!sc*/
+.ljOoWA{background:#ffffff;padding:16px 24px 80px 24px;}/*!sc*/
+data-styled.g40[id="MainPanel__ListContainer-dujdt9-1"]{content:"ljOoWA,"}/*!sc*/
+.cIKCMm:hover{background-color:#f8fafd;}/*!sc*/
+data-styled.g41[id="Navbar__MenuItem-zbdsw1-0"]{content:"cIKCMm,"}/*!sc*/
+.jabPmx{position:fixed;background:#ffffff;top:0;right:-375px;width:100%;max-width:375px;height:100vh;overflow-y:auto;-webkit-transition:right 0.4s;transition:right 0.4s;z-index:11;}/*!sc*/
+data-styled.g44[id="Panel__Wrapper-rgznpu-0"]{content:"jabPmx,"}/*!sc*/
+.jtlwNr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:16px 24px;background:#ffffff;}/*!sc*/
+data-styled.g45[id="Panel__Header-rgznpu-1"]{content:"jtlwNr,"}/*!sc*/
+.hbrKEE{display:none;}/*!sc*/
+data-styled.g47[id="Navbar__Input-midvey-1"]{content:"hbrKEE,"}/*!sc*/
+.LHhmf{margin-left:8px;}/*!sc*/
+data-styled.g48[id="Navbar__Label-midvey-2"]{content:"LHhmf,"}/*!sc*/
+.fJcvOH{background-color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;max-width:375px;overflow:hidden;position:absolute;right:0;top:0;-webkit-transition:width 400ms linear;transition:width 400ms linear;width:0;box-shadow:1px 1px 2px 0 rgb(88 102 126 / 42%),4px 4px 40px 0 rgb(88 102 126 / 28%);margin-top:8px;}/*!sc*/
+data-styled.g50[id="SearchForm-sc-1vfffbc-0"]{content:"fJcvOH,"}/*!sc*/
+.hZCLgD{background-color:#fff;border:0;color:#000;font-size:20px;width:100%;height:64px;outline:0;padding-left:24px;padding-right:24px;}/*!sc*/
+data-styled.g51[id="SearchForm__Input-sc-1vfffbc-1"]{content:"hZCLgD,"}/*!sc*/
+.eSLlrc{background-color:transparent;border:0;color:#000;cursor:pointer;height:64px;outline:0;width:64px;}/*!sc*/
+data-styled.g52[id="SearchForm__CloseButton-sc-1vfffbc-2"]{content:"eSLlrc,"}/*!sc*/
+.cMwSJN{-webkit-flex:1;-ms-flex:1;flex:1;}/*!sc*/
+data-styled.g53[id="SearchForm__Label-sc-1vfffbc-3"]{content:"cMwSJN,"}/*!sc*/
+.cgHWSS{padding:24px;}/*!sc*/
+.cgHWSS footer{background:#12141d;color:#fff;padding:48px;border-radius:16px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.cgHWSS footer > *{-webkit-flex:1;-ms-flex:1;flex:1;}/*!sc*/
+.cgHWSS .logo svg path{fill:#fff;}/*!sc*/
+.cgHWSS .social{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}/*!sc*/
+.cgHWSS .social > a svg{height:32px;margin:0 12px;}/*!sc*/
+.cgHWSS .copyright{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;}/*!sc*/
+@media screen and (max-width:930px){.cgHWSS footer{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.cgHWSS footer > *{padding:16px 0;}}/*!sc*/
+data-styled.g55[id="Footer__FooterContainer-sc-1xgrmdq-1"]{content:"cgHWSS,"}/*!sc*/
+@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:swap;src:url("/alexandria/fonts/inter/Inter-Light.woff2") format("woff2"),url("/fonts/inter/Inter-Light.woff") format("woff");}/*!sc*/
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("/alexandria/fonts/inter/Inter-Regular-new.woff2") format("woff2"),url("/fonts/inter/Inter-Regular-new.woff") format("woff");}/*!sc*/
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("/alexandria/fonts/inter/Inter-Medium-new.woff2") format("woff2"),url("/fonts/inter/Inter-Medium-new.woff") format("woff");}/*!sc*/
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("/alexandria/fonts/inter/Inter-SemiBold-new.woff2") format("woff2"),url("/fonts/inter/Inter-SemiBold-new.woff") format("woff");}/*!sc*/
+:root{--tooltip-border-radius:4px;--tooltip-color:#0B0E11;--tooltip-text-color:#FFFFFF;--tooltip-font-size:12px;--tooltip-move:4px;}/*!sc*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}/*!sc*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}/*!sc*/
+body{line-height:1;}/*!sc*/
+ol,ul{list-style:disc;list-style-position:inside;}/*!sc*/
+blockquote,q{quotes:none;}/*!sc*/
+blockquote:before,blockquote:after,q:before,q:after{content:"";content:none;}/*!sc*/
+table{border-collapse:collapse;border-spacing:0;}/*!sc*/
+*,*::before,*::after{box-sizing:border-box;}/*!sc*/
+*{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}/*!sc*/
+[role="button"]{cursor:pointer;}/*!sc*/
+body{background-color:#FFFFFF;}/*!sc*/
+a{color:inherit;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.no-scroll{overflow:hidden;}/*!sc*/
+svg,img{max-width:100%;height:auto;}/*!sc*/
+iframe{max-width:100%;}/*!sc*/
+.coverImage{border-radius:16px;}/*!sc*/
+amp-img img{object-fit:contain;}/*!sc*/
+data-styled.g56[id="sc-global-fIRkdD1"]{content:"sc-global-fIRkdD1,"}/*!sc*/
+@media screen and (max-width:600px){.cdmsOS{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;}.cdmsOS > *:first-child{margin-bottom:16px;width:100%;}}/*!sc*/
+data-styled.g61[id="NewsletterForm__InputFlex-ux3sq5-0"]{content:"cdmsOS,"}/*!sc*/
+.ldGcwa{cursor:pointer;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:24px;height:24px;-webkit-transition:ease-out 0.2s;transition:ease-out 0.2s;color:#76808F;}/*!sc*/
+.ldGcwa:hover{color:#1DA1F2;}/*!sc*/
+.ldGcwa svg{width:100%;height:100%;}/*!sc*/
+.kINMVY{cursor:pointer;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:24px;height:24px;-webkit-transition:ease-out 0.2s;transition:ease-out 0.2s;color:#76808F;}/*!sc*/
+.kINMVY:hover{color:#4267B2;}/*!sc*/
+.kINMVY svg{width:100%;height:100%;}/*!sc*/
+.kWcfCj{cursor:pointer;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:24px;height:24px;-webkit-transition:ease-out 0.2s;transition:ease-out 0.2s;color:#76808F;}/*!sc*/
+.kWcfCj:hover{color:#0088cc;}/*!sc*/
+.kWcfCj svg{width:100%;height:100%;}/*!sc*/
+.sHTpX{cursor:pointer;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:24px;height:24px;-webkit-transition:ease-out 0.2s;transition:ease-out 0.2s;color:#76808F;}/*!sc*/
+.sHTpX:hover{color:black;}/*!sc*/
+.sHTpX svg{width:100%;height:100%;}/*!sc*/
+data-styled.g68[id="SocialLink__IconWrapper-sc-1toayxk-0"]{content:"ldGcwa,kINMVY,kWcfCj,sHTpX,"}/*!sc*/
+.eMGdpa{-webkit-transition:width 300ms linear 0s;transition:width 300ms linear 0s;height:4px;}/*!sc*/
+data-styled.g70[id="ProgressBar__Bar-sc-7ekl2x-0"]{content:"eMGdpa,"}/*!sc*/
+.eMCbwr{background-color:#FFFFFF;position:fixed;top:0;left:0;width:100%;-webkit-transition:-webkit-transform 0.3s ease-in;-webkit-transition:transform 0.3s ease-in;transition:transform 0.3s ease-in;z-index:1;}/*!sc*/
+data-styled.g71[id="StickyBarWrapper__Wrapper-sc-8z2dej-0"]{content:"eMCbwr,"}/*!sc*/
+.iPCECF{border-radius:8px;height:40px;padding:0;width:40px;}/*!sc*/
+data-styled.g72[id="SocialShareMobile__IconButton-wlnyr9-0"]{content:"iPCECF,"}/*!sc*/
+.estnki{padding:16px;width:60px;}/*!sc*/
+data-styled.g73[id="SocialShareMobile__Menu-wlnyr9-1"]{content:"estnki,"}/*!sc*/
+.PywUU{padding:16px;max-height:calc(100vh - 105px);max-width:320px;overflow-y:auto;width:100%;}/*!sc*/
+data-styled.g74[id="StickyBar__ToC-rk0m1f-0"]{content:"PywUU,"}/*!sc*/
+.eGrglv{border-radius:8px;font-weight:300;line-height:1.45;padding:16px;}/*!sc*/
+.eGrglv:hover{background-color:#f5f5f5;cursor:pointer;}/*!sc*/
+data-styled.g75[id="StickyBar__ToCButton-rk0m1f-1"]{content:"eGrglv,"}/*!sc*/
+@media screen and (min-width:832px){.bVYJZw{margin:0 -40px;width:calc(100% + 80px);max-width:calc(100vw - 32px);}.bVYJZw > *{width:100%;}}/*!sc*/
+data-styled.g76[id="ArticleCover__CoverBox-sc-9pmloj-0"]{content:"bVYJZw,"}/*!sc*/
+.dOATlA h2 a,.dOATlA h3 a,.dOATlA h4 a{font-size:inherit;}/*!sc*/
+.dOATlA figure.w-richtext-figure-type-video{margin:0 auto 32px;}/*!sc*/
+.dOATlA figure.w-richtext-figure-type-video.w-richtext-figure-type-video{height:0;width:60%;position:relative;}/*!sc*/
+.dOATlA figure.w-richtext-figure-type-video.w-richtext-figure-type-video.w-richtext-align-fullwidth{width:100%;}/*!sc*/
+.dOATlA figure.w-richtext-figure-type-video.w-richtext-figure-type-video iframe{position:absolute;top:0;left:0;height:100%;}/*!sc*/
+.dOATlA figure.w-richtext-figure-type-video iframe{width:100%;}/*!sc*/
+.dOATlA figure{margin-bottom:32px;}/*!sc*/
+.dOATlA .twitter-tweet-rendered{margin:0 auto;}/*!sc*/
+.dOATlA .disclaimer{margin-top:24px;margin-bottom:24px;color:#58667e;font-size:12px;line-height:20px;}/*!sc*/
+.dOATlA .disclaimer p{margin-bottom:8px;}/*!sc*/
+.dOATlA .fr-video{height:0;padding-bottom:56.206088992974244%;position:relative;display:inline-block;width:100%;}/*!sc*/
+.dOATlA .fr-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;}/*!sc*/
+data-styled.g80[id="ArticleContent__ArticleContainer-sc-18n1x4l-0"]{content:"dOATlA,"}/*!sc*/
+.dwcfaP{border-left:4px solid #3ce9a8;background:#f8fafd;line-height:1.4;}/*!sc*/
+data-styled.g81[id="ArticleContent__ArticleSummaryBox-sc-18n1x4l-1"]{content:"dwcfaP,"}/*!sc*/
+.fiqiCA{border-radius:32px;}/*!sc*/
+.fiqiCA ul{list-style-position:outside;padding-left:20px;}/*!sc*/
+.fiqiCA .toc-link *{font-size:inherit;}/*!sc*/
+data-styled.g82[id="ArticleContent__TableOfContents-sc-18n1x4l-2"]{content:"fiqiCA,"}/*!sc*/
+.gMCoqt .name{color:#000;}/*!sc*/
+data-styled.g83[id="ArticleContent__AuthorLink-sc-18n1x4l-3"]{content:"gMCoqt,"}/*!sc*/
+.bKWLgX{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background:#f8fafd;padding:24px 40px 24px 24px;border-radius:16px;}/*!sc*/
+.bKWLgX .image-link{border-radius:20px;overflow:hidden;margin-right:24px;display:block;-webkit-flex:0 0 72px;-ms-flex:0 0 72px;flex:0 0 72px;}/*!sc*/
+.bKWLgX h3{margin-bottom:4px;}/*!sc*/
+.bKWLgX p{line-height:1.5;color:#58667e;}/*!sc*/
+data-styled.g84[id="ArticleAuthor__AuthorSection-t18p1k-0"]{content:"bKWLgX,"}/*!sc*/
+.fqZiSi{background-position:center center;background-repeat:no-repeat;background-size:cover;background-color:#d3d3d3;border-radius:16px;display:block;height:0;max-width:100%;position:relative;width:100%;}/*!sc*/
+data-styled.g85[id="LazyBackground__Background-sc-16pnu62-0"]{content:"fqZiSi,"}/*!sc*/
+.gRgJsG:hover{-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+data-styled.g86[id="Title__StyledTitle-sc-6yi3ll-0"]{content:"gRgJsG,"}/*!sc*/
+.jZHrE{position:relative;height:100%;}/*!sc*/
+data-styled.g88[id="ArticleCard__ArticleBox-sc-4ctgqh-0"]{content:"jZHrE,"}/*!sc*/
+.SmqGy{color:#3861FB;line-height:1.5;padding-bottom:4px;}/*!sc*/
+data-styled.g89[id="ArticleCard__Category-sc-4ctgqh-1"]{content:"SmqGy,"}/*!sc*/
+.pQehZ{padding-left:32px;padding-right:32px;}/*!sc*/
+.pQehZ p,.pQehZ h3{text-align:center;}/*!sc*/
+.pQehZ form{margin-top:24px;max-width:500px;margin:24px auto 0;}/*!sc*/
+data-styled.g92[id="Newsletter__NewsletterSection-tgkqos-0"]{content:"pQehZ,"}/*!sc*/
+.eTnhwi{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:relative;box-sizing:border-box;background-color:transparent;outline:0px;border:0px;margin:0px;padding:0px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+@media (hover:none){.eTnhwi{cursor:inherit;}}/*!sc*/
+data-styled.g93[id="LikeButton__StyledButton-sc-1xl44e6-0"]{content:"eTnhwi,"}/*!sc*/
+  </style>
+ </head>
+ <body data-ts="2022-03-22T00:09:19.045Z">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-40475998-1">
+  </script>
+  <div id="__next">
+   <div class="notification__NotificationContainer-ru7pbh-0 gitnvH">
+    <div>
+    </div>
+   </div>
+   <div class="sc-bdfBwQ">
+    <nav class="sc-gsTCUz inJjsD">
+     <div class="Logo__SvgContainer-hxzlkl-0 hQeyNG">
+      <a href="/">
+       <svg color="primary" viewbox="0 0 76.52 77.67" xmlns="http://www.w3.org/2000/svg">
+        <path d="M66.54 46.41a4.09 4.09 0 01-4.17.28C60.83 45.82 60 43.78 60 41v-8.52c0-4.09-1.62-7-4.33-7.79-4.58-1.34-8 4.27-9.32 6.38l-8.1 13.11v-16c-.09-3.69-1.29-5.9-3.56-6.56-1.5-.44-3.75-.26-5.94 3.08L10.64 53.77A32 32 0 017 38.83C7 21.31 21 7.06 38.25 7.06s31.3 14.25 31.3 31.77v.18c.17 3.39-.93 6.09-3 7.4zm10-7.57v-.17C76.4 17.32 59.28 0 38.25 0S0 17.42 0 38.83s17.16 38.84 38.25 38.84a37.81 37.81 0 0026-10.36 3.56 3.56 0 00.18-5 3.43 3.43 0 00-4.86-.23A30.93 30.93 0 0115 60l16.3-26.2v12.09c0 5.81 2.25 7.69 4.14 8.24s4.78.17 7.81-4.75l9-14.57c.28-.47.55-.87.79-1.22V41c0 5.43 2.18 9.77 6 11.91a11 11 0 0011.21-.45c4.2-2.73 6.49-7.67 6.25-13.62z" fill="#17181b">
+        </path>
+       </svg>
+      </a>
+      <a aria-label="Home page" class="sc-bdfBwQ Text-msjfkz-0 bZFyDn" href="/alexandria">
+       <svg color="primary" viewbox="0 0 127.2 40" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.2 25l.9-2.7h4L26 25h1.6L24 14.8h-1.8L18.6 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3h-3.1zM31.4 25h6.1v-1.3h-4.6v-8.9h-1.5V25zM41.5 25H48v-1.3h-4.9v-3.1h4.5v-1.3h-4.5v-3.1h4.8v-1.3h-6.4V25zM53.3 14.8h-1.8l3.2 5.1-3.2 5.1h1.8l2.4-3.9h.1l2.4 3.9H60l-3.2-5.1 3.2-5.1h-1.8l-2.4 4h-.1l-2.4-4zM64.6 25l.9-2.7h4l.9 2.7H72l-3.7-10.2h-1.8L63 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3H66zM84 14.8h-1.5v7.5h-.1l-5.2-7.5h-1.4V25h1.5v-7.5h.1l5.2 7.5H84V14.8zM91.8 25c3.1 0 4.9-1.9 4.9-5.1 0-3.2-1.8-5.1-4.8-5.1h-3.4V25h3.3zm-1.7-1.3v-7.5h1.8c2.2 0 3.4 1.3 3.4 3.7 0 2.4-1.1 3.8-3.5 3.8h-1.7zM100.9 25h1.5v-3.9h2.2l2.1 3.9h1.8l-2.3-4.1c1.2-.5 1.9-1.5 1.9-2.9 0-1.9-1.2-3.2-3.5-3.2H101V25zm1.5-5.2v-3.7h1.9c1.5 0 2.1.7 2.1 1.9 0 1.1-.6 1.8-2.1 1.8h-1.9zM113.7 14.8h-1.5V25h1.5V14.8zM119 25l.9-2.7h4l.9 2.7h1.6l-3.7-10.2H121L117.4 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3h-3.1z">
+        </path>
+        <path d="M1.2 4h1v32h-1z" fill-opacity="0.16">
+        </path>
+       </svg>
+      </a>
+     </div>
+     <div class="sc-gsTCUz fBYRBQ">
+      <button aria-label="Open search bar" class="NavButton-sc-1sr7lbk-0 jmfAe">
+       <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 cKSfzR" fill="currentColor" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.5 2.57457e-06C11.9038 -0.00124001 10.3396 0.447331 8.98664 1.29429C7.6337 2.14125 6.54681 3.35231 5.85056 4.78864C5.15432 6.22496 4.87691 7.82841 5.05014 9.41517C5.22337 11.0019 5.84023 12.5077 6.82999 13.76L0.299988 20.29L1.70999 21.7L8.23999 15.17C9.30415 16.0093 10.5536 16.5818 11.8841 16.8399C13.2146 17.098 14.5875 17.0341 15.8883 16.6535C17.1891 16.273 18.3799 15.5868 19.3615 14.6523C20.3431 13.7178 21.087 12.5621 21.531 11.2816C21.975 10.0011 22.1062 8.63293 21.9138 7.29136C21.7214 5.9498 21.211 4.67371 20.425 3.5696C19.639 2.46549 18.6003 1.56539 17.3957 0.94443C16.191 0.323466 14.8553 -0.000352271 13.5 2.57457e-06ZM13.5 15C12.2144 15 10.9577 14.6188 9.88878 13.9046C8.81986 13.1903 7.98674 12.1752 7.49477 10.9874C7.0028 9.79973 6.87408 8.49279 7.12488 7.23191C7.37569 5.97104 7.99475 4.81285 8.90379 3.90381C9.81283 2.99477 10.971 2.3757 12.2319 2.1249C13.4928 1.87409 14.7997 2.00282 15.9874 2.49479C17.1751 2.98676 18.1903 3.81988 18.9045 4.8888C19.6188 5.95772 20 7.21442 20 8.5C19.9966 10.2229 19.3107 11.8742 18.0925 13.0925C16.8742 14.3108 15.2229 14.9967 13.5 15Z" fill="currentColor">
+        </path>
+       </svg>
+      </button>
+      <label aria-label="Open mobile menu" class="Navbar__Label-midvey-2 LHhmf" for="mobileMenuButton">
+       <svg aria-label="Open mobile menu" class="sc-bdfBwQ Svg-sc-17i2kvj-0 guyNMq" fill="currentColor" role="button" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.5 4.5H4.5V6.5H19.5V4.5Z">
+        </path>
+        <path d="M19.5 17.5H4.5V19.5H19.5V17.5Z">
+        </path>
+        <path d="M19.5 11H4.5V13H19.5V11Z">
+        </path>
+       </svg>
+       <input class="Navbar__Input-midvey-1 hbrKEE" id="mobileMenuButton" type="checkbox"/>
+      </label>
+      <div class="Panel__Wrapper-rgznpu-0 jabPmx">
+       <div class="Panel__Header-rgznpu-1 jtlwNr">
+        <div class="Logo__SvgContainer-hxzlkl-0 hQeyNG">
+         <a href="/">
+          <svg color="primary" viewbox="0 0 76.52 77.67" xmlns="http://www.w3.org/2000/svg">
+           <path d="M66.54 46.41a4.09 4.09 0 01-4.17.28C60.83 45.82 60 43.78 60 41v-8.52c0-4.09-1.62-7-4.33-7.79-4.58-1.34-8 4.27-9.32 6.38l-8.1 13.11v-16c-.09-3.69-1.29-5.9-3.56-6.56-1.5-.44-3.75-.26-5.94 3.08L10.64 53.77A32 32 0 017 38.83C7 21.31 21 7.06 38.25 7.06s31.3 14.25 31.3 31.77v.18c.17 3.39-.93 6.09-3 7.4zm10-7.57v-.17C76.4 17.32 59.28 0 38.25 0S0 17.42 0 38.83s17.16 38.84 38.25 38.84a37.81 37.81 0 0026-10.36 3.56 3.56 0 00.18-5 3.43 3.43 0 00-4.86-.23A30.93 30.93 0 0115 60l16.3-26.2v12.09c0 5.81 2.25 7.69 4.14 8.24s4.78.17 7.81-4.75l9-14.57c.28-.47.55-.87.79-1.22V41c0 5.43 2.18 9.77 6 11.91a11 11 0 0011.21-.45c4.2-2.73 6.49-7.67 6.25-13.62z" fill="#17181b">
+           </path>
+          </svg>
+         </a>
+         <a aria-label="Home page" class="sc-bdfBwQ Text-msjfkz-0 bZFyDn" href="/alexandria">
+          <svg color="primary" viewbox="0 0 127.2 40" xmlns="http://www.w3.org/2000/svg">
+           <path d="M20.2 25l.9-2.7h4L26 25h1.6L24 14.8h-1.8L18.6 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3h-3.1zM31.4 25h6.1v-1.3h-4.6v-8.9h-1.5V25zM41.5 25H48v-1.3h-4.9v-3.1h4.5v-1.3h-4.5v-3.1h4.8v-1.3h-6.4V25zM53.3 14.8h-1.8l3.2 5.1-3.2 5.1h1.8l2.4-3.9h.1l2.4 3.9H60l-3.2-5.1 3.2-5.1h-1.8l-2.4 4h-.1l-2.4-4zM64.6 25l.9-2.7h4l.9 2.7H72l-3.7-10.2h-1.8L63 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3H66zM84 14.8h-1.5v7.5h-.1l-5.2-7.5h-1.4V25h1.5v-7.5h.1l5.2 7.5H84V14.8zM91.8 25c3.1 0 4.9-1.9 4.9-5.1 0-3.2-1.8-5.1-4.8-5.1h-3.4V25h3.3zm-1.7-1.3v-7.5h1.8c2.2 0 3.4 1.3 3.4 3.7 0 2.4-1.1 3.8-3.5 3.8h-1.7zM100.9 25h1.5v-3.9h2.2l2.1 3.9h1.8l-2.3-4.1c1.2-.5 1.9-1.5 1.9-2.9 0-1.9-1.2-3.2-3.5-3.2H101V25zm1.5-5.2v-3.7h1.9c1.5 0 2.1.7 2.1 1.9 0 1.1-.6 1.8-2.1 1.8h-1.9zM113.7 14.8h-1.5V25h1.5V14.8zM119 25l.9-2.7h4l.9 2.7h1.6l-3.7-10.2H121L117.4 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3h-3.1z">
+           </path>
+           <path d="M1.2 4h1v32h-1z" fill-opacity="0.16">
+           </path>
+          </svg>
+         </a>
+        </div>
+        <svg aria-label="Close mobile menu" class="sc-bdfBwQ Svg-sc-17i2kvj-0 uqPkp" fill="currentColor" role="button" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M13.4 12L20 18.6L18.6 20L12 13.4L5.4 20L4 18.6L10.6 12L4 5.4L5.4 4L12 10.6L18.6 4L20 5.4L13.4 12Z">
+         </path>
+        </svg>
+       </div>
+       <div class="MainPanel__Container-dujdt9-0 MainPanel__ListContainer-dujdt9-1 cZFSA-d ljOoWA">
+        <div class="sc-gsTCUz jUEeyM" role="button">
+         <div class="sc-bdfBwQ Text-msjfkz-0 dLcezr">
+          Learn
+         </div>
+         <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 kCeqsc" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.59003 16.59L13.17 12L8.59003 7.41L10 6L16 12L10 18L8.59003 16.59Z" fill="currentColor">
+          </path>
+         </svg>
+        </div>
+        <div class="sc-gsTCUz jUEeyM" role="button">
+         <div class="sc-bdfBwQ Text-msjfkz-0 dLcezr">
+          Topics
+         </div>
+         <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 kCeqsc" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.59003 16.59L13.17 12L8.59003 7.41L10 6L16 12L10 18L8.59003 16.59Z" fill="currentColor">
+          </path>
+         </svg>
+        </div>
+        <div class="sc-gsTCUz kupqjK" role="button">
+         <div class="sc-bdfBwQ Text-msjfkz-0 dLcezr">
+          CoinMarketCap News
+         </div>
+         <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 kCeqsc" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.59003 16.59L13.17 12L8.59003 7.41L10 6L16 12L10 18L8.59003 16.59Z" fill="currentColor">
+          </path>
+         </svg>
+        </div>
+        <a class="sc-gsTCUz irrFZf" href="/alexandria/glossary">
+         <div class="sc-bdfBwQ Text-msjfkz-0 dLcezr">
+          Glossary
+         </div>
+        </a>
+        <a class="sc-gsTCUz irrFZf" href="/alexandria/videos">
+         <div class="sc-bdfBwQ Text-msjfkz-0 dLcezr">
+          Video
+         </div>
+        </a>
+       </div>
+       <div class="MainPanel__Container-dujdt9-0 cZFSA-d">
+        <div class="sc-gsTCUz kSSfgv">
+         <div class="sc-bdfBwQ Dropdown__Wrapper-egbkvi-2 iOZaIg wrapper--top,bottom">
+          <button aria-label="Change language" class="NavButton-sc-1sr7lbk-0 LanguageSwitcher__Button-sc-1rgi4yk-0 jmfAe iSSjsx">
+           <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 kmkzFK" fill="currentColor" viewbox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.99 0.00440563C8.01262 0.00638301 6.0802 0.594553 4.43703 1.69457C2.79385 2.79458 1.51369 4.35706 0.758342 6.18449C0.00299907 8.01193 -0.193608 10.0223 0.193372 11.9614C0.580353 13.9006 1.53355 15.6815 2.93247 17.079C4.33139 18.4765 6.11324 19.4279 8.05278 19.813C9.99231 20.198 12.0025 19.9994 13.8291 19.2422C15.6558 18.4851 17.217 17.2033 18.3154 15.5591C19.4138 13.9148 20 11.9818 20 10.0044C20.0006 8.69016 19.7421 7.3887 19.2392 6.1745C18.7362 4.9603 17.9987 3.85721 17.069 2.92836C16.1392 1.99952 15.0354 1.26316 13.8207 0.761427C12.606 0.259696 11.3042 0.0024476 9.99 0.00440563ZM16.92 6.00441H13.97C13.657 4.76586 13.1936 3.5703 12.59 2.44441C14.4141 3.07238 15.9512 4.33611 16.92 6.00441ZM10 2.04441C10.84 3.2563 11.4845 4.59258 11.91 6.00441H8.09C8.51549 4.59258 9.16 3.2563 10 2.04441ZM2.26 12.0044C1.91334 10.6936 1.91334 9.31521 2.26 8.00441H5.64C5.55288 8.66762 5.50612 9.33552 5.5 10.0044C5.50612 10.6733 5.55288 11.3412 5.64 12.0044H2.26ZM3.08 14.0044H6.03C6.34297 15.243 6.80642 16.4385 7.41 17.5644C5.58396 16.9399 4.04582 15.6752 3.08 14.0044ZM6.03 6.00441H3.08C4.04582 4.33357 5.58396 3.06896 7.41 2.44441C6.80642 3.5703 6.34297 4.76586 6.03 6.00441ZM10 17.9644C9.16001 16.7525 8.51549 15.4162 8.09 14.0044H11.91C11.4845 15.4162 10.84 16.7525 10 17.9644ZM12.34 12.0044H7.66C7.56122 11.3422 7.50777 10.6739 7.5 10.0044C7.50736 9.33486 7.56082 8.66661 7.66 8.00441H12.34C12.4392 8.66661 12.4926 9.33486 12.5 10.0044C12.4922 10.6739 12.4388 11.3422 12.34 12.0044ZM12.59 17.5644C13.1936 16.4385 13.657 15.243 13.97 14.0044H16.92C15.9512 15.6727 14.4141 16.9364 12.59 17.5644ZM14.36 12.0044C14.4471 11.3412 14.4939 10.6733 14.5 10.0044C14.4939 9.33552 14.4471 8.66762 14.36 8.00441H17.74C18.0867 9.31521 18.0867 10.6936 17.74 12.0044H14.36Z">
+            </path>
+           </svg>
+          </button>
+          <div class="Dropdown__DropdownWrapper-egbkvi-1 dpplru">
+           <div class="Dropdown__Menu-egbkvi-0 bBRENP">
+            <div class="sc-bdfBwQ Grid-sc-3uwl3g-0 hSHUfX eYLPhT" style="overflow-y:auto">
+             <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+              English
+             </a>
+             <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/de/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+              Deutsch
+             </a>
+             <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/vi/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+              Tiếng Việt
+             </a>
+             <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/ru/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+              Русский
+             </a>
+             <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/es/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+              Español
+             </a>
+             <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/tr/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+              Türkçe
+             </a>
+             <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/pt/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+              Português
+             </a>
+             <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/id/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+              Bahasa Indonesia
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="sc-bdfBwQ jZXIMD">
+      <div class="sc-gsTCUz kSSfgv">
+       <div class="sc-bdfBwQ Dropdown__Wrapper-egbkvi-2 hjcGbS wrapper--bottom">
+        <div class="sc-gsTCUz leStXf" role="button">
+         Learn
+         <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 eBAqEu" fill="currentColor" viewbox="0 0 8 4" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.666672 0.666626L4 3.99996L7.33334 0.666626H0.666672Z">
+          </path>
+         </svg>
+        </div>
+        <div class="Dropdown__DropdownWrapper-egbkvi-1 gaITVH">
+         <div class="Dropdown__Menu-egbkvi-0 bBRENP">
+          <div class="sc-bdfBwQ Grid-sc-3uwl3g-0 hGITez hhlnuT">
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/blog">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Blog
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/crypto-basics">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Crypto Basics
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/how-to-guides">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             How-to Guides
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/market-musing">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Market Musings
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/tech-deep-dives">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Tech Deep Dives
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/trading-analysis">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Trading Analysis
+            </div>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="sc-bdfBwQ Dropdown__Wrapper-egbkvi-2 hjcGbS wrapper--bottom">
+        <div class="sc-gsTCUz leStXf" role="button">
+         Topics
+         <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 eBAqEu" fill="currentColor" viewbox="0 0 8 4" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.666672 0.666626L4 3.99996L7.33334 0.666626H0.666672Z">
+          </path>
+         </svg>
+        </div>
+        <div class="Dropdown__DropdownWrapper-egbkvi-1 gaITVH">
+         <div class="Dropdown__Menu-egbkvi-0 bBRENP">
+          <div class="sc-bdfBwQ Grid-sc-3uwl3g-0 hGITez hhlnuT">
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/altcoins">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Altcoins
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/bitcoin">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Bitcoin
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/blockchain">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Blockchain
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/defi">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             DeFi
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/ethereum">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Ethereum
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/gamefi">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             GameFi
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/metaverse">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Metaverse
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/nfts">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             NFTs
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/trading">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Trading
+            </div>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="sc-bdfBwQ Dropdown__Wrapper-egbkvi-2 hjcGbS wrapper--bottom">
+        <div class="sc-gsTCUz leStXf" role="button">
+         CoinMarketCap News
+         <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 eBAqEu" fill="currentColor" viewbox="0 0 8 4" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.666672 0.666626L4 3.99996L7.33334 0.666626H0.666672Z">
+          </path>
+         </svg>
+        </div>
+        <div class="Dropdown__DropdownWrapper-egbkvi-1 gaITVH">
+         <div class="Dropdown__Menu-egbkvi-0 bBRENP">
+          <div class="sc-bdfBwQ Grid-sc-3uwl3g-0 hGITez hhlnuT">
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/announcements">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Announcements
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/feature-explorer">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Feature Explorer
+            </div>
+           </a>
+           <a class="sc-gsTCUz Navbar__MenuItem-zbdsw1-0 cZWuHU cIKCMm" href="/alexandria/categories/marketing">
+            <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+             Marketing
+            </div>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <a class="sc-gsTCUz kAuvPc" href="/alexandria/glossary">
+        <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+         Glossary
+        </div>
+       </a>
+       <a class="sc-gsTCUz kAuvPc" href="/alexandria/videos">
+        <div class="sc-bdfBwQ Text-msjfkz-0 bRtkcJ">
+         Video
+        </div>
+       </a>
+       <div class="sc-gsTCUz cHCQYY">
+       </div>
+       <button aria-label="Open search bar" class="NavButton-sc-1sr7lbk-0 jmfAe">
+        <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 cKSfzR" fill="currentColor" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+         <path d="M13.5 2.57457e-06C11.9038 -0.00124001 10.3396 0.447331 8.98664 1.29429C7.6337 2.14125 6.54681 3.35231 5.85056 4.78864C5.15432 6.22496 4.87691 7.82841 5.05014 9.41517C5.22337 11.0019 5.84023 12.5077 6.82999 13.76L0.299988 20.29L1.70999 21.7L8.23999 15.17C9.30415 16.0093 10.5536 16.5818 11.8841 16.8399C13.2146 17.098 14.5875 17.0341 15.8883 16.6535C17.1891 16.273 18.3799 15.5868 19.3615 14.6523C20.3431 13.7178 21.087 12.5621 21.531 11.2816C21.975 10.0011 22.1062 8.63293 21.9138 7.29136C21.7214 5.9498 21.211 4.67371 20.425 3.5696C19.639 2.46549 18.6003 1.56539 17.3957 0.94443C16.191 0.323466 14.8553 -0.000352271 13.5 2.57457e-06ZM13.5 15C12.2144 15 10.9577 14.6188 9.88878 13.9046C8.81986 13.1903 7.98674 12.1752 7.49477 10.9874C7.0028 9.79973 6.87408 8.49279 7.12488 7.23191C7.37569 5.97104 7.99475 4.81285 8.90379 3.90381C9.81283 2.99477 10.971 2.3757 12.2319 2.1249C13.4928 1.87409 14.7997 2.00282 15.9874 2.49479C17.1751 2.98676 18.1903 3.81988 18.9045 4.8888C19.6188 5.95772 20 7.21442 20 8.5C19.9966 10.2229 19.3107 11.8742 18.0925 13.0925C16.8742 14.3108 15.2229 14.9967 13.5 15Z" fill="currentColor">
+         </path>
+        </svg>
+       </button>
+       <div class="sc-bdfBwQ Dropdown__Wrapper-egbkvi-2 hjcGbS wrapper--bottom-right">
+        <button aria-label="Change language" class="NavButton-sc-1sr7lbk-0 LanguageSwitcher__Button-sc-1rgi4yk-0 jmfAe iSSjsx">
+         <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 kmkzFK" fill="currentColor" viewbox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.99 0.00440563C8.01262 0.00638301 6.0802 0.594553 4.43703 1.69457C2.79385 2.79458 1.51369 4.35706 0.758342 6.18449C0.00299907 8.01193 -0.193608 10.0223 0.193372 11.9614C0.580353 13.9006 1.53355 15.6815 2.93247 17.079C4.33139 18.4765 6.11324 19.4279 8.05278 19.813C9.99231 20.198 12.0025 19.9994 13.8291 19.2422C15.6558 18.4851 17.217 17.2033 18.3154 15.5591C19.4138 13.9148 20 11.9818 20 10.0044C20.0006 8.69016 19.7421 7.3887 19.2392 6.1745C18.7362 4.9603 17.9987 3.85721 17.069 2.92836C16.1392 1.99952 15.0354 1.26316 13.8207 0.761427C12.606 0.259696 11.3042 0.0024476 9.99 0.00440563ZM16.92 6.00441H13.97C13.657 4.76586 13.1936 3.5703 12.59 2.44441C14.4141 3.07238 15.9512 4.33611 16.92 6.00441ZM10 2.04441C10.84 3.2563 11.4845 4.59258 11.91 6.00441H8.09C8.51549 4.59258 9.16 3.2563 10 2.04441ZM2.26 12.0044C1.91334 10.6936 1.91334 9.31521 2.26 8.00441H5.64C5.55288 8.66762 5.50612 9.33552 5.5 10.0044C5.50612 10.6733 5.55288 11.3412 5.64 12.0044H2.26ZM3.08 14.0044H6.03C6.34297 15.243 6.80642 16.4385 7.41 17.5644C5.58396 16.9399 4.04582 15.6752 3.08 14.0044ZM6.03 6.00441H3.08C4.04582 4.33357 5.58396 3.06896 7.41 2.44441C6.80642 3.5703 6.34297 4.76586 6.03 6.00441ZM10 17.9644C9.16001 16.7525 8.51549 15.4162 8.09 14.0044H11.91C11.4845 15.4162 10.84 16.7525 10 17.9644ZM12.34 12.0044H7.66C7.56122 11.3422 7.50777 10.6739 7.5 10.0044C7.50736 9.33486 7.56082 8.66661 7.66 8.00441H12.34C12.4392 8.66661 12.4926 9.33486 12.5 10.0044C12.4922 10.6739 12.4388 11.3422 12.34 12.0044ZM12.59 17.5644C13.1936 16.4385 13.657 15.243 13.97 14.0044H16.92C15.9512 15.6727 14.4141 16.9364 12.59 17.5644ZM14.36 12.0044C14.4471 11.3412 14.4939 10.6733 14.5 10.0044C14.4939 9.33552 14.4471 8.66762 14.36 8.00441H17.74C18.0867 9.31521 18.0867 10.6936 17.74 12.0044H14.36Z">
+          </path>
+         </svg>
+        </button>
+        <div class="Dropdown__DropdownWrapper-egbkvi-1 jrosAA">
+         <div class="Dropdown__Menu-egbkvi-0 bBRENP">
+          <div class="sc-bdfBwQ Grid-sc-3uwl3g-0 hSHUfX eYLPhT" style="overflow-y:auto">
+           <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+            English
+           </a>
+           <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/de/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+            Deutsch
+           </a>
+           <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/vi/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+            Tiếng Việt
+           </a>
+           <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/ru/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+            Русский
+           </a>
+           <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/es/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+            Español
+           </a>
+           <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/tr/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+            Türkçe
+           </a>
+           <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/pt/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+            Português
+           </a>
+           <a class="ListCTA__Link-rp0q6e-0 iOKdEn" href="/alexandria/id/article/3-minute-tips-what-are-gas-wars" style="justify-content:center">
+            Bahasa Indonesia
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <form action="/alexandria/search" class="SearchForm-sc-1vfffbc-0 fJcvOH" method="get" target="_self">
+      <label aria-label="Search articles" class="SearchForm__Label-sc-1vfffbc-3 cMwSJN" for="headerSearchInput">
+       <input class="SearchForm__Input-sc-1vfffbc-1 hZCLgD" id="headerSearchInput" name="term" placeholder="Search..." type="text"/>
+      </label>
+      <button aria-label="Close search bar" class="SearchForm__CloseButton-sc-1vfffbc-2 eSLlrc" type="button">
+       <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 ecKBcM" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.4 12L20 18.6L18.6 20L12 13.4L5.4 20L4 18.6L10.6 12L4 5.4L5.4 4L12 10.6L18.6 4L20 5.4L13.4 12Z">
+        </path>
+       </svg>
+      </button>
+     </form>
+    </nav>
+    <div>
+     <span>
+     </span>
+     <div class="sc-bdfBwQ Container-sc-4c5vqs-0 kGZDmf khdEkh">
+      <div class="sc-bdfBwQ StickyBarWrapper__Wrapper-sc-8z2dej-0 lifqWE eMCbwr">
+       <div class="sc-gsTCUz bgZavq">
+        <div class="sc-bdfBwQ Text-msjfkz-0 cjnMxG">
+         3 Minute Tips: What Are Gas Wars?
+        </div>
+        <div class="sc-bdfBwQ gQbnxJ">
+         <div class="sc-bdfBwQ Grid-sc-3uwl3g-0 jvVtgT hfyApF">
+          <div class="sc-bdfBwQ Grid__GridItem-sc-3uwl3g-2">
+           <a aria-label="Share this article on twitter" class="sc-gsTCUz SocialLink__IconWrapper-sc-1toayxk-0 SocialLink-sc-1toayxk-1 kSSfgv ldGcwa" href="https://twitter.com/intent/tweet?url=https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars&amp;text=3%20Minute%20Tips:%20What%20Are%20Gas%20Wars?" rel="noopener noreferrer" target="_blank">
+            <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0" fill="currentColor" viewbox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+             <path d="M5.90944 13.7676C7.18903 13.7764 8.45762 13.5308 9.64152 13.0452C10.8254 12.5596 11.901 11.8436 12.8058 10.9387C13.7107 10.0339 14.4267 8.95831 14.9123 7.77442C15.398 6.59052 15.6435 5.32193 15.6347 4.04234C15.6347 3.89424 15.6318 3.74692 15.6251 3.6004C16.294 3.11637 16.8714 2.51704 17.3301 1.83048C16.7065 2.10711 16.0448 2.28853 15.3673 2.36867C16.081 1.9415 16.6151 1.26951 16.8702 0.47784C16.1993 0.875917 15.4653 1.15658 14.7 1.30773C14.1847 0.759649 13.5031 0.396688 12.7607 0.275024C12.0184 0.153359 11.2566 0.279775 10.5933 0.634706C9.93003 0.989637 9.40223 1.55329 9.09159 2.23844C8.78095 2.92358 8.7048 3.69201 8.87492 4.4248C7.51583 4.35687 6.18622 4.00382 4.97245 3.38858C3.75868 2.77334 2.6879 1.90967 1.82965 0.853666C1.39239 1.60611 1.2584 2.49693 1.45497 3.3447C1.65154 4.19248 2.16388 4.93344 2.88765 5.41668C2.34485 5.40017 1.81395 5.25358 1.33958 4.98925C1.3388 5.00353 1.3388 5.01782 1.3388 5.03287C1.33896 5.82207 1.61213 6.58691 2.11194 7.19765C2.61176 7.8084 3.30746 8.22744 4.08103 8.38371C3.57776 8.52103 3.0497 8.5411 2.53745 8.4424C2.75578 9.12162 3.18095 9.7156 3.75349 10.1413C4.32603 10.5669 5.01731 10.803 5.73063 10.8164C4.51983 11.7668 3.02454 12.2822 1.48533 12.2798C1.21283 12.2799 0.940561 12.264 0.669922 12.2322C2.23287 13.2363 4.05177 13.7693 5.90944 13.7676Z">
+             </path>
+            </svg>
+           </a>
+          </div>
+          <div class="sc-bdfBwQ Grid__GridItem-sc-3uwl3g-2">
+           <a aria-label="Share this article on Facebook" class="sc-gsTCUz SocialLink__IconWrapper-sc-1toayxk-0 SocialLink-sc-1toayxk-1 kSSfgv kINMVY" href="https://www.facebook.com/sharer/sharer.php?u=https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars&amp;t=3%20Minute%20Tips:%20What%20Are%20Gas%20Wars?" rel="noopener noreferrer" target="_blank">
+            <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+             <path d="M19.375 10.06a9.383 9.383 0 0 1-7.907 9.257V12.77h2.185l.408-2.71h-2.593V8.3a1.356 1.356 0 0 1 1.521-1.468h1.2V4.53a14.7 14.7 0 0 0-2.1-.182 3.31 3.31 0 0 0-3.547 3.643v2.068h-2.38v2.71h2.38v6.546a9.374 9.374 0 1 1 10.843-9.257z">
+             </path>
+            </svg>
+           </a>
+          </div>
+          <div class="sc-bdfBwQ Grid__GridItem-sc-3uwl3g-2">
+           <a aria-label="Share this article on Telegram" class="sc-gsTCUz SocialLink__IconWrapper-sc-1toayxk-0 SocialLink-sc-1toayxk-1 kSSfgv kWcfCj" href="https://t.me/share/url?url=https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars&amp;text=3%20Minute%20Tips:%20What%20Are%20Gas%20Wars?" rel="noopener noreferrer" target="_blank">
+            <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0" fill="currentColor" viewbox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
+             <path d="M16.5257 0.95613L0.992894 6.94483C-0.066948 7.37023 -0.061323 7.96196 0.800144 8.22551L4.78605 9.46968L14.0138 3.64787C14.4499 3.3832 14.8494 3.52537 14.5213 3.81704L7.04397 10.5643L7.12095 10.6987L7.04397 10.5649L6.76974 14.675C6.92584 14.6731 7.07947 14.6358 7.21913 14.566C7.35878 14.4963 7.48083 14.3958 7.57613 14.2721L9.51318 12.389L13.5423 15.3662C14.2841 15.7748 14.8191 15.5629 15.004 14.6773L17.6491 2.21212C17.9199 1.12644 17.2349 0.634171 16.5258 0.956163">
+             </path>
+            </svg>
+           </a>
+          </div>
+          <div class="sc-bdfBwQ Grid__GridItem-sc-3uwl3g-2">
+           <div aria-label="Copy the link to your clipboard" class="sc-gsTCUz SocialLink__IconWrapper-sc-1toayxk-0 kSSfgv sHTpX">
+            <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0" fill="currentColor" viewbox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+             <path d="M13.8801 0V12.26H11.8801V2H4.12012V0H13.8801Z">
+             </path>
+             <path d="M0.120117 3.97998V16.24H9.88012V3.99998L0.120117 3.97998ZM7.87012 14.26H2.12012V5.99998H7.88012L7.87012 14.26Z">
+             </path>
+            </svg>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="sc-bdfBwQ fWNSXR">
+         <div class="sc-bdfBwQ">
+          <div class="sc-bdfBwQ Dropdown__Wrapper-egbkvi-2 hjcGbS wrapper--bottom-right">
+           <button aria-label="Share this article on the social media of your choice" class="sc-bdfBwQ Button__StyledButton-sc-1kvh4an-0 jcleUz SocialShareMobile__IconButton-wlnyr9-0 iPCECF">
+            <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 gSUsoi" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+             <path d="M17.8476 13.1998C16.9476 13.1998 16.0476 13.5998 15.5476 14.2998L9.24756 11.9998H9.14756H9.24756L15.4476 9.69981C15.9476 10.3998 16.8476 10.7998 17.7476 10.7998C19.4476 10.7998 20.7476 9.3998 20.7476 7.7998C20.7476 6.0998 19.4476 4.7998 17.7476 4.7998C16.0476 4.7998 14.7476 6.0998 14.7476 7.7998L8.54756 10.0998C8.04756 9.3998 7.24756 8.99981 6.24756 8.99981C4.54756 8.99981 3.24756 10.2998 3.24756 11.9998C3.24756 13.5998 4.54756 14.9998 6.24756 14.9998C7.14756 14.9998 8.04756 14.5998 8.54756 13.8998L14.7476 16.1998C14.7476 17.7998 16.0476 19.1998 17.7476 19.1998C19.4476 19.1998 20.7476 17.7998 20.7476 16.1998C20.8476 14.5998 19.4476 13.1998 17.8476 13.1998ZM17.8476 6.7998C18.3476 6.7998 18.8476 7.2998 18.8476 7.7998C18.8476 8.2998 18.3476 8.7998 17.8476 8.7998C17.3476 8.7998 16.8476 8.2998 16.8476 7.7998C16.8476 7.2998 17.2476 6.7998 17.8476 6.7998ZM6.24756 12.9998C5.74756 12.9998 5.24756 12.4998 5.24756 11.9998C5.24756 11.3998 5.74756 10.9998 6.24756 10.9998C6.74756 10.9998 7.24756 11.3998 7.24756 11.9998C7.24756 12.4998 6.84756 12.9998 6.24756 12.9998ZM17.8476 17.1998C17.3476 17.1998 16.8476 16.6998 16.8476 16.1998C16.8476 15.6998 17.3476 15.1998 17.8476 15.1998C18.3476 15.1998 18.8476 15.6998 18.8476 16.1998C18.8476 16.6998 18.3476 17.1998 17.8476 17.1998Z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+           <div class="Dropdown__DropdownWrapper-egbkvi-1 jrosAA">
+            <div class="Dropdown__Menu-egbkvi-0 bBRENP">
+             <div class="SocialShareMobile__Menu-wlnyr9-1 estnki">
+              <div class="sc-bdfBwQ Grid-sc-3uwl3g-0 jvVtgT iaLNSR">
+               <div class="sc-bdfBwQ Grid__GridItem-sc-3uwl3g-2">
+                <a aria-label="Share this article on twitter" class="sc-gsTCUz SocialLink__IconWrapper-sc-1toayxk-0 SocialLink-sc-1toayxk-1 kSSfgv ldGcwa" href="https://twitter.com/intent/tweet?url=https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars&amp;text=3%20Minute%20Tips:%20What%20Are%20Gas%20Wars?" rel="noopener noreferrer" target="_blank">
+                 <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0" fill="currentColor" viewbox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.90944 13.7676C7.18903 13.7764 8.45762 13.5308 9.64152 13.0452C10.8254 12.5596 11.901 11.8436 12.8058 10.9387C13.7107 10.0339 14.4267 8.95831 14.9123 7.77442C15.398 6.59052 15.6435 5.32193 15.6347 4.04234C15.6347 3.89424 15.6318 3.74692 15.6251 3.6004C16.294 3.11637 16.8714 2.51704 17.3301 1.83048C16.7065 2.10711 16.0448 2.28853 15.3673 2.36867C16.081 1.9415 16.6151 1.26951 16.8702 0.47784C16.1993 0.875917 15.4653 1.15658 14.7 1.30773C14.1847 0.759649 13.5031 0.396688 12.7607 0.275024C12.0184 0.153359 11.2566 0.279775 10.5933 0.634706C9.93003 0.989637 9.40223 1.55329 9.09159 2.23844C8.78095 2.92358 8.7048 3.69201 8.87492 4.4248C7.51583 4.35687 6.18622 4.00382 4.97245 3.38858C3.75868 2.77334 2.6879 1.90967 1.82965 0.853666C1.39239 1.60611 1.2584 2.49693 1.45497 3.3447C1.65154 4.19248 2.16388 4.93344 2.88765 5.41668C2.34485 5.40017 1.81395 5.25358 1.33958 4.98925C1.3388 5.00353 1.3388 5.01782 1.3388 5.03287C1.33896 5.82207 1.61213 6.58691 2.11194 7.19765C2.61176 7.8084 3.30746 8.22744 4.08103 8.38371C3.57776 8.52103 3.0497 8.5411 2.53745 8.4424C2.75578 9.12162 3.18095 9.7156 3.75349 10.1413C4.32603 10.5669 5.01731 10.803 5.73063 10.8164C4.51983 11.7668 3.02454 12.2822 1.48533 12.2798C1.21283 12.2799 0.940561 12.264 0.669922 12.2322C2.23287 13.2363 4.05177 13.7693 5.90944 13.7676Z">
+                  </path>
+                 </svg>
+                </a>
+               </div>
+               <div class="sc-bdfBwQ Grid__GridItem-sc-3uwl3g-2">
+                <a aria-label="Share this article on Facebook" class="sc-gsTCUz SocialLink__IconWrapper-sc-1toayxk-0 SocialLink-sc-1toayxk-1 kSSfgv kINMVY" href="https://www.facebook.com/sharer/sharer.php?u=https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars&amp;t=3%20Minute%20Tips:%20What%20Are%20Gas%20Wars?" rel="noopener noreferrer" target="_blank">
+                 <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.375 10.06a9.383 9.383 0 0 1-7.907 9.257V12.77h2.185l.408-2.71h-2.593V8.3a1.356 1.356 0 0 1 1.521-1.468h1.2V4.53a14.7 14.7 0 0 0-2.1-.182 3.31 3.31 0 0 0-3.547 3.643v2.068h-2.38v2.71h2.38v6.546a9.374 9.374 0 1 1 10.843-9.257z">
+                  </path>
+                 </svg>
+                </a>
+               </div>
+               <div class="sc-bdfBwQ Grid__GridItem-sc-3uwl3g-2">
+                <a aria-label="Share this article on Telegram" class="sc-gsTCUz SocialLink__IconWrapper-sc-1toayxk-0 SocialLink-sc-1toayxk-1 kSSfgv kWcfCj" href="https://t.me/share/url?url=https://coinmarketcap.com/alexandria/article/3-minute-tips-what-are-gas-wars&amp;text=3%20Minute%20Tips:%20What%20Are%20Gas%20Wars?" rel="noopener noreferrer" target="_blank">
+                 <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0" fill="currentColor" viewbox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.5257 0.95613L0.992894 6.94483C-0.066948 7.37023 -0.061323 7.96196 0.800144 8.22551L4.78605 9.46968L14.0138 3.64787C14.4499 3.3832 14.8494 3.52537 14.5213 3.81704L7.04397 10.5643L7.12095 10.6987L7.04397 10.5649L6.76974 14.675C6.92584 14.6731 7.07947 14.6358 7.21913 14.566C7.35878 14.4963 7.48083 14.3958 7.57613 14.2721L9.51318 12.389L13.5423 15.3662C14.2841 15.7748 14.8191 15.5629 15.004 14.6773L17.6491 2.21212C17.9199 1.12644 17.2349 0.634171 16.5258 0.956163">
+                  </path>
+                 </svg>
+                </a>
+               </div>
+               <div class="sc-bdfBwQ Grid__GridItem-sc-3uwl3g-2">
+                <div aria-label="Copy the link to your clipboard" class="sc-gsTCUz SocialLink__IconWrapper-sc-1toayxk-0 kSSfgv sHTpX">
+                 <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0" fill="currentColor" viewbox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.8801 0V12.26H11.8801V2H4.12012V0H13.8801Z">
+                  </path>
+                  <path d="M0.120117 3.97998V16.24H9.88012V3.99998L0.120117 3.97998ZM7.87012 14.26H2.12012V5.99998H7.88012L7.87012 14.26Z">
+                  </path>
+                 </svg>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="sc-bdfBwQ Dropdown__Wrapper-egbkvi-2 haGBPZ dKySxu wrapper--bottom,bottom-right">
+         <div class="sc-gsTCUz hSEAzV">
+          <div class="sc-bdfBwQ Text-msjfkz-0 fJwUeL">
+           Table of Contents
+          </div>
+          <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 erLLvd" fill="currentColor" viewbox="0 0 9 6" xmlns="http://www.w3.org/2000/svg">
+           <path d="M4.24 5.65L0 1.41L1.42 0L4.24 2.82L7.06 0L8.48 1.41L4.24 5.65Z">
+           </path>
+          </svg>
+         </div>
+         <div class="Dropdown__DropdownWrapper-egbkvi-1 jpFHJB">
+          <div class="Dropdown__Menu-egbkvi-0 bBRENP">
+           <div class="StickyBar__ToC-rk0m1f-0 PywUU">
+            <div class="StickyBar__ToCButton-rk0m1f-1 eGrglv">
+             Why Do People Compete on Gas?
+            </div>
+            <div class="StickyBar__ToCButton-rk0m1f-1 eGrglv">
+             How to Win a Gas War
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="sc-bdfBwQ ProgressBar__Bar-sc-7ekl2x-0 blnIOn eMGdpa" style="width:0%">
+       </div>
+      </div>
+      <a class="sc-bdfBwQ Text-msjfkz-0 jStWLp" href="/alexandria/categories/crypto-basics">
+       Crypto Basics
+      </a>
+      <h1 class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 eoTVVS dAnDNe">
+       3 Minute Tips: What Are Gas Wars?
+      </h1>
+      <div class="sc-gsTCUz HVMbO">
+       <div class="sc-bdfBwQ Text-msjfkz-0 clhOqr">
+        <a class="ArticleContent__AuthorLink-sc-18n1x4l-3 gMCoqt" href="/alexandria/author/daniel-phillips">
+         By Daniel Phillips
+        </a>
+       </div>
+       <div class="sc-gsTCUz cYTCNP">
+        <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 kKBMco" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M11.9963 4C13.5785 4 15.1252 4.46919 16.4408 5.34824C17.7564 6.22729 18.7818 7.47672 19.3873 8.93853C19.9928 10.4003 20.1512 12.0089 19.8426 13.5607C19.5339 15.1126 18.772 16.538 17.6531 17.6569C16.5343 18.7757 15.1089 19.5376 13.557 19.8463C12.0052 20.155 10.3966 19.9965 8.93481 19.391C7.473 18.7855 6.22358 17.7602 5.34452 16.4446C4.46547 15.129 3.99628 13.5823 3.99628 12C3.99871 9.87901 4.84234 7.84559 6.34211 6.34583C7.84187 4.84606 9.87529 4.00243 11.9963 4ZM11.9963 2C10.0185 2 8.08507 2.58649 6.44058 3.6853C4.79609 4.78412 3.51436 6.3459 2.75749 8.17317C2.00061 10.0004 1.80258 12.0111 2.18843 13.9509C2.57428 15.8907 3.52669 17.6725 4.92521 19.0711C6.32374 20.4696 8.10557 21.422 10.0454 21.8079C11.9852 22.1937 13.9959 21.9957 15.8231 21.2388C17.6504 20.4819 19.2122 19.2002 20.311 17.5557C21.4098 15.9112 21.9963 13.9778 21.9963 12C21.9963 10.6868 21.7377 9.38641 21.2351 8.17315C20.7326 6.95988 19.996 5.85748 19.0674 4.92889C18.1388 4.0003 17.0364 3.26371 15.8231 2.76117C14.6099 2.25863 13.3095 1.99998 11.9963 2Z" fill="currentColor">
+         </path>
+         <path d="M15.561 16.972L11.003 12.414V6.004H13.003V11.586L16.975 15.558L15.561 16.972Z" fill="currentColor">
+         </path>
+        </svg>
+        <span class="sc-bdfBwQ Text-msjfkz-0 gtVAYr">
+         3m
+        </span>
+       </div>
+      </div>
+      <div class="sc-gsTCUz lmyhRy">
+       <span class="sc-bdfBwQ Text-msjfkz-0 eDxZZL">
+        7mo ago
+       </span>
+      </div>
+      <div class="sc-bdfBwQ ArticleContent__ArticleSummaryBox-sc-18n1x4l-1 koUmyx dwcfaP">
+       <p>
+        Gas wars occur when different network participants battle it out to secure space in the next block, by taking part in a priority gas auction. Learn how to win in a gas war if you get caught in one in the future.
+       </p>
+      </div>
+      <div class="sc-bdfBwQ ArticleCover__CoverBox-sc-9pmloj-0 bVYJZw">
+       <div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
+        <div style="box-sizing:border-box;display:block;max-width:100%">
+         <img alt="" aria-hidden="true" role="presentation" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIwIiBoZWlnaHQ9IjQwNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4=" style="max-width:100%;display:block;margin:0;border:none;padding:0"/>
+        </div>
+        <img alt="3 Minute Tips: What Are Gas Wars?" class="coverImage" decoding="async" src="https://academy-public.coinmarketcap.com/optimized-uploads/771d204091bc439196e148c33af15e24.jpg" srcset="https://academy-public.coinmarketcap.com/optimized-uploads/771d204091bc439196e148c33af15e24.jpg 1x, https://academy-public.coinmarketcap.com/optimized-uploads/771d204091bc439196e148c33af15e24.jpg 2x" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"/>
+       </div>
+      </div>
+      <div class="sc-bdfBwQ ArticleContent__TableOfContents-sc-18n1x4l-2 eOpHrs fiqiCA">
+       <h4 class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 ksiqdi dAnDNe">
+        Table of Contents
+       </h4>
+       <ul>
+        <li>
+         <a class="sc-bdfBwQ Text-msjfkz-0 bjGZcz toc-link" href="#why-do-people-compete-ongas">
+          Why Do People Compete on Gas?
+         </a>
+        </li>
+        <li>
+         <a class="sc-bdfBwQ Text-msjfkz-0 bjGZcz toc-link" href="#how-to-win-a-gas-war">
+          How to Win a Gas War
+         </a>
+        </li>
+       </ul>
+      </div>
+      <article class="sc-bdfBwQ Container-sc-4c5vqs-0 ArticleContent__ArticleContainer-sc-18n1x4l-0 QlHlj khdEkh dOATlA">
+       <div class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        Not unlike the frequent conflicts over scarce resources like land, fossil fuels and precious metals, the blockchain space regularly sees battles of its own — but in this case, the battle is for block space. These are known as
+        <em>
+         gas wars
+        </em>
+        .
+       </div>
+       <div class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        In a
+        <a class="sc-bdfBwQ Text-msjfkz-0 gbfvns" href="https://coinmarketcap.com/alexandria/glossary/gas" rel="noopener noreferrer" target="_blank">
+         gas
+        </a>
+        war, different network participants battle it out to secure space in the next block by taking part in a “priority gas auction” or PGA. In essence, this involves paying above the network average for gas in order to secure better positioning in the next block. Oftentimes, the winners of a gas war might end up paying several times the average transaction fee to secure their positions.
+       </div>
+       <h2 class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 iLpgJa ehzvDo" id="why-do-people-compete-ongas">
+        Why Do People Compete on Gas?
+       </h2>
+       <p class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        “Why would anybody purposely spend over the odds on gas?” We hear you say. Well, it’s to ensure that the transaction is processed by the network quickly — such as to capitalize on an extremely transient trading opportunity or participate in a first-come-first-served event of some sort.
+       </p>
+       <div class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        Generally, these gas wars are associated with highly sought-after, limited access events — such as initial DEX offerings (
+        <a class="sc-bdfBwQ Text-msjfkz-0 gbfvns" href="https://coinmarketcap.com/alexandria/glossary/initial-dex-offering" rel="noopener noreferrer" target="_blank">
+         IDOs
+        </a>
+        ) and non-fungible token (
+        <a class="sc-bdfBwQ Text-msjfkz-0 gbfvns" href="https://coinmarketcap.com/alexandria/glossary/non-fungible-token" rel="noopener noreferrer" target="_blank">
+         NFT
+        </a>
+        ) drops. Pretty much anything where there are a limited number of slots and a large number of participants. This forces users to overpay on gas to secure priority positioning within the next block to ensure they are one of the few winning participants.
+       </div>
+       <div class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        <strong>
+         The intricacies of PGAs are commonly exploited by front runners. Read more about front running —
+        </strong>
+        <a class="sc-bdfBwQ Text-msjfkz-0 gbfvns" href="https://coinmarketcap.com/alexandria/article/3-minute-tips-avoiding-front-runners-on-decentralized-exchanges" rel="noopener noreferrer" target="_blank">
+         <strong>
+          here
+         </strong>
+        </a>
+        <strong>
+         .
+        </strong>
+       </div>
+       <p class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        Gas wars are generally designed to confer some advantage to winners, whether this is accessing limited slot investment opportunities, registering for a beta program or incentivized testnet, or participating in a lucrative giveaway of some sort. They can also be used to minimize losses, by being the first to sell tokens in a declining market where competition to sell tokens is high.
+       </p>
+       <h2 class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 iLpgJa ehzvDo" id="how-to-win-a-gas-war">
+        How to Win a Gas War
+       </h2>
+       <p class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        The first step towards winning a gas war, is to recognize that you’re likely to be in one. This means considering whether there are going to be a large number of users competing for block space at the specific time when you’ll be making your transaction.
+       </p>
+       <div class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        One of the simplest ways to do this is by using
+        <a class="sc-bdfBwQ Text-msjfkz-0 gbfvns" href="https://coinmarketcap.com/events/" rel="noopener noreferrer" target="_blank">
+         our events calendar
+        </a>
+        , which will help you spot events that could drive up block space demand at the time when you need to make a transaction. Likewise, if you’re in a highly sought-after first-come-first-serve event, odds are you’ll end up in a gas war (particularly when hosted on the Ethereum network).
+       </div>
+       <div class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        To win, you’ll need to overpay on gas. It’s as simple as that. Most Web3
+        <a class="sc-bdfBwQ Text-msjfkz-0 gbfvns" href="https://coinmarketcap.com/alexandria/glossary/wallet" rel="noopener noreferrer" target="_blank">
+         wallets
+        </a>
+        will allow you to manually adjust the price you pay for gas. You can use services like
+        <a class="sc-bdfBwQ Text-msjfkz-0 gbfvns" href="https://ethgasstation.info/" rel="noopener noreferrer" target="_blank">
+         ETH Gas Station
+        </a>
+        to see what the current gas price is (e.g. 50 gwei), then you’ll be able to use this to set a number you think will secure you the slot.
+       </div>
+       <p class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        In general, the fewer the slots and/or the more potential participants, the more you will need to overpay. To put this into perspective, it isn’t uncommon for participants to pay more than 1,000 gwei for gas — and even then, success might not be guaranteed. Internet latency, node issues, wallet issues and more can cause additional delays — impacting your odds of winning.
+       </p>
+       <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:349px">
+        <div name="div">
+         <div class="lazyload-wrapper">
+          <div class="lazyload-placeholder" style="height:200px">
+          </div>
+         </div>
+        </div>
+       </figure>
+       <div class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        You might also want to consider not only increasing the amount paid for gas, but also the gas limit beyond what your Web3 wallet suggests. This will ensure your transaction can successfully complete without failing due to the dreaded “Out of Gas”
+        <a class="sc-bdfBwQ Text-msjfkz-0 gbfvns" href="https://metamask.zendesk.com/hc/en-us/articles/360038849792-Why-did-my-transaction-fail-with-an-Out-of-Gas-error-How-can-I-fix-it-" rel="noopener noreferrer" target="_blank">
+         error
+        </a>
+        .
+       </div>
+       <p class="sc-bdfBwQ Text-msjfkz-0 Renderer___StyledText-mfgg8t-5 fAerDW">
+        In general, anybody participating in a gas war (whether knowingly or not), will generally be doing so under the assumption that the potential benefit/reward outweighs the risks of losing. Whatever the case, some calculations will likely be needed beforehand to work out the maximum gas fee you are willing to pay to secure the slot, since it can cost hundreds of dollars in gas to almost guarantee a place among the winners in some cases.
+       </p>
+       <div class="disclaimer">
+        This article contains links to third-party websites or other content for information purposes only (“Third-Party Sites”). The Third-Party Sites are not under the control of CoinMarketCap, and CoinMarketCap is not responsible for the content of any Third-Party Site, including without limitation any link contained in a Third-Party Site, or any changes or updates to a Third-Party Site. CoinMarketCap is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement, approval or recommendation by CoinMarketCap of the site or any association with its operators. This article is intended to be used and must be used for informational purposes only. It is important to do your own research and analysis before making any material decisions related to any of the products or services described. This article is not intended as, and shall not be construed as, financial advice. The views and opinions expressed in this article are the author’s [company’s] own and do not necessarily reflect those of CoinMarketCap.
+       </div>
+      </article>
+     </div>
+    </div>
+    <div class="sc-bdfBwQ gPOvAF">
+     <button class="LikeButton__StyledButton-sc-1xl44e6-0 eTnhwi" type="button">
+      <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 hZZWDZ" fill="none" viewbox="0 0 26 23" xmlns="http://www.w3.org/2000/svg">
+       <path d="M2.75736 3.14987C0.414213 5.41675 0.414213 9.0921 2.75736 11.359L13.0001 21.2683L23.2426 11.359C25.5858 9.0921 25.5858 5.41675 23.2426 3.14987C20.8995 0.882986 17.1005 0.882986 14.7574 3.14987L13.0001 4.8501L11.2426 3.14987C8.8995 0.882986 5.10051 0.882986 2.75736 3.14987Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+       </path>
+      </svg>
+     </button>
+     <div class="sc-bdfBwQ Text-msjfkz-0 bFLuOX">
+      0 people liked this article
+     </div>
+    </div>
+    <div class="sc-bdfBwQ Container-sc-4c5vqs-0 dCEoLC khdEkh" style="padding-top:0">
+     <div class="ArticleAuthor__AuthorSection-t18p1k-0 bKWLgX">
+      <a class="image-link" href="/alexandria/author/daniel-phillips">
+       <div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
+        <div style="box-sizing:border-box;display:block;max-width:100%">
+         <img alt="" aria-hidden="true" role="presentation" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+" style="max-width:100%;display:block;margin:0;border:none;padding:0"/>
+        </div>
+        <noscript>
+         <img alt="Daniel Phillips" decoding="async" src="https://academy-public.coinmarketcap.com/uploads/5157fb7b2c7e44a89e27e6659d02d7d6.jpeg" srcset="https://academy-public.coinmarketcap.com/uploads/5157fb7b2c7e44a89e27e6659d02d7d6.jpeg 1x, https://academy-public.coinmarketcap.com/uploads/5157fb7b2c7e44a89e27e6659d02d7d6.jpeg 2x" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"/>
+        </noscript>
+        <img alt="Daniel Phillips" decoding="async" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"/>
+       </div>
+      </a>
+      <div>
+       <a href="/alexandria/author/daniel-phillips">
+        <h3>
+         Daniel Phillips
+        </h3>
+       </a>
+       <p>
+        Cryptocurrencies are all I talk about. Most of the time.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="sc-bdfBwQ dBQaiO">
+     <div class="sc-bdfBwQ Container-sc-4c5vqs-0 kA-dzTb khdEkh">
+      <h3 class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 bjGlIw dAnDNe">
+       Related Articles
+      </h3>
+     </div>
+     <div class="sc-bdfBwQ Container-sc-4c5vqs-0 kA-dzTb khdEkh sc-bdfBwQ Grid-sc-3uwl3g-0 bGWzuD ZAQjM">
+      <a class="sc-bdfBwQ ArticleCard__ArticleBox-sc-4ctgqh-0 iXxiMt jZHrE" href="/alexandria/article/how-decentralized-are-decentralized-networks">
+       <div class="sc-gsTCUz ghfBCu">
+        <div class="sc-bdfBwQ LazyBackground__Background-sc-16pnu62-0 ftOUaZ fqZiSi">
+        </div>
+        <div class="sc-bdfBwQ jzZbpr">
+         <div class="ArticleCard__Category-sc-4ctgqh-1 SmqGy">
+          Crypto Basics
+         </div>
+         <div class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 Title__StyledTitle-sc-6yi3ll-0 bXSEgn ffRerq gRgJsG" title="How Decentralized Are Decentralized Networks?">
+          How Decentralized Are Decentralized Networks?
+         </div>
+         <div class="sc-bdfBwQ Text-msjfkz-0 hOMFgM">
+          Almost every decentralized network claims a very high level of decentralized — but is that always the case?
+         </div>
+        </div>
+        <div class="sc-gsTCUz hoYWsg">
+         <div class="sc-bdfBwQ Text-msjfkz-0 fDPsJm">
+          By Werner Vermaak
+         </div>
+        </div>
+        <div class="sc-gsTCUz gvdfNf">
+         <span class="sc-bdfBwQ Text-msjfkz-0 fDPsJm">
+          1yr ago
+         </span>
+         <div class="sc-gsTCUz dSCuHF">
+          <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 hAnSfs" fill="currentColor" size="12" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M11.9963 4C13.5785 4 15.1252 4.46919 16.4408 5.34824C17.7564 6.22729 18.7818 7.47672 19.3873 8.93853C19.9928 10.4003 20.1512 12.0089 19.8426 13.5607C19.5339 15.1126 18.772 16.538 17.6531 17.6569C16.5343 18.7757 15.1089 19.5376 13.557 19.8463C12.0052 20.155 10.3966 19.9965 8.93481 19.391C7.473 18.7855 6.22358 17.7602 5.34452 16.4446C4.46547 15.129 3.99628 13.5823 3.99628 12C3.99871 9.87901 4.84234 7.84559 6.34211 6.34583C7.84187 4.84606 9.87529 4.00243 11.9963 4ZM11.9963 2C10.0185 2 8.08507 2.58649 6.44058 3.6853C4.79609 4.78412 3.51436 6.3459 2.75749 8.17317C2.00061 10.0004 1.80258 12.0111 2.18843 13.9509C2.57428 15.8907 3.52669 17.6725 4.92521 19.0711C6.32374 20.4696 8.10557 21.422 10.0454 21.8079C11.9852 22.1937 13.9959 21.9957 15.8231 21.2388C17.6504 20.4819 19.2122 19.2002 20.311 17.5557C21.4098 15.9112 21.9963 13.9778 21.9963 12C21.9963 10.6868 21.7377 9.38641 21.2351 8.17315C20.7326 6.95988 19.996 5.85748 19.0674 4.92889C18.1388 4.0003 17.0364 3.26371 15.8231 2.76117C14.6099 2.25863 13.3095 1.99998 11.9963 2Z" fill="currentColor">
+           </path>
+           <path d="M15.561 16.972L11.003 12.414V6.004H13.003V11.586L16.975 15.558L15.561 16.972Z" fill="currentColor">
+           </path>
+          </svg>
+          <span class="sc-bdfBwQ Text-msjfkz-0 czscDz">
+           5m
+          </span>
+         </div>
+        </div>
+       </div>
+      </a>
+      <a class="sc-bdfBwQ ArticleCard__ArticleBox-sc-4ctgqh-0 iXxiMt jZHrE" href="/alexandria/article/what-are-sandwich-attacks-in-defi-and-how-can-you-avoid-them">
+       <div class="sc-gsTCUz ghfBCu">
+        <div class="sc-bdfBwQ LazyBackground__Background-sc-16pnu62-0 ftOUaZ fqZiSi">
+        </div>
+        <div class="sc-bdfBwQ jzZbpr">
+         <div class="ArticleCard__Category-sc-4ctgqh-1 SmqGy">
+          Crypto Basics
+         </div>
+         <div class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 Title__StyledTitle-sc-6yi3ll-0 bXSEgn ffRerq gRgJsG" title="What Are Sandwich Attacks in DeFi — and How Can You Avoid Them?">
+          What Are Sandwich Attacks in DeFi — and How Can You Avoid Them?
+         </div>
+         <div class="sc-bdfBwQ Text-msjfkz-0 hOMFgM">
+          With DeFi scams and attacks happening every day, CoinMarketCap breaks down a new type of attack...a sandwich attack. Hungry?
+         </div>
+        </div>
+        <div class="sc-gsTCUz hoYWsg">
+         <div class="sc-bdfBwQ Text-msjfkz-0 fDPsJm">
+          By Andrey Sergeenkov
+         </div>
+        </div>
+        <div class="sc-gsTCUz gvdfNf">
+         <span class="sc-bdfBwQ Text-msjfkz-0 fDPsJm">
+          6mo ago
+         </span>
+         <div class="sc-gsTCUz dSCuHF">
+          <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 hAnSfs" fill="currentColor" size="12" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M11.9963 4C13.5785 4 15.1252 4.46919 16.4408 5.34824C17.7564 6.22729 18.7818 7.47672 19.3873 8.93853C19.9928 10.4003 20.1512 12.0089 19.8426 13.5607C19.5339 15.1126 18.772 16.538 17.6531 17.6569C16.5343 18.7757 15.1089 19.5376 13.557 19.8463C12.0052 20.155 10.3966 19.9965 8.93481 19.391C7.473 18.7855 6.22358 17.7602 5.34452 16.4446C4.46547 15.129 3.99628 13.5823 3.99628 12C3.99871 9.87901 4.84234 7.84559 6.34211 6.34583C7.84187 4.84606 9.87529 4.00243 11.9963 4ZM11.9963 2C10.0185 2 8.08507 2.58649 6.44058 3.6853C4.79609 4.78412 3.51436 6.3459 2.75749 8.17317C2.00061 10.0004 1.80258 12.0111 2.18843 13.9509C2.57428 15.8907 3.52669 17.6725 4.92521 19.0711C6.32374 20.4696 8.10557 21.422 10.0454 21.8079C11.9852 22.1937 13.9959 21.9957 15.8231 21.2388C17.6504 20.4819 19.2122 19.2002 20.311 17.5557C21.4098 15.9112 21.9963 13.9778 21.9963 12C21.9963 10.6868 21.7377 9.38641 21.2351 8.17315C20.7326 6.95988 19.996 5.85748 19.0674 4.92889C18.1388 4.0003 17.0364 3.26371 15.8231 2.76117C14.6099 2.25863 13.3095 1.99998 11.9963 2Z" fill="currentColor">
+           </path>
+           <path d="M15.561 16.972L11.003 12.414V6.004H13.003V11.586L16.975 15.558L15.561 16.972Z" fill="currentColor">
+           </path>
+          </svg>
+          <span class="sc-bdfBwQ Text-msjfkz-0 czscDz">
+           5m
+          </span>
+         </div>
+        </div>
+       </div>
+      </a>
+      <a class="sc-bdfBwQ ArticleCard__ArticleBox-sc-4ctgqh-0 iXxiMt jZHrE" href="/alexandria/article/what-is-web-3-0">
+       <div class="sc-gsTCUz ghfBCu">
+        <div class="sc-bdfBwQ LazyBackground__Background-sc-16pnu62-0 ftOUaZ fqZiSi">
+        </div>
+        <div class="sc-bdfBwQ jzZbpr">
+         <div class="ArticleCard__Category-sc-4ctgqh-1 SmqGy">
+          Crypto Basics
+         </div>
+         <div class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 Title__StyledTitle-sc-6yi3ll-0 bXSEgn ffRerq gRgJsG" title="What Is Web 3.0?">
+          What Is Web 3.0?
+         </div>
+         <div class="sc-bdfBwQ Text-msjfkz-0 hOMFgM">
+          Web 3.0 is coming — but what is it, and where did Web 1.0 and 2.0 go?
+         </div>
+        </div>
+        <div class="sc-gsTCUz hoYWsg">
+         <div class="sc-bdfBwQ Text-msjfkz-0 fDPsJm">
+          By Werner Vermaak
+         </div>
+        </div>
+        <div class="sc-gsTCUz gvdfNf">
+         <span class="sc-bdfBwQ Text-msjfkz-0 fDPsJm">
+          1yr ago
+         </span>
+         <div class="sc-gsTCUz dSCuHF">
+          <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 hAnSfs" fill="currentColor" size="12" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M11.9963 4C13.5785 4 15.1252 4.46919 16.4408 5.34824C17.7564 6.22729 18.7818 7.47672 19.3873 8.93853C19.9928 10.4003 20.1512 12.0089 19.8426 13.5607C19.5339 15.1126 18.772 16.538 17.6531 17.6569C16.5343 18.7757 15.1089 19.5376 13.557 19.8463C12.0052 20.155 10.3966 19.9965 8.93481 19.391C7.473 18.7855 6.22358 17.7602 5.34452 16.4446C4.46547 15.129 3.99628 13.5823 3.99628 12C3.99871 9.87901 4.84234 7.84559 6.34211 6.34583C7.84187 4.84606 9.87529 4.00243 11.9963 4ZM11.9963 2C10.0185 2 8.08507 2.58649 6.44058 3.6853C4.79609 4.78412 3.51436 6.3459 2.75749 8.17317C2.00061 10.0004 1.80258 12.0111 2.18843 13.9509C2.57428 15.8907 3.52669 17.6725 4.92521 19.0711C6.32374 20.4696 8.10557 21.422 10.0454 21.8079C11.9852 22.1937 13.9959 21.9957 15.8231 21.2388C17.6504 20.4819 19.2122 19.2002 20.311 17.5557C21.4098 15.9112 21.9963 13.9778 21.9963 12C21.9963 10.6868 21.7377 9.38641 21.2351 8.17315C20.7326 6.95988 19.996 5.85748 19.0674 4.92889C18.1388 4.0003 17.0364 3.26371 15.8231 2.76117C14.6099 2.25863 13.3095 1.99998 11.9963 2Z" fill="currentColor">
+           </path>
+           <path d="M15.561 16.972L11.003 12.414V6.004H13.003V11.586L16.975 15.558L15.561 16.972Z" fill="currentColor">
+           </path>
+          </svg>
+          <span class="sc-bdfBwQ Text-msjfkz-0 czscDz">
+           8m
+          </span>
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="sc-gsTCUz hFwcgf">
+      <a class="sc-bdfBwQ Button__StyledButton-sc-1kvh4an-0 bxNOKk" href="/alexandria/article" style="height:56px">
+       See all articles
+       <span class="Button__EndIcon-sc-1kvh4an-1 cEbvLE">
+        <svg class="sc-bdfBwQ Svg-sc-17i2kvj-0 bwxocM" fill="currentColor" viewbox="0 0 18 15" xmlns="http://www.w3.org/2000/svg">
+         <path d="M10.5 15L9.1 13.6L14.2 8.5L5.68248e-07 8.5L7.43094e-07 6.5L14.2 6.5L9.1 1.4L10.5 -6.55671e-07L18 7.5L10.5 15Z">
+         </path>
+        </svg>
+       </span>
+      </a>
+     </div>
+    </div>
+    <div class="sc-bdfBwQ Container-sc-4c5vqs-0 jKSHrp khdEkh">
+     <div class="sc-bdfBwQ iCRjms Newsletter__NewsletterSection-tgkqos-0 pQehZ">
+      <p class="sc-bdfBwQ Text-msjfkz-0 bFOiFL">
+       Join the thousands already learning crypto!
+      </p>
+      <h3 class="sc-bdfBwQ Text-msjfkz-0 Heading-juwhnu-0 epLOPA dAnDNe">
+       Join our free newsletter for daily crypto updates!
+      </h3>
+      <form>
+       <input name="u" type="hidden" value="17"/>
+       <input name="f" type="hidden" value="17"/>
+       <input name="s" type="hidden"/>
+       <input name="c" type="hidden" value="0"/>
+       <input name="m" type="hidden" value="0"/>
+       <input name="act" type="hidden" value="sub"/>
+       <input name="v" type="hidden" value="2"/>
+       <div class="sc-gsTCUz NewsletterForm__InputFlex-ux3sq5-0 kSSfgv cdmsOS">
+        <div class="sc-bdfBwQ dGqbKE">
+         <input aria-label="Enter your email address" class="sc-bdfBwQ Input__StyledInput-hw3pg2-0 IiwYn" name="email" placeholder="Enter your email address" required="" type="email"/>
+        </div>
+        <button class="sc-bdfBwQ Button__StyledButton-sc-1kvh4an-0 eToAte cCzBkx" type="submit">
+         Subscribe
+        </button>
+       </div>
+      </form>
+     </div>
+    </div>
+    <div class="Footer__FooterContainer-sc-1xgrmdq-1 cgHWSS">
+     <footer>
+      <div class="Logo__SvgContainer-hxzlkl-0 hQeyNG">
+       <a class="logo" href="/">
+        <svg color="primary" viewbox="0 0 76.52 77.67" xmlns="http://www.w3.org/2000/svg">
+         <path d="M66.54 46.41a4.09 4.09 0 01-4.17.28C60.83 45.82 60 43.78 60 41v-8.52c0-4.09-1.62-7-4.33-7.79-4.58-1.34-8 4.27-9.32 6.38l-8.1 13.11v-16c-.09-3.69-1.29-5.9-3.56-6.56-1.5-.44-3.75-.26-5.94 3.08L10.64 53.77A32 32 0 017 38.83C7 21.31 21 7.06 38.25 7.06s31.3 14.25 31.3 31.77v.18c.17 3.39-.93 6.09-3 7.4zm10-7.57v-.17C76.4 17.32 59.28 0 38.25 0S0 17.42 0 38.83s17.16 38.84 38.25 38.84a37.81 37.81 0 0026-10.36 3.56 3.56 0 00.18-5 3.43 3.43 0 00-4.86-.23A30.93 30.93 0 0115 60l16.3-26.2v12.09c0 5.81 2.25 7.69 4.14 8.24s4.78.17 7.81-4.75l9-14.57c.28-.47.55-.87.79-1.22V41c0 5.43 2.18 9.77 6 11.91a11 11 0 0011.21-.45c4.2-2.73 6.49-7.67 6.25-13.62z" fill="#17181b">
+         </path>
+        </svg>
+       </a>
+       <a aria-label="Home page" class="sc-bdfBwQ Text-msjfkz-0 bZFyDn logo" href="/alexandria">
+        <svg color="primary" viewbox="0 0 127.2 40" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20.2 25l.9-2.7h4L26 25h1.6L24 14.8h-1.8L18.6 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3h-3.1zM31.4 25h6.1v-1.3h-4.6v-8.9h-1.5V25zM41.5 25H48v-1.3h-4.9v-3.1h4.5v-1.3h-4.5v-3.1h4.8v-1.3h-6.4V25zM53.3 14.8h-1.8l3.2 5.1-3.2 5.1h1.8l2.4-3.9h.1l2.4 3.9H60l-3.2-5.1 3.2-5.1h-1.8l-2.4 4h-.1l-2.4-4zM64.6 25l.9-2.7h4l.9 2.7H72l-3.7-10.2h-1.8L63 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3H66zM84 14.8h-1.5v7.5h-.1l-5.2-7.5h-1.4V25h1.5v-7.5h.1l5.2 7.5H84V14.8zM91.8 25c3.1 0 4.9-1.9 4.9-5.1 0-3.2-1.8-5.1-4.8-5.1h-3.4V25h3.3zm-1.7-1.3v-7.5h1.8c2.2 0 3.4 1.3 3.4 3.7 0 2.4-1.1 3.8-3.5 3.8h-1.7zM100.9 25h1.5v-3.9h2.2l2.1 3.9h1.8l-2.3-4.1c1.2-.5 1.9-1.5 1.9-2.9 0-1.9-1.2-3.2-3.5-3.2H101V25zm1.5-5.2v-3.7h1.9c1.5 0 2.1.7 2.1 1.9 0 1.1-.6 1.8-2.1 1.8h-1.9zM113.7 14.8h-1.5V25h1.5V14.8zM119 25l.9-2.7h4l.9 2.7h1.6l-3.7-10.2H121L117.4 25h1.6zm1.4-4l1.5-4.3h.1l1.5 4.3h-3.1z">
+         </path>
+         <path d="M1.2 4h1v32h-1z" fill-opacity="0.16">
+         </path>
+        </svg>
+       </a>
+      </div>
+      <div class="social">
+       <a href="https://twitter.com/CoinMarketCap" rel="noopener noreferrer" target="_blank">
+        <svg aria-hidden="true" class="MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24">
+         <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
+         </path>
+        </svg>
+       </a>
+       <a href="https://instagram.com/coinmarketcap" rel="noopener noreferrer" target="_blank">
+        <svg aria-hidden="true" class="MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24">
+         <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+         </path>
+        </svg>
+       </a>
+       <a href="https://www.facebook.com/CoinMarketCap" rel="noopener noreferrer" target="_blank">
+        <svg aria-hidden="true" class="MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24">
+         <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z">
+         </path>
+        </svg>
+       </a>
+       <a href="https://www.linkedin.com/company/coinmarketcap/" rel="noopener noreferrer" target="_blank">
+        <svg aria-hidden="true" class="MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24">
+         <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+         </path>
+        </svg>
+       </a>
+      </div>
+      <div class="copyright">
+       <div>
+        ©
+        <!-- -->
+        2022
+        <!-- -->
+        CoinMarketCap
+       </div>
+      </div>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"pageProps":{"article":{"id":15914,"title":"3 Minute Tips: What Are Gas Wars?","slug":"3-minute-tips-what-are-gas-wars","meta":"Gas wars occur when different network participants battle it out to secure space in the next block, by taking part in a priority gas auction. Learn how to win in a gas war if you get caught in one in the future.","visible":true,"image":{"original":"uploads/771d204091bc439196e148c33af15e24.jpg","optimized":"optimized-uploads/771d204091bc439196e148c33af15e24.jpg","thumbnail":"thumbnail-uploads/771d204091bc439196e148c33af15e24.jpg"},"content":"\u003cp\u003eNot unlike the frequent conflicts over scarce resources like land, fossil fuels and precious metals, the blockchain space regularly sees battles of its own — but in this case, the battle is for block space. These are known as \u003cem\u003egas wars\u003c/em\u003e.\u003c/p\u003e\u003cp\u003eIn a \u003ca href=\"https://coinmarketcap.com/alexandria/glossary/gas\"\u003egas\u003c/a\u003e war, different network participants battle it out to secure space in the next block by taking part in a “priority gas auction” or PGA. In essence, this involves paying above the network average for gas in order to secure better positioning in the next block. Oftentimes, the winners of a gas war might end up paying several times the average transaction fee to secure their positions.\u0026nbsp;\u003c/p\u003e\u003ch2 id=\"why-do-people-compete-ongas\"\u003eWhy Do People Compete on\u0026nbsp;Gas?\u003c/h2\u003e\u003cp\u003e“Why would anybody purposely spend over the odds on gas?” We hear you say. Well, it’s to ensure that the transaction is processed by the network quickly — such as to capitalize on an extremely transient trading opportunity or participate in a first-come-first-served event of some sort.\u0026nbsp;\u003c/p\u003e\u003cp\u003eGenerally, these gas wars are associated with highly sought-after, limited access events — such as initial DEX offerings (\u003ca href=\"https://coinmarketcap.com/alexandria/glossary/initial-dex-offering\"\u003eIDOs\u003c/a\u003e) and non-fungible token (\u003ca href=\"https://coinmarketcap.com/alexandria/glossary/non-fungible-token\"\u003eNFT\u003c/a\u003e) drops. Pretty much anything where there are a limited number of slots and a large number of participants. This forces users to overpay on gas to secure priority positioning within the next block to ensure they are one of the few winning participants.\u003c/p\u003e\u003cp\u003e\u003cstrong\u003eThe intricacies of PGAs are commonly exploited by front runners. Read more about front running — \u003c/strong\u003e\u003ca href=\"https://coinmarketcap.com/alexandria/article/3-minute-tips-avoiding-front-runners-on-decentralized-exchanges\"\u003e\u003cstrong\u003ehere\u003c/strong\u003e\u003c/a\u003e\u003cstrong\u003e.\u0026nbsp;\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eGas wars are generally designed to confer some advantage to winners, whether this is accessing limited slot investment opportunities, registering for a beta program or incentivized testnet, or participating in a lucrative giveaway of some sort. They can also be used to minimize losses, by being the first to sell tokens in a declining market where competition to sell tokens is high.\u003c/p\u003e\u003ch2 id=\"how-to-win-a-gas-war\"\u003eHow to Win a Gas War\u003c/h2\u003e\u003cp\u003eThe first step towards winning a gas war, is to recognize that you’re likely to be in one. This means considering whether there are going to be a large number of users competing for block space at the specific time when you’ll be making your transaction.\u0026nbsp;\u003c/p\u003e\u003cp\u003eOne of the simplest ways to do this is by using \u003ca href=\"https://coinmarketcap.com/events/\"\u003eour events calendar\u003c/a\u003e, which will help you spot events that could drive up block space demand at the time when you need to make a transaction. Likewise, if you’re in a highly sought-after first-come-first-serve event, odds are you’ll end up in a gas war (particularly when hosted on the Ethereum network).\u003c/p\u003e\u003cp\u003eTo win, you’ll need to overpay on gas. It’s as simple as that. Most Web3 \u003ca href=\"https://coinmarketcap.com/alexandria/glossary/wallet\"\u003ewallets\u003c/a\u003e will allow you to manually adjust the price you pay for gas. You can use services like \u003ca href=\"https://ethgasstation.info/\"\u003eETH Gas Station\u003c/a\u003e to see what the current gas price is (e.g. 50 gwei), then you’ll be able to use this to set a number you think will secure you the slot.\u003c/p\u003e\u003cp\u003eIn general, the fewer the slots and/or the more potential participants, the more you will need to overpay. To put this into perspective, it isn’t uncommon for participants to pay more than 1,000 gwei for gas — and even then, success might not be guaranteed. Internet latency, node issues, wallet issues and more can cause additional delays — impacting your odds of winning.\u0026nbsp;\u003c/p\u003e\u003cfigure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:349px\"\u003e\u003cdiv\u003e\u003cimg src=\"https://academy-public.coinmarketcap.com/optimized-uploads/cc3a6b4281b54ab2bd0db49ad98a53b0.png\" width=\"auto\" height=\"auto\" loading=\"auto\"\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eYou might also want to consider not only increasing the amount paid for gas, but also the gas limit beyond what your Web3 wallet suggests. This will ensure your transaction can successfully complete without failing due to the dreaded “Out of Gas” \u003ca href=\"https://metamask.zendesk.com/hc/en-us/articles/360038849792-Why-did-my-transaction-fail-with-an-Out-of-Gas-error-How-can-I-fix-it-\"\u003eerror\u003c/a\u003e.\u0026nbsp;\u003c/p\u003e\u003cp\u003eIn general, anybody participating in a gas war (whether knowingly or not), will generally be doing so under the assumption that the potential benefit/reward outweighs the risks of losing. Whatever the case, some calculations will likely be needed beforehand to work out the maximum gas fee you are willing to pay to secure the slot, since it can cost hundreds of dollars in gas to almost guarantee a place among the winners in some cases. \u003c/p\u003e","disclaimer":"This article contains links to third-party websites or other content for information purposes only (“Third-Party Sites”). The Third-Party Sites are not under the control of CoinMarketCap, and CoinMarketCap is not responsible for the content of any Third-Party Site, including without limitation any link contained in a Third-Party Site, or any changes or updates to a Third-Party Site. CoinMarketCap is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement, approval or recommendation by CoinMarketCap of the site or any association with its operators. This article is intended to be used and must be used for informational purposes only. It is important to do your own research and analysis before making any material decisions related to any of the products or services described. This article is not intended as, and shall not be construed as, financial advice. The views and opinions expressed in this article are the author’s [company’s] own and do not necessarily reflect those of CoinMarketCap.","language":"en","created_at":"2021-08-19T03:03:23.000Z","reading_time":167500,"likes":0,"related":[{"id":15656,"title":"How Decentralized Are Decentralized Networks?","slug":"how-decentralized-are-decentralized-networks","meta":"Almost every decentralized network claims a very high level of decentralized — but is that always the case?","image":{"original":"uploads/8c339cbd61b94a9c9ad1278b4b1d49c6.png","optimized":"optimized-uploads/8c339cbd61b94a9c9ad1278b4b1d49c6.png","thumbnail":"thumbnail-uploads/8c339cbd61b94a9c9ad1278b4b1d49c6.png"},"language":"en","created_at":"2020-12-17T09:23:23.000Z","reading_time":250000,"translations":[],"categories":[{"title":"Crypto Basics","language":"en","slug":"crypto-basics"}],"author":{"id":573,"name":"Werner Vermaak","bio_summary":"I'm a technical writer and marketer who has been in crypto since 2017.","slug":"werner-vermaak","image":{"original":"uploads/023a9d5cec504ef9bbf27c479530b672.jpeg","optimized":"optimized-uploads/023a9d5cec504ef9bbf27c479530b672.jpeg","thumbnail":"thumbnail-uploads/023a9d5cec504ef9bbf27c479530b672.jpeg"}},"assets":[]},{"id":16411,"title":"What Are Sandwich Attacks in DeFi — and How Can You Avoid Them?","slug":"what-are-sandwich-attacks-in-defi-and-how-can-you-avoid-them","meta":"With DeFi scams and attacks happening every day, CoinMarketCap breaks down a new type of attack...a sandwich attack. Hungry?","image":{"original":"uploads/e8d21534035d4630aca16cb36f28137e.png","optimized":"optimized-uploads/e8d21534035d4630aca16cb36f28137e.png","thumbnail":"thumbnail-uploads/e8d21534035d4630aca16cb36f28137e.png"},"language":"en","created_at":"2021-09-14T20:11:13.000Z","reading_time":271750,"translations":[],"categories":[{"title":"Crypto Basics","language":"en","slug":"crypto-basics"}],"author":{"id":528,"name":"Andrey Sergeenkov","bio_summary":"I'm a firm supporter of blockchain technology.","slug":"andrey-sergeenkov","image":{"original":"uploads/5930539fa05c40d48a1ba3fd6383703f.jpeg","optimized":"optimized-uploads/5930539fa05c40d48a1ba3fd6383703f.jpeg","thumbnail":"thumbnail-uploads/5930539fa05c40d48a1ba3fd6383703f.jpeg"}},"assets":[]},{"id":15526,"title":"What Is Web 3.0?","slug":"what-is-web-3-0","meta":"Web 3.0 is coming — but what is it, and where did Web 1.0 and 2.0 go?","image":{"original":"uploads/559ebb4592094a2cad06aa5655510a2b.png","optimized":"optimized-uploads/559ebb4592094a2cad06aa5655510a2b.png","thumbnail":"thumbnail-uploads/559ebb4592094a2cad06aa5655510a2b.png"},"language":"en","created_at":"2021-02-08T14:50:56.000Z","updated_at":"2022-01-17T11:46:16.000Z","reading_time":431250,"translations":[],"categories":[{"title":"Crypto Basics","language":"en","slug":"crypto-basics"}],"author":{"id":573,"name":"Werner Vermaak","bio_summary":"I'm a technical writer and marketer who has been in crypto since 2017.","slug":"werner-vermaak","image":{"original":"uploads/023a9d5cec504ef9bbf27c479530b672.jpeg","optimized":"optimized-uploads/023a9d5cec504ef9bbf27c479530b672.jpeg","thumbnail":"thumbnail-uploads/023a9d5cec504ef9bbf27c479530b672.jpeg"}},"assets":[]}],"available_languages":["en"],"difficulty":{"level":1,"label":"Easy","slug":"beginner","language":"en"},"categories":[{"title":"Crypto Basics","language":"en","slug":"crypto-basics"}],"author":{"id":547,"name":"Daniel Phillips","bio_summary":"Cryptocurrencies are all I talk about. Most of the time. ","slug":"daniel-phillips","image":{"original":"uploads/5157fb7b2c7e44a89e27e6659d02d7d6.jpeg","optimized":"optimized-uploads/5157fb7b2c7e44a89e27e6659d02d7d6.jpeg","thumbnail":"thumbnail-uploads/5157fb7b2c7e44a89e27e6659d02d7d6.jpeg"}},"assets":[]},"tableOfContent":[{"label":"Why Do People Compete on\u0026nbsp;Gas?","slug":"why-do-people-compete-ongas"},{"label":"How to Win a Gas War","slug":"how-to-win-a-gas-war"}]},"locale":"en","i18n":{"Home":"Home","Articles":"Articles","Looking to get started with cryptocurrency? Buy Bitcoin on Binance!":"Looking to get started with cryptocurrency?","Buy Bitcoin":"Buy Bitcoin","Was this article useful?":"Was this article useful?","{{count}} out of {{count}} people found this article useful.":"{{count}} out of {{count}} people found this article useful.","Yes":"Yes","No":"No","No noise. Just signal.":"No noise. Just signal.","Sign up for our weekly newsletter. We promise we don't spam!":"Sign up for our weekly newsletter. We promise we don't spam!","Your email":"Your email","Sign up":"Sign up","Explore all of our content":"Explore all of our content","Related topics":"Related topics","Share":"Share","Table of Contents":"Table of Contents","Topics at Academy":"Topics at Academy","Search topics to add...":"Search topics to add...","Reading time":"Reading time","{{count}}m":"{{count}}m","Layout":"Layout","Sort by Latest":"Sort by Latest","Sort by Difficulty":"Sort by Difficulty","Latest":"Latest","Read more":"Read more","See all results for your search":"See all results for your search","{{count}} results for '{{term}}'":"{{count}} results for '{{term}}'","Topics":"Topics","Difficulty":"Difficulty","Type":"Type","Glossary entries":"Glossary entries","Courses":"Courses","Hide filters":"Hide filters","Show filters":"Show filters","Refresh results":"Refresh results","Clear all filters":"Clear all filters","Show off your crypto knowledge":"Show off your crypto knowledge","Try out Academy Quizzes":"Try out Academy Quizzes","Phishing quiz":"Phishing quiz","Glossary quiz":"Glossary quiz","Bitcoin history quiz":"Bitcoin history quiz","We're working on getting more quizzes ready.":"We're working on getting more quizzes ready.","While you're waiting, why not check out our latest content?":"While you're waiting, why not check out our latest content?","Cryptocurrencies have brought lots of exciting possibilities, but they are full of risks and dangers for the inexperienced.":"Cryptocurrencies have brought lots of exciting possibilities, but they are full of risks and dangers for the inexperienced.","How well do you know the origins of Bitcoin and its journey since inception? Take the Binance Academy Bitcoin History quiz to find out how much you know!":"How well do you know the origins of Bitcoin and its journey since inception? Take the Binance Academy Bitcoin History quiz to find out how much you know!","Think you know crypto? Take our crypto glossary quiz.":"Think you know crypto? Take our crypto glossary quiz.","Take the quiz":"Take the quiz","This quiz has {{count}} questions.":"This quiz has {{count}} questions.","I am a complete beginner and just started exploring Binance Academy. Let me test my basic knowledge":"I am a complete beginner and just started exploring Binance Academy. Let me test my basic knowledge","I am a frequent visitor of Binance Academy and am quite familiar with some terms, but still on my path to true knowledge.":"I am a frequent visitor of Binance Academy and am quite familiar with some terms, but still on my path to true knowledge.","I have learned enough at Binance Academy. My knowledge base is wide and I feel ready to be challenged.":"I have learned enough at Binance Academy. My knowledge base is wide and I feel ready to be challenged.","Select a suitable level of difficulty.":"Select a suitable level of difficulty.","Q{{count}}/{{count}}":"Q{{count}}/{{count}}","Phishing":"Phishing","Legitimate":"Legitimate","Quizzes":"Quizzes","Quiz difficulty selection":"Quiz difficulty selection","LEARN ALL ABOUT":"LEARN ALL ABOUT","Blockchain \u0026 Crypto":"Blockchain \u0026 Crypto","Your one-stop guide to all things crypto. Whether you're a rookie trying to understand mining or a veteran looking to develop a trading strategy, we've got you covered.":"Your one-stop guide to all things crypto. Whether you're a rookie trying to understand mining or a veteran looking to develop a trading strategy, we've got you covered.","Featured":"Featured","Beginner":"Beginner","Intermediate":"Intermediate","Advanced":"Advanced","{{count}} minutes":"{{count}} minutes","{{count}} minutes ago":"{{count}} minutes ago","{{count}} hours ago":"{{count}} hours ago","{{count}} days ago":"{{count}} days ago","Latest releases":"Latest releases","SEE ALL LATEST RELEASES":"SEE ALL LATEST RELEASES","Full definition":"Full definition","Glossary addition":"Glossary addition","Explore all the latest content":"Explore all the latest content","Lost in all the crypto slang?":"Lost in all the crypto slang?","Take a closer look at our blockchain \u0026 crypto glossary.":"Take a closer look at our blockchain \u0026 crypto glossary.","Check out Glossary":"Check out Glossary","Up for an adventure?":"Up for an adventure?","Learn while you test your knowledge with a range of quizzes.":"Learn while you test your knowledge with a range of quizzes.","Take a crypto quiz":"Take a crypto quiz","Trading":"Trading","SEE ALL TRADING CONTENT":"SEE ALL TRADING CONTENT","See more content about this topic":"See more content about this topic","No idea what you just scrolled through?":"No idea what you just scrolled through?","Not to worry. Our no-nonsense beginner's guide will get you up to speed.":"Not to worry. Our no-nonsense beginner's guide will get you up to speed.","Get started here":"Get started here","Essentials":"Essentials","SEE ALL ESSENTIALS CONTENT":"SEE ALL ESSENTIALS","Blockchain":"Blockchain","SEE ALL BLOCKCHAIN CONTENT":"SEE ALL BLOCKCHAIN CONTENT","Keep an eye on Bitcoin":"Keep an eye on Bitcoin","Every four years, the Bitcoin rewards are slashed in half. Find out why on the Halving page.":"Every four years, the Bitcoin rewards are slashed in half. Find out why on the Halving page.","Bitcoin halving page":"Bitcoin halving page","Got questions?":"Got questions?","We totally understand. That's why we've built a platform to answer them.":"We totally understand. That's why we've built a platform to answer them.","Go to Ask Academy":"Go to Ask Academy","Guides":"Guides","SEE ALL GUIDES":"SEE ALL GUIDES","Weekly pick":"Weekly pick","{{count}}":"{{count}}","That's the number of terms in our glossary. How many do you know?":"That's the number of terms in our glossary. How many do you know?","Search glossary":"Search glossary","Get the latest in crypto dropped to your email, every week.":"Get the latest in crypto dropped to your email, every week.","Glossary":"Glossary","The Words of Crypto":"The Words of Crypto","Time to understand the language":"Time to understand the language","Search terms here...":"Search terms here...","Can't find what you're looking for?":"Can't find what you're looking for?","Whoops. Our bad. Please help us make our glossary better by submitting new terms.":"Whoops. Our bad. Please help us make our glossary better by submitting new terms.","Submit terms":"Submit terms","Community submission":"Community submission","Author:":"Author:","Start here":"Start here","Discover":"Discover","Log In":"Log In","Register":"Register","Search":"Search","Ask Academy":"Ask Academy","Blockchain forum and Q\u0026A":"Blockchain forum and Q\u0026A","Crypto-terms glossary":"Crypto-terms glossary","Test your knowledge":"Test your knowledge","Have a product idea or feedback?":"Have a product idea or feedback?","Contribute":"Contribute","New to Crypto?":"New to Crypto?","See our beginner content.":"See our beginner content.","Products":"Products","Exchange":"Exchange","Access":"Access","Academy":"Academy","BCF":"BCF","Card":"Card","Labs":"Labs","Launchpad":"Launchpad","Research":"Research","Trust Wallet":"Trust Wallet","Company":"Company","Terms \u0026 Conditions":"Terms \u0026 Conditions","Privacy Policy":"Privacy Policy","Disclaimer":"Disclaimer","Content Request":"Content Request","Submission Guide":"Submission Guide","Feedback":"Feedback","Bitcoin Halving Countdown":"Bitcoin Halving Countdown","Bitcoin Halving Timer":"Bitcoin Halving Timer","Days":"Days","Hours":"Hours","Minutes":"Minutes","Seconds":"Seconds","Current block height":"Current block height","Blocks until halving":"Blocks until halving","BTC Price":"BTC Price","Buy Bitcoin on Binance":"Buy Bitcoin on Binance","Detailed datasheet":"Detailed datasheet","Total BTC in circulation":"Total BTC in circulation","Total BTC to ever be produced":"Total BTC to ever be produced","Percentage of BTC mined":"Percentage of BTC mined","BTC left to mine until halving":"BTC left to mine until halving","BTC market cap (USD)":"BTC market cap (USD)","BTC generated each day":"BTC generated each day","BTC annual inflation rate":"BTC annual inflation rate","BTC daily inflation":"BTC daily inflation","Approximate block time":"Approximate block time","Mining difficulty":"Mining difficulty","Hash rate":"Hash rate","Community":"Community","{{count}}h ago":"{{count}}h ago","{{count}}d ago":"{{count}}d ago","{{count}}w ago":"{{count}}w ago","Crypto \u0026 Blockchain Education | Blockchain Course":"Crypto \u0026 Blockchain Education | Blockchain Course","Blockchain and crypto asset exchange":"Blockchain and crypto asset exchange","Blockchain and crypto education":"Blockchain and crypto education","Blockchain charity foundation":"Blockchain charity foundation","Cryptocurrency Information":"Cryptocurrency Information","Incubator for top blockchain projects":"Incubator for top blockchain projects","Institutional-grade analysis and reports":"Institutional-grade analysis and reports","Binance's official crypto wallet":"Binance's official crypto wallet","Token Launch Platform":"Token Launch Platform","Binance Academy's Blockchain and Crypto Glossary is the authoritative source for terminology and definitions of the blockchain and cryptocurrency world":"Binance Academy's Blockchain and Crypto Glossary is the authoritative source for terminology and definitions of the blockchain and cryptocurrency world","Learn about blockchain, cryptocurrency, security, technology and more with entirely free videos, articles, and online courses all on Binance Academy.":"Learn about blockchain, cryptocurrency, security, technology and more with entirely free videos, articles, and online courses all on Binance Academy.","Interested in learning about blockchain, cryptocurrency, security, technology, or following along with tutorials? Binance Academy has all that and more!":"Interested in learning about blockchain, cryptocurrency, security, technology, or following along with tutorials? Binance Academy has all that and more!","Binance Academy playlists provide content from beginner to advanced, you can follow along curated list of articles designed to make it easy to understand":"Binance Academy playlists provide content from beginner to advanced, you can follow along curated list of articles designed to make it easy to understand","The bitcoin block reward halving occurs once every 4 years on average, learn the significance of the bitcoin halving and when the next one will occur.":"The bitcoin block reward halving occurs once every 4 years on average, learn the significance of the bitcoin halving and when the next one will occur.","Want to test yourself? Check out Binance Academy Quizzes and test how much you have learned about Blockchain, Cryptocurrency, Security, and Economics.":"Want to test yourself? Check out Binance Academy Quizzes and test how much you have learned about Blockchain, Cryptocurrency, Security, and Economics.","Looks like you don't have an internet connection.":"Looks like you don't have an internet connection.","Binance Academy is currently under maintenance.":"Binance Academy is currently under maintenance.","We'll be right back!":"We'll be right back!","In the meantime, take a look at some of our videos.":"In the meantime, take a look at some of our videos.","Search results for":"Search results for ","No results found.":"No results found.","Ask a new question":"Ask a new question","asked by":"asked by","Latest questions":"Latest questions","Trending":"Trending","New":"New","Solved":"Solved","All":"All","Open":"Open","Find existing answers":"Find existing answers","Title must be 10 or more characters":"Title must be 10 or more characters","You will not be able to edit your title after posting":"You will not be able to edit your title after posting","Title...":"Title...","Enter your question here":"Enter your question here","Post question":"Post question","Answers":"Answers","Enter your answer or comment here...":"Enter your answer or comment here...","Test Key":"Test Value"},"statusCode":null,"initialTheme":0,"supportedLanguages":["en","ru","id","de","vi","tr","pt","es"],"categories":[{"id":40,"slug":"altcoins","created_at":"2021-11-04T07:49:36.000Z","parent_slug":"topics","translations":[{"title":"Altcoins","language":"de","created_at":"2022-03-02T08:13:57.000Z","updated_at":"2022-03-02T08:13:57.000Z"},{"title":"Altcoins","language":"en","created_at":"2021-11-04T07:49:36.000Z","updated_at":"2022-03-02T08:13:57.000Z"},{"title":"Altcoins","language":"es","created_at":"2022-03-02T08:13:57.000Z","updated_at":"2022-03-02T08:13:57.000Z"},{"title":"Altcoins","language":"id","created_at":"2022-03-02T08:13:57.000Z","updated_at":"2022-03-02T08:13:57.000Z"},{"title":"Altcoins","language":"pt","created_at":"2022-03-02T08:13:57.000Z","updated_at":"2022-03-02T08:13:57.000Z"},{"title":"Altcoins","language":"ru","created_at":"2022-03-02T08:13:57.000Z","updated_at":"2022-03-02T08:13:57.000Z"},{"title":"Altcoins","language":"tr","created_at":"2022-03-02T08:13:57.000Z","updated_at":"2022-03-02T08:13:57.000Z"},{"title":"Altcoins","language":"vi","created_at":"2022-03-02T08:13:57.000Z","updated_at":"2022-03-02T08:13:57.000Z"}]},{"id":29,"slug":"announcements","created_at":"2021-11-03T08:24:02.000Z","parent_slug":"coinmarketcap-news","translations":[{"title":"Announcements","language":"de","created_at":"2022-03-02T08:11:56.000Z","updated_at":"2022-03-02T08:11:56.000Z"},{"title":"Announcements","language":"en","created_at":"2021-11-03T08:24:02.000Z","updated_at":"2022-03-02T08:11:56.000Z"},{"title":"Announcements","language":"es","created_at":"2022-03-02T08:11:56.000Z","updated_at":"2022-03-02T08:11:56.000Z"},{"title":"Announcements","language":"id","created_at":"2022-03-02T08:11:56.000Z","updated_at":"2022-03-02T08:11:56.000Z"},{"title":"Announcements","language":"pt","created_at":"2022-03-02T08:11:56.000Z","updated_at":"2022-03-02T08:11:56.000Z"},{"title":"Announcements","language":"ru","created_at":"2022-03-02T08:11:56.000Z","updated_at":"2022-03-02T08:11:56.000Z"},{"title":"Announcements","language":"tr","created_at":"2022-03-02T08:11:56.000Z","updated_at":"2022-03-02T08:11:56.000Z"},{"title":"Announcements","language":"vi","created_at":"2022-03-02T08:11:56.000Z","updated_at":"2022-03-02T08:11:56.000Z"}]},{"id":61,"slug":"announcements-g","created_at":"2021-12-22T09:07:29.000Z","parent_slug":"gravity","translations":[{"title":"Announcements","language":"de","created_at":"2022-03-02T07:28:33.000Z","updated_at":"2022-03-02T07:28:33.000Z"},{"title":"Announcements","language":"en","created_at":"2021-12-22T09:07:29.000Z","updated_at":"2022-03-02T07:28:33.000Z"},{"title":"Announcements","language":"es","created_at":"2022-03-02T07:28:22.000Z","updated_at":"2022-03-02T07:28:22.000Z"},{"title":"Announcements","language":"id","created_at":"2022-02-22T08:57:33.000Z","updated_at":"2022-03-02T07:28:33.000Z"},{"title":"Announcements","language":"pt","created_at":"2022-03-02T07:28:24.000Z","updated_at":"2022-03-02T07:28:24.000Z"},{"title":"Announcements","language":"ru","created_at":"2022-02-22T08:54:38.000Z","updated_at":"2022-03-02T07:28:33.000Z"},{"title":"Announcements","language":"tr","created_at":"2022-03-02T07:28:27.000Z","updated_at":"2022-03-02T07:28:27.000Z"},{"title":"Announcements","language":"vi","created_at":"2022-03-02T07:28:30.000Z","updated_at":"2022-03-02T07:28:30.000Z"}]},{"id":33,"slug":"bitcoin","created_at":"2021-11-04T07:48:21.000Z","parent_slug":"topics","translations":[{"title":"Bitcoin","language":"de","created_at":"2022-03-02T08:12:16.000Z","updated_at":"2022-03-02T08:12:16.000Z"},{"title":"Bitcoin","language":"en","created_at":"2021-11-04T07:48:21.000Z","updated_at":"2022-03-02T08:12:16.000Z"},{"title":"Bitcoin","language":"es","created_at":"2022-03-02T08:12:16.000Z","updated_at":"2022-03-02T08:12:16.000Z"},{"title":"Bitcoin","language":"id","created_at":"2022-03-02T08:12:16.000Z","updated_at":"2022-03-02T08:12:16.000Z"},{"title":"Bitcoin","language":"pt","created_at":"2022-03-02T08:12:16.000Z","updated_at":"2022-03-02T08:12:16.000Z"},{"title":"Bitcoin","language":"ru","created_at":"2022-03-02T08:12:16.000Z","updated_at":"2022-03-02T08:12:16.000Z"},{"title":"Bitcoin","language":"tr","created_at":"2022-03-02T08:12:16.000Z","updated_at":"2022-03-02T08:12:16.000Z"},{"title":"Bitcoin","language":"vi","created_at":"2022-03-02T08:12:16.000Z","updated_at":"2022-03-02T08:12:16.000Z"}]},{"id":35,"slug":"blockchain","created_at":"2021-11-04T07:48:43.000Z","parent_slug":"topics","translations":[{"title":"Blockchain","language":"de","created_at":"2022-03-02T08:12:23.000Z","updated_at":"2022-03-02T08:12:26.000Z"},{"title":"Blockchain","language":"en","created_at":"2021-11-04T07:48:43.000Z","updated_at":"2022-03-02T08:12:26.000Z"},{"title":"Blockchain","language":"es","created_at":"2022-03-02T08:12:23.000Z","updated_at":"2022-03-02T08:12:26.000Z"},{"title":"Blockchain","language":"id","created_at":"2022-03-02T08:12:23.000Z","updated_at":"2022-03-02T08:12:26.000Z"},{"title":"Blockchain","language":"pt","created_at":"2022-03-02T08:12:23.000Z","updated_at":"2022-03-02T08:12:26.000Z"},{"title":"Blockchain","language":"ru","created_at":"2022-03-02T08:12:23.000Z","updated_at":"2022-03-02T08:12:26.000Z"},{"title":"Blockchain","language":"tr","created_at":"2022-03-02T08:12:23.000Z","updated_at":"2022-03-02T08:12:26.000Z"},{"title":"Blockchain","language":"vi","created_at":"2022-03-02T08:12:23.000Z","updated_at":"2022-03-02T08:12:26.000Z"}]},{"id":22,"slug":"blog","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/403189d0bc3d4b22a765422a4c9f27ea.png","created_at":"2021-08-03T16:34:12.000Z","parent_slug":"learn","translations":[{"title":"Blog","language":"de","created_at":"2022-03-02T07:32:02.000Z","updated_at":"2022-03-02T07:32:02.000Z"},{"title":"Blog","description":"Product updates, partnerships, and announcements from CoinMarketCap and our contributors.","language":"en","created_at":"2021-08-03T16:34:12.000Z","updated_at":"2022-03-02T07:32:02.000Z"},{"title":"Blog","language":"es","created_at":"2022-03-02T07:31:52.000Z","updated_at":"2022-03-02T07:31:52.000Z"},{"title":"Blog","language":"id","created_at":"2021-09-23T14:40:15.000Z","updated_at":"2022-03-02T07:32:02.000Z"},{"title":"Blog","language":"pt","created_at":"2022-03-02T07:31:54.000Z","updated_at":"2022-03-02T07:31:54.000Z"},{"title":"Блог","description":"Апдейты по продуктам, партнерствам и анонсы от CoinMarketCap и наших контрибьютеров.","language":"ru","created_at":"2021-08-05T19:41:16.000Z","updated_at":"2022-03-02T07:32:02.000Z"},{"title":"Blog","language":"tr","created_at":"2022-03-02T07:31:57.000Z","updated_at":"2022-03-02T07:31:57.000Z"},{"title":"Blog","language":"vi","created_at":"2022-03-02T07:32:00.000Z","updated_at":"2022-03-02T07:32:00.000Z"}]},{"id":48,"slug":"blog-g","created_at":"2021-12-22T09:04:13.000Z","parent_slug":"gravity","translations":[{"title":"Blog","language":"de","created_at":"2022-02-22T10:25:20.000Z","updated_at":"2022-02-22T10:25:20.000Z"},{"title":"Blog","language":"en","created_at":"2021-12-22T09:04:13.000Z","updated_at":"2022-02-22T10:25:20.000Z"}]},{"id":28,"slug":"coinmarketcap-news","created_at":"2021-11-03T08:23:36.000Z","translations":[{"title":"CoinMarketCap News","language":"de","created_at":"2022-03-02T08:10:51.000Z","updated_at":"2022-03-02T08:10:51.000Z"},{"title":"CoinMarketCap News","language":"en","created_at":"2021-11-03T08:23:36.000Z","updated_at":"2022-03-02T08:10:51.000Z"},{"title":"CoinMarketCap News","language":"es","created_at":"2022-03-02T08:10:51.000Z","updated_at":"2022-03-02T08:10:51.000Z"},{"title":"CoinMarketCap News","language":"id","created_at":"2022-03-02T08:10:51.000Z","updated_at":"2022-03-02T08:10:51.000Z"},{"title":"CoinMarketCap News","language":"pt","created_at":"2022-03-02T08:10:51.000Z","updated_at":"2022-03-02T08:10:51.000Z"},{"title":"CoinMarketCap News","language":"ru","created_at":"2022-03-02T08:10:51.000Z","updated_at":"2022-03-02T08:10:51.000Z"},{"title":"CoinMarketCap News","language":"tr","created_at":"2022-03-02T08:10:51.000Z","updated_at":"2022-03-02T08:10:51.000Z"},{"title":"CoinMarketCap News","language":"vi","created_at":"2022-03-02T08:10:51.000Z","updated_at":"2022-03-02T08:10:51.000Z"}]},{"id":25,"slug":"crypto-basics","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/64112bea3b9b4038b6cbc25a1cd86fb7.png","created_at":"2021-08-03T16:34:57.000Z","parent_slug":"learn","translations":[{"title":"Crypto Basics","language":"de","created_at":"2022-02-22T08:58:06.000Z","updated_at":"2022-02-22T08:58:45.000Z"},{"title":"Crypto Basics","description":"All you need to know about the basics of cryptocurrency in one place. Learn how Bitcoin, blockchain and altcoins work, how to actually use them, and why it matters to you.","language":"en","created_at":"2021-08-03T16:34:57.000Z","updated_at":"2022-02-22T08:58:45.000Z"},{"title":"Crypto Basics","language":"es","created_at":"2022-02-22T08:58:45.000Z","updated_at":"2022-02-22T08:58:45.000Z"},{"title":"Crypto Basics","language":"id","created_at":"2021-09-23T14:40:07.000Z","updated_at":"2022-02-22T08:58:45.000Z"},{"title":"Crypto Basics","language":"pt","created_at":"2022-02-22T08:58:33.000Z","updated_at":"2022-02-22T08:58:45.000Z"},{"title":"Основы крипто","description":"Все что надо вам нужно знать про основы криптоиндустрии у вас под рукой. Узнайте как работают Bitcoin, блокчейн и альткоины, как их использовать и почему это важно.","language":"ru","created_at":"2021-08-08T13:23:53.000Z","updated_at":"2022-02-22T08:58:45.000Z"},{"title":"Crypto Basics","language":"tr","created_at":"2022-02-22T08:58:25.000Z","updated_at":"2022-02-22T08:58:45.000Z"},{"title":"Crypto Basics","language":"vi","created_at":"2022-02-22T08:58:17.000Z","updated_at":"2022-02-22T08:58:45.000Z"}]},{"id":37,"slug":"defi","created_at":"2021-11-04T07:49:03.000Z","parent_slug":"topics","translations":[{"title":"DeFi","language":"de","created_at":"2022-03-02T08:13:52.000Z","updated_at":"2022-03-02T08:13:52.000Z"},{"title":"DeFi","language":"en","created_at":"2021-11-04T07:49:03.000Z","updated_at":"2022-03-02T08:13:52.000Z"},{"title":"DeFi","language":"es","created_at":"2022-03-02T08:13:52.000Z","updated_at":"2022-03-02T08:13:52.000Z"},{"title":"DeFi","language":"id","created_at":"2022-03-02T08:13:52.000Z","updated_at":"2022-03-02T08:13:52.000Z"},{"title":"DeFi","language":"pt","created_at":"2022-03-02T08:13:52.000Z","updated_at":"2022-03-02T08:13:52.000Z"},{"title":"DeFi","language":"ru","created_at":"2022-03-02T08:13:52.000Z","updated_at":"2022-03-02T08:13:52.000Z"},{"title":"DeFi","language":"tr","created_at":"2022-03-02T08:13:52.000Z","updated_at":"2022-03-02T08:13:52.000Z"},{"title":"DeFi","language":"vi","created_at":"2022-03-02T08:13:52.000Z","updated_at":"2022-03-02T08:13:52.000Z"}]},{"id":53,"slug":"defi-g","created_at":"2021-12-22T09:05:37.000Z","parent_slug":"gravity","translations":[{"title":"DeFi","language":"en","created_at":"2021-12-22T09:05:37.000Z"}]},{"id":34,"slug":"ethereum","created_at":"2021-11-04T07:48:33.000Z","parent_slug":"topics","translations":[{"title":"Ethereum","language":"de","created_at":"2022-03-02T08:12:21.000Z","updated_at":"2022-03-02T08:12:21.000Z"},{"title":"Ethereum","language":"en","created_at":"2021-11-04T07:48:33.000Z","updated_at":"2022-03-02T08:12:21.000Z"},{"title":"Ethereum","language":"es","created_at":"2022-03-02T08:12:21.000Z","updated_at":"2022-03-02T08:12:21.000Z"},{"title":"Ethereum","language":"id","created_at":"2022-03-02T08:12:21.000Z","updated_at":"2022-03-02T08:12:21.000Z"},{"title":"Ethereum","language":"pt","created_at":"2022-03-02T08:12:21.000Z","updated_at":"2022-03-02T08:12:21.000Z"},{"title":"Ethereum","language":"ru","created_at":"2022-03-02T08:12:21.000Z","updated_at":"2022-03-02T08:12:21.000Z"},{"title":"Ethereum","language":"tr","created_at":"2022-03-02T08:12:21.000Z","updated_at":"2022-03-02T08:12:21.000Z"},{"title":"Ethereum","language":"vi","created_at":"2022-03-02T08:12:21.000Z","updated_at":"2022-03-02T08:12:21.000Z"}]},{"id":30,"slug":"feature-explorer","created_at":"2021-11-03T08:24:10.000Z","parent_slug":"coinmarketcap-news","translations":[{"title":"Feature Explorer","language":"de","created_at":"2022-03-02T08:12:09.000Z","updated_at":"2022-03-02T08:12:09.000Z"},{"title":"Feature Explorer","language":"en","created_at":"2021-11-03T08:24:10.000Z","updated_at":"2022-03-02T08:12:09.000Z"},{"title":"Feature Explorer","language":"es","created_at":"2022-03-02T08:12:09.000Z","updated_at":"2022-03-02T08:12:09.000Z"},{"title":"Feature Explorer","language":"id","created_at":"2022-03-02T08:12:09.000Z","updated_at":"2022-03-02T08:12:09.000Z"},{"title":"Feature Explorer","language":"pt","created_at":"2022-03-02T08:12:09.000Z","updated_at":"2022-03-02T08:12:09.000Z"},{"title":"Feature Explorer","language":"ru","created_at":"2022-03-02T08:12:09.000Z","updated_at":"2022-03-02T08:12:09.000Z"},{"title":"Feature Explorer","language":"tr","created_at":"2022-03-02T08:12:09.000Z","updated_at":"2022-03-02T08:12:09.000Z"},{"title":"Feature Explorer","language":"vi","created_at":"2022-03-02T08:12:09.000Z","updated_at":"2022-03-02T08:12:09.000Z"}]},{"id":60,"slug":"feature-explorer-g","created_at":"2021-12-22T09:07:17.000Z","parent_slug":"gravity","translations":[{"title":"Feature Explorer","language":"de","created_at":"2022-03-02T07:29:28.000Z","updated_at":"2022-03-02T07:29:28.000Z"},{"title":"Feature Explorer","language":"en","created_at":"2021-12-22T09:07:17.000Z","updated_at":"2022-03-02T07:29:33.000Z"},{"title":"Feature Explorer","language":"es","created_at":"2022-03-02T07:29:18.000Z","updated_at":"2022-03-02T07:29:18.000Z"},{"title":"Feature Explorer","language":"id","created_at":"2022-03-02T07:29:30.000Z","updated_at":"2022-03-02T07:29:30.000Z"},{"title":"Feature Explorer","language":"pt","created_at":"2022-03-02T07:29:20.000Z","updated_at":"2022-03-02T07:29:20.000Z"},{"title":"Feature Explorer","language":"ru","created_at":"2022-03-02T07:29:33.000Z","updated_at":"2022-03-02T07:29:33.000Z"},{"title":"Feature Explorer","language":"tr","created_at":"2022-03-02T07:29:23.000Z","updated_at":"2022-03-02T07:29:23.000Z"},{"title":"Feature Explorer","language":"vi","created_at":"2022-03-02T07:29:25.000Z","updated_at":"2022-03-02T07:29:25.000Z"}]},{"id":39,"slug":"gamefi","created_at":"2021-11-04T07:49:26.000Z","parent_slug":"topics","translations":[{"title":"GameFi","language":"de","created_at":"2022-03-02T08:13:56.000Z","updated_at":"2022-03-02T08:13:56.000Z"},{"title":"GameFi","language":"en","created_at":"2021-11-04T07:49:26.000Z","updated_at":"2022-03-02T08:13:56.000Z"},{"title":"GameFi","language":"es","created_at":"2022-03-02T08:13:56.000Z","updated_at":"2022-03-02T08:13:56.000Z"},{"title":"GameFi","language":"id","created_at":"2022-03-02T08:13:56.000Z","updated_at":"2022-03-02T08:13:56.000Z"},{"title":"GameFi","language":"pt","created_at":"2022-03-02T08:13:56.000Z","updated_at":"2022-03-02T08:13:56.000Z"},{"title":"GameFi","language":"ru","created_at":"2022-03-02T08:13:56.000Z","updated_at":"2022-03-02T08:13:56.000Z"},{"title":"GameFi","language":"tr","created_at":"2022-03-02T08:13:56.000Z","updated_at":"2022-03-02T08:13:56.000Z"},{"title":"GameFi","language":"vi","created_at":"2022-03-02T08:13:56.000Z","updated_at":"2022-03-02T08:13:56.000Z"}]},{"id":55,"slug":"gamefi-g","created_at":"2021-12-22T09:05:56.000Z","parent_slug":"gravity","translations":[{"title":"GameFi","language":"en","created_at":"2021-12-22T09:05:56.000Z"}]},{"id":42,"slug":"gravity","created_at":"2021-12-22T06:38:33.000Z","translations":[{"title":"Gravity","language":"en","created_at":"2021-12-22T06:38:33.000Z"}]},{"id":46,"slug":"how-to-guide","created_at":"2021-12-22T09:03:38.000Z","parent_slug":"gravity","translations":[{"title":"How-to Guides","language":"de","created_at":"2022-02-22T10:24:50.000Z","updated_at":"2022-02-22T10:24:50.000Z"},{"title":"How-to Guides","language":"en","created_at":"2021-12-22T09:03:38.000Z","updated_at":"2022-02-22T10:24:50.000Z"}]},{"id":21,"slug":"how-to-guides","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/b2645949dd5e444f91bdda7fb2f513fd.png","created_at":"2021-08-03T14:18:47.000Z","parent_slug":"learn","translations":[{"title":"How-to Guides","language":"de","created_at":"2022-03-02T07:31:26.000Z","updated_at":"2022-03-02T07:31:26.000Z"},{"title":"How-to Guides","description":"Dealing with cryptocurrency isn’t always easy. CMC provides in-depth guides into everything from how to create a crypto address to the best way to keep your crypto safe.","language":"en","created_at":"2021-08-03T14:18:47.000Z","updated_at":"2022-03-02T07:31:26.000Z"},{"title":"How-to Guides","language":"es","created_at":"2022-03-02T07:31:16.000Z","updated_at":"2022-03-02T07:31:16.000Z"},{"title":"How-to Guides","language":"id","created_at":"2021-09-23T14:40:23.000Z","updated_at":"2022-03-02T07:31:26.000Z"},{"title":"How-to Guides","language":"pt","created_at":"2022-03-02T07:31:18.000Z","updated_at":"2022-03-02T07:31:18.000Z"},{"title":"Практические руководства","description":"Не всегда легко разобраться с криптовалютами. CoinMarketCap предоставляет детальные руководства обо всех нюансах от создания крипто адреса до лучших способов безопасно хранить ваши криптовалюты.","language":"ru","created_at":"2021-08-20T13:49:10.000Z","updated_at":"2022-03-02T07:31:26.000Z"},{"title":"How-to Guides","language":"tr","created_at":"2022-03-02T07:31:21.000Z","updated_at":"2022-03-02T07:31:21.000Z"},{"title":"How-to Guides","language":"vi","created_at":"2022-03-02T07:31:24.000Z","updated_at":"2022-03-02T07:31:24.000Z"}]},{"id":26,"slug":"learn","created_at":"2021-10-23T11:45:27.000Z","translations":[{"title":"Learn","language":"de","created_at":"2022-03-02T07:34:38.000Z","updated_at":"2022-03-02T07:34:38.000Z"},{"title":"Learn","language":"en","created_at":"2021-10-23T11:45:27.000Z","updated_at":"2022-03-02T07:34:43.000Z"},{"title":"Learn","language":"es","created_at":"2022-03-02T07:34:28.000Z","updated_at":"2022-03-02T07:34:28.000Z"},{"title":"Learn","language":"id","created_at":"2022-03-02T07:34:40.000Z","updated_at":"2022-03-02T07:34:40.000Z"},{"title":"Learn","language":"pt","created_at":"2022-03-02T07:34:30.000Z","updated_at":"2022-03-02T07:34:30.000Z"},{"title":"Learn","language":"ru","created_at":"2022-03-02T07:34:43.000Z","updated_at":"2022-03-02T07:34:43.000Z"},{"title":"Learn","language":"tr","created_at":"2022-03-02T07:34:33.000Z","updated_at":"2022-03-02T07:34:33.000Z"},{"title":"Learn","language":"vi","created_at":"2022-03-02T07:34:35.000Z","updated_at":"2022-03-02T07:34:35.000Z"}]},{"id":23,"slug":"market-musing","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/33d76d0d4aab45b9b02ebab17820373f.png","created_at":"2021-08-03T16:34:25.000Z","parent_slug":"learn","translations":[{"title":"Market Musings","language":"de","created_at":"2022-03-02T07:33:01.000Z","updated_at":"2022-03-02T07:33:01.000Z"},{"title":"Market Musings","description":"Read crypto news and discover knowledgeable insights from leaders in the blockchain and cryptocurrency sectors.","language":"en","created_at":"2021-08-03T16:34:25.000Z","updated_at":"2022-03-02T07:33:01.000Z"},{"title":"Market Musings","language":"es","created_at":"2022-03-02T07:32:53.000Z","updated_at":"2022-03-02T07:32:53.000Z"},{"title":"Crypto Basics","language":"id","created_at":"2021-09-23T14:40:11.000Z","updated_at":"2022-03-02T07:33:01.000Z"},{"title":"Market Musings","language":"pt","created_at":"2022-03-02T07:32:51.000Z","updated_at":"2022-03-02T07:32:51.000Z"},{"title":"Поразмышляем о рынках","description":"Узнайте важные инсайты от лидеров в сфере блокчейна и крипто, чтобы лучше ориентироваться в криптоиндустрии.","language":"ru","created_at":"2021-08-09T15:04:16.000Z","updated_at":"2022-03-02T07:33:01.000Z"},{"title":"Market Musings","language":"tr","created_at":"2022-03-02T07:32:55.000Z","updated_at":"2022-03-02T07:32:55.000Z"},{"title":"Market Musings","language":"vi","created_at":"2022-03-02T07:32:58.000Z","updated_at":"2022-03-02T07:32:58.000Z"}]},{"id":31,"slug":"marketing","created_at":"2021-11-03T08:24:22.000Z","parent_slug":"coinmarketcap-news","translations":[{"title":"Marketing","language":"de","created_at":"2022-03-02T08:12:11.000Z","updated_at":"2022-03-02T08:12:11.000Z"},{"title":"Marketing","language":"en","created_at":"2021-11-03T08:24:22.000Z","updated_at":"2022-03-02T08:12:11.000Z"},{"title":"Marketing","language":"es","created_at":"2022-03-02T08:12:11.000Z","updated_at":"2022-03-02T08:12:11.000Z"},{"title":"Marketing","language":"id","created_at":"2022-03-02T08:12:11.000Z","updated_at":"2022-03-02T08:12:11.000Z"},{"title":"Marketing","language":"pt","created_at":"2022-03-02T08:12:11.000Z","updated_at":"2022-03-02T08:12:11.000Z"},{"title":"Marketing","language":"ru","created_at":"2022-03-02T08:12:11.000Z","updated_at":"2022-03-02T08:12:11.000Z"},{"title":"Marketing","language":"tr","created_at":"2022-03-02T08:12:11.000Z","updated_at":"2022-03-02T08:12:11.000Z"},{"title":"Marketing","language":"vi","created_at":"2022-03-02T08:12:11.000Z","updated_at":"2022-03-02T08:12:11.000Z"}]},{"id":59,"slug":"marketing-g","created_at":"2021-12-22T09:06:36.000Z","parent_slug":"gravity","translations":[{"title":"Marketing","language":"en","created_at":"2021-12-22T09:06:36.000Z"}]},{"id":41,"slug":"metaverse","created_at":"2021-11-04T07:49:59.000Z","parent_slug":"topics","translations":[{"title":"Metaverse","language":"de","created_at":"2022-03-02T08:13:59.000Z","updated_at":"2022-03-02T08:13:59.000Z"},{"title":"Metaverse","language":"en","created_at":"2021-11-04T07:49:59.000Z","updated_at":"2022-03-02T08:13:59.000Z"},{"title":"Metaverse","language":"es","created_at":"2022-03-02T08:13:59.000Z","updated_at":"2022-03-02T08:13:59.000Z"},{"title":"Metaverse","language":"id","created_at":"2022-03-02T08:13:59.000Z","updated_at":"2022-03-02T08:13:59.000Z"},{"title":"Metaverse","language":"pt","created_at":"2022-03-02T08:13:59.000Z","updated_at":"2022-03-02T08:13:59.000Z"},{"title":"Metaverse","language":"ru","created_at":"2022-03-02T08:13:59.000Z","updated_at":"2022-03-02T08:13:59.000Z"},{"title":"Metaverse","language":"tr","created_at":"2022-03-02T08:13:59.000Z","updated_at":"2022-03-02T08:13:59.000Z"},{"title":"Metaverse","language":"vi","created_at":"2022-03-02T08:13:59.000Z","updated_at":"2022-03-02T08:13:59.000Z"}]},{"id":51,"slug":"metaverse-g","created_at":"2021-12-22T09:05:19.000Z","parent_slug":"gravity","translations":[{"title":"Metaverse","language":"en","created_at":"2021-12-22T09:05:19.000Z"}]},{"id":57,"slug":"nft","created_at":"2021-12-22T09:06:08.000Z","parent_slug":"gravity","translations":[{"title":"NFTs","language":"en","created_at":"2021-12-22T09:06:08.000Z"}]},{"id":38,"slug":"nfts","created_at":"2021-11-04T07:49:17.000Z","parent_slug":"topics","translations":[{"title":"NFTs","language":"de","created_at":"2022-03-02T08:13:54.000Z","updated_at":"2022-03-02T08:13:54.000Z"},{"title":"NFTs","language":"en","created_at":"2021-11-04T07:49:17.000Z","updated_at":"2022-03-02T08:13:54.000Z"},{"title":"NFTs","language":"es","created_at":"2022-03-02T08:13:54.000Z","updated_at":"2022-03-02T08:13:54.000Z"},{"title":"NFTs","language":"id","created_at":"2022-03-02T08:13:54.000Z","updated_at":"2022-03-02T08:13:54.000Z"},{"title":"NFTs","language":"pt","created_at":"2022-03-02T08:13:54.000Z","updated_at":"2022-03-02T08:13:54.000Z"},{"title":"NFTs","language":"ru","created_at":"2022-03-02T08:13:54.000Z","updated_at":"2022-03-02T08:13:54.000Z"},{"title":"NFTs","language":"tr","created_at":"2022-03-02T08:13:54.000Z","updated_at":"2022-03-02T08:13:54.000Z"},{"title":"NFTs","language":"vi","created_at":"2022-03-02T08:13:54.000Z","updated_at":"2022-03-02T08:13:54.000Z"}]},{"id":24,"slug":"tech-deep-dives","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/c4d4081206a54bc29287837d9ad6facf.png","created_at":"2021-08-03T16:34:45.000Z","parent_slug":"learn","translations":[{"title":"Tech Deep Dives","language":"de","created_at":"2022-02-22T10:23:57.000Z","updated_at":"2022-03-02T07:33:50.000Z"},{"title":"Tech Deep Dives","description":"The crypto industry is rapidly changing — that’s what makes it so much fun, but it can become easy to get lost in the whirl of new technologies. CMC’s tech deep dives are here to help.","language":"en","created_at":"2021-08-03T16:34:45.000Z","updated_at":"2022-03-02T07:33:50.000Z"},{"title":"Tech Deep Dives","language":"es","created_at":"2022-03-02T07:33:50.000Z","updated_at":"2022-03-02T07:33:50.000Z"},{"title":"Tech Deep Dives","language":"id","created_at":"2021-09-23T14:04:47.000Z","updated_at":"2022-03-02T07:33:50.000Z"},{"title":"Tech Deep Dives","language":"pt","created_at":"2022-03-02T07:33:47.000Z","updated_at":"2022-03-02T07:33:47.000Z"},{"title":"Глубокое погружение в технологии","description":"Криптоиндустрия развивается очень быстро —  и именно поэтому она такая захватывающая! Но становится очень легко потеряться в вихре новых технологии. Глубокое погружение в технологии с CoinMarketCap поможет вам лучше разобраться.","language":"ru","created_at":"2021-08-20T13:47:21.000Z","updated_at":"2022-03-02T07:33:50.000Z"},{"title":"Tech Deep Dives","language":"tr","created_at":"2022-03-02T07:33:43.000Z","updated_at":"2022-03-02T07:33:43.000Z"},{"title":"Tech Deep Dives","language":"vi","created_at":"2022-03-02T07:33:41.000Z","updated_at":"2022-03-02T07:33:41.000Z"}]},{"id":49,"slug":"tech-deep-dives-g","created_at":"2021-12-22T09:04:25.000Z","parent_slug":"gravity","translations":[{"title":"Tech Deep Dives","language":"en","created_at":"2021-12-22T09:04:25.000Z","updated_at":"2021-12-22T09:05:04.000Z"}]},{"id":32,"slug":"topics","created_at":"2021-11-04T07:47:20.000Z","translations":[{"title":"Topics","language":"de","created_at":"2022-03-02T08:12:14.000Z","updated_at":"2022-03-02T08:12:14.000Z"},{"title":"Topics","language":"en","created_at":"2021-11-04T07:47:20.000Z","updated_at":"2022-03-02T08:12:14.000Z"},{"title":"Topics","language":"es","created_at":"2022-03-02T08:12:14.000Z","updated_at":"2022-03-02T08:12:14.000Z"},{"title":"Topics","language":"id","created_at":"2022-03-02T08:12:14.000Z","updated_at":"2022-03-02T08:12:14.000Z"},{"title":"Topics","language":"pt","created_at":"2022-03-02T08:12:14.000Z","updated_at":"2022-03-02T08:12:14.000Z"},{"title":"Topics","language":"ru","created_at":"2022-03-02T07:36:54.000Z","updated_at":"2022-03-02T08:12:14.000Z"},{"title":"Topics","language":"tr","created_at":"2022-03-02T08:12:14.000Z","updated_at":"2022-03-02T08:12:14.000Z"},{"title":"Topics","language":"vi","created_at":"2022-03-02T08:12:14.000Z","updated_at":"2022-03-02T08:12:14.000Z"}]},{"id":36,"slug":"trading","created_at":"2021-11-04T07:48:52.000Z","parent_slug":"topics","translations":[{"title":"Trading","language":"de","created_at":"2022-03-02T08:13:49.000Z","updated_at":"2022-03-02T08:13:49.000Z"},{"title":"Trading","language":"en","created_at":"2021-11-04T07:48:52.000Z","updated_at":"2022-03-02T08:13:49.000Z"},{"title":"Trading","language":"es","created_at":"2022-03-02T08:13:49.000Z","updated_at":"2022-03-02T08:13:49.000Z"},{"title":"Trading","language":"id","created_at":"2022-03-02T08:13:49.000Z","updated_at":"2022-03-02T08:13:49.000Z"},{"title":"Trading","language":"pt","created_at":"2022-03-02T08:13:49.000Z","updated_at":"2022-03-02T08:13:49.000Z"},{"title":"Trading","language":"ru","created_at":"2022-03-02T08:13:49.000Z","updated_at":"2022-03-02T08:13:49.000Z"},{"title":"Trading","language":"tr","created_at":"2022-03-02T08:13:49.000Z","updated_at":"2022-03-02T08:13:49.000Z"},{"title":"Trading","language":"vi","created_at":"2022-03-02T08:13:49.000Z","updated_at":"2022-03-02T08:13:49.000Z"}]},{"id":47,"slug":"trading-analysi","created_at":"2021-12-22T09:03:49.000Z","parent_slug":"gravity","translations":[{"title":"Trading Analysis","language":"en","created_at":"2021-12-22T09:03:49.000Z","updated_at":"2021-12-22T09:04:52.000Z"}]},{"id":27,"slug":"trading-analysis","created_at":"2021-10-28T13:11:44.000Z","parent_slug":"learn","translations":[{"title":"Trading Analysis","language":"de","created_at":"2022-03-02T07:35:48.000Z","updated_at":"2022-03-02T07:35:48.000Z"},{"title":"Trading Analysis","description":"All you need to know about trading!","language":"en","created_at":"2021-10-28T13:11:44.000Z","updated_at":"2022-03-02T07:35:53.000Z"},{"title":"Trading Analysis","language":"es","created_at":"2022-03-02T07:35:38.000Z","updated_at":"2022-03-02T07:35:38.000Z"},{"title":"Trading Analysis","language":"id","created_at":"2022-03-02T07:35:51.000Z","updated_at":"2022-03-02T07:35:51.000Z"},{"title":"Trading Analysis","language":"pt","created_at":"2022-03-02T07:35:41.000Z","updated_at":"2022-03-02T07:35:41.000Z"},{"title":"Trading Analysis","language":"ru","created_at":"2022-03-02T07:35:53.000Z","updated_at":"2022-03-02T07:35:53.000Z"},{"title":"Trading Analysis","language":"tr","created_at":"2022-03-02T07:35:43.000Z","updated_at":"2022-03-02T07:35:43.000Z"},{"title":"Trading Analysis","language":"vi","created_at":"2022-03-02T07:35:46.000Z","updated_at":"2022-03-02T07:35:46.000Z"}]},{"id":58,"slug":"trading-g","created_at":"2021-12-22T09:06:20.000Z","parent_slug":"gravity","translations":[{"title":"Trading","language":"en","created_at":"2021-12-22T09:06:20.000Z","updated_at":"2021-12-22T09:07:06.000Z"}]}],"categoriesCount":[{"id":21,"primary":false,"slug":"how-to-guides","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/b2645949dd5e444f91bdda7fb2f513fd.png","created_at":"2021-08-03T14:18:47.000Z","parent_id":26,"articles":63},{"id":22,"primary":false,"slug":"blog","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/403189d0bc3d4b22a765422a4c9f27ea.png","created_at":"2021-08-03T16:34:12.000Z","parent_id":26,"articles":282},{"id":23,"primary":false,"slug":"market-musing","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/33d76d0d4aab45b9b02ebab17820373f.png","created_at":"2021-08-03T16:34:25.000Z","parent_id":26,"articles":1541},{"id":24,"primary":false,"slug":"tech-deep-dives","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/c4d4081206a54bc29287837d9ad6facf.png","created_at":"2021-08-03T16:34:45.000Z","parent_id":26,"articles":406},{"id":25,"primary":false,"slug":"crypto-basics","icon":"https://academy-public.coinmarketcap.com/optimized-uploads/64112bea3b9b4038b6cbc25a1cd86fb7.png","created_at":"2021-08-03T16:34:57.000Z","parent_id":26,"articles":290},{"id":27,"primary":false,"slug":"trading-analysis","created_at":"2021-10-28T13:11:44.000Z","parent_id":26,"articles":139},{"id":28,"primary":false,"slug":"coinmarketcap-news","created_at":"2021-11-03T08:23:36.000Z","articles":19},{"id":29,"primary":false,"slug":"announcements","created_at":"2021-11-03T08:24:02.000Z","parent_id":28,"articles":40},{"id":30,"primary":false,"slug":"feature-explorer","created_at":"2021-11-03T08:24:10.000Z","parent_id":28,"articles":22},{"id":31,"primary":false,"slug":"marketing","created_at":"2021-11-03T08:24:22.000Z","parent_id":28,"articles":77},{"id":33,"primary":false,"slug":"bitcoin","created_at":"2021-11-04T07:48:21.000Z","parent_id":32,"articles":281},{"id":34,"primary":false,"slug":"ethereum","created_at":"2021-11-04T07:48:33.000Z","parent_id":32,"articles":125},{"id":35,"primary":false,"slug":"blockchain","created_at":"2021-11-04T07:48:43.000Z","parent_id":32,"articles":94},{"id":36,"primary":false,"slug":"trading","created_at":"2021-11-04T07:48:52.000Z","parent_id":32,"articles":164},{"id":37,"primary":false,"slug":"defi","created_at":"2021-11-04T07:49:03.000Z","parent_id":32,"articles":57},{"id":38,"primary":false,"slug":"nfts","created_at":"2021-11-04T07:49:17.000Z","parent_id":32,"articles":179},{"id":39,"primary":false,"slug":"gamefi","created_at":"2021-11-04T07:49:26.000Z","parent_id":32,"articles":47},{"id":40,"primary":false,"slug":"altcoins","created_at":"2021-11-04T07:49:36.000Z","parent_id":32,"articles":210},{"id":41,"primary":false,"slug":"metaverse","created_at":"2021-11-04T07:49:59.000Z","parent_id":32,"articles":103}],"__N_SSG":true},"page":"/article/[slug]","query":{"slug":"3-minute-tips-what-are-gas-wars"},"buildId":"6jhSqalwf8VHQP-7YyyX-","assetPrefix":"/alexandria","isFallback":false,"gsp":true,"appGip":true,"locale":"en","locales":["en","fr","de","pl","zh","zt","vi","ar","ko","ru","es","tr","nl","pt","it","id","ja","th","ph","uk","cs"],"defaultLocale":"en"}
+  </script>
+  <script nomodule="" src="/alexandria/_next/static/chunks/polyfills-ec9ce50fc97750c8259a.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/webpack-37e3146a8b69e7f35b5c.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/framework.f8bd46fc02868c500bda.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/04e37f4d6c528b0f0d80140d93dfb7aea3787e99.65571f932be9853a08b3.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/e8be24f57145524316a5f3a5a1367135728657a9.74d5b26cbc7639c9f70d.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/main-17decf8f2f93a326ecc1.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/db9b7ace882e78c03cd18cfdc014d8150d427169.457863b109ae76845421.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/cc09560be9c81fc7a21806c7d47db67c5afce608.2ba0087da578ac1db2bb.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/6e333aff15ab7779bcdc00cab5df5760b679d3b7.c5aafd63960017096fad.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/f7e86894c62b1b4585c33f328aa66be3e1a0fab3.60d37e9af8b1cec5a49c.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/6a0f8e083dd402f98433b56dc80f06a5212c7677.cba4459fc829defbf9c1.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/f29d735d71feedc072dc9851ac21bdba93356132.b6cb712649650f2a3d82.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/pages/_app-97796f1ab5f9a6c651f0.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/c6ebe4b14158841a4ff2a093869258a8b896b5d0.b3d069b828e5a0f091f1.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/a7ced4349a5a3a01f455762438431af0f43d1317.888a0860fc91bb6ead4c.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/61d1c476db4910a26448f908775c0a15a425313c.50221222468d0a9b8c19.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/7b0d724edad6d163eda5363a14422bba6434af08.2e5962d916a98b177de5.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/e3d24eb48a70eff3456a01e2819f084c397814b6.6f8d1b66a846269f5a55.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/3dd71bec730e6eb6ab138b7daf85921ddd1ae7bb.1c1faa954cef631d1567.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/96228f85c16890032173ca987b7dad9cefb8754d.521e1d11664b6e02e08a.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/1d9642865c5a754e58bb2ffa8f880f1ad09df7c0.9cea7ec07d533d5c3e3e.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/chunks/pages/article/%5Bslug%5D-b0e216e28f0e14b12bf9.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/6jhSqalwf8VHQP-7YyyX-/_buildManifest.js">
+  </script>
+  <script async="" src="/alexandria/_next/static/6jhSqalwf8VHQP-7YyyX-/_ssgManifest.js">
+  </script>
+ </body>
+</html>
