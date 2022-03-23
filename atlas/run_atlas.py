@@ -16,6 +16,7 @@ Options:
     - If a json file is provided, a dictionary of scholarship objects to be saved to the database.
 Examples:
    atlas add_content --urls https://ethereum.org/en/nft,https://chain.link/education/nfts
+   atlas add_content --file data/urls_to_parse.txt
 """
 import json
 
@@ -41,14 +42,15 @@ def run_atlas(cli_args):
     args_map: dict = {
         "--urls": "urls",
         "<query>": "query",
-        # "--file": "file",
+        "--file": "input_file",
         # "--limit": "limit",
     }
 
     for cli_arg, bot_arg in args_map.items():
-        bot_args[bot_arg] = cli_args.get(cli_arg, None)
+        if cli_args.get(cli_arg, None):
+            bot_args[bot_arg] = cli_args[cli_arg]
 
-    if bot_args["urls"]:
+    if bot_args.get("urls"):
         bot_args["urls"] = bot_args["urls"].split(",")
 
     print("bot_args", bot_args)

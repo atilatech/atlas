@@ -53,6 +53,9 @@ class ContentIndex:
 
         for hit in hits:
             hit["snippets"] = self.clean_snippets(hit["_snippetResult"])
+            # for key, value in hit.items():
+            #     if key not in ["title", "description", "header_image_url", "url", "snippets"]:
+            #         del hit[key]
             del hit["_snippetResult"]
 
         return hits

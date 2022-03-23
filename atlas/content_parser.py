@@ -20,12 +20,27 @@ def current_time_iso():
 class ContentParser:
 
     def __init__(self,
-                 urls: List[str]):
-        self.urls = [url.rstrip("/") for url in urls]
+                 urls: List[str] = None,
+                 input_file: str = None):
+
+        if input_file:
+            self.get_urls_from_file(input_file)
+        else:
+            self.urls = [url.rstrip("/") for url in urls]
 
         self.content_index = ContentIndex()
         # all_content ->'object_id' -> {'json': {}, 'html': '', 'object_id' : '', 'url': '', 'article', 'soup'}
         self.all_content = defaultdict(dict)
+
+    def get_urls_from_file(self, file_name):
+        # Always set the file path relative to the location of the content_parser script parent folder for consistency
+        parent_directory = Path(__file__).resolve().parents[0]
+        file_name = parent_directory / file_name
+        with open(file_name) as f:
+            urls = f.readlines()
+
+        # remove whitespace characters like `\n` at the end of each line
+        self.urls = [url.strip().rstrip("/") for url in urls]
 
     def parse_all_content(self, save=False):
         for index, url in enumerate(self.urls):
@@ -35,7 +50,7 @@ class ContentParser:
                 parsed_content['date_saved'] = current_time_iso()
                 self.content_index.save_to_search_index(parsed_content)
 
-    def save_to_file(self, save_type="json", file_name="parsed_content_sample"):
+    def save_to_file(self, save_type="json", file_name="parsed_content"):
         parent_directory = Path(__file__).resolve().parents[0]
         if save_type == "html":
             for content_id, content in self.all_content.items():
@@ -257,17 +272,6 @@ if __name__ == "__main__":
     sample_urls = [
         "https://ethereum.org/en/nft",
         "https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d",
-        # "https://opensea.io/blog/guides/non-fungible-tokens/",
-        # "https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq",
-        # "https://foundation.app/blog/enter-the-metaverse",
-        # "https://medium.com/superrare/no-cryptoartists-arent-harming-the-planet-43182f72fc61",
-        # "https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem",
-        # "https://verinite.com/a-primer-on-non-fungible-tokens-everything-you-need-to-know",
-        # "https://chain.link/education/nfts",
-        # "https://www.nftinvesting.io/a-few-resources-that-helped-me-learn-more-about-nft-investing/",
-        # "https://decrypt.co/resources/non-fungible-tokens-nfts-explained-guide-learn-blockchain",
-        # "https://en.wikipedia.org/wiki/Non-fungible_token",
-        # "https://golden.com/wiki/Non-fungible_token_(NFT)-PBRM4DG",
     ]
     content_bot = ContentParser(urls=sample_urls)
     content_bot.parse_all_content(save=True)
