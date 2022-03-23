@@ -5,9 +5,9 @@ from collections import defaultdict
 from pathlib import Path
 from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
-from newspaper import Article, ArticleException
+from requests import HTTPError
 from typing import List
-
+import requests
 from publicsuffix2 import get_sld
 
 from atlas.content_index import ContentIndex
@@ -15,6 +15,9 @@ from atlas.content_index import ContentIndex
 
 def current_time_iso():
     return datetime.utcnow().replace(microsecond=0).isoformat()
+
+
+FALLBACK_ENCODING = 'ISO-8859-1'
 
 
 class ContentParser:
@@ -78,11 +81,11 @@ class ContentParser:
         self.all_content[object_id]['url'] = url
         self.all_content[object_id]['html'] = ''
 
+        response = requests.get(url)
         try:
-            article = Article(url)
-            article.download()
-            article.parse()
-            soup = BeautifulSoup(article.html, "html.parser")
+            response.raise_for_status()
+            response_html = self.get_html_from_response(response)
+            soup = BeautifulSoup(response_html, "html.parser")
             self.all_content[object_id]['html'] = soup.prettify()
 
             content = {
@@ -99,11 +102,12 @@ class ContentParser:
             content["body_byte_count"] = len(json.dumps(content["body"]).encode('utf-8'))
             content["images_byte_count"] = len(json.dumps(content["images"]).encode('utf-8'))
             content["links_byte_count"] = len(json.dumps(content["links"]).encode('utf-8'))
-        except ArticleException as e:
+        except HTTPError as e:
             content = {
                 "objectID": object_id,  # use camelcase instead of underscore case to match Algolia syntax
                 "url": url,
                 "error": str(e),
+                "error_response": f"status code: {response.status_code} reason: {response.reason}",
                 "title": "",
                 "description": "",
                 "body": [],
@@ -115,6 +119,26 @@ class ContentParser:
 
         self.all_content[object_id]['json'] = content
         return content
+
+    @staticmethod
+    def get_html_from_response(response):
+        """
+        Logic copied from newspaper package network.py: _get_html_from_response()
+        :param response:
+        :return:
+        """
+        if response.encoding != FALLBACK_ENCODING:
+            # return response as a unicode string
+            html = response.text
+        else:
+            html = response.content
+            if 'charset' not in response.headers.get('content-type'):
+                encodings = requests.utils.get_encodings_from_content(response.text)
+                if len(encodings) > 0:
+                    response.encoding = encodings[0]
+                    html = response.text
+
+        return html or ''
 
     def get_links(self, soup, article_url):
         link_tags = soup.find_all(["a"])

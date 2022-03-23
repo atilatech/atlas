@@ -558,24 +558,25 @@
             }
         ],
         "header_image_url": "https://images.mirror-media.xyz/nft/09865721-a967-4108-8ac2-ba91d413cfc9.jpeg",
-        "date_parsed": "2022-03-23T00:44:17",
+        "date_parsed": "2022-03-23T00:58:02",
         "body_byte_count": 17693,
         "images_byte_count": 3704,
         "links_byte_count": 7827,
-        "date_saved": "2022-03-23T00:44:17"
+        "date_saved": "2022-03-23T00:58:02"
     },
     "ebd78740372c10c79905fc2ff45c3b50963fbca3956aa743458ec11a351ddda1": {
         "objectID": "ebd78740372c10c79905fc2ff45c3b50963fbca3956aa743458ec11a351ddda1",
         "url": "https://opensea.io/blog/guides/non-fungible-tokens",
-        "error": "Article `download()` failed with 403 Client Error: Forbidden for url: https://opensea.io/blog/guides/non-fungible-tokens on URL https://opensea.io/blog/guides/non-fungible-tokens",
+        "error": "403 Client Error: Forbidden for url: https://opensea.io/blog/guides/non-fungible-tokens",
+        "error_response": "status code: 403 reason: Forbidden",
         "title": "",
         "description": "",
         "body": [],
         "images": [],
         "links": [],
         "header_image_url": "",
-        "date_parsed": "2022-03-23T00:44:17",
-        "date_saved": "2022-03-23T00:44:17"
+        "date_parsed": "2022-03-23T00:58:02",
+        "date_saved": "2022-03-23T00:58:02"
     },
     "58b21036cccedf77cdc980697eac6738a8cf054022a1b69eb87b86c1e6f7c61b": {
         "objectID": "58b21036cccedf77cdc980697eac6738a8cf054022a1b69eb87b86c1e6f7c61b",
@@ -1567,11 +1568,11 @@
             }
         ],
         "header_image_url": "https://cdn.vox-cdn.com/thumbor/9DLaW8apXgtm4gYZ4jAnEQeyyRA=/0x160:1252x815/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22341171/Screen_Shot_2021_03_02_at_3.21.50_PM.png",
-        "date_parsed": "2022-03-23T00:44:17",
+        "date_parsed": "2022-03-23T00:58:02",
         "body_byte_count": 21326,
         "images_byte_count": 2601,
         "links_byte_count": 13891,
-        "date_saved": "2022-03-23T00:44:17"
+        "date_saved": "2022-03-23T00:58:02"
     },
     "847b9fc03a49e941fb5506f6205e179a7196d57c8b61181e434419f65b67f0a3": {
         "objectID": "847b9fc03a49e941fb5506f6205e179a7196d57c8b61181e434419f65b67f0a3",
@@ -1670,11 +1671,11 @@
             }
         ],
         "header_image_url": "https://images.ctfassets.net/9tp4nbs38ooy/3JSyS7cbCe6P2QGrqQVoyi/62216586bc41d8b9d8927a14865bd05c/Blog.png?fit=fill&q=90&w=1920",
-        "date_parsed": "2022-03-23T00:44:18",
+        "date_parsed": "2022-03-23T00:58:02",
         "body_byte_count": 1194,
         "images_byte_count": 533,
         "links_byte_count": 1075,
-        "date_saved": "2022-03-23T00:44:18"
+        "date_saved": "2022-03-23T00:58:02"
     },
     "4c88e411c1262b298cf9b62af4070968a47a4a70306cfdddce466f3056c50002": {
         "objectID": "4c88e411c1262b298cf9b62af4070968a47a4a70306cfdddce466f3056c50002",
@@ -2062,11 +2063,11 @@
             }
         ],
         "header_image_url": "https://miro.medium.com/max/1200/1*rhs_v9WfMtpSaLersPPK-g.jpeg",
-        "date_parsed": "2022-03-23T00:44:18",
+        "date_parsed": "2022-03-23T00:58:03",
         "body_byte_count": 8971,
         "images_byte_count": 3047,
         "links_byte_count": 2303,
-        "date_saved": "2022-03-23T00:44:18"
+        "date_saved": "2022-03-23T00:58:03"
     },
     "ec632292215ab1e9752b3e066f2dbf167920507c99e2bb4ee5df25f7b821aa94": {
         "objectID": "ec632292215ab1e9752b3e066f2dbf167920507c99e2bb4ee5df25f7b821aa94",
@@ -3137,11 +3138,11 @@
             }
         ],
         "header_image_url": "https://cdn.substack.com/image/fetch/w_1200,h_600,c_limit,f_jpg,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc03dd194-fff6-44b8-ae5d-c8df19fd2e88_1394x766.png",
-        "date_parsed": "2022-03-23T00:44:18",
+        "date_parsed": "2022-03-23T00:58:03",
         "body_byte_count": 22887,
         "images_byte_count": 2329,
         "links_byte_count": 10140,
-        "date_saved": "2022-03-23T00:44:18"
+        "date_saved": "2022-03-23T00:58:03"
     },
     "dc26649c9ccb8bd1a985e471d568182b1c62031507821ae0ef2f3104ea793b31": {
         "objectID": "dc26649c9ccb8bd1a985e471d568182b1c62031507821ae0ef2f3104ea793b31",
@@ -3678,11 +3679,11 @@
             }
         ],
         "header_image_url": "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/61485fcfc7f175bf88c5c8c1_opengraph-education-nfts.png",
-        "date_parsed": "2022-03-23T00:44:21",
+        "date_parsed": "2022-03-23T00:58:03",
         "body_byte_count": 16035,
         "images_byte_count": 1380,
         "links_byte_count": 6236,
-        "date_saved": "2022-03-23T00:44:21"
+        "date_saved": "2022-03-23T00:58:03"
     },
     "44a5080e827b379a15eaca6206de15653bdbcc71a0c87c126d6c7424dbc959f9": {
         "objectID": "44a5080e827b379a15eaca6206de15653bdbcc71a0c87c126d6c7424dbc959f9",
@@ -5420,11 +5421,11 @@
             }
         ],
         "header_image_url": "https://ethereum.org/static/28214bb68eb5445dcb063a72535bc90c/0f3ee/hero.png",
-        "date_parsed": "2022-03-23T00:44:16",
+        "date_parsed": "2022-03-23T00:58:01",
         "body_byte_count": 45886,
         "images_byte_count": 1035,
         "links_byte_count": 6318,
-        "date_saved": "2022-03-23T00:44:16"
+        "date_saved": "2022-03-23T00:58:01"
     },
     "74fa7d98f83182af834bc91b774cd67f5c46b474f7af74e6aa19cf780a546a09": {
         "objectID": "74fa7d98f83182af834bc91b774cd67f5c46b474f7af74e6aa19cf780a546a09",
@@ -5596,11 +5597,11 @@
             }
         ],
         "header_image_url": "https://www.nftinvesting.io/content/images/2021/05/nft-investing.png",
-        "date_parsed": "2022-03-23T00:44:22",
+        "date_parsed": "2022-03-23T00:58:04",
         "body_byte_count": 4922,
         "images_byte_count": 1653,
         "links_byte_count": 1114,
-        "date_saved": "2022-03-23T00:44:22"
+        "date_saved": "2022-03-23T00:58:04"
     },
     "f265901012403d3bdc2f861bf006a10db5433c783097c2a2cad62eab53edaeb6": {
         "objectID": "f265901012403d3bdc2f861bf006a10db5433c783097c2a2cad62eab53edaeb6",
@@ -6230,11 +6231,11 @@
             }
         ],
         "header_image_url": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2020/02/non-fungible-tokens-gID_1-pID_3.png",
-        "date_parsed": "2022-03-23T00:44:22",
+        "date_parsed": "2022-03-23T00:58:04",
         "body_byte_count": 20050,
         "images_byte_count": 4367,
         "links_byte_count": 4396,
-        "date_saved": "2022-03-23T00:44:22"
+        "date_saved": "2022-03-23T00:58:04"
     },
     "61ff1070aa5e4706b3ad5e687b70705d6c3910d2122eccd449f6e700bdd6cc6b": {
         "objectID": "61ff1070aa5e4706b3ad5e687b70705d6c3910d2122eccd449f6e700bdd6cc6b",
@@ -10244,11 +10245,11 @@
             }
         ],
         "header_image_url": "",
-        "date_parsed": "2022-03-23T00:44:24",
+        "date_parsed": "2022-03-23T00:58:05",
         "body_byte_count": 49988,
         "images_byte_count": 1867,
         "links_byte_count": 13780,
-        "date_saved": "2022-03-23T00:44:24"
+        "date_saved": "2022-03-23T00:58:05"
     },
     "0dfe60378dddf0c04482f2d7cfc6146b9723a2a8a257588193827def34a2a85b": {
         "objectID": "0dfe60378dddf0c04482f2d7cfc6146b9723a2a8a257588193827def34a2a85b",
@@ -11267,11 +11268,11 @@
             }
         ],
         "header_image_url": "https://media-thumbs.golden.com/fCYVc6611R9ue526XSlCHPm0GNA=/200x200/smart/golden-storage-production.s3.amazonaws.com%2Ftopic_images%2F519b95a6ccf448f885ed9f2cb9fdcf9f.png",
-        "date_parsed": "2022-03-23T00:44:25",
+        "date_parsed": "2022-03-23T00:58:06",
         "body_byte_count": 25726,
         "images_byte_count": 6761,
         "links_byte_count": 4779,
-        "date_saved": "2022-03-23T00:44:25"
+        "date_saved": "2022-03-23T00:58:06"
     },
     "c6677b6f249a978fe163e4ce0633e7f489009b7f11998c161858be2d52c1ae54": {
         "objectID": "c6677b6f249a978fe163e4ce0633e7f489009b7f11998c161858be2d52c1ae54",
@@ -12195,11 +12196,11 @@
             }
         ],
         "header_image_url": "https://hbr.org/resources/images/article_assets/2021/11/Nov21_10_VinnieHager.jpg",
-        "date_parsed": "2022-03-23T00:44:46",
+        "date_parsed": "2022-03-23T00:58:19",
         "body_byte_count": 22300,
         "images_byte_count": 906,
         "links_byte_count": 12636,
-        "date_saved": "2022-03-23T00:44:46"
+        "date_saved": "2022-03-23T00:58:19"
     },
     "4f7e2c364cbd79dc8d75c55eded9eb863120a1cca5be4646607c0fc869e6d402": {
         "objectID": "4f7e2c364cbd79dc8d75c55eded9eb863120a1cca5be4646607c0fc869e6d402",
@@ -12624,11 +12625,11 @@
             }
         ],
         "header_image_url": "https://editorial.mintable.app/wp-content/uploads/2021/12/layer-2.jpg",
-        "date_parsed": "2022-03-23T00:44:43",
+        "date_parsed": "2022-03-23T00:58:17",
         "body_byte_count": 6390,
         "images_byte_count": 2002,
         "links_byte_count": 5425,
-        "date_saved": "2022-03-23T00:44:43"
+        "date_saved": "2022-03-23T00:58:17"
     },
     "1f6f236758d96f7227106e4a278d88b989637bfdd4127c12fb49928cec09eb40": {
         "objectID": "1f6f236758d96f7227106e4a278d88b989637bfdd4127c12fb49928cec09eb40",
@@ -13448,11 +13449,11 @@
             }
         ],
         "header_image_url": "https://www.investopedia.com/thmb/FIVhFgHx2EDzqWF-xau7cy_9zOo=/680x453/filters:fill(auto,1)/shutterstock373543888vc-5bfc2b2dc9e77c005143e0d5.jpg",
-        "date_parsed": "2022-03-23T00:44:43",
+        "date_parsed": "2022-03-23T00:58:18",
         "body_byte_count": 17171,
         "images_byte_count": 2253,
         "links_byte_count": 2255,
-        "date_saved": "2022-03-23T00:44:43"
+        "date_saved": "2022-03-23T00:58:18"
     },
     "b387d1f87c698e0ef5309df94326d431e197c3418383cff96b9d8f9fdfaabd7e": {
         "objectID": "b387d1f87c698e0ef5309df94326d431e197c3418383cff96b9d8f9fdfaabd7e",
@@ -13816,11 +13817,11 @@
             }
         ],
         "header_image_url": "https://miro.medium.com/max/1200/1*uTlWUwmKJ5Mm1YncdN-tkQ.png",
-        "date_parsed": "2022-03-23T00:44:44",
+        "date_parsed": "2022-03-23T00:58:18",
         "body_byte_count": 8737,
         "images_byte_count": 3854,
         "links_byte_count": 2592,
-        "date_saved": "2022-03-23T00:44:44"
+        "date_saved": "2022-03-23T00:58:18"
     },
     "fece05d10ca76208c62cd416d883b4bb1f798681d465bb5f96f9faa163289798": {
         "objectID": "fece05d10ca76208c62cd416d883b4bb1f798681d465bb5f96f9faa163289798",
@@ -13957,11 +13958,11 @@
             }
         ],
         "header_image_url": "https://academy-public.coinmarketcap.com/optimized-uploads/771d204091bc439196e148c33af15e24.jpg",
-        "date_parsed": "2022-03-23T00:44:44",
+        "date_parsed": "2022-03-23T00:58:18",
         "body_byte_count": 2787,
         "images_byte_count": 441,
         "links_byte_count": 1760,
-        "date_saved": "2022-03-23T00:44:44"
+        "date_saved": "2022-03-23T00:58:18"
     },
     "87deb0d6ba436a75a3637a91d6f02775c6eb1f65613fcf1806db48cda9dd624e": {
         "objectID": "87deb0d6ba436a75a3637a91d6f02775c6eb1f65613fcf1806db48cda9dd624e",
@@ -14226,11 +14227,11 @@
             }
         ],
         "header_image_url": "",
-        "date_parsed": "2022-03-23T00:44:45",
+        "date_parsed": "2022-03-23T00:58:19",
         "body_byte_count": 6900,
         "images_byte_count": 841,
         "links_byte_count": 3040,
-        "date_saved": "2022-03-23T00:44:45"
+        "date_saved": "2022-03-23T00:58:19"
     },
     "b08b9aae11ea40851b5f0d4ae40554845fcbefebec5d098fc7ca5c7233f159c6": {
         "objectID": "b08b9aae11ea40851b5f0d4ae40554845fcbefebec5d098fc7ca5c7233f159c6",
@@ -15131,11 +15132,11 @@
             }
         ],
         "header_image_url": "",
-        "date_parsed": "2022-03-23T00:44:26",
+        "date_parsed": "2022-03-23T00:58:06",
         "body_byte_count": 11017,
         "images_byte_count": 918,
         "links_byte_count": 1247,
-        "date_saved": "2022-03-23T00:44:26"
+        "date_saved": "2022-03-23T00:58:06"
     },
     "7fd8dc1f5f5023ccbf6037f7fd34e6401beee1f228b01b6b31a238010abba182": {
         "objectID": "7fd8dc1f5f5023ccbf6037f7fd34e6401beee1f228b01b6b31a238010abba182",
@@ -15527,11 +15528,11 @@
             }
         ],
         "header_image_url": "https://images.mirror-media.xyz/publication-images/5590908c-8a4e-4750-8a92-613e9c184828.png",
-        "date_parsed": "2022-03-23T00:44:26",
+        "date_parsed": "2022-03-23T00:58:06",
         "body_byte_count": 11877,
         "images_byte_count": 2862,
         "links_byte_count": 5071,
-        "date_saved": "2022-03-23T00:44:26"
+        "date_saved": "2022-03-23T00:58:06"
     },
     "a4ee02ddc0728a5a7dd596c920c71f747b575f965c2b98b1f7f220c31b1aa75c": {
         "objectID": "a4ee02ddc0728a5a7dd596c920c71f747b575f965c2b98b1f7f220c31b1aa75c",
@@ -16888,11 +16889,11 @@
             }
         ],
         "header_image_url": "https://cdn.substack.com/image/fetch/w_1200,h_600,c_limit,f_jpg,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7215aba1-b0a9-4b52-b9da-5e1334db75df_1200x600.png",
-        "date_parsed": "2022-03-23T00:44:27",
+        "date_parsed": "2022-03-23T00:58:07",
         "body_byte_count": 49933,
         "images_byte_count": 6742,
         "links_byte_count": 13745,
-        "date_saved": "2022-03-23T00:44:27"
+        "date_saved": "2022-03-23T00:58:07"
     },
     "e3fb4493e26c98f5e8600135e3d695e6fb815dcbccb7442a391e4423bda649a7": {
         "objectID": "e3fb4493e26c98f5e8600135e3d695e6fb815dcbccb7442a391e4423bda649a7",
@@ -17501,11 +17502,11 @@
             }
         ],
         "header_image_url": "https://miro.medium.com/focal/1200/632/54/24/1*M87BjTgkwOhKNtSWRu2uLA.png",
-        "date_parsed": "2022-03-23T00:44:28",
+        "date_parsed": "2022-03-23T00:58:08",
         "body_byte_count": 9153,
         "images_byte_count": 2783,
         "links_byte_count": 13681,
-        "date_saved": "2022-03-23T00:44:28"
+        "date_saved": "2022-03-23T00:58:08"
     },
     "4b2b2f49207ba64bb5fc7e4d7091430161ad930b6463626ecec3e5dd31107a45": {
         "objectID": "4b2b2f49207ba64bb5fc7e4d7091430161ad930b6463626ecec3e5dd31107a45",
@@ -17892,11 +17893,11 @@
             }
         ],
         "header_image_url": "",
-        "date_parsed": "2022-03-23T00:44:28",
+        "date_parsed": "2022-03-23T00:58:09",
         "body_byte_count": 25379,
         "images_byte_count": 798,
         "links_byte_count": 1840,
-        "date_saved": "2022-03-23T00:44:28"
+        "date_saved": "2022-03-23T00:58:09"
     },
     "f4f1d51f7b4e9a598da10597ea01854b4fc04b8c14baf12829cadb24a4706a40": {
         "objectID": "f4f1d51f7b4e9a598da10597ea01854b4fc04b8c14baf12829cadb24a4706a40",
@@ -18208,11 +18209,11 @@
             }
         ],
         "header_image_url": "https://super-static-assets.s3.amazonaws.com/e7b39ac7-626b-4f78-9dad-0e546faf8ab7/uploads/cover/57f589ed-b97e-427d-8255-f0d16121c61e.png",
-        "date_parsed": "2022-03-23T00:44:29",
+        "date_parsed": "2022-03-23T00:58:09",
         "body_byte_count": 1239,
         "images_byte_count": 6756,
         "links_byte_count": 2560,
-        "date_saved": "2022-03-23T00:44:29"
+        "date_saved": "2022-03-23T00:58:09"
     },
     "17ab14df7b6eb7d67998ee68ef1a7a4eecee72203d0d6182aec54382b8c1cbd5": {
         "objectID": "17ab14df7b6eb7d67998ee68ef1a7a4eecee72203d0d6182aec54382b8c1cbd5",
@@ -18751,11 +18752,11 @@
             }
         ],
         "header_image_url": "",
-        "date_parsed": "2022-03-23T00:44:29",
+        "date_parsed": "2022-03-23T00:58:09",
         "body_byte_count": 5070,
         "images_byte_count": 155,
         "links_byte_count": 9818,
-        "date_saved": "2022-03-23T00:44:29"
+        "date_saved": "2022-03-23T00:58:09"
     },
     "f4e6c6648a793d4c750ee51d0165bbe7a888476bd90c473b176ddfea659541fa": {
         "objectID": "f4e6c6648a793d4c750ee51d0165bbe7a888476bd90c473b176ddfea659541fa",
@@ -19592,11 +19593,11 @@
             }
         ],
         "header_image_url": "",
-        "date_parsed": "2022-03-23T00:44:36",
+        "date_parsed": "2022-03-23T00:58:12",
         "body_byte_count": 12762,
         "images_byte_count": 2784,
         "links_byte_count": 6877,
-        "date_saved": "2022-03-23T00:44:36"
+        "date_saved": "2022-03-23T00:58:12"
     },
     "1453347f878479166c6105dde0691b99afdae49cd4d9d399ee9b13d163352a30": {
         "objectID": "1453347f878479166c6105dde0691b99afdae49cd4d9d399ee9b13d163352a30",
@@ -20460,11 +20461,11 @@
             }
         ],
         "header_image_url": "https://nftplazas.com/wp-content/uploads/2021/08/31.png",
-        "date_parsed": "2022-03-23T00:44:37",
+        "date_parsed": "2022-03-23T00:58:13",
         "body_byte_count": 11935,
         "images_byte_count": 4057,
         "links_byte_count": 4673,
-        "date_saved": "2022-03-23T00:44:37"
+        "date_saved": "2022-03-23T00:58:13"
     },
     "6cbd4eef7c6bc54a4f2919db5509514f7b707dde21601c7ea97398559b377ba5": {
         "objectID": "6cbd4eef7c6bc54a4f2919db5509514f7b707dde21601c7ea97398559b377ba5",
@@ -20800,11 +20801,11 @@
             }
         ],
         "header_image_url": "https://images.mirror-media.xyz/publication-images/XOVukHaULvp4dsmWbcywK.jpg?height=2500&width=2500",
-        "date_parsed": "2022-03-23T00:44:37",
+        "date_parsed": "2022-03-23T00:58:13",
         "body_byte_count": 13852,
         "images_byte_count": 290,
         "links_byte_count": 4271,
-        "date_saved": "2022-03-23T00:44:37"
+        "date_saved": "2022-03-23T00:58:13"
     },
     "054e24f0abce793265e35d574af700da63a123cc0776a6de6457941757995585": {
         "objectID": "054e24f0abce793265e35d574af700da63a123cc0776a6de6457941757995585",
@@ -21232,11 +21233,11 @@
             }
         ],
         "header_image_url": "https://cdn.vox-cdn.com/thumbor/uv_Dd8dUrBGJwU5ivmjAoYZZvyk=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22382752/GettyImages_1230723516.jpg",
-        "date_parsed": "2022-03-23T00:44:38",
+        "date_parsed": "2022-03-23T00:58:14",
         "body_byte_count": 16425,
         "images_byte_count": 495,
         "links_byte_count": 7539,
-        "date_saved": "2022-03-23T00:44:38"
+        "date_saved": "2022-03-23T00:58:14"
     },
     "761f833be3d733b685d143dcb653b0ddefe8d32c6f520d4ca8f9cf492181ddf5": {
         "objectID": "761f833be3d733b685d143dcb653b0ddefe8d32c6f520d4ca8f9cf492181ddf5",
@@ -21739,10 +21740,10 @@
             }
         ],
         "header_image_url": "https://brightly.eco/wp-content/uploads/2021/03/environmental-impact-of-nfts-scaled.jpg",
-        "date_parsed": "2022-03-23T00:44:40",
+        "date_parsed": "2022-03-23T00:58:15",
         "body_byte_count": 9200,
         "images_byte_count": 4083,
         "links_byte_count": 3274,
-        "date_saved": "2022-03-23T00:44:40"
+        "date_saved": "2022-03-23T00:58:15"
     }
 }
