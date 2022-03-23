@@ -87,7 +87,8 @@ class ContentIndex:
     def save_to_search_index(self, content):
         return self.search_client_index.save_object(content)
 
-    def get_inbound_links(self, minimum_link_count=3):
+    def get_inbound_links(self, minimum_link_count=2):
+        minimum_link_count = int(minimum_link_count)
         """
         Counting the inbound links to a page can be used to determine the priority of which pages to index next.
 

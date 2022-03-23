@@ -4,19 +4,20 @@ Atila Atlas: Save content to a database and search that data.
 
 Usage:
   atlas initialize_index
-  atlas add_content [--urls=<urls>] [--file=<file>] [--limit=<limit>]
+  atlas add_content [--urls=<urls>] [--file=<file>]
   atlas search <query>
-  atlas get_inbound_links
+  atlas get_inbound_links [--min-inbound-links=<min>]
 
 Options:
   -h --help     Show this screen.
   --urls=<urls>   The urls to parse, separated by a comma
   --file=<file> The input file that contains:
     - If a txt file is provided, a list of urls that should be parsed.
-    - If a json file is provided, a dictionary of scholarship objects to be saved to the database.
+  --min-inbound-links=<min>   The minimum number of inbound links to include
 Examples:
    atlas add_content --urls https://ethereum.org/en/nft,https://chain.link/education/nfts
    atlas add_content --file data/urls_to_parse.txt
+   atlas get_inbound_links --min-inbound-links=2
 """
 import json
 
@@ -43,6 +44,7 @@ def run_atlas(cli_args):
         "--urls": "urls",
         "<query>": "query",
         "--file": "input_file",
+        "--min-inbound-links": "minimum_link_count",
         # "--limit": "limit",
     }
 
@@ -52,6 +54,9 @@ def run_atlas(cli_args):
 
     if bot_args.get("urls"):
         bot_args["urls"] = bot_args["urls"].split(",")
+
+    if bot_args.get("minimum_link_count"):
+        bot_args["minimum_link_count"] = int(bot_args["minimum_link_count"])
 
     print("bot_args", bot_args)
 
@@ -67,8 +72,7 @@ def run_atlas(cli_args):
 
     if cli_args.get('get_inbound_links'):
         content_index = ContentIndex()
-        results = content_index.get_inbound_links()
-        print(json.dumps(results, indent=4))
+        content_index.get_inbound_links(**bot_args)
 
     if cli_args.get('search'):
         content_index = ContentIndex()
