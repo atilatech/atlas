@@ -36,9 +36,6 @@ class ContentParser:
         self.all_content = defaultdict(dict)
 
     def get_urls_from_file(self, file_name):
-        # Always set the file path relative to the location of the content_parser script parent folder for consistency
-        parent_directory = Path(__file__).resolve().parents[0]
-        file_name = parent_directory / file_name
         with open(file_name) as f:
             urls = f.readlines()
 
@@ -54,15 +51,17 @@ class ContentParser:
                 self.content_index.save_to_search_index(parsed_content)
 
     def save_to_file(self, save_type="json", file_name="parsed_content"):
-        parent_directory = Path(__file__).resolve().parents[0]
         if save_type == "html":
             for content_id, content in self.all_content.items():
                 domain = urlparse(self.all_content[content_id]["url"]).netloc
                 file_name = f"{domain}-{content_id[:8]}"
-                with open(parent_directory / f"data/html_files/{file_name}.html", 'w') as outfile:
+                output_file_name = f"data/html_files/{file_name}.html"
+                Path(output_file_name).parents[0].mkdir(parents=True, exist_ok=True)
+                with open(output_file_name, 'w') as outfile:
                     outfile.write(content['html'])
         else:
-            output_file_name = parent_directory / f"data/{file_name}.json"
+            output_file_name = f"data/{file_name}.json"
+            Path(output_file_name).parents[0].mkdir(parents=True, exist_ok=True)
             content_to_save = {}
             for content_id, content in self.all_content.items():
                 content_to_save[content_id] = content['json']

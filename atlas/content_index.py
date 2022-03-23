@@ -38,9 +38,7 @@ class ContentIndex:
     def add_sample_content_data_to_index(self):
         self.initialize_index()
 
-        parent_directory = Path(__file__).resolve().parents[0]
-
-        with open(parent_directory / "data/parsed_content.json") as outfile:
+        with open("data/parsed_content.json") as outfile:
             content_to_save = json.load(outfile)
             content_to_save = list(content_to_save.values())
             self.search_client_index.save_objects(content_to_save, {'autoGenerateObjectIDIfNotExist': True})
@@ -127,7 +125,8 @@ class ContentIndex:
                                                  reverse=True)}
 
         parent_directory = Path(__file__).resolve().parents[0]
-        output_json_file = parent_directory / "data/inbound_links_metadata.json"
+        output_json_file = "data/inbound_links_metadata.json"
+        Path("data").mkdir(parents=True, exist_ok=True)
 
         with open(output_json_file, 'w') as outfile:
             json.dump(inbound_links, outfile, indent=4)

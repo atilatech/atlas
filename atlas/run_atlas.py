@@ -15,8 +15,10 @@ Options:
     - If a txt file is provided, a list of urls that should be parsed.
   --min-inbound-links=<min>   The minimum number of inbound links to include
 Examples:
-   atlas add_content --urls https://ethereum.org/en/nft,https://chain.link/education/nfts
+   atlas initialize_index
    atlas add_content --file data/urls_to_parse.txt
+   atlas add_content --urls https://ethereum.org/en/nft,https://chain.link/education/nfts
+   atlas query "what is an nft"
    atlas get_inbound_links --min-inbound-links=2
 """
 import json
