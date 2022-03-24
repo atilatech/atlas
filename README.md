@@ -1,9 +1,11 @@
 # Atlas
 
-Atlas is a search engine for parsing a collection of web pages and making it searchable.
+A search engine for the internet.
 
-Atlas stands for Atila's Tool for Learning any Subject. We're starting by focusing on web3 and crypto related
-content with plans to add other subjects in the future. However, you're welcome to use Atlas to index and search any type of content you want.
+Atlas stands for Atila's Tool for Learning any Subject. 
+To start, Atlas will be focused on effectively indexing and searching crypto and web3 related
+content with plans to add other subjects in the future. 
+However, you're welcome to use Atlas to index and search any type of content you want.
 
 ## Installation
 
@@ -93,4 +95,4 @@ curl --location --request GET 'http://127.0.0.1:8080/api/search?q=what+is+an+NFT
 
 `ModuleNotFoundError: No module named 'atlas'`
 
-Set your $PYTHONPATH. See this [SO answer](ModuleNotFoundError: No module named 'atlas')
+Set your $PYTHONPATH. See this [SO answer](https://stackoverflow.com/a/15622021/5405197)
