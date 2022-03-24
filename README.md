@@ -9,6 +9,13 @@ content with plans to add other subjects in the future. However, you're welcome 
 
 `pip install atila-atlas`
 
+Set your environment variables:
+```shell
+export ALGOLIA_APPLICATION_ID=""
+export ALGOLIA_API_KEY=""
+export ALGOLIA_INDEX_NAME=""
+```
+
 ### Development Installation
 
 ```shell
@@ -25,6 +32,30 @@ atlas add_content --urls https://ethereum.org/en/nft,https://en.wikipedia.org/wi
 atlas query "what is an nft"
 atlas get_inbound_links --min-inbound-links=2
 ```
+
+
+```python
+from atlas.content_parser import ContentParser, ContentIndex
+
+sample_urls = [
+   "https://ethereum.org/en/nft",
+   "https://en.wikipedia.org/wiki/Ethereum",
+   "https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d",
+   "https://chain.link/education/nfts",
+   "https://medium.com/superrare/no-cryptoartists-arent-harming-the-planet-43182f72fc61",
+   "https://andrewsteinwold.substack.com/p/-quick-overview-of-the-nft-ecosystem",
+   "https://medium.com/superrare/no-cryptoartists-arent-harming-the-planet-43182f72fc61"
+]
+
+content_bot = ContentParser(urls=sample_urls)
+content_bot.parse_all_content()
+content_bot.save_to_file()
+
+content_index = ContentIndex()
+content_index.initialize_index()
+results = content_index.search("what is an nft")
+```
+
 
 ### Development Quickstart
 

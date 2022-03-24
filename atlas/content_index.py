@@ -1,4 +1,5 @@
 import json
+import warnings
 from collections import defaultdict
 from pathlib import Path
 
@@ -14,6 +15,9 @@ SEARCHABLE_ATTRIBUTES = ["title", "description", "body", "url", "links", "images
 class ContentIndex:
     def __init__(self, index_name=None):
         if index_name is None:
+            if not ALGOLIA_INDEX_NAME:
+                raise TypeError("ALGOLIA_INDEX_NAME environment variable is not set "
+                                "and index_name not provided to ContentIndex(index_name='') constructor.")
             index_name = ALGOLIA_INDEX_NAME
         search_client = SearchClient.create(ALGOLIA_APPLICATION_ID, ALGOLIA_API_KEY)
         self.search_client_index = search_client.init_index(index_name)
@@ -32,7 +36,6 @@ class ContentIndex:
                 'removeStopWords': True,
                 "attributesToRetrieve": ["title", "description", "header_image_url", "url"]
             }
-            print(settings)
         self.search_client_index.set_settings(settings)
 
     def add_sample_content_data_to_index(self):
