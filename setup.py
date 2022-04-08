@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="atila-atlas",
-    version="0.0.1",
+    version="0.0.2",
     author="Atila Tech",
     author_email="info@atila.ca",
     description="Atlas is a search engine for parsing a collection of web pages and making it searchable.",

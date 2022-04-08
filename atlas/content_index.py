@@ -5,7 +5,7 @@ from pathlib import Path
 
 from algoliasearch.search_client import SearchClient
 
-from atlas.settings import ALGOLIA_APPLICATION_ID, ALGOLIA_API_KEY, ALGOLIA_INDEX_NAME
+from atlas.settings import ATLAS_ALGOLIA_APPLICATION_ID, ATLAS_ALGOLIA_API_KEY, ATLAS_ALGOLIA_INDEX_NAME
 
 # While searchable attributes could be set to links.text and images.label
 # Doing so would have omitted the url from showing in the search result snippets.
@@ -13,13 +13,26 @@ SEARCHABLE_ATTRIBUTES = ["title", "description", "body", "url", "links", "images
 
 
 class ContentIndex:
-    def __init__(self, index_name=None):
+    def __init__(self, application_id=None, api_key=None, index_name=None):
         if index_name is None:
-            if not ALGOLIA_INDEX_NAME:
-                raise TypeError("ALGOLIA_INDEX_NAME environment variable is not set "
+            index_name = ATLAS_ALGOLIA_INDEX_NAME
+            if not index_name:
+                raise TypeError("ATLAS_ALGOLIA_INDEX_NAME environment variable is not set "
                                 "and index_name not provided to ContentIndex(index_name='') constructor.")
-            index_name = ALGOLIA_INDEX_NAME
-        search_client = SearchClient.create(ALGOLIA_APPLICATION_ID, ALGOLIA_API_KEY)
+
+        if application_id is None:
+            application_id = ATLAS_ALGOLIA_APPLICATION_ID
+            if not application_id:
+                raise TypeError("ATLAS_ALGOLIA_APPLICATION_ID environment variable is not set "
+                                "and application_id not provided to ContentIndex(application_id='') constructor.")
+
+        if api_key is None:
+            api_key = ATLAS_ALGOLIA_API_KEY
+            if not api_key:
+                raise TypeError("ATLAS_ALGOLIA_API_KEY environment variable is not set "
+                                "and index_name not provided to ContentIndex(api_key='') constructor.")
+
+        search_client = SearchClient.create(application_id, api_key)
         self.search_client_index = search_client.init_index(index_name)
 
     def initialize_index(self, settings=None):

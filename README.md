@@ -13,9 +13,9 @@ However, you're welcome to use Atlas to index and search any type of content you
 
 Set your environment variables:
 ```shell
-export ALGOLIA_APPLICATION_ID=""
-export ALGOLIA_API_KEY=""
-export ALGOLIA_INDEX_NAME=""
+export ATLAS_ALGOLIA_APPLICATION_ID=""
+export ATLAS_ALGOLIA_API_KEY=""
+export ATLAS_ALGOLIA_INDEX_NAME=""
 ```
 
 ### Development Installation
@@ -31,7 +31,7 @@ pip install -e .
 atlas initialize_index
 atlas add_content --file data/urls_to_parse.txt
 atlas add_content --urls https://ethereum.org/en/nft,https://en.wikipedia.org/wiki/Ethereum
-atlas query "what is an nft"
+atlas search "what is an nft"
 atlas get_inbound_links --min-inbound-links=2
 ```
 

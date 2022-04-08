@@ -24,14 +24,17 @@ class ContentParser:
 
     def __init__(self,
                  urls: List[str] = None,
-                 input_file: str = None):
+                 input_file: str = None,
+                 application_id=None,
+                 api_key=None,
+                 index_name=None):
 
         if input_file:
             self.get_urls_from_file(input_file)
         else:
             self.urls = [url.rstrip("/") for url in urls]
 
-        self.content_index = ContentIndex()
+        self.content_index = ContentIndex(application_id=application_id, api_key=api_key, index_name=index_name)
         # all_content ->'object_id' -> {'json': {}, 'html': '', 'object_id' : '', 'url': '', 'article', 'soup'}
         self.all_content = defaultdict(dict)
 
