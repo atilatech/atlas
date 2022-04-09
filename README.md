@@ -11,6 +11,8 @@ However, you're welcome to use Atlas to index and search any type of content you
 
 `pip install atila-atlas`
 
+See: https://pypi.org/project/atila-atlas
+
 Set your environment variables:
 ```shell
 export ATLAS_ALGOLIA_APPLICATION_ID=""
