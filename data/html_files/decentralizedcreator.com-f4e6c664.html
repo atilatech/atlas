@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+ <head>
+  <meta charset="utf-8"/>
+  <script data-cfasync="false" data-ezscrex="false" data-pagespeed-no-defer="">
+   var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=(function(){var count=0,incr=0,items=[],timeDelayFired=false,hpItems=[],lpItems=[],allowLoad=true;var obj={func:function(name,funcName,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError){var self=this;this.name=name;this.funcName=funcName;this.parameters=parameters===null?null:(parameters instanceof Array)?parameters:[parameters];this.isBlock=isBlock;this.blockedBy=blockedBy;this.deleteWhenComplete=deleteWhenComplete;this.isError=false;this.isComplete=false;this.isInitialized=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){log("... func = "+name);self.isInitialized=true;self.isComplete=true;log("... func.apply: "+name);var funcs=self.funcName.split('.');var func=null;if(funcs.length>3){}else if(funcs.length===3){func=window[funcs[0]][funcs[1]][funcs[2]];}else if(funcs.length===2){func=window[funcs[0]][funcs[1]];}else{func=window[self.funcName];}
+if(typeof func!=='undefined'&&func!==null){func.apply(null,this.parameters);}
+if(self.deleteWhenComplete===true)delete items[name];if(self.isBlock===true){log("----- F'D: "+self.name);processAll();}}},file:function(name,path,isBlock,blockedBy,async,defer,proceedIfError){var self=this;this.name=name;this.path=path;this.async=async;this.defer=defer;this.isBlock=isBlock;this.blockedBy=blockedBy;this.isInitialized=false;this.isError=false;this.isComplete=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){self.isInitialized=true;log("... file = "+name);var scr=document.createElement('script');scr.src=path;if(async===true)scr.async=true;else if(defer===true)scr.defer=true;scr.onerror=function(){log("----- ERR'D: "+self.name);self.isError=true;if(self.isBlock===true){processAll();}};scr.onreadystatechange=scr.onload=function(){var state=scr.readyState;log("----- F'D: "+self.name);if((!state||/loaded|complete/.test(state))){self.isComplete=true;if(self.isBlock===true){processAll();}}};document.getElementsByTagName('head')[0].appendChild(scr);}},fileLoaded:function(name,isComplete){this.name=name;this.path="";this.async=false;this.defer=false;this.isBlock=false;this.blockedBy=[];this.isInitialized=true;this.isError=false;this.isComplete=isComplete;this.proceedIfError=false;this.isTimeDelay=false;this.process=function(){};}};function init(){window.addEventListener("load",function(){setTimeout(function(){timeDelayFired=true;log('TDELAY -----');processAll();},5000);},false);}
+function addFile(name,path,isBlock,blockedBy,async,defer,proceedIfError,priority){var item=new obj.file(name,path,isBlock,blockedBy,async,defer,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+items[name]=item;checkIfBlocked(item);}
+function setallowLoad(settobool){allowLoad=settobool}
+function addFunc(name,func,parameters,isBlock,blockedBy,autoInc,deleteWhenComplete,proceedIfError,priority){if(autoInc===true)name=name+"_"+incr++;var item=new obj.func(name,func,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+items[name]=item;checkIfBlocked(item);}
+function addTimeDelayFile(name,path){var item=new obj.file(name,path,false,[],false,false,true);item.isTimeDelay=true;log(name+' ... '+' FILE! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+function addTimeDelayFunc(name,func,parameters){var item=new obj.func(name,func,parameters,false,[],true,true);item.isTimeDelay=true;log(name+' ... '+' FUNCTION! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+function checkIfBlocked(item){if(isBlocked(item)===true||allowLoad==false)return;item.process();}
+function isBlocked(item){if(item.isTimeDelay===true&&timeDelayFired===false){log(item.name+" blocked = TIME DELAY!");return true;}
+if(item.blockedBy instanceof Array){for(var i=0;i<item.blockedBy.length;i++){var block=item.blockedBy[i];if(items.hasOwnProperty(block)===false){log(item.name+" blocked = "+block);return true;}else if(item.proceedIfError===true&&items[block].isError===true){return false;}else if(items[block].isComplete===false){log(item.name+" blocked = "+block);return true;}}}
+return false;}
+function markLoaded(filename){if(!filename||0===filename.length){return;}
+if(filename in items){var item=items[filename];if(item.isComplete===true){log(item.name+' '+filename+': error loaded duplicate')}else{item.isComplete=true;item.isInitialized=true;}}else{items[filename]=new obj.fileLoaded(filename,true);}
+log("markLoaded dummyfile: "+items[filename].name);}
+function logWhatsBlocked(){for(var i in items){if(items.hasOwnProperty(i)===false)continue;var item=items[i];isBlocked(item)}}
+function log(msg){var href=window.location.href;var reg=new RegExp('[?&]ezq=([^&#]*)','i');var string=reg.exec(href);var res=string?string[1]:null;if(res==="1")console.debug(msg);}
+function processAll(){count++;if(count>200)return;log("let's go");processItems(hpItems);processItems(lpItems);}
+function processItems(list){for(var i in list){if(list.hasOwnProperty(i)===false)continue;var item=list[i];if(item.isComplete===true||isBlocked(item)||item.isInitialized===true||item.isError===true){if(item.isError===true){log(item.name+': error')}else if(item.isComplete===true){log(item.name+': complete already')}else if(item.isInitialized===true){log(item.name+': initialized already')}}else{item.process();}}}
+init();return{addFile:addFile,addDelayFile:addTimeDelayFile,addFunc:addFunc,addDelayFunc:addTimeDelayFunc,items:items,processAll:processAll,setallowLoad:setallowLoad,markLoaded:markLoaded,logWhatsBlocked:logWhatsBlocked,};})();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('/detroitchicago/boise.js', '//g.ezoic.net/detroitchicago/boise.js?gcb=195-0&cb=1', true, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/memphis.js', '//g.ezoic.net/detroitchicago/memphis.js?gcb=195-0&cb=14', true, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/minneapolis.js', '//g.ezoic.net/detroitchicago/minneapolis.js?gcb=195-0&cb=3', true, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/rochester.js', '//g.ezoic.net/detroitchicago/rochester.js?gcb=195-0&cb=12', false, ['/detroitchicago/memphis.js','/detroitchicago/minneapolis.js'], true, false, true, false);__ez.vep=(function(){var pixels=[],pxURL="/detroitchicago/grapefruit.gif";function AddPixel(vID,pixelData){if(__ez.dot.isDefined(vID)&&__ez.dot.isValid(pixelData)){pixels.push({type:'video',video_impression_id:vID,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(pixelData)});}}
+function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender"){return;}
+if(__ez.dot.isDefined(pixels)&&pixels.length>0){while(pixels.length>0){var j=5;if(j>pixels.length){j=pixels.length;}
+var pushPixels=pixels.splice(0,j);var pixelURL=__ez.dot.getURL(pxURL)+"?orig="+(__ez.template.isOrig===true?1:0)+"&v="+btoa(JSON.stringify(pushPixels));__ez.dot.Fire(pixelURL);}}
+pixels=[];}
+return{Add:AddPixel,Fire:Fire};})();
+  </script>
+  <script data-cfasync="false" data-ezscrex="false" data-pagespeed-no-defer="">
+   __ez.pel=(function(){var pixels=[],pxURL="/porpoiseant/army.gif";function AddAndFirePixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0);Fire();}
+function AddAndFireOrigPixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0,true);Fire();}
+function GetCurrentPixels(){return pixels;}
+function AddPixel(adSlot,pixelData,revenue,est_revenue,bid_floor_filled,bid_floor_prev,stat_source_id,isOrig){if(!__ez.dot.isDefined(adSlot)||__ez.dot.isAnyDefined(adSlot.getSlotElementId,adSlot.ElementId)==false){return;}
+if(typeof isOrig==='undefined'){isOrig=false;}
+var ad_position_id=parseInt(__ez.dot.getTargeting(adSlot,'ap'));var impId=__ez.dot.getSlotIID(adSlot),adUnit=__ez.dot.getAdUnit(adSlot,isOrig);var compId=parseInt(__ez.dot.getTargeting(adSlot,"compid"));var lineItemId=0;var creativeId=0;var ezimData=getEzimData(adSlot);if(typeof ezimData=='object'){if(ezimData.creative_id!==undefined){creativeId=ezimData.creative_id;}
+if(ezimData.line_item_id!==undefined){lineItemId=ezimData.line_item_id;}}
+if(__ez.dot.isDefined(impId,adUnit)&&__ez.dot.isValid(pixelData)){if((impId!=="0"||isOrig===true)&&adUnit!==""){pixels.push({type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),revenue:revenue,est_revenue:est_revenue,ad_position:ad_position_id,ad_size:"",bid_floor_filled:bid_floor_filled,bid_floor_prev:bid_floor_prev,stat_source_id:stat_source_id,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:compId,line_item_id:lineItemId,creative_id:creativeId,data:__ez.dot.dataToStr(pixelData),is_orig:isOrig||__ez.template.isOrig,});}}}
+function AddPixelById(impFullId,pixelData,isOrig,revenue){var vals=impFullId.split('/');if(__ez.dot.isDefined(impFullId)&&vals.length===3&&__ez.dot.isValid(pixelData)){var adUnit=vals[0],impId=vals[2];var pix={type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(pixelData),is_orig:isOrig||__ez.template.isOrig};if(typeof revenue!=='undefined'){pix.revenue=revenue;}
+pixels.push(pix);}}
+function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender")return;if(__ez.dot.isDefined(pixels)&&pixels.length>0){var allPixels=[pixels.filter(function(pixel){return pixel.is_orig}),pixels.filter(function(pixel){return!pixel.is_orig})];allPixels.forEach(function(pixels){while(pixels.length>0){var isOrig=pixels[0].is_orig||false;var j=5;if(j>pixels.length){j=pixels.length;}
+var pushPixels=pixels.splice(0,j);var pixelURL=__ez.dot.getURL(pxURL)+"?orig="+(isOrig===true?1:0)+"&sts="+btoa(JSON.stringify(pushPixels));if(typeof window.isAmp!=='undefined'&&isAmp&&typeof window._ezaq!=='undefined'&&_ezaq.hasOwnProperty("domain_id")){pixelURL+="&visit_uuid="+_ezaq['visit_uuid'];}
+__ez.dot.Fire(pixelURL);}});}
+pixels=[];}
+function getEzimData(adSlot){if(typeof _ezim_d=="undefined"){return false;}
+var adUnitName=__ez.dot.getAdUnitPath(adSlot).split('/').pop();if(typeof _ezim_d==='object'&&_ezim_d.hasOwnProperty(adUnitName)){return _ezim_d[adUnitName];}
+for(var ezimKey in _ezim_d){if(ezimKey.split('/').pop()===adUnitName){return _ezim_d[ezimKey];}}
+return false;}
+return{Add:AddPixel,AddAndFire:AddAndFirePixel,AddAndFireOrig:AddAndFireOrigPixel,AddById:AddPixelById,Fire:Fire,GetPixels:GetCurrentPixels,};})();__ez.queue.addFile('/detroitchicago/raleigh.js', '//g.ezoic.net/detroitchicago/raleigh.js?gcb=195-0&cb=5', false, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/tampa.js', '//g.ezoic.net/detroitchicago/tampa.js?gcb=195-0&cb=4', false, [], true, false, true, false);
+  </script>
+  <script data-cfasync="false" data-ezscrex="false">
+   (function(){if("function"===typeof window.CustomEvent)return!1;window.CustomEvent=function(c,a){a=a||{bubbles:!1,cancelable:!1,detail:null};var b=document.createEvent("CustomEvent");b.initCustomEvent(c,a.bubbles,a.cancelable,a.detail);return b}})();
+  </script>
+  <script data-cfasync="false" data-ezscrex="false">
+   __ez.queue.addFile('/detroitchicago/tulsa.js', '//g.ezoic.net/detroitchicago/tulsa.js?gcb=195-0&cb=5', false, [], true, false, true, false);
+  </script>
+  <link href="https://gmpg.org/xfn/11" rel="profile"/>
+  <title>
+   12 Best Solana NFT Projects / Collections in 2022
+  </title>
+  <!-- All in One SEO 4.1.6.2 -->
+  <meta content="Non-Fungible Token is becoming a buzzword and it is moving upward and onward. Every month billions of transactions are happening in NFT spaces. Most NFT is part of Ethereum blockchain and almost all NFT marketplace are part of Ethereum blockchain. With the growing gas fee on Ethereum and there is a huge rise and demand ... Read more" name="description"/>
+  <meta content="max-image-preview:large" name="robots"/>
+  <link href="https://decentralizedcreator.com/best-solana-nft-projects/" rel="canonical"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="DC -" property="og:site_name"/>
+  <meta content="article" property="og:type"/>
+  <meta content="12 Best Solana NFT Projects / Collections in 2022" property="og:title"/>
+  <meta content="Non-Fungible Token is becoming a buzzword and it is moving upward and onward. Every month billions of transactions are happening in NFT spaces. Most NFT is part of Ethereum blockchain and almost all NFT marketplace are part of Ethereum blockchain. With the growing gas fee on Ethereum and there is a huge rise and demand ... Read more" property="og:description"/>
+  <meta content="https://decentralizedcreator.com/best-solana-nft-projects/" property="og:url"/>
+  <meta content="2022-01-16T03:25:02+00:00" property="article:published_time"/>
+  <meta content="2022-02-16T11:41:04+00:00" property="article:modified_time"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="12 Best Solana NFT Projects / Collections in 2022" name="twitter:title"/>
+  <meta content="Non-Fungible Token is becoming a buzzword and it is moving upward and onward. Every month billions of transactions are happening in NFT spaces. Most NFT is part of Ethereum blockchain and almost all NFT marketplace are part of Ethereum blockchain. With the growing gas fee on Ethereum and there is a huge rise and demand ... Read more" name="twitter:description"/>
+  <script class="aioseo-schema" type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/decentralizedcreator.com\/#website","url":"https:\/\/decentralizedcreator.com\/","name":"DC","inLanguage":"en-US","publisher":{"@id":"https:\/\/decentralizedcreator.com\/#organization"}},{"@type":"Organization","@id":"https:\/\/decentralizedcreator.com\/#organization","name":"DC","url":"https:\/\/decentralizedcreator.com\/"},{"@type":"BreadcrumbList","@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/decentralizedcreator.com\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/decentralizedcreator.com\/","name":"Home","url":"https:\/\/decentralizedcreator.com\/"},"nextItem":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#listItem"},{"@type":"ListItem","@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#listItem","position":2,"item":{"@type":"WebPage","@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/","name":"12 Best Solana NFT Projects \/ Collections in 2022","description":"Non-Fungible Token is becoming a buzzword and it is moving upward and onward. Every month billions of transactions are happening in NFT spaces. Most NFT is part of Ethereum blockchain and almost all NFT marketplace are part of Ethereum blockchain. With the growing gas fee on Ethereum and there is a huge rise and demand ... Read more","url":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/"},"previousItem":"https:\/\/decentralizedcreator.com\/#listItem"}]},{"@type":"Person","@id":"https:\/\/decentralizedcreator.com\/author\/decentralizedcreator\/#author","url":"https:\/\/decentralizedcreator.com\/author\/decentralizedcreator\/","name":"decentralizedcreator","image":{"@type":"ImageObject","@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/39ad320603914b50238c2f2a2da27619?s=96&d=mm&r=g","width":96,"height":96,"caption":"decentralizedcreator"}},{"@type":"WebPage","@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#webpage","url":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/","name":"12 Best Solana NFT Projects \/ Collections in 2022","description":"Non-Fungible Token is becoming a buzzword and it is moving upward and onward. Every month billions of transactions are happening in NFT spaces. Most NFT is part of Ethereum blockchain and almost all NFT marketplace are part of Ethereum blockchain. With the growing gas fee on Ethereum and there is a huge rise and demand ... Read more","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/decentralizedcreator.com\/#website"},"breadcrumb":{"@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#breadcrumblist"},"author":"https:\/\/decentralizedcreator.com\/author\/decentralizedcreator\/#author","creator":"https:\/\/decentralizedcreator.com\/author\/decentralizedcreator\/#author","datePublished":"2022-01-16T03:25:02+00:00","dateModified":"2022-02-16T11:41:04+00:00"},{"@type":"BlogPosting","@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#blogposting","name":"12 Best Solana NFT Projects \/ Collections in 2022","description":"Non-Fungible Token is becoming a buzzword and it is moving upward and onward. Every month billions of transactions are happening in NFT spaces. Most NFT is part of Ethereum blockchain and almost all NFT marketplace are part of Ethereum blockchain. With the growing gas fee on Ethereum and there is a huge rise and demand ... Read more","inLanguage":"en-US","headline":"12 Best Solana NFT Projects \/ Collections in 2022","author":{"@id":"https:\/\/decentralizedcreator.com\/author\/decentralizedcreator\/#author"},"publisher":{"@id":"https:\/\/decentralizedcreator.com\/#organization"},"datePublished":"2022-01-16T03:25:02+00:00","dateModified":"2022-02-16T11:41:04+00:00","articleSection":"NFT","mainEntityOfPage":{"@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#webpage"},"isPartOf":{"@id":"https:\/\/decentralizedcreator.com\/best-solana-nft-projects\/#webpage"},"image":{"@type":"ImageObject","@id":"https:\/\/decentralizedcreator.com\/#articleImage","url":"https:\/\/decentralizedcreator.com\/wp-content\/uploads\/2022\/01\/Solana-Monkey-Business.png","width":1881,"height":906,"caption":"Best Solana NFT Project"}}]}
+  </script>
+  <!-- All in One SEO -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <script type="application/javascript">
+   console.log('PixelYourSite Free version 8.2.11');
+  </script>
+  <link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+  <link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+  <link href="//s.w.org" rel="dns-prefetch"/>
+  <link href="//pagead2.googlesyndication.com" rel="dns-prefetch"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <!-- This site uses the Google Analytics by MonsterInsights plugin v7.17.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+  <!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+  <!-- No UA code set -->
+  <!-- / Google Analytics by MonsterInsights -->
+  <script>
+   window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/decentralizedcreator.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.6"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <style>
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <link href="//fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic|Work+Sans:100,200,300,regular,500,600,700,800,900" id="generate-fonts-css" media="all" rel="stylesheet"/>
+  <link href="https://decentralizedcreator.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.6" id="wp-block-library-css" media="all" rel="stylesheet"/>
+  <link href="https://decentralizedcreator.com/wp-content/plugins/creative-mail-by-constant-contact/src/blocks/subscribe/../../../assets/js/block/subscribe.css?ver=1625901515" id="ce4wp-subscribe-style-css" media="all" rel="stylesheet"/>
+  <link href="https://decentralizedcreator.com/wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/all.min.css?ver=2.10.6" id="font-awesome-5-css" media="all" rel="stylesheet"/>
+  <link href="https://decentralizedcreator.com/wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/v4-shims.min.css?ver=2.10.6" id="font-awesome-4-shims-css" media="all" rel="stylesheet"/>
+  <link href="https://decentralizedcreator.com/wp-content/plugins/easy-table-of-contents/vendor/icomoon/style.min.css?ver=2.0.17" id="ez-icomoon-css" media="all" rel="stylesheet"/>
+  <link href="https://decentralizedcreator.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.17" id="ez-toc-css" media="all" rel="stylesheet"/>
+  <style id="ez-toc-inline-css">
+   div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}
+  </style>
+  <link href="https://decentralizedcreator.com/wp-content/themes/generatepress/assets/css/components/comments.min.css?ver=3.1.0" id="generate-comments-css" media="all" rel="stylesheet"/>
+  <link href="https://decentralizedcreator.com/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.1.0" id="generate-style-css" media="all" rel="stylesheet"/>
+  <style id="generate-style-inline-css">
+   .page-template-builder-fullwidth-std #page {
+			margin: 0;
+			max-width: 100%;
+		}
+		.page-template-builder-fullwidth-std .entry-header .grid-container .entry-title {
+			display: none;
+		}
+		.page-template-builder-fullwidth .entry-header {
+			display: none;
+		}
+	
+body{background-color:#f7f8f9;color:#222222;}a{color:#1e73be;}a:hover, a:focus, a:active{color:#000000;}.grid-container{max-width:1170px;}.wp-block-group__inner-container{max-width:1170px;margin-left:auto;margin-right:auto;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;}.has-contrast-color{color:#222222;}.has-contrast-background-color{background-color:#222222;}.has-contrast-2-color{color:#575760;}.has-contrast-2-background-color{background-color:#575760;}.has-contrast-3-color{color:#b2b2be;}.has-contrast-3-background-color{background-color:#b2b2be;}.has-base-color{color:#f0f0f0;}.has-base-background-color{background-color:#f0f0f0;}.has-base-2-color{color:#f7f8f9;}.has-base-2-background-color{background-color:#f7f8f9;}.has-base-3-color{color:#ffffff;}.has-base-3-background-color{background-color:#ffffff;}.has-accent-color{color:#1e73be;}.has-accent-background-color{background-color:#1e73be;}body, button, input, select, textarea{font-family:"Lato", sans-serif;}body{line-height:1.5;}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:1.5em;}.main-title{font-size:45px;}.main-navigation .main-nav ul ul li a{font-size:14px;}.sidebar .widget, .footer-widgets .widget{font-size:17px;}h1{font-family:"Work Sans", sans-serif;}h2{font-family:"Work Sans", sans-serif;}h3{font-family:"Work Sans", sans-serif;line-height:1.3em;}@media (max-width:768px){h1{font-size:31px;}h2{font-size:27px;}h3{font-size:24px;}h4{font-size:22px;}h5{font-size:19px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;}.main-title a,.main-title a:hover{color:#222222;}.site-description{color:#757575;}.mobile-menu-control-wrapper .menu-toggle,.mobile-menu-control-wrapper .menu-toggle:hover,.mobile-menu-control-wrapper .menu-toggle:focus,.has-inline-mobile-toggle #site-navigation.toggled{background-color:rgba(0, 0, 0, 0.02);}.main-navigation,.main-navigation ul ul{background-color:#ffffff;}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:#515151;}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:#7a8896;background-color:#ffffff;}button.menu-toggle:hover,button.menu-toggle:focus{color:#515151;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#7a8896;background-color:#ffffff;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#7a8896;background-color:#ffffff;}.main-navigation ul ul{background-color:#eaeaea;}.main-navigation .main-nav ul ul li a{color:#515151;}.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"]) > a{color:#7a8896;background-color:#eaeaea;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#7a8896;background-color:#eaeaea;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-title a{color:#222222;}.entry-title a:hover{color:#55555e;}.entry-meta{color:#595959;}.sidebar .widget{background-color:#ffffff;}.footer-widgets{background-color:#ffffff;}.footer-widgets .widget-title{color:#000000;}.site-info{color:#ffffff;background-color:#55555e;}.site-info a{color:#ffffff;}.site-info a:hover{color:#d3d3d3;}.footer-bar .widget_nav_menu .current-menu-item a{color:#d3d3d3;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#55555e;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f4047;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}@media (max-width:768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#515151;}}.inside-header{padding:40px;}.nav-below-header .main-navigation .inside-navigation.grid-container, .nav-above-header .main-navigation .inside-navigation.grid-container{padding:0px 20px 0px 20px;}.site-main .wp-block-group__inner-container{padding:40px;}.separate-containers .paging-navigation{padding-top:20px;padding-bottom:20px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}.site-main .wp-block-group__inner-container{padding:30px;}.inside-top-bar{padding-right:30px;padding-left:30px;}.inside-header{padding-right:30px;padding-left:30px;}.widget-area .widget{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.footer-widgets-container{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.inside-site-info{padding-right:30px;padding-left:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}.one-container .site-main .paging-navigation{margin-bottom:20px;}}/* End cached CSS */.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:70%;}@media (max-width:768px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}}
+  </style>
+  <link href="https://decentralizedcreator.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.15" id="addtoany-css" media="all" rel="stylesheet"/>
+  <link href="https://decentralizedcreator.com/wp-content/plugins/lightweight-grid-columns/css/unsemantic-grid-responsive-tablet.css?ver=1.0" id="lgc-unsemantic-grid-responsive-tablet-css" media="all" rel="stylesheet"/>
+  <script id="jquery-core-js" src="https://decentralizedcreator.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1">
+  </script>
+  <script id="jquery-migrate-js" src="https://decentralizedcreator.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2">
+  </script>
+  <script id="addtoany-js" src="https://decentralizedcreator.com/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1">
+  </script>
+  <script id="jquery-cookie-js" src="https://decentralizedcreator.com/wp-content/plugins/convertkit/resources/frontend/jquery.cookie.min.js?ver=1.4.0">
+  </script>
+  <script id="convertkit-js-js-extra">
+   var ck_data = {"ajaxurl":"https:\/\/decentralizedcreator.com\/wp-admin\/admin-ajax.php","post_has_tag":""};
+  </script>
+  <script id="convertkit-js-js" src="https://decentralizedcreator.com/wp-content/plugins/convertkit/resources/frontend/wp-convertkit.js?ver=1.9.4">
+  </script>
+  <!-- Google Analytics snippet added by Site Kit -->
+  <script async="" id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=UA-201027617-1">
+  </script>
+  <script id="google_gtagjs-js-after">
+   window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["decentralizedcreator.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-201027617-1", {"anonymize_ip":true});
+  </script>
+  <!-- End Google Analytics snippet added by Site Kit -->
+  <script type="text/javascript">
+   window.tiTpc = {"endpoint":"https:\/\/api.themeisle.com\/templates-cloud\/","params":{"site_url":"https:\/\/decentralizedcreator.com","license_id":"free","type":"beaver"},"canPredefine":false,"pageTitle":"12 Best Solana NFT Projects \/ Collections in 2022","postType":"post","postTypes":["post","page","fl-builder-template"],"postMeta":{"_ti_tpc_template_sync":"","_ti_tpc_screenshot_url":"","_ti_tpc_site_slug":"","_ti_tpc_published":""},"exporter":{"modalLabel":"Save Templates","textLabel":"Template Name","textPlaceholder":"Template","buttonLabel":"Save","toggleLabel":"Automatically sync to the cloud","cancelLabel":"Cancel","importFailed":"Import Failed","exportFailed":"Export Failed"},"library":{"templatesCloud":"Templates Cloud","404":"No templates available. Add a new one?","deleteItem":"Are you sure you want to delete this template?","synced":"This template is synced to a page.","tabs":{"templates":"Page Templates","library":"My Library"},"actions":{"sync":"Sync Library","save":"Save to templates-patterns-collection","update":"Update","close":"Close","edit":"Edit","delete":"Delete","deleting":"Deleting","preview":"Preview","import":"Import"},"filters":{"sortLabel":"Sort by","sortLabels":{"name":"Name","date":"Date","modified":"Last Modified","actions":"Actions","list":"List View","grid":"Grid View"},"search":"Search","searchLabel":"Search Templates","clearSearch":"Clear search query"},"export":{"save":"Save","title":"Save your page to Templates Cloud","labelScreenshot":"Screenshot URL","labelSlug":"Site Slug","publish":"Publish","unpublish":"Unpublish"}}};
+  </script>
+  <link href="https://decentralizedcreator.com/wp-json/" rel="https://api.w.org/"/>
+  <link href="https://decentralizedcreator.com/wp-json/wp/v2/posts/2012" rel="alternate" type="application/json"/>
+  <link href="https://decentralizedcreator.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdecentralizedcreator.com%2Fbest-solana-nft-projects%2F" rel="alternate" type="application/json+oembed"/>
+  <link href="https://decentralizedcreator.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdecentralizedcreator.com%2Fbest-solana-nft-projects%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+  <script data-cfasync="false">
+   window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+a2a_config.callbacks.push({ready: function(){var d=document;function a(){var c,e=d.createElement("div");e.innerHTML="<div class=\"a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style\" data-a2a-scroll-show=\"100,500\" style=\"margin-left:-64px;top:100px;background-color:transparent;\"><a class=\"a2a_button_facebook\"><\/a><a class=\"a2a_button_twitter\"><\/a><a class=\"a2a_button_pinterest\"><\/a><a class=\"a2a_button_linkedin\"><\/a><a class=\"a2a_button_reddit\"><\/a><a class=\"a2a_button_whatsapp\"><\/a><a class=\"a2a_dd a2a_counter addtoany_share_save addtoany_share\" href=\"https:\/\/www.addtoany.com\/share\"><\/a><\/div>";c=d.querySelector("main, [role=\"main\"], article, .status-publish");if(c)c.appendChild(e.firstChild);a2a.init("page");}if("loading"!==d.readyState)a();else d.addEventListener("DOMContentLoaded",a,false);}});
+(function(d,s,a,b){a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src="https://static.addtoany.com/menu/page.js";b.parentNode.insertBefore(a,b);})(document,"script");
+  </script>
+  <meta content="Site Kit by Google 1.48.1" name="generator"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6BVKSP1SEB">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6BVKSP1SEB');
+  </script>
+  <!--[if lt IE 9]>
+			<link rel="stylesheet" href="https://decentralizedcreator.com/wp-content/plugins/lightweight-grid-columns/css/ie.min.css" />
+		<![endif]-->
+  <!-- Enter your scripts here -->
+  <link href="https://decentralizedcreator.com/xmlrpc.php" rel="pingback"/>
+  <!-- Google AdSense snippet added by Site Kit -->
+  <meta content="ca-host-pub-2644536267352236" name="google-adsense-platform-account"/>
+  <meta content="sitekit.withgoogle.com" name="google-adsense-platform-domain"/>
+  <!-- End Google AdSense snippet added by Site Kit -->
+  <script type="application/javascript">
+   console.warn('PixelYourSite: no pixel configured.');
+  </script>
+  <!-- Google AdSense snippet added by Site Kit -->
+  <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9283102232016563">
+  </script>
+  <!-- End Google AdSense snippet added by Site Kit -->
+  <script type="text/javascript">
+   var ezouid = "1";
+  </script>
+  <base href="https://decentralizedcreator.com/best-solana-nft-projects/"/>
+  <script type="text/javascript">
+   var ezoTemplate = 'old_site_noads';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+  </script>
+  <!-- START EZHEAD -->
+  <script data-ezscrex="false" type="text/javascript">
+   var soc_app_id = '0';
+var did = 334238;
+var ezdomain = 'decentralizedcreator.com';
+var ezoicSearchable = 1;
+  </script>
+  <!--{jquery}-->
+  <!-- END EZHEAD -->
+  <script data-cfasync="false" data-ezscrex="false" type="text/javascript">
+   var _ezaq = {"ab_test_id":"mod13-c","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Toronto","country":"CA","days_since_last_visit":-1,"domain_id":334238,"engaged_time_visit":0,"ezcache_level":0,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"d898dc40-78e8-466a-7525-c8d3c8f3a097","position_selection_id":0,"postal_code":"M5A","pv_event_count":0,"response_size_orig":69553,"response_time_orig":0,"serverid":"18.184.148.133:1483","state":"ON","t_epoch":1647997092,"template_id":120,"time_on_site_visit":0,"url":"https://decentralizedcreator.com/best-solana-nft-projects/","user_id":0,"visit_uuid":"d699b686-82db-4a4e-4b02-461bfeb0071c","word_count":1522,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";
+  </script>
+  <script data-cfasync="false" data-ezscrex="false" type="text/javascript">
+   var ezWp = true;
+  </script>
+  <script data-cfasync="false" data-ezscrex="false" data-pagespeed-no-defer="">
+   function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_334238=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["d898dc40-78e8-466a-7525-c8d3c8f3a097", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+  </script>
+ </head>
+ <body class="post-template-default single single-post postid-2012 single-format-standard wp-embed-responsive right-sidebar nav-below-header separate-containers header-aligned-center dropdown-hover" itemscope="" itemtype="https://schema.org/Blog">
+  <a class="screen-reader-text skip-link" href="#content" title="Skip to content">
+   Skip to content
+  </a>
+  <header aria-label="Site" class="site-header grid-container" id="masthead" itemscope="" itemtype="https://schema.org/WPHeader">
+   <div class="inside-header grid-container">
+    <div class="site-branding">
+     <p class="main-title" itemprop="headline">
+      <a href="https://decentralizedcreator.com/" rel="home">
+       DC
+      </a>
+     </p>
+    </div>
+   </div>
+  </header>
+  <nav aria-label="Primary" class="main-navigation sub-menu-right" id="site-navigation" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+   <div class="inside-navigation grid-container">
+    <button aria-controls="primary-menu" aria-expanded="false" class="menu-toggle">
+     <span class="gp-icon icon-menu-bars">
+      <svg aria-hidden="true" height="1em" viewbox="0 0 512 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+       <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z">
+       </path>
+      </svg>
+      <svg aria-hidden="true" height="1em" viewbox="0 0 512 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+       <path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z">
+       </path>
+      </svg>
+     </span>
+     <span class="mobile-menu">
+      Menu
+     </span>
+    </button>
+    <div class="main-nav" id="primary-menu">
+     <ul class="menu sf-menu" id="menu-nft">
+      <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2036" id="menu-item-2036">
+       <a href="https://decentralizedcreator.com/category/nft/">
+        NFT
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="site grid-container container hfeed" id="page">
+   <div class="site-content" id="content">
+    <div class="content-area" id="primary">
+     <main class="site-main" id="main">
+      <article class="post-2012 post type-post status-publish format-standard hentry category-nft" id="post-2012" itemscope="" itemtype="https://schema.org/CreativeWork">
+       <div class="inside-article">
+        <header aria-label="Content" class="entry-header">
+         <h1 class="entry-title" itemprop="headline">
+          12 Best Solana NFT Projects / Collections in 2022
+         </h1>
+         <div class="entry-meta">
+          <span class="posted-on">
+           <time class="updated" datetime="2022-02-16T11:41:04+00:00" itemprop="dateModified">
+            February 16, 2022
+           </time>
+           <time class="entry-date published" datetime="2022-01-16T03:25:02+00:00" itemprop="datePublished">
+            January 16, 2022
+           </time>
+          </span>
+          <span class="byline">
+           by
+           <span class="author vcard" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+            <a class="url fn n" href="https://decentralizedcreator.com/author/decentralizedcreator/" itemprop="url" rel="author" title="View all posts by decentralizedcreator">
+             <span class="author-name" itemprop="name">
+              decentralizedcreator
+             </span>
+            </a>
+           </span>
+          </span>
+         </div>
+        </header>
+        <div class="entry-content" itemprop="text">
+         <p>
+          <span style="font-weight: 400;">
+           Non-Fungible Token is becoming a buzzword and it is moving upward and onward. Every month billions of transactions are happening in NFT spaces.
+          </span>
+         </p>
+         <!-- Ezoic - wp_under_page_title - under_page_title -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-102">
+         </div>
+         <!-- End Ezoic - wp_under_page_title - under_page_title -->
+         <p>
+          <span style="font-weight: 400;">
+           Most NFT is part of Ethereum blockchain and almost all NFT marketplace are part of Ethereum blockchain. With the growing gas fee on Ethereum and there is a huge rise and demand for the whole Solana ecosystem.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Solana NFT ecosystem is growing and doing billions of transactions every day. With Solana’s
+           <a href="https://decentralizedcreator.com/solana-nft-marketplace/" rel="noopener" target="_blank">
+            dedicated marketplace
+           </a>
+           and Solana-based NFT, projects are on the rise.
+          </span>
+         </p>
+         <!-- Ezoic - wp_under_first_paragraph - under_first_paragraph -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-110">
+         </div>
+         <!-- End Ezoic - wp_under_first_paragraph - under_first_paragraph -->
+         <p>
+          Checkout
+         </p>
+         <ul>
+          <li>
+           <a href="https://decentralizedcreator.com/solana-nft-marketplace/" rel="noopener" target="_blank">
+            Best Solana NFT Marketplace
+           </a>
+          </li>
+          <li>
+           <a href="https://decentralizedcreator.com/best-solana-wallets/" rel="noopener" target="_blank">
+            5 Best Solana Wallet
+           </a>
+          </li>
+         </ul>
+         <p>
+          <span style="font-weight: 400;">
+           Here we have curated the top and best Solana NFT projects based on utility value, community, road map including
+           <a href="https://decentralizedcreator.com/solana-play-to-earn-nft-games/" rel="noopener" target="_blank">
+            play-to-earn games
+           </a>
+           ,
+           <a href="https://decentralizedcreator.com/solana-metaverse-projects/" rel="noopener" target="_blank">
+            metaverse
+           </a>
+           possibility, and total transaction value.
+          </span>
+         </p>
+         <ol>
+          <li>
+           <a href="#1">
+            Solana Monkey Business
+           </a>
+          </li>
+          <li>
+           <a href="#2">
+            Degenerate Ape Academy
+           </a>
+          </li>
+          <li>
+           <a href="#3">
+            Aurory
+           </a>
+          </li>
+          <li>
+           <a href="#4">
+            Galactic Gecko Space Garage
+           </a>
+          </li>
+          <li>
+           <a href="#5">
+            SolPunks
+           </a>
+          </li>
+          <li>
+           <a href="#6">
+            Thug Birdz
+           </a>
+          </li>
+          <li>
+           <a href="#7">
+            Meerkat Millionaire Country Club
+           </a>
+          </li>
+          <li>
+           <a href="#8">
+            Frakt
+           </a>
+          </li>
+          <li>
+           <a href="#9">
+            Portals
+           </a>
+          </li>
+          <li>
+           <a href="#10">
+            Solsteads
+           </a>
+          </li>
+          <li>
+           <a href="#11">
+            Infinity Labs
+           </a>
+          </li>
+          <li>
+           <a href="#12">
+            Rogue Sharks
+           </a>
+          </li>
+         </ol>
+         <h2 id="1">
+          <a href="https://solanamonkey.business/">
+           <b>
+            Solana Monkey Business
+           </b>
+          </a>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2017 size-large" height="493" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Solana-Monkey-Business-1024x493.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Solana-Monkey-Business-1024x493.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Solana-Monkey-Business-300x144.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Solana-Monkey-Business-768x370.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Solana-Monkey-Business-1536x740.png 1536w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Solana-Monkey-Business.png 1881w" width="1024"/>
+         </p>
+         <!-- Ezoic - wp_under_second_paragraph - under_second_paragraph -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-111">
+         </div>
+         <!-- End Ezoic - wp_under_second_paragraph - under_second_paragraph -->
+         <p>
+          <span style="font-weight: 400;">
+           Solana Monkey Business Gen 2 is a collection of 5000 unique 24 * 24 pixel randomly generated monkeys.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           The advantage of holding Solana Monkey Business are NFT ownership, as well as a community wallet useable by holders with a future on-chain voting system.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Each monkey is generated from over 99 possible character attributes.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Steven Harvey changes his profile picture to
+           <a href="https://decrypt.co/80509/steve-harvey-new-face-solana-nft-boom">
+            Solana Monkey Business
+           </a>
+          </span>
+         </p>
+         <!-- Ezoic - wp_mid_content - mid_content -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-112">
+         </div>
+         <!-- End Ezoic - wp_mid_content - mid_content -->
+         <p>
+          <a href="https://market.solanamonkey.business/item/5MKSwPqaS8168XFjWNBk1cYoGCrFUYT8zcsdNLUd1QWS">
+           <span style="font-weight: 400;">
+            SMB #790
+           </span>
+          </a>
+          <span style="font-weight: 400;">
+           has sold for a price of  SOL 25001. Currently highest value for any other SMB.
+          </span>
+         </p>
+         <p>
+          Rank 1 Solana Monkey Business #1553 sold for 13027 SOL ( 2+ million dollars in value )
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Solana Monkey Business support wallet including Phantom, Slope, Solflare, Torus, Sollet, MathWallet.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           SMB has a total transaction volume of 828.2k Solana.
+          </span>
+         </p>
+         <!-- Ezoic - wp_long_content - long_content -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-113">
+         </div>
+         <!-- End Ezoic - wp_long_content - long_content -->
+         <p>
+         </p>
+         <h2 id="2">
+          <a href="https://www.degenape.academy/">
+           <b>
+            Degenerate Ape Academy
+           </b>
+          </a>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2018 size-large" height="499" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Degnerate-Ape-Academy-1024x499.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Degnerate-Ape-Academy-1024x499.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Degnerate-Ape-Academy-300x146.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Degnerate-Ape-Academy-768x374.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Degnerate-Ape-Academy.png 1428w" width="1024"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Degenerate Ape Academy is a collection of 10,000 NFTs on the Solana Blockchain. The Degenerate Ape Academy is founded on the principles of friendship making, crayon eating, and absolute, unregulated, deplorable, degenerate behavior.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           The difference between each NFT is their Traits and Rarity. There are 137 total traits in the Academy, all classified from common to mythic.
+          </span>
+         </p>
+         <!-- Ezoic - wp_longer_content - longer_content -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-114">
+         </div>
+         <!-- End Ezoic - wp_longer_content - longer_content -->
+         <p>
+          <span style="font-weight: 400;">
+           The common rarity among Degenerate Ape Academy are Common, Uncommon, Rare, Super Rare, and Mythic
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Degenerate Ape Academy is available on
+          </span>
+          <a href="https://magiceden.io/marketplace/degenerate_ape_academy">
+           <span style="font-weight: 400;">
+            Magic Eden
+           </span>
+          </a>
+          <span style="font-weight: 400;">
+           and supported Solana Wallet are Phantom and Solflare.
+          </span>
+         </p>
+         <blockquote class="twitter-tweet" data-dnt="true" data-width="550">
+          <p dir="ltr" lang="en">
+           Moonrock Capital just acquired the 13th rarest
+           <a href="https://twitter.com/DegenApeAcademy?ref_src=twsrc%5Etfw">
+            @DegenApeAcademy
+           </a>
+           NFT for 5980
+           <a href="https://twitter.com/search?q=%24SOL&amp;src=ctag&amp;ref_src=twsrc%5Etfw">
+            $SOL
+           </a>
+           ($1,109,170.40)
+           <a href="https://t.co/STkwJetRl1">
+            pic.twitter.com/STkwJetRl1
+           </a>
+          </p>
+          <p>
+           — Moonrock Capital (@MoonrockCapital)
+           <a href="https://twitter.com/MoonrockCapital/status/1436700043843706883?ref_src=twsrc%5Etfw">
+            September 11, 2021
+           </a>
+          </p>
+         </blockquote>
+         <p>
+          <script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js">
+          </script>
+         </p>
+         <p>
+          <a href="https://magiceden.io/item-details/8iZSAgKfkMHbEEosVBaAjkKZv7Bd4F79eGpYAfbNTDtT">
+           <span style="font-weight: 400;">
+            Degen Ape #2719
+           </span>
+          </a>
+          <span style="font-weight: 400;">
+           is currently the highest-priced NFT of Degenerate Ape Academy and it is priced at 6969 SOL
+          </span>
+         </p>
+         <!-- Ezoic - wp_longest_content - longest_content -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-115">
+         </div>
+         <!-- End Ezoic - wp_longest_content - longest_content -->
+         <p>
+          <span style="font-weight: 400;">
+           As of now the total volume of 270 K Solana transactions has happened at Degenerate Ape Academy.
+          </span>
+         </p>
+         <h2 id="3">
+          <a href="https://aurory.io/">
+           <span style="font-weight: 400;">
+            <strong>
+             Aurory
+            </strong>
+           </span>
+          </a>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2019 size-large" height="528" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Aurory-1024x528.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Aurory-1024x528.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Aurory-300x155.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Aurory-768x396.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Aurory-1536x792.png 1536w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Aurory.png 1543w" width="1024"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Aurory is a play-to-earn desktop game and it has more than 10000 NFT items that players can trade. Aurory project is invested by Solana Foundation, Alameda Research, and CMS.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Aurory team is composed of talents from the gaming and the cryptocurrency industry. With the former experience in studios like Ubisoft, EA, and other reputable companies.
+          </span>
+         </p>
+         <!-- Ezoic - wp_incontent_5 - incontent_5 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-116">
+         </div>
+         <!-- End Ezoic - wp_incontent_5 - incontent_5 -->
+         <p>
+          <span style="font-weight: 400;">
+           Aurory is on the goal to develop one of the sought-after play to games in the Solana Ecosystem.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Aurory is listed on
+          </span>
+          <a href="https://solanart.io/collections/aurory">
+           <span style="font-weight: 400;">
+            Solanart Marketplace
+           </span>
+          </a>
+          <span style="font-weight: 400;">
+           which supports Phantom, Solflare, Clover, and Slope.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Aurorian #6423 is currently the highest-priced NFT at 111K Solana.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Aurory has a total trade volume of more than 565 K Solana ( At the time of writing ).
+          </span>
+         </p>
+         <!-- Ezoic - wp_incontent_6 - incontent_6 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-117">
+         </div>
+         <!-- End Ezoic - wp_incontent_6 - incontent_6 -->
+         <p>
+         </p>
+         <h2 id="4">
+          <strong>
+           <a href="https://galacticgeckos.io/">
+            Galactic Gecko Space Garage
+           </a>
+          </strong>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2020 size-large" height="554" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Galactic-NFT-1024x554.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Galactic-NFT-1024x554.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Galactic-NFT-300x162.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Galactic-NFT-768x416.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Galactic-NFT-1536x832.png 1536w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Galactic-NFT.png 1544w" width="1024"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Galactic Gecko Space Garage is a social adventure club featuring more than 10,000 geckos on Solana Blockchain.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Galactic Gecko NFT is proof of the membership granting you access to the Space Garage, future dorps, and the community of fellow geckos.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           You can check the rarity of your Geckos NFT using the G
+          </span>
+          <a href="https://galacticgeckos.io/rare.html">
+           <span style="font-weight: 400;">
+            alactic Gecko rarity tool
+           </span>
+          </a>
+          <span style="font-weight: 400;">
+           or
+          </span>
+          <a href="https://galacticgeckos.io/pet_rarity.html">
+           <span style="font-weight: 400;">
+            Concordian rarity tool
+           </span>
+          </a>
+         </p>
+         <!-- Ezoic - wp_incontent_7 - incontent_7 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-118">
+         </div>
+         <!-- End Ezoic - wp_incontent_7 - incontent_7 -->
+         <p>
+          <span style="font-weight: 400;">
+           Galactic Gecko has a total transaction volume of 307K Sol ( at the time of writing )
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Galactic Gecko #9262 is currently  listed at the highest price of 3000 Sol
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Supported wallets are Phantom, Slope, Solflare, Solong, and MathWallet and are hosted on Magic Eden Marketplace.
+          </span>
+         </p>
+         <h2 id="5">
+          <strong>
+           <a href="https://solpunks.com/">
+            SolPunks
+           </a>
+          </strong>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2014 size-large" height="524" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/SolPunk-1024x524.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/SolPunk-1024x524.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/SolPunk-300x154.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/SolPunk-768x393.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/SolPunk-1536x787.png 1536w, https://decentralizedcreator.com/wp-content/uploads/2022/01/SolPunk.png 1558w" width="1024"/>
+         </p>
+         <p>
+         </p>
+         <!-- Ezoic - wp_incontent_8 - incontent_8 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-119">
+         </div>
+         <!-- End Ezoic - wp_incontent_8 - incontent_8 -->
+         <p>
+          <span style="font-weight: 400;">
+           Similar to CryptoPunk. SolPunks is one of the first NFTs on the Solana Blockchain. Each of these 10,000 SolPunks has unique attributes.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           SolPunks types are Alien, Ape, Zombie, Female, and Male, and a total of 8 Category counts.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Solpunk is available on
+          </span>
+          <a href="https://solanart.io/collections/solpunks">
+           <span style="font-weight: 400;">
+            Solanart Marketplace
+           </span>
+          </a>
+          <span style="font-weight: 400;">
+           which supports wallets including Phantom, Soflare, Clover, and Slope.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           As of now, Solpunk has been traded a total volume of 417K Solana.
+          </span>
+         </p>
+         <p>
+         </p>
+         <!-- Ezoic - wp_incontent_9 - incontent_9 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-120">
+         </div>
+         <!-- End Ezoic - wp_incontent_9 - incontent_9 -->
+         <h2 id="6">
+          <strong>
+           <a href="https://www.thugbirdz.com/">
+            Thug Birdz
+           </a>
+          </strong>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2016 size-large" height="715" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/ThugBirdz-1024x715.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/ThugBirdz-1024x715.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/ThugBirdz-300x209.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/ThugBirdz-768x536.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/ThugBirdz.png 1107w" width="1024"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Thug Birdz is a collection of 3,333 uniquely generated, tough, and collectible thugbirdz available on Solana Blockchain.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Thug Birdz’s rarity is based on Types, Shades, Chains, Face-tattoo, Ear-ring, Smoking, Hats, Meta-data Gang roles, and Rappers.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Their roadmap includes collaboration with other projects, an 8-bit thugbirdz game, and getting thugbirdz in a rap song.
+          </span>
+         </p>
+         <p>
+          Major Rapers Wiz Khalifa &amp; Waka Flocka joined Thugbirdz
+         </p>
+         <!-- Ezoic - wp_incontent_10 - incontent_10 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-121">
+         </div>
+         <!-- End Ezoic - wp_incontent_10 - incontent_10 -->
+         <blockquote class="twitter-tweet" data-dnt="true" data-width="550">
+          <p dir="ltr" lang="en">
+           gm
+           <a href="https://twitter.com/thugbirdz?ref_src=twsrc%5Etfw">
+            @thugbirdz
+           </a>
+           and taylors
+           <a href="https://t.co/ujj3RvrIju">
+            pic.twitter.com/ujj3RvrIju
+           </a>
+          </p>
+          <p>
+           — Wiz Khalifa (@wizkhalifa)
+           <a href="https://twitter.com/wizkhalifa/status/1461377011377745923?ref_src=twsrc%5Etfw">
+            November 18, 2021
+           </a>
+          </p>
+         </blockquote>
+         <p>
+          <script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js">
+          </script>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           ThugBirdz is available on
+          </span>
+          <a href="https://digitaleyes.market/collections/Thugbirdz">
+           <span style="font-weight: 400;">
+            DigitalEyes
+           </span>
+          </a>
+          <span style="font-weight: 400;">
+           which supports both Phantom and Solflare wallets.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Thug Birdz’s total transaction volume as of today is 76.5 K Solana.
+          </span>
+         </p>
+         <p>
+         </p>
+         <h2 id="7">
+          <strong>
+           <a href="https://meerkatmillionaires.club/">
+            Meerkat Millionaires Country Club
+           </a>
+          </strong>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2022 size-large" height="550" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Meerkar-Millionaire-Club-1024x550.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Meerkar-Millionaire-Club-1024x550.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Meerkar-Millionaire-Club-300x161.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Meerkar-Millionaire-Club-768x412.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Meerkar-Millionaire-Club-1536x825.png 1536w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Meerkar-Millionaire-Club.png 1546w" width="1024"/>
+         </p>
+         <!-- Ezoic - wp_incontent_11 - incontent_11 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-122">
+         </div>
+         <!-- End Ezoic - wp_incontent_11 - incontent_11 -->
+         <p>
+          <span style="font-weight: 400;">
+           MMCC is a collection of 9,999 generative meerkats on the Solana blockchain and it is created by VenusLabs.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           A generative art NFT  series composed of over 175 different traits.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           The member perks for MMCC are
+          </span>
+         </p>
+         <ul>
+          <li aria-level="1" style="font-weight: 400;">
+           <span style="font-weight: 400;">
+            Minter of the project receive 15% of royalties for the lifetime of the project
+           </span>
+          </li>
+          <li aria-level="1" style="font-weight: 400;">
+           <span style="font-weight: 400;">
+            85% of royalties will go to the holders of the projects.
+           </span>
+          </li>
+         </ul>
+         <p>
+          <span style="font-weight: 400;">
+           MMCC is available on Solanart which support Phantom and Solflare
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           MMCC has a total transaction volume of more than 121.7K SOL
+          </span>
+         </p>
+         <!-- Ezoic - wp_incontent_12 - incontent_12 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-123">
+         </div>
+         <!-- End Ezoic - wp_incontent_12 - incontent_12 -->
+         <h2 id="8">
+          <strong>
+           <a href="https://frakt.art">
+            Frakt
+           </a>
+          </strong>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2021 size-full" height="422" loading="lazy" sizes="(max-width: 1500px) 100vw, 1500px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Frakr.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Frakr.png 1500w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Frakr-300x84.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Frakr-1024x288.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Frakr-768x216.png 768w" width="1500"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Frakt is the first generative art NFT project on Solana. Each frakt is a uniquely generated art piece with 5 different types of shapes and 4 color schemes, each with various rarities.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Frakt is a limited supply of 10000 frakts out of infinite possibilities.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Frakt has a pretty solid roadmap plan from staking, sandbox, DAO, and Frakionalizer.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Frakt is available on Solanart, Digital Eyes, and their own Marketplace
+          </span>
+         </p>
+         <!-- Ezoic - wp_incontent_13 - incontent_13 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-124">
+         </div>
+         <!-- End Ezoic - wp_incontent_13 - incontent_13 -->
+         <p>
+          <span style="font-weight: 400;">
+           Frakt is supported by Phanton, Solflare, Ledger and Sollet.
+          </span>
+         </p>
+         <h2 id="9">
+          <strong>
+           <a href="https://theportal.to/" rel="noopener" target="_blank">
+            Portals
+           </a>
+          </strong>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2023 size-large" height="566" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Portal-NFT-1024x566.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Portal-NFT-1024x566.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Portal-NFT-300x166.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Portal-NFT-768x424.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Portal-NFT.png 1455w" width="1024"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Portals is a web-based metaverse platform on Solana Ecosystem. Currently, they are working on Room ownership and permission, More NFT integrations, Community partnership, Early adopter outreach.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Portals NFT grants you ownership to one of the units in Building One. The NFT will be your proof of ownership and access card to your space in the building. The card will store and remember everything you own and build in Portals.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Portals NFT are available on Magicden. They have done a total volume of more than 109k Solana at the time of writing.
+          </span>
+         </p>
+         <!-- Ezoic - wp_incontent_14 - incontent_14 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-125">
+         </div>
+         <!-- End Ezoic - wp_incontent_14 - incontent_14 -->
+         <p>
+         </p>
+         <h2 id="10">
+          <strong>
+           <a href="https://infinitylabsnft.com/">
+            Infinity Labs
+           </a>
+          </strong>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2024 size-full" height="912" loading="lazy" sizes="(max-width: 999px) 100vw, 999px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Infinity-Labs-NFT.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Infinity-Labs-NFT.png 999w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Infinity-Labs-NFT-300x274.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Infinity-Labs-NFT-768x701.png 768w" width="999"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Scenes from the Solverse is a collection of 8888 NFT or scenes from every corner of Metaverse and they are called Solverse.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Solverse NFT is a collection of 111 unique artwork and 8 copies of each that represent 8 different possible timelines.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           It is the first of a kind animated NFT merging on the blockchain and this will unlock thousands of animations, stories, and rare sounds by collecting &amp; merging timelines.
+          </span>
+         </p>
+         <!-- Ezoic - wp_incontent_15 - incontent_15 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-126">
+         </div>
+         <!-- End Ezoic - wp_incontent_15 - incontent_15 -->
+         <p>
+          <span style="font-weight: 400;">
+           You can purchase their NFT on Solanart, Magic Eden, Alpha Art, FTX, and Exchange Art.
+          </span>
+         </p>
+         <p>
+         </p>
+         <h2 id="11">
+          <a href="https://solsteads.com/" rel="noopener" target="_blank">
+           <strong>
+            Solsteads
+           </strong>
+          </a>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2015 size-large" height="558" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Solstead-NFT-1024x558.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Solstead-NFT-1024x558.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Solstead-NFT-300x164.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Solstead-NFT-768x419.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Solstead-NFT.png 1471w" width="1024"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           A Solsteads NFT comes with a unique street address and a beautiful depiction of a home.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Solsteads is a surreal estate collection of 2472 homes. Each NFT represents an individual house on each directory and addresses
+          </span>
+         </p>
+         <!-- Ezoic - wp_incontent_16 - incontent_16 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-127">
+         </div>
+         <!-- End Ezoic - wp_incontent_16 - incontent_16 -->
+         <p>
+          <span style="font-weight: 400;">
+           Solstead is available on DigitalEyes, Solaart, Magic Eden, and FTX.
+          </span>
+         </p>
+         <h2 id="12">
+          <strong>
+           <a href="https://www.roguesharks.org/">
+            Rogue Sharks
+           </a>
+          </strong>
+         </h2>
+         <p>
+          <img alt="Best Solana NFT Project " class="aligncenter wp-image-2013 size-large" height="502" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://decentralizedcreator.com/wp-content/uploads/2022/01/Shark-NFT-1024x502.png" srcset="https://decentralizedcreator.com/wp-content/uploads/2022/01/Shark-NFT-1024x502.png 1024w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Shark-NFT-300x147.png 300w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Shark-NFT-768x376.png 768w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Shark-NFT-1536x752.png 1536w, https://decentralizedcreator.com/wp-content/uploads/2022/01/Shark-NFT.png 1582w" width="1024"/>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Rogue Sharks is the most exclusive collection of sharks on the Solana blockchain with only 5000 NFTs in existence.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           Rogue Sharks NFT increases access pass, unlocking holder only utilities that only increases over time.
+          </span>
+         </p>
+         <p>
+          <span style="font-weight: 400;">
+           You can directly purchase their NFT on their own
+          </span>
+          <a href="https://market.roguesharks.org/">
+           <span style="font-weight: 400;">
+            Marketplace
+           </span>
+          </a>
+          <span style="font-weight: 400;">
+           and they support both Phantom and SolFlare.
+          </span>
+         </p>
+         <h1>
+          FAQ
+         </h1>
+         <h3>
+          How to find Solana NFT Projects?
+         </h3>
+         <p>
+          To find out Solana NFT Project, you have to visit
+          <a href="https://decentralizedcreator.com/solana-nft-marketplaces/">
+           Solana NFT Marketplace
+          </a>
+          such as MagicDen, Solsea, where you can able to find Solana NFT Project. Before buying NFT you need to have to buy
+          <a href="https://decentralizedcreator.com/buy-cryptocurrency-in-2022/">
+           Solana from Cryptocurrency exchange
+          </a>
+          and
+          <a href="https://decentralizedcreator.com/deposit-solana-to-phantom-wallet/">
+           transfer
+          </a>
+          it to
+          <a href="https://decentralizedcreator.com/best-solana-wallets/">
+           Solana-supported Wallet.
+          </a>
+         </p>
+         <!-- Ezoic - wp_incontent_17 - incontent_17 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-128">
+         </div>
+         <!-- End Ezoic - wp_incontent_17 - incontent_17 -->
+         <h3>
+          <strong>
+           What is the best Solana NFT Wallet?
+          </strong>
+         </h3>
+         <p>
+          The phantom wallet is the best Solana NFT Wallet. As
+          <a href="https://decentralizedcreator.com/create-a-phantom-wallet/">
+           Phantom
+          </a>
+          wallet is supported in almost all major
+          <a href="https://decentralizedcreator.com/solana-nft-marketplaces/">
+           Solana NFT Marketplace
+          </a>
+          and it is available on a mobile device so that you can view your NFT collection through any device. You can check out the other
+          <a href="https://decentralizedcreator.com/best-solana-wallets/">
+           best Solana Wallet
+          </a>
+          .
+         </p>
+         <h3>
+          What is the best Solana NFT Rarity Tool?
+         </h3>
+         <p>
+          <a href="https://howrare.is/">
+           HowRare.is
+          </a>
+          is the best Solana NFT Rarity Tool that helps you to find how rare your Solana NFTs are.
+         </p>
+         <p>
+         </p>
+         <p>
+          Checkout
+         </p>
+         <!-- Ezoic - wp_incontent_18 - incontent_18 -->
+         <div data-inserter-version="2" id="ezoic-pub-ad-placeholder-129">
+         </div>
+         <!-- End Ezoic - wp_incontent_18 - incontent_18 -->
+         <ul>
+          <li>
+           <a href="https://decentralizedcreator.com/solana-play-to-earn-nft-games/">
+            Best Solana NFT Play-to-Earn Games
+           </a>
+          </li>
+          <li>
+           <a href="https://decentralizedcreator.com/solana-metaverse-projects/">
+            Best Solana NFT Metaverse Project
+           </a>
+          </li>
+          <li>
+           <a href="https://decentralizedcreator.com/best-solana-wallets/">
+            Best Solana Wallet
+           </a>
+          </li>
+          <li>
+           <a href="https://decentralizedcreator.com/solana-nft-marketplaces/">
+            Best Solana NFT Marketplace
+           </a>
+          </li>
+         </ul>
+         <p>
+         </p>
+         <div class="addtoany_share_save_container addtoany_content addtoany_content_bottom">
+          <div class="addtoany_header">
+           Share this:
+          </div>
+          <div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-title="12 Best Solana NFT Projects / Collections in 2022" data-a2a-url="https://decentralizedcreator.com/best-solana-nft-projects/">
+           <a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fdecentralizedcreator.com%2Fbest-solana-nft-projects%2F&amp;linkname=12%20Best%20Solana%20NFT%20Projects%20%2F%20Collections%20in%202022" rel="nofollow noopener" target="_blank" title="Facebook">
+           </a>
+           <a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fdecentralizedcreator.com%2Fbest-solana-nft-projects%2F&amp;linkname=12%20Best%20Solana%20NFT%20Projects%20%2F%20Collections%20in%202022" rel="nofollow noopener" target="_blank" title="Twitter">
+           </a>
+           <a class="a2a_button_pinterest" href="https://www.addtoany.com/add_to/pinterest?linkurl=https%3A%2F%2Fdecentralizedcreator.com%2Fbest-solana-nft-projects%2F&amp;linkname=12%20Best%20Solana%20NFT%20Projects%20%2F%20Collections%20in%202022" rel="nofollow noopener" target="_blank" title="Pinterest">
+           </a>
+           <a class="a2a_button_linkedin" href="https://www.addtoany.com/add_to/linkedin?linkurl=https%3A%2F%2Fdecentralizedcreator.com%2Fbest-solana-nft-projects%2F&amp;linkname=12%20Best%20Solana%20NFT%20Projects%20%2F%20Collections%20in%202022" rel="nofollow noopener" target="_blank" title="LinkedIn">
+           </a>
+           <a class="a2a_button_reddit" href="https://www.addtoany.com/add_to/reddit?linkurl=https%3A%2F%2Fdecentralizedcreator.com%2Fbest-solana-nft-projects%2F&amp;linkname=12%20Best%20Solana%20NFT%20Projects%20%2F%20Collections%20in%202022" rel="nofollow noopener" target="_blank" title="Reddit">
+           </a>
+           <a class="a2a_button_whatsapp" href="https://www.addtoany.com/add_to/whatsapp?linkurl=https%3A%2F%2Fdecentralizedcreator.com%2Fbest-solana-nft-projects%2F&amp;linkname=12%20Best%20Solana%20NFT%20Projects%20%2F%20Collections%20in%202022" rel="nofollow noopener" target="_blank" title="WhatsApp">
+           </a>
+           <a class="a2a_dd a2a_counter addtoany_share_save addtoany_share" href="https://www.addtoany.com/share">
+           </a>
+          </div>
+         </div>
+        </div>
+        <footer aria-label="Entry meta" class="entry-meta">
+         <span class="cat-links">
+          <span class="gp-icon icon-categories">
+           <svg aria-hidden="true" height="1em" viewbox="0 0 512 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+            </path>
+           </svg>
+          </span>
+          <span class="screen-reader-text">
+           Categories
+          </span>
+          <a href="https://decentralizedcreator.com/category/nft/" rel="category tag">
+           NFT
+          </a>
+         </span>
+         <nav aria-label="Single Post" class="post-navigation" id="nav-below">
+          <span class="screen-reader-text">
+           Post navigation
+          </span>
+          <div class="nav-previous">
+           <span class="gp-icon icon-arrow-left">
+            <svg aria-hidden="true" clip-rule="evenodd" fill-rule="evenodd" height="1em" stroke-linejoin="round" stroke-miterlimit="1.414" viewbox="0 0 192 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+             <path d="M178.425 138.212c0 2.265-1.133 4.813-2.832 6.512L64.276 256.001l111.317 111.277c1.7 1.7 2.832 4.247 2.832 6.513 0 2.265-1.133 4.813-2.832 6.512L161.43 394.46c-1.7 1.7-4.249 2.832-6.514 2.832-2.266 0-4.816-1.133-6.515-2.832L16.407 262.514c-1.699-1.7-2.832-4.248-2.832-6.513 0-2.265 1.133-4.813 2.832-6.512l131.994-131.947c1.7-1.699 4.249-2.831 6.515-2.831 2.265 0 4.815 1.132 6.514 2.831l14.163 14.157c1.7 1.7 2.832 3.965 2.832 6.513z" fill-rule="nonzero">
+             </path>
+            </svg>
+           </span>
+           <span class="prev" title="Previous">
+            <a href="https://decentralizedcreator.com/send-ada-from-coinbase-to-nami/" rel="prev">
+             How to Send Cardano from Coinbase to Nami Wallet
+            </a>
+           </span>
+          </div>
+          <div class="nav-next">
+           <span class="gp-icon icon-arrow-right">
+            <svg aria-hidden="true" clip-rule="evenodd" fill-rule="evenodd" height="1em" stroke-linejoin="round" stroke-miterlimit="1.414" viewbox="0 0 192 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+             <path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero">
+             </path>
+            </svg>
+           </span>
+           <span class="next" title="Next">
+            <a href="https://decentralizedcreator.com/spot-wallet-to-funding-wallet/" rel="next">
+             How to Transfer Assets from Binance’s Spot Wallet to Funding Wallet
+            </a>
+           </span>
+          </div>
+         </nav>
+        </footer>
+       </div>
+      </article>
+      <div class="comments-area">
+       <div id="comments">
+        <div class="comment-respond" id="respond">
+         <h3 class="comment-reply-title" id="reply-title">
+          Leave a Comment
+          <small>
+           <a href="/best-solana-nft-projects/#respond" id="cancel-comment-reply-link" rel="nofollow" style="display:none;">
+            Cancel reply
+           </a>
+          </small>
+         </h3>
+         <form action="https://decentralizedcreator.com/wp-comments-post.php" class="comment-form" id="commentform" method="post" novalidate="">
+          <p class="comment-form-comment">
+           <label class="screen-reader-text" for="comment">
+            Comment
+           </label>
+           <textarea cols="45" id="comment" name="comment" required="" rows="8"></textarea>
+          </p>
+          <label class="screen-reader-text" for="author">
+           Name
+          </label>
+          <input id="author" name="author" placeholder="Name *" required="" size="30" type="text" value=""/>
+          <label class="screen-reader-text" for="email">
+           Email
+          </label>
+          <input id="email" name="email" placeholder="Email *" required="" size="30" type="email" value=""/>
+          <label class="screen-reader-text" for="url">
+           Website
+          </label>
+          <input id="url" name="url" placeholder="Website" size="30" type="url" value=""/>
+          <p class="comment-form-cookies-consent">
+           <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"/>
+           <label for="wp-comment-cookies-consent">
+            Save my name, email, and website in this browser for the next time I comment.
+           </label>
+          </p>
+          <p class="form-submit">
+           <input class="submit" id="submit" name="submit" type="submit" value="Post Comment"/>
+           <input id="comment_post_ID" name="comment_post_ID" type="hidden" value="2012"/>
+           <input id="comment_parent" name="comment_parent" type="hidden" value="0"/>
+          </p>
+         </form>
+        </div>
+        <!-- #respond -->
+       </div>
+       <!-- #comments -->
+      </div>
+     </main>
+    </div>
+    <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+     <div class="inside-right-sidebar">
+      <!-- Ezoic - wp_sidebar - sidebar -->
+      <div data-inserter-version="-1" id="ezoic-pub-ad-placeholder-104">
+      </div>
+      <!-- End Ezoic - wp_sidebar - sidebar -->
+      <aside class="widget inner-padding widget_archive" id="archives-7">
+       <h2 class="widget-title">
+        Archives
+       </h2>
+       <ul>
+        <li>
+         <a href="https://decentralizedcreator.com/2022/03/">
+          March 2022
+         </a>
+         (33)
+        </li>
+        <li>
+         <a href="https://decentralizedcreator.com/2022/02/">
+          February 2022
+         </a>
+         (21)
+        </li>
+        <li>
+         <a href="https://decentralizedcreator.com/2022/01/">
+          January 2022
+         </a>
+         (27)
+        </li>
+        <li>
+         <a href="https://decentralizedcreator.com/2021/12/">
+          December 2021
+         </a>
+         (27)
+        </li>
+        <li>
+         <a href="https://decentralizedcreator.com/2021/11/">
+          November 2021
+         </a>
+         (13)
+        </li>
+        <li>
+         <a href="https://decentralizedcreator.com/2021/10/">
+          October 2021
+         </a>
+         (7)
+        </li>
+        <li>
+         <a href="https://decentralizedcreator.com/2021/09/">
+          September 2021
+         </a>
+         (8)
+        </li>
+        <li>
+         <a href="https://decentralizedcreator.com/2021/08/">
+          August 2021
+         </a>
+         (6)
+        </li>
+        <li>
+         <a href="https://decentralizedcreator.com/2021/07/">
+          July 2021
+         </a>
+         (16)
+        </li>
+       </ul>
+      </aside>
+      <!-- Ezoic - wp_sidebar_middle_1 - sidebar_middle -->
+      <div data-inserter-version="-1" id="ezoic-pub-ad-placeholder-105">
+      </div>
+      <!-- End Ezoic - wp_sidebar_middle_1 - sidebar_middle -->
+      <!-- Ezoic - wp_sidebar_middle_2 - sidebar_middle -->
+      <div data-inserter-version="-1" id="ezoic-pub-ad-placeholder-106">
+      </div>
+      <!-- End Ezoic - wp_sidebar_middle_2 - sidebar_middle -->
+      <!-- Ezoic - wp_sidebar_middle_3 - sidebar_middle -->
+      <div data-inserter-version="-1" id="ezoic-pub-ad-placeholder-107">
+      </div>
+      <!-- End Ezoic - wp_sidebar_middle_3 - sidebar_middle -->
+      <!-- Ezoic - wp_sidebar_bottom - sidebar_bottom -->
+      <div data-inserter-version="-1" id="ezoic-pub-ad-placeholder-108">
+      </div>
+      <!-- End Ezoic - wp_sidebar_bottom - sidebar_bottom -->
+      <!-- Ezoic - wp_sidebar_floating_1 - sidebar_floating_1 -->
+      <div data-inserter-version="-1" id="ezoic-pub-ad-placeholder-109">
+      </div>
+      <!-- End Ezoic - wp_sidebar_floating_1 - sidebar_floating_1 -->
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="site-footer">
+   <footer aria-label="Site" class="site-info" itemscope="" itemtype="https://schema.org/WPFooter">
+    <div class="inside-site-info grid-container">
+     <div class="copyright-bar">
+      <span class="copyright">
+       © 2022 DC
+      </span>
+      • Built with
+      <a href="https://generatepress.com" itemprop="url">
+       GeneratePress
+      </a>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <!-- Enter your scripts here -->
+  <script id="generate-a11y">
+   !function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();
+  </script>
+  <script id="ce4wp_form_submit-js-extra">
+   var ce4wp_form_submit_data = {"siteUrl":"https:\/\/decentralizedcreator.com","url":"https:\/\/decentralizedcreator.com\/wp-admin\/admin-ajax.php","nonce":"b36e1590d5","listNonce":"5967d38f65"};
+  </script>
+  <script id="ce4wp_form_submit-js" src="https://decentralizedcreator.com/wp-content/plugins/creative-mail-by-constant-contact/assets/js/block/submit.js?ver=1625901515">
+  </script>
+  <!--[if lte IE 11]>
+<script src='https://decentralizedcreator.com/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.1.0' id='generate-classlist-js'></script>
+<![endif]-->
+  <script id="generate-menu-js-extra">
+   var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+  </script>
+  <script id="generate-menu-js" src="https://decentralizedcreator.com/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.1.0">
+  </script>
+  <script id="comment-reply-js" src="https://decentralizedcreator.com/wp-includes/js/comment-reply.min.js?ver=5.7.6">
+  </script>
+  <script id="wp-embed-js" src="https://decentralizedcreator.com/wp-includes/js/wp-embed.min.js?ver=5.7.6">
+  </script>
+  <script async="" style="display:none;" type="text/javascript">
+   __ez.queue.addFile('/detroitchicago/edmonton.webp', '//g.ezoic.net/detroitchicago/edmonton.webp?a=a&cb=0&shcb=34', true, ['/detroitchicago/minneapolis.js'], true, false, false, false);
+__ez.queue.addFile('/porpoiseant/jellyfish.webp', '//g.ezoic.net/porpoiseant/jellyfish.webp?a=a&cb=0&shcb=34', false, [], true, false, false, false);
+  </script>
+  <script>
+   var _audins_dom="decentralizedcreator_com",_audins_did=334238;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=195-0");
+  </script>
+  <noscript>
+   <div style="display:none;">
+    <img alt="Quantcast" border="0" height="1" src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.decentralizedcreator_com,DomainId.334238" width="1"/>
+   </div>
+  </noscript>
+  <script data-cfasync="false" type="text/javascript">
+  </script>
+  <script>
+   __ez.queue.addFile('/tardisrocinante/vitals.js', '//g.ezoic.net/tardisrocinante/vitals.js?gcb=0&cb=3', false, ['/detroitchicago/minneapolis.js'], true, false, true, false);
+  </script>
+ </body>
+</html>
